@@ -1,0 +1,25 @@
+{
+  "name": "mcq-ceh",
+  "version": "1.0.0",
+  "description": "Quick MCQ webapp to study the CEH exam",
+  "keywords": [
+    "MCQ",
+    "CEH"
+  ],
+  "homepage": "https://github.com/Nat2194/MCQ-CEH#readme",
+  "bugs": {
+    "url": "https://github.com/Nat2194/MCQ-CEH/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nat2194/MCQ-CEH.git"
+  },
+  "license": "MIT",
+  "author": "Nathan CARLIER",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "start cmd /k \"cd backend && npm run start\" & start cmd /k \"cd frontend && npm run dev\""
+  }
+}

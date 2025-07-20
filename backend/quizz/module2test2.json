@@ -1,0 +1,372 @@
+[
+  {
+    "question": "Which protocols are commonly used for remote enumeration?",
+    "options": {
+      "A": "SMB",
+      "B": "RDP",
+      "C": "SNMP",
+      "D": "ICMP"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which of the following is a technique for website footprinting?",
+    "options": {
+      "A": "Examining robots.txt",
+      "B": "Performing SQL injection",
+      "C": "Brute-forcing login credentials",
+      "D": "Using the Wayback Machine"
+    },
+    "correct_answers": ["A", "D"]
+  },
+  {
+    "question": "What is the purpose of email harvesting?",
+    "options": {
+      "A": "Find email addresses for phishing",
+      "B": "Spoof legitimate emails",
+      "C": "Create fake email servers",
+      "D": "Gain admin privileges"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are examples of WHOIS data?",
+    "options": {
+      "A": "Domain registrar",
+      "B": "Domain creation date",
+      "C": "Website HTML content",
+      "D": "Registrant's contact information"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What is a zone transfer in DNS?",
+    "options": {
+      "A": "A method for syncing DNS records between servers",
+      "B": "An encrypted DNS query",
+      "C": "A DNS poisoning technique",
+      "D": "A way to inject malicious DNS entries"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools can perform email address harvesting?",
+    "options": {
+      "A": "theHarvester",
+      "B": "Maltego",
+      "C": "Metasploit",
+      "D": "Recon-ng"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which operating system service can be enumerated with rpcclient?",
+    "options": {
+      "A": "Active Directory",
+      "B": "Linux cron jobs",
+      "C": "SMB shares",
+      "D": "Firewall rules"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which of the following tools are effective for performing OS fingerprinting?",
+    "options": {
+      "A": "xProbe2",
+      "B": "Netcat",
+      "C": "nmap",
+      "D": "hping"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "Which of the following can be used to bypass IDS during reconnaissance?",
+    "options": {
+      "A": "Slow and low scanning",
+      "B": "Packet fragmentation",
+      "C": "Using SYN flood",
+      "D": "Spoofed source IP"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What is the purpose of DNS brute forcing?",
+    "options": {
+      "A": "Identify subdomains",
+      "B": "Change DNS records",
+      "C": "Bypass DNSSEC",
+      "D": "Hijack DNS responses"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which header information can be extracted from an HTTP response for fingerprinting?",
+    "options": {
+      "A": "Server type",
+      "B": "Content-Length",
+      "C": "X-Powered-By",
+      "D": "Date"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which command can be used to list all open ports and associated services in Linux?",
+    "options": {
+      "A": "netstat -tuln",
+      "B": "ps -aux",
+      "C": "ls -al",
+      "D": "iptables -L"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools can analyze metadata in documents?",
+    "options": {
+      "A": "ExifTool",
+      "B": "Binwalk",
+      "C": "FOCA",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which of these tools is best suited for visual reconnaissance mapping?",
+    "options": {
+      "A": "Maltego",
+      "B": "Shodan",
+      "C": "Nessus",
+      "D": "Zenmap"
+    },
+    "correct_answers": ["A", "D"]
+  },
+  {
+    "question": "What can be extracted from a DNS reverse lookup?",
+    "options": {
+      "A": "Hostname from IP address",
+      "B": "MAC address",
+      "C": "Open ports",
+      "D": "Operating system"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which CEH concept involves identifying an organization’s external attack surface?",
+    "options": {
+      "A": "Footprinting",
+      "B": "Privilege escalation",
+      "C": "Payload injection",
+      "D": "Backdoor installation"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are common targets during enumeration?",
+    "options": {
+      "A": "Usernames",
+      "B": "Network shares",
+      "C": "Passwords",
+      "D": "Group memberships"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What information can be obtained from an SSL certificate?",
+    "options": {
+      "A": "Domain name",
+      "B": "Organization name",
+      "C": "Server IP address",
+      "D": "Expiration date"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following are best practices during reconnaissance?",
+    "options": {
+      "A": "Documenting findings",
+      "B": "Using stealth techniques",
+      "C": "Notifying the blue team",
+      "D": "Exploiting discovered vulnerabilities"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these reconnaissance tools provides graphical output?",
+    "options": {
+      "A": "Zenmap",
+      "B": "Maltego",
+      "C": "Nmap",
+      "D": "Metasploit"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What can be a potential risk of performing active scanning?",
+    "options": {
+      "A": "Triggering alerts on intrusion detection systems",
+      "B": "Overloading internal systems",
+      "C": "Exposure of attacker’s IP",
+      "D": "None of the above"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What kind of records can be found in DNS to map services?",
+    "options": {
+      "A": "MX records",
+      "B": "A records",
+      "C": "TXT records",
+      "D": "SRV records"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What is the primary purpose of using the tool Netdiscover?",
+    "options": {
+      "A": "Discover live hosts in a subnet",
+      "B": "Crack SSH passwords",
+      "C": "Analyze HTTP headers",
+      "D": "Dump SMB credentials"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the function of the '-sU' option in nmap?",
+    "options": {
+      "A": "UDP scan",
+      "B": "Service version detection",
+      "C": "OS fingerprinting",
+      "D": "Aggressive scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are valid passive DNS reconnaissance techniques?",
+    "options": {
+      "A": "Using online DNS history tools",
+      "B": "Packet sniffing",
+      "C": "WHOIS lookup",
+      "D": "DNS zone transfer"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of the following is a benefit of using OSINT in reconnaissance?",
+    "options": {
+      "A": "Reduces the need for active scanning",
+      "B": "Low detection risk",
+      "C": "Legal implications are higher",
+      "D": "Easy to automate"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which network device is likely to block ping requests during reconnaissance?",
+    "options": {
+      "A": "Firewall",
+      "B": "Router",
+      "C": "Switch",
+      "D": "Hub"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool can perform SMB enumeration on a Windows host?",
+    "options": {
+      "A": "enum4linux",
+      "B": "smbclient",
+      "C": "hydra",
+      "D": "rpcinfo"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which command helps to check reverse DNS records on Linux?",
+    "options": {
+      "A": "dig -x <IP>",
+      "B": "host <IP>",
+      "C": "nslookup <IP>",
+      "D": "traceroute <IP>"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What kind of reconnaissance does packet analysis fall under?",
+    "options": {
+      "A": "Passive",
+      "B": "Active",
+      "C": "Internal",
+      "D": "Physical"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the role of Google Alerts in reconnaissance?",
+    "options": {
+      "A": "Monitor mentions of an organization",
+      "B": "Track malware infections",
+      "C": "Alert network anomalies",
+      "D": "Crack passwords"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are passive footprinting methods?",
+    "options": {
+      "A": "Reading job postings",
+      "B": "Analyzing metadata of public files",
+      "C": "DNS brute-force",
+      "D": "Social media mining"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following can be an indicator of exposed internal systems?",
+    "options": {
+      "A": "Internal IPs in public DNS",
+      "B": "Default login pages exposed",
+      "C": "Open SNMP community strings",
+      "D": "Closed port 22"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which tool helps in monitoring domain changes over time?",
+    "options": {
+      "A": "DNSDumpster",
+      "B": "SecurityTrails",
+      "C": "FOCA",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What does the TTL value in a ping response typically indicate?",
+    "options": {
+      "A": "Hops to the destination",
+      "B": "Latency",
+      "C": "Operating system guess",
+      "D": "Response size"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which field in an email header helps identify the originating IP?",
+    "options": {
+      "A": "Received",
+      "B": "From",
+      "C": "Subject",
+      "D": "X-Mailer"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the default SNMP community string often used for enumeration?",
+    "options": {
+      "A": "private",
+      "B": "public",
+      "C": "admin",
+      "D": "read-only"
+    },
+    "correct_answers": ["B"]
+  }
+]
