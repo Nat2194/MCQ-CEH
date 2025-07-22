@@ -1,0 +1,342 @@
+[
+  {
+    "question": "Which of the following tools is used to generate shellcode?",
+    "options": {
+      "A": "msfvenom",
+      "B": "Netcat",
+      "C": "Hydra",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following attacks allows an attacker to inject malicious commands directly into the operating system?",
+    "options": {
+      "A": "Command injection",
+      "B": "SQL injection",
+      "C": "XSS",
+      "D": "Session hijacking"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is an effective method for exploiting misconfigured SUID binaries in Linux?",
+    "options": {
+      "A": "Privilege escalation",
+      "B": "Buffer overflow",
+      "C": "Social engineering",
+      "D": "ARP spoofing"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of the 'getuid' command in Meterpreter?",
+    "options": {
+      "A": "Displays the user context of the current session",
+      "B": "Creates a new user",
+      "C": "Changes the current user context",
+      "D": "Uploads files to the target"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is a bind shell?",
+    "options": {
+      "A": "The target machine listens for a connection from the attacker",
+      "B": "The attacker connects to a third-party system",
+      "C": "The shell is encrypted using TLS",
+      "D": "The attacker is automatically notified of system changes"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following allows the execution of malicious code through a legitimate process?",
+    "options": {
+      "A": "Process injection",
+      "B": "Brute force",
+      "C": "Firewall evasion",
+      "D": "Web scraping"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the use of the 'set' command in Metasploit?",
+    "options": {
+      "A": "Configure options for an exploit or payload",
+      "B": "Launch a brute-force attack",
+      "C": "Start a listener",
+      "D": "Bypass antivirus"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following exploits allows execution of code on the heap memory?",
+    "options": {
+      "A": "Heap overflow",
+      "B": "Stack overflow",
+      "C": "SQL injection",
+      "D": "Race condition"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which payload would you use for a simple command-line shell?",
+    "options": {
+      "A": "/bin/sh",
+      "B": "Meterpreter",
+      "C": "exploit/multi/handler",
+      "D": "ps"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Windows feature allows execution of macros that can be abused for gaining access?",
+    "options": {
+      "A": "Microsoft Office macros",
+      "B": "BitLocker",
+      "C": "Cortana",
+      "D": "Defender SmartScreen"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is a key objective when crafting a payload?",
+    "options": {
+      "A": "To execute arbitrary code on the target system",
+      "B": "To send packets over the network",
+      "C": "To encrypt all target data",
+      "D": "To create an admin user account"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a post-exploitation tool in Metasploit?",
+    "options": {
+      "A": "Hashdump",
+      "B": "Nmap",
+      "C": "Gobuster",
+      "D": "dnsenum"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the function of the 'migrate' command in Meterpreter?",
+    "options": {
+      "A": "Move payload to a different process",
+      "B": "Escalate privileges",
+      "C": "Upload a file",
+      "D": "Run remote desktop"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Metasploit module category contains exploits?",
+    "options": {
+      "A": "exploit",
+      "B": "payload",
+      "C": "post",
+      "D": "auxiliary"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these is an example of a local privilege escalation vector?",
+    "options": {
+      "A": "Unquoted service paths",
+      "B": "Open FTP ports",
+      "C": "SQL injection",
+      "D": "ARP poisoning"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command in Meterpreter is used to dump password hashes?",
+    "options": {
+      "A": "hashdump",
+      "B": "getuid",
+      "C": "upload",
+      "D": "run"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which method is used to inject shellcode into a remote process?",
+    "options": {
+      "A": "Remote process injection",
+      "B": "DLL injection",
+      "C": "Memory corruption",
+      "D": "Session hijacking"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scripting language is supported by Metasploit for custom modules?",
+    "options": {
+      "A": "Ruby",
+      "B": "Python",
+      "C": "PHP",
+      "D": "Go"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a widely used repository for public exploits?",
+    "options": {
+      "A": "Exploit-DB",
+      "B": "VirusTotal",
+      "C": "Shodan",
+      "D": "Burp Collaborator"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What type of vulnerability is being exploited in a buffer overflow?",
+    "options": {
+      "A": "Memory corruption",
+      "B": "Permission misconfiguration",
+      "C": "Improper encryption",
+      "D": "DNS misconfiguration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these are valid attack vectors for gaining system access?",
+    "options": {
+      "A": "Web applications",
+      "B": "Network services",
+      "C": "Social engineering",
+      "D": "Switch configuration"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which type of vulnerability allows execution of arbitrary commands via web input?",
+    "options": {
+      "A": "Command injection",
+      "B": "CSRF",
+      "C": "Open redirect",
+      "D": "Directory traversal"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Metasploit module is commonly used for reverse shells?",
+    "options": {
+      "A": "windows/meterpreter/reverse_tcp",
+      "B": "linux/x86/shell_reverse_tcp",
+      "C": "multi/handler",
+      "D": "exploit/windows/smb/ms17_010_eternalblue"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these can be used to bypass application whitelisting?",
+    "options": {
+      "A": "Living off the Land Binaries (LOLBins)",
+      "B": "Signed PowerShell scripts",
+      "C": "Registry modification",
+      "D": "ARP cache poisoning"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What kind of attack targets file inclusion vulnerabilities?",
+    "options": {
+      "A": "LFI/RFI (Local/Remote File Inclusion)",
+      "B": "CSRF",
+      "C": "Privilege escalation",
+      "D": "Brute force"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a fileless attack technique?",
+    "options": {
+      "A": "Executing PowerShell from memory",
+      "B": "DLL injection",
+      "C": "SQL injection",
+      "D": "Storing malware on disk"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Metasploit feature allows combining an exploit with a payload?",
+    "options": {
+      "A": "Module chaining",
+      "B": "Payload binding",
+      "C": "Session hijacking",
+      "D": "Auto-run scripts"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "What is the function of the 'sessions' command in Metasploit?",
+    "options": {
+      "A": "Interact with open sessions",
+      "B": "Run exploits",
+      "C": "Load plugins",
+      "D": "Perform DNS queries"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following represents a successful access-gain indicator?",
+    "options": {
+      "A": "Obtaining a reverse shell",
+      "B": "Discovering open ports",
+      "C": "Receiving ICMP replies",
+      "D": "Enumerating hostnames"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which payload type allows in-memory execution to evade antivirus detection?",
+    "options": {
+      "A": "Staged payload",
+      "B": "Bind shell",
+      "C": "Java applet",
+      "D": "Shellshock"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command generates a payload in msfvenom for a Windows system?",
+    "options": {
+      "A": "msfvenom -p windows/meterpreter/reverse_tcp",
+      "B": "nmap -p 445",
+      "C": "hydra -l admin",
+      "D": "nc -lvp 4444"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the role of shellcode in exploitation?",
+    "options": {
+      "A": "Execute commands or code after a vulnerability is triggered",
+      "B": "Encrypt traffic",
+      "C": "Bypass VPN filters",
+      "D": "Fingerprint operating systems"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following allows execution of a malicious DLL by loading it before a legitimate one?",
+    "options": {
+      "A": "DLL Hijacking",
+      "B": "DLL Export Forwarding",
+      "C": "Buffer overflow",
+      "D": "NTLM Relay"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does 'persistence' in post-exploitation mean?",
+    "options": {
+      "A": "Maintaining access to a compromised system",
+      "B": "Enumerating users and shares",
+      "C": "Crashing the system remotely",
+      "D": "Flooding the network"
+    },
+    "correct_answers": ["A"]
+  }
+]

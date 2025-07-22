@@ -1,0 +1,352 @@
+[
+  {
+    "question": "Which of the following protocols is commonly associated with directory services enumeration?",
+    "options": {
+      "A": "LDAP",
+      "B": "SMB",
+      "C": "SNMP",
+      "D": "HTTP"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the primary use of the 'host' command in reconnaissance?",
+    "options": {
+      "A": "DNS querying",
+      "B": "Packet capturing",
+      "C": "ARP spoofing",
+      "D": "Firewall evasion"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools can assist with WHOIS enumeration?",
+    "options": {
+      "A": "whois",
+      "B": "theHarvester",
+      "C": "Netcraft",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of these is an example of a threat intelligence platform useful during reconnaissance?",
+    "options": {
+      "A": "VirusTotal",
+      "B": "Shodan",
+      "C": "Splunk",
+      "D": "Censys"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which tool can be used to scan for open RDP services?",
+    "options": {
+      "A": "Nmap",
+      "B": "Masscan",
+      "C": "Metasploit",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What does the 'nslookup' command do?",
+    "options": {
+      "A": "Performs DNS queries",
+      "B": "Captures packets",
+      "C": "Performs vulnerability scans",
+      "D": "Executes system enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which port is associated with LDAP enumeration?",
+    "options": {
+      "A": "389",
+      "B": "161",
+      "C": "53",
+      "D": "110"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the function of the 'dig' command?",
+    "options": {
+      "A": "Performs DNS lookups",
+      "B": "Discovers hidden directories",
+      "C": "Starts a TCP handshake",
+      "D": "Checks IP TTL values"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following ports are commonly scanned for remote login services?",
+    "options": {
+      "A": "22",
+      "B": "23",
+      "C": "3389",
+      "D": "69"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the main purpose of an aggressive scan in Nmap?",
+    "options": {
+      "A": "Collect maximum information in minimum time",
+      "B": "Bypass firewalls silently",
+      "C": "Avoid detection",
+      "D": "Encrypt data in transit"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following protocols are used in banner grabbing?",
+    "options": {
+      "A": "HTTP",
+      "B": "SMTP",
+      "C": "Telnet",
+      "D": "DNS"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of these are examples of fingerprinting techniques?",
+    "options": {
+      "A": "Banner grabbing",
+      "B": "TTL analysis",
+      "C": "Operating system detection",
+      "D": "SQL injection"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which tool is specifically designed for Linux SMB enumeration?",
+    "options": {
+      "A": "enum4linux",
+      "B": "smbclient",
+      "C": "rpcclient",
+      "D": "wireshark"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of the following tools allows interaction with SNMP services for enumeration?",
+    "options": {
+      "A": "snmpwalk",
+      "B": "onesixtyone",
+      "C": "nmap",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which reconnaissance activity can provide insight into software and technologies used by an organization?",
+    "options": {
+      "A": "Website fingerprinting",
+      "B": "DNS zone transfer",
+      "C": "ARP scanning",
+      "D": "IP spoofing"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which information is typically found in public SSL certificates?",
+    "options": {
+      "A": "Organization name",
+      "B": "Domain name",
+      "C": "Certificate authority",
+      "D": "Private key"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the main advantage of using passive DNS monitoring services?",
+    "options": {
+      "A": "They do not interact with the target",
+      "B": "They scan faster than active scans",
+      "C": "They inject packets for testing",
+      "D": "They support brute-force techniques"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these tools is used for large-scale active network scanning?",
+    "options": {
+      "A": "Masscan",
+      "B": "Nmap",
+      "C": "OpenVAS",
+      "D": "Recon-ng"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these techniques is associated with identifying DNS misconfigurations?",
+    "options": {
+      "A": "Zone transfer",
+      "B": "Reverse lookup",
+      "C": "Packet crafting",
+      "D": "Phishing"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What kind of information can be gathered from job advertisements?",
+    "options": {
+      "A": "Technologies in use",
+      "B": "Employee roles",
+      "C": "Security policy details",
+      "D": "Internal passwords"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these reconnaissance techniques uses search engine cache to collect data?",
+    "options": {
+      "A": "Google hacking",
+      "B": "Packet sniffing",
+      "C": "DNSSEC testing",
+      "D": "Zone transfers"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which ports are typically associated with email enumeration?",
+    "options": {
+      "A": "25",
+      "B": "110",
+      "C": "143",
+      "D": "21"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which reconnaissance method involves analyzing SSL/TLS certificates?",
+    "options": {
+      "A": "Certificate fingerprinting",
+      "B": "SSL scanning",
+      "C": "Metadata harvesting",
+      "D": "ARP spoofing"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which option in nmap is used for OS fingerprinting?",
+    "options": {
+      "A": "-O",
+      "B": "-sS",
+      "C": "-sV",
+      "D": "-A"
+    },
+    "correct_answers": ["A", "D"]
+  },
+  {
+    "question": "Which of the following techniques uses packet flags to identify open or closed ports?",
+    "options": {
+      "A": "TCP FIN scan",
+      "B": "SYN scan",
+      "C": "NULL scan",
+      "D": "ACK scan"
+    },
+    "correct_answers": ["A", "B", "C", "D"]
+  },
+  {
+    "question": "Which of the following data types can be extracted from LinkedIn for reconnaissance?",
+    "options": {
+      "A": "Employee names",
+      "B": "Company job roles",
+      "C": "Email addresses",
+      "D": "Network diagrams"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the purpose of directory brute-forcing during reconnaissance?",
+    "options": {
+      "A": "Discover hidden directories and files",
+      "B": "Break firewall rules",
+      "C": "Exploit SQL injection",
+      "D": "Capture session tokens"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following protocols typically uses UDP for communication?",
+    "options": {
+      "A": "DNS",
+      "B": "SNMP",
+      "C": "SMTP",
+      "D": "TFTP"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following indicates an exposed web administration interface?",
+    "options": {
+      "A": "Login page at /admin",
+      "B": "Port 8080 open",
+      "C": "Directory listing enabled",
+      "D": "robots.txt disallow entries"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of the following commands can help identify network interfaces in Linux?",
+    "options": {
+      "A": "ifconfig",
+      "B": "ip addr",
+      "C": "netstat -i",
+      "D": "dig"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What information does the 'Received' field in an email header typically contain?",
+    "options": {
+      "A": "IP address of sending server",
+      "B": "Date and time of transfer",
+      "C": "DNS server used",
+      "D": "Sender’s MAC address"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What is the role of the robots.txt file in reconnaissance?",
+    "options": {
+      "A": "Reveals restricted directories",
+      "B": "Blocks scanning tools",
+      "C": "Lists allowed bots",
+      "D": "Contains authentication data"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What data can be collected from a certificate transparency log?",
+    "options": {
+      "A": "Newly issued certificates",
+      "B": "Domain associations",
+      "C": "Private keys",
+      "D": "Expired certificates"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following is a valid method of Wi-Fi reconnaissance?",
+    "options": {
+      "A": "Listening to beacon frames",
+      "B": "Sniffing probe requests",
+      "C": "Sending ARP requests",
+      "D": "ICMP echo sweep"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these is considered a metadata analysis tool?",
+    "options": {
+      "A": "FOCA",
+      "B": "ExifTool",
+      "C": "Nikto",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A", "B"]
+  }
+]

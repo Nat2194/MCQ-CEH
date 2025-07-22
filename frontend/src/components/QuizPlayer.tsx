@@ -27,12 +27,24 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
   const [score, setScore] = useState<number>(0);
 
   const handleSelect = (index: number, option: string) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [index]: [...(prev[index] || []), option].filter(
-        (v, i, a) => a.indexOf(v) === i
-      ),
-    }));
+    setAnswers((prev) => {
+      const currentAnswers = prev[index] || [];
+      const isSelected = currentAnswers.includes(option);
+
+      if (isSelected) {
+        // Remove the option if it's already selected
+        return {
+          ...prev,
+          [index]: currentAnswers.filter((a) => a !== option),
+        };
+      } else {
+        // Add the option if it's not selected
+        return {
+          ...prev,
+          [index]: [...currentAnswers, option],
+        };
+      }
+    });
   };
 
   const handleSubmit = () => {
@@ -81,6 +93,14 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
   if (!quiz || !quiz.data || !Array.isArray(quiz.data)) {
     return (
       <div className="min-h-screen bg-gray-900 flex justify-center">
+        <div className="absolute top-4 left-4 space-x-2">
+          <button
+            onClick={onExit}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors font-medium text-sm"
+          >
+            Exit Quiz
+          </button>
+        </div>
         <div className="max-w-md w-full mx-4 flex items-center justify-center">
           <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 text-center">
             <h2 className="text-xl font-bold text-red-400 mb-3">Error</h2>
@@ -104,6 +124,14 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
 
     return (
       <div className="min-h-screen bg-gray-900 flex justify-center py-8">
+        <div className="absolute top-4 left-4 space-x-2">
+          <button
+            onClick={onExit}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors font-medium text-sm"
+          >
+            Exit Quiz
+          </button>
+        </div>
         <div className="max-w-4xl w-full px-4 space-y-6">
           <div className="bg-gray-800 border border-gray-700 p-6 rounded-lg">
             <h2 className="text-2xl font-bold mb-2 text-white">
@@ -218,6 +246,14 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
 
   return (
     <div className="min-h-screen bg-gray-900 flex justify-center py-8">
+      <div className="absolute top-4 left-4 space-x-2">
+        <button
+          onClick={onExit}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors font-medium text-sm"
+        >
+          Exit Quiz
+        </button>
+      </div>
       <div className="max-w-4xl w-full px-4 space-y-6">
         <h2 className="text-2xl font-bold mb-6 text-white text-center">
           {quiz.title}

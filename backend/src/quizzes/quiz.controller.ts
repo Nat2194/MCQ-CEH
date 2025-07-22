@@ -11,10 +11,14 @@ import { QuizService } from './quiz.service';
 export class QuizController {
   constructor(private readonly quizService: QuizService) {}
 
-  @Get('list')
-  async getAllQuizFiles(): Promise<string[]> {
-    console.log('get all json');
-    return await this.quizService.getQuizFileList();
+  @Get('modules')
+  async getAllModules(): Promise<string[]> {
+    return await this.quizService.getModuleList();
+  }
+
+  @Get('list/:module')
+  async getQuizFiles(@Param('module') module?: string): Promise<string[]> {
+    return await this.quizService.getQuizFileList(module);
   }
 
   @Get('load/:filename')
@@ -26,7 +30,10 @@ export class QuizController {
   }
 
   @Get('combined')
-  async getCombinedQuiz(@Query('count') count: string) {
+  async getCombinedQuiz(
+    @Query('count') count: string,
+    @Query('module') module?: string,
+  ) {
     const parsedCount = parseInt(count);
 
     if (isNaN(parsedCount) || parsedCount <= 0) {
@@ -37,6 +44,6 @@ export class QuizController {
       throw new BadRequestException('Count cannot exceed 1000');
     }
 
-    return await this.quizService.getCombinedQuiz(parsedCount);
+    return await this.quizService.getCombinedQuiz(parsedCount, module);
   }
 }

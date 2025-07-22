@@ -1,0 +1,362 @@
+[
+  {
+    "question": "What is the main objective of gaining access in the ethical hacking process?",
+    "options": {
+      "A": "To exploit a system and obtain unauthorized access",
+      "B": "To identify users on the network",
+      "C": "To perform a network scan",
+      "D": "To fingerprint the operating system"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a common technique used to gain access to a target system?",
+    "options": {
+      "A": "Password cracking",
+      "B": "Phishing",
+      "C": "Buffer overflow exploitation",
+      "D": "Port scanning"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the role of Metasploit in gaining access?",
+    "options": {
+      "A": "Framework for developing and executing exploits",
+      "B": "Tool for scanning vulnerabilities",
+      "C": "Tool for wireless packet capture",
+      "D": "Password manager"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following types of exploits allows remote code execution?",
+    "options": {
+      "A": "Remote exploits",
+      "B": "Local exploits",
+      "C": "Privilege escalation exploits",
+      "D": "Web application exploits"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is a zero-day exploit?",
+    "options": {
+      "A": "An exploit for an unknown vulnerability with no patch available",
+      "B": "An exploit that affects outdated systems",
+      "C": "A proof-of-concept script",
+      "D": "A common vulnerability used for training"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following attacks exploits poor input validation in applications?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "Command Injection",
+      "C": "ARP Spoofing",
+      "D": "Cross-site scripting"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What is the goal of privilege escalation?",
+    "options": {
+      "A": "To gain higher-level access rights",
+      "B": "To log off a user",
+      "C": "To launch a DDoS attack",
+      "D": "To exfiltrate data"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool is commonly used for brute-force attacks against SSH?",
+    "options": {
+      "A": "Hydra",
+      "B": "John the Ripper",
+      "C": "Aircrack-ng",
+      "D": "Metasploit"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What kind of payload maintains a persistent connection with the attacker's system?",
+    "options": {
+      "A": "Reverse shell",
+      "B": "Bind shell",
+      "C": "Trojan",
+      "D": "Meterpreter"
+    },
+    "correct_answers": ["D"]
+  },
+  {
+    "question": "Which type of malware disguises itself as legitimate software?",
+    "options": {
+      "A": "Trojan",
+      "B": "Worm",
+      "C": "RAT",
+      "D": "Keylogger"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a client-side attack vector?",
+    "options": {
+      "A": "Phishing email",
+      "B": "Browser exploit",
+      "C": "DNS poisoning",
+      "D": "Rogue access point"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these tools can be used to create and execute exploits?",
+    "options": {
+      "A": "Metasploit",
+      "B": "ExploitDB",
+      "C": "msfvenom",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "What is shellcode?",
+    "options": {
+      "A": "A small piece of code used as the payload in an exploit",
+      "B": "A command line utility",
+      "C": "A script that executes in a web browser",
+      "D": "Encrypted malware"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Linux command can be used to escalate privileges if misconfigured?",
+    "options": {
+      "A": "sudo",
+      "B": "passwd",
+      "C": "chmod",
+      "D": "crontab"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is DLL injection primarily used for?",
+    "options": {
+      "A": "Injecting malicious code into running processes on Windows",
+      "B": "Extracting password hashes",
+      "C": "Disabling firewalls",
+      "D": "Creating user accounts"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which type of vulnerability allows attackers to upload malicious files?",
+    "options": {
+      "A": "Unrestricted file upload",
+      "B": "CSRF",
+      "C": "Buffer overflow",
+      "D": "Privilege escalation"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of msfvenom in penetration testing?",
+    "options": {
+      "A": "Generate custom payloads",
+      "B": "Scan for open ports",
+      "C": "Intercept HTTP traffic",
+      "D": "Enumerate usernames"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scripting language is most commonly used in exploit development?",
+    "options": {
+      "A": "Python",
+      "B": "PHP",
+      "C": "Java",
+      "D": "Perl"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following techniques is used to bypass antivirus software?",
+    "options": {
+      "A": "Encoding payloads",
+      "B": "Using polymorphic malware",
+      "C": "Code obfuscation",
+      "D": "Port scanning"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which file is typically targeted in Linux for password cracking?",
+    "options": {
+      "A": "/etc/shadow",
+      "B": "/etc/passwd",
+      "C": "/var/log/auth.log",
+      "D": "/boot/grub.cfg"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is used to maintain remote access after exploiting a system?",
+    "options": {
+      "A": "Backdoor",
+      "B": "RAT",
+      "C": "Bind shell",
+      "D": "Ping sweep"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What is buffer overflow?",
+    "options": {
+      "A": "Overwriting memory due to excess input",
+      "B": "Using brute force to crack a password",
+      "C": "Intercepting network packets",
+      "D": "Using a dictionary attack"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which type of access is required for privilege escalation exploits?",
+    "options": {
+      "A": "Local access",
+      "B": "Remote access",
+      "C": "VPN access",
+      "D": "Telnet access"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are considered lateral movement techniques?",
+    "options": {
+      "A": "Pass-the-Hash",
+      "B": "Exploiting trust relationships",
+      "C": "VPN brute-force",
+      "D": "Pivoting"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which Metasploit module is used for executing payloads?",
+    "options": {
+      "A": "Exploit",
+      "B": "Auxiliary",
+      "C": "Post",
+      "D": "Payload"
+    },
+    "correct_answers": ["D"]
+  },
+  {
+    "question": "What does the 'exploit/multi/handler' module in Metasploit do?",
+    "options": {
+      "A": "Handles reverse shells",
+      "B": "Performs brute-force attacks",
+      "C": "Enumerates users",
+      "D": "Scans for vulnerabilities"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which technique abuses legitimate applications to execute malicious payloads?",
+    "options": {
+      "A": "Living off the Land Binaries (LOLBins)",
+      "B": "DLL hijacking",
+      "C": "RAT deployment",
+      "D": "Keylogging"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of privilege escalation?",
+    "options": {
+      "A": "Move from low-level to high-level access",
+      "B": "Crack user passwords",
+      "C": "Sniff network traffic",
+      "D": "Scan for vulnerabilities"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Windows feature, if misconfigured, can allow for unauthorized privilege escalation?",
+    "options": {
+      "A": "AlwaysInstallElevated",
+      "B": "Windows Defender",
+      "C": "Firewall rules",
+      "D": "UAC"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What kind of file is typically used in a social engineering attack to gain access?",
+    "options": {
+      "A": "Malicious PDF or Office document",
+      "B": "Encrypted ZIP archive",
+      "C": "Binary ISO file",
+      "D": "Signed certificate"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which technique involves relaying authentication information to impersonate a user?",
+    "options": {
+      "A": "Pass-the-Hash",
+      "B": "Keylogging",
+      "C": "Credential stuffing",
+      "D": "Packet replay"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following best describes a reverse shell?",
+    "options": {
+      "A": "Target system connects back to attacker’s system",
+      "B": "Attacker directly connects to the target system",
+      "C": "Encrypted SSH session",
+      "D": "Malware that encrypts files"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the term 'exploit chaining' refer to?",
+    "options": {
+      "A": "Using multiple exploits in sequence",
+      "B": "Brute-forcing a password",
+      "C": "Sniffing packets on the network",
+      "D": "Enumerating usernames"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which payload type is most stealthy and interactive in Metasploit?",
+    "options": {
+      "A": "Meterpreter",
+      "B": "Reverse shell",
+      "C": "Bind shell",
+      "D": "Command prompt"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command in Meterpreter uploads files to the target?",
+    "options": {
+      "A": "upload",
+      "B": "put",
+      "C": "send",
+      "D": "scp"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does UAC bypass allow in a Windows environment?",
+    "options": {
+      "A": "Execute code with elevated privileges",
+      "B": "Disable antivirus",
+      "C": "Capture keyboard input",
+      "D": "Restart system"
+    },
+    "correct_answers": ["A"]
+  }
+]

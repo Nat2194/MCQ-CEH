@@ -1,0 +1,292 @@
+[
+  {
+    "question": "Which of the following best describe the primary goals of ethical hacking?",
+    "options": {
+      "A": "Identify and fix vulnerabilities",
+      "B": "Access systems for financial gain",
+      "C": "Simulate attacks with authorization",
+      "D": "Deface websites for publicity"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which of the following phases involves gathering public and private information about a target?",
+    "options": {
+      "A": "Reconnaissance",
+      "B": "Maintaining Access",
+      "C": "Covering Tracks",
+      "D": "Exploitation"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are part of the CEH hacking methodology?",
+    "options": {
+      "A": "Scanning",
+      "B": "Vulnerability Identification",
+      "C": "Maintaining Access",
+      "D": "Covering Tracks"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "Which of these require written consent before performing a penetration test?",
+    "options": {
+      "A": "A client’s e-commerce platform",
+      "B": "A personal test lab on localhost",
+      "C": "An open Wi-Fi in a coffee shop",
+      "D": "A competitor’s website"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "What distinguishes a gray hat hacker from a white hat hacker?",
+    "options": {
+      "A": "Gray hats may act without permission",
+      "B": "White hats hack for fun",
+      "C": "Gray hats report bugs after breaching systems",
+      "D": "White hats avoid breaking laws"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "Which of the following can be used for passive reconnaissance?",
+    "options": {
+      "A": "Google Dorking",
+      "B": "DNS interrogation",
+      "C": "Ping sweeps",
+      "D": "Social media analysis"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which are considered components of the attack surface?",
+    "options": {
+      "A": "Exposed services",
+      "B": "Misconfigured firewalls",
+      "C": "Outdated software",
+      "D": "Encrypted communications"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of these are responsibilities of an ethical hacker?",
+    "options": {
+      "A": "Gain unauthorized access to test boundaries",
+      "B": "Report discovered vulnerabilities to clients",
+      "C": "Maintain confidentiality",
+      "D": "Stay within defined scope"
+    },
+    "correct_answers": ["B", "C", "D"]
+  },
+  {
+    "question": "What is the purpose of covering tracks during a cyberattack?",
+    "options": {
+      "A": "Hide the attacker's identity",
+      "B": "Ensure access persistence",
+      "C": "Bypass firewall rules",
+      "D": "Remove evidence from logs"
+    },
+    "correct_answers": ["A", "D"]
+  },
+  {
+    "question": "What are the common traits of black hat hackers?",
+    "options": {
+      "A": "Act illegally",
+      "B": "Seek personal gain",
+      "C": "Work under contracts",
+      "D": "Have malicious intent"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which laws or standards regulate ethical hacking practices?",
+    "options": {
+      "A": "GDPR",
+      "B": "CFAA",
+      "C": "OWASP Top 10",
+      "D": "PCI DSS"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following actions are considered unethical in a penetration test?",
+    "options": {
+      "A": "Testing outside the defined scope",
+      "B": "Crashing critical servers without permission",
+      "C": "Using exploits with client approval",
+      "D": "Performing authorized phishing simulations"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which of these are examples of social engineering techniques?",
+    "options": {
+      "A": "Phishing emails",
+      "B": "Fake help desk calls",
+      "C": "SQL injection",
+      "D": "Tailgating"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What is the primary function of the Blue Team?",
+    "options": {
+      "A": "Execute targeted attacks",
+      "B": "Analyze threat intelligence",
+      "C": "Protect systems and respond to incidents",
+      "D": "Simulate APTs"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "What should be defined in a Rules of Engagement document?",
+    "options": {
+      "A": "Scope of systems to test",
+      "B": "Authorized tools and techniques",
+      "C": "Expected outcomes",
+      "D": "Exploit code sharing"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What are considered ethical hacking deliverables?",
+    "options": {
+      "A": "Executive summary",
+      "B": "Remediation report",
+      "C": "Vulnerability findings",
+      "D": "Unencrypted password lists"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of the following are common threat vectors?",
+    "options": {
+      "A": "Phishing emails",
+      "B": "Misconfigured cloud storage",
+      "C": "Signed SSL certificates",
+      "D": "Open remote desktop ports"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following activities are part of vulnerability assessment?",
+    "options": {
+      "A": "Network scanning",
+      "B": "Automated vulnerability detection",
+      "C": "Zero-day exploitation",
+      "D": "Risk ranking"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following is true about Red Team operations?",
+    "options": {
+      "A": "They mimic real-world adversaries",
+      "B": "They perform incident response",
+      "C": "They focus on detection and stealth",
+      "D": "They patch systems after attacks"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which skills are essential for an ethical hacker?",
+    "options": {
+      "A": "Knowledge of networking and protocols",
+      "B": "Legal understanding",
+      "C": "Malicious coding habits",
+      "D": "Strong communication skills"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which tools are commonly used for enumeration?",
+    "options": {
+      "A": "Nmap",
+      "B": "Netcat",
+      "C": "SNMPwalk",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which phase follows scanning in the hacking process?",
+    "options": {
+      "A": "Covering Tracks",
+      "B": "Gaining Access",
+      "C": "Reconnaissance",
+      "D": "Maintaining Access"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which statements best describe vulnerability assessment?",
+    "options": {
+      "A": "It involves system exploitation",
+      "B": "It identifies known vulnerabilities",
+      "C": "It can be automated",
+      "D": "It guarantees system protection"
+    },
+    "correct_answers": ["B", "C"]
+  },
+  {
+    "question": "Which tools can be used for web vulnerability scanning?",
+    "options": {
+      "A": "Nikto",
+      "B": "Burp Suite",
+      "C": "Wireshark",
+      "D": "Acunetix"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following are examples of insider threats?",
+    "options": {
+      "A": "Former employee with credentials",
+      "B": "Malicious administrator",
+      "C": "Nation-state actor",
+      "D": "Negligent contractor"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What defines a zero-day vulnerability?",
+    "options": {
+      "A": "A vulnerability that is publicly patched",
+      "B": "A vulnerability unknown to the vendor",
+      "C": "A bug exploited by malware before a fix",
+      "D": "A vulnerability found during a pen test"
+    },
+    "correct_answers": ["B", "C"]
+  },
+  {
+    "question": "Which tools are used for password cracking?",
+    "options": {
+      "A": "Hydra",
+      "B": "Hashcat",
+      "C": "Metasploit",
+      "D": "John the Ripper"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following help ethical hackers avoid legal issues?",
+    "options": {
+      "A": "Non-disclosure agreements",
+      "B": "Scope definition",
+      "C": "Verbal consent",
+      "D": "Signed engagement contracts"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which tools are commonly used in reconnaissance?",
+    "options": {
+      "A": "Maltego",
+      "B": "Recon-ng",
+      "C": "Nmap",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B", "C"]
+  }
+]

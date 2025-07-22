@@ -1,0 +1,342 @@
+[
+  {
+    "question": "Which scanning technique sends TCP packets with FIN flag set to identify open ports?",
+    "options": {
+      "A": "FIN Scan",
+      "B": "SYN Scan",
+      "C": "NULL Scan",
+      "D": "ACK Scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What type of response does a closed port send during a NULL scan?",
+    "options": {
+      "A": "RST",
+      "B": "SYN-ACK",
+      "C": "FIN",
+      "D": "No response"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Nmap option enables aggressive scan that includes OS detection and version detection?",
+    "options": {
+      "A": "-A",
+      "B": "-sS",
+      "C": "-sT",
+      "D": "-T4"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following represents the correct order in scanning methodology?",
+    "options": {
+      "A": "Ping Sweep → Port Scanning → OS Fingerprinting",
+      "B": "OS Fingerprinting → Port Scanning → Ping Sweep",
+      "C": "Port Scanning → OS Fingerprinting → Ping Sweep",
+      "D": "Vulnerability Scan → Port Scan → Ping Sweep"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scanning type does not complete the TCP handshake and is used for stealth purposes?",
+    "options": {
+      "A": "SYN Scan",
+      "B": "Connect Scan",
+      "C": "UDP Scan",
+      "D": "Ping Sweep"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What information can OS fingerprinting reveal?",
+    "options": {
+      "A": "Operating system type and version",
+      "B": "Running services",
+      "C": "MAC address",
+      "D": "Usernames"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scan type is most likely to go undetected by a stateful firewall?",
+    "options": {
+      "A": "XMAS Scan",
+      "B": "TCP Connect Scan",
+      "C": "Ping Sweep",
+      "D": "UDP Scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which protocol is targeted in UDP scans?",
+    "options": {
+      "A": "DNS",
+      "B": "SNMP",
+      "C": "SMTP",
+      "D": "TFTP"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following ports is commonly scanned to detect FTP services?",
+    "options": {
+      "A": "21",
+      "B": "20",
+      "C": "22",
+      "D": "80"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which option in Nmap is used to specify the timing template?",
+    "options": {
+      "A": "-T",
+      "B": "-sT",
+      "C": "-sU",
+      "D": "-v"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Nmap timing template provides the fastest scanning speed?",
+    "options": {
+      "A": "-T5",
+      "B": "-T0",
+      "C": "-T3",
+      "D": "-T1"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What scanning method attempts to enumerate services without being detected by IDS?",
+    "options": {
+      "A": "Idle Scan",
+      "B": "Connect Scan",
+      "C": "UDP Scan",
+      "D": "NULL Scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does a filtered port indicate?",
+    "options": {
+      "A": "Firewall or filtering device is blocking the port",
+      "B": "Port is open",
+      "C": "Service is crashing",
+      "D": "No host available"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool is known for its fast scanning performance on large networks?",
+    "options": {
+      "A": "Masscan",
+      "B": "Nessus",
+      "C": "Hydra",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Nmap script category is used for detecting vulnerabilities?",
+    "options": {
+      "A": "vuln",
+      "B": "discovery",
+      "C": "safe",
+      "D": "external"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following scanning tools can also perform OS detection?",
+    "options": {
+      "A": "Nmap",
+      "B": "xProbe2",
+      "C": "Nessus",
+      "D": "OpenVAS"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What is the purpose of a decoy scan?",
+    "options": {
+      "A": "Mask the origin of the scan",
+      "B": "Increase scanning speed",
+      "C": "Bypass antivirus",
+      "D": "Find hidden services"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which response from a UDP scan typically indicates an open port?",
+    "options": {
+      "A": "No response",
+      "B": "ICMP Port Unreachable",
+      "C": "SYN-ACK",
+      "D": "RST"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scanning technique can exploit idle hosts to mask scan source?",
+    "options": {
+      "A": "Idle Scan",
+      "B": "SYN Scan",
+      "C": "ACK Scan",
+      "D": "XMAS Scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does Nmap's '-sA' scan do?",
+    "options": {
+      "A": "Sends ACK packets to map firewall rules",
+      "B": "Performs a full TCP handshake",
+      "C": "Performs OS detection",
+      "D": "Sends FIN packets"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool can be used for both scanning and exploitation?",
+    "options": {
+      "A": "Metasploit",
+      "B": "Burp Suite",
+      "C": "Hydra",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does it mean if a host responds to a ping but not a TCP scan?",
+    "options": {
+      "A": "Host is alive but ports are filtered",
+      "B": "Host is offline",
+      "C": "Scan tool is broken",
+      "D": "Firewall blocks ICMP"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool is primarily used for web server scanning?",
+    "options": {
+      "A": "Nikto",
+      "B": "Nmap",
+      "C": "Dirb",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which type of scan provides the most accurate results but is most likely to be logged?",
+    "options": {
+      "A": "TCP Connect Scan",
+      "B": "SYN Scan",
+      "C": "ACK Scan",
+      "D": "NULL Scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following services typically run on port 445?",
+    "options": {
+      "A": "SMB",
+      "B": "FTP",
+      "C": "Telnet",
+      "D": "DNS"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the main purpose of a SYN-ACK response in a scan?",
+    "options": {
+      "A": "Indicates an open port",
+      "B": "Indicates a closed port",
+      "C": "Initiates DNS lookup",
+      "D": "Triggers a firewall alert"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which option in Nmap enables the use of a specific script category?",
+    "options": {
+      "A": "--script",
+      "B": "-A",
+      "C": "-sC",
+      "D": "-v"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What type of scan is used to discover open UDP ports?",
+    "options": {
+      "A": "Nmap -sU",
+      "B": "Nmap -sS",
+      "C": "Nmap -sT",
+      "D": "Nmap -sA"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scanning method is least likely to be noticed by IDS systems?",
+    "options": {
+      "A": "Idle Scan",
+      "B": "Connect Scan",
+      "C": "Ping Sweep",
+      "D": "SYN Scan"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following ports are commonly scanned in default Nmap scans?",
+    "options": {
+      "A": "Top 1000 TCP ports",
+      "B": "All 65535 TCP ports",
+      "C": "Only port 80",
+      "D": "ICMP ports"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which technique helps to avoid detection during a scan?",
+    "options": {
+      "A": "Using decoys",
+      "B": "Randomizing scan order",
+      "C": "Spoofing MAC address",
+      "D": "Sending FIN packets"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which Nmap option is used for verbose output?",
+    "options": {
+      "A": "-v",
+      "B": "-V",
+      "C": "-vv",
+      "D": "--verbose"
+    },
+    "correct_answers": ["A", "C"]
+  },
+  {
+    "question": "Which scan can detect both open and filtered ports based on TTL response?",
+    "options": {
+      "A": "ACK Scan",
+      "B": "XMAS Scan",
+      "C": "UDP Scan",
+      "D": "OS Fingerprinting"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which scan is typically used to bypass network intrusion detection systems?",
+    "options": {
+      "A": "Idle Scan",
+      "B": "TCP Connect Scan",
+      "C": "XMAS Scan",
+      "D": "OS Fingerprinting"
+    },
+    "correct_answers": ["A"]
+  }
+]

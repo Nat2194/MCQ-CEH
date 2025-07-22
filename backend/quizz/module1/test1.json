@@ -1,0 +1,282 @@
+[
+  {
+    "question": "Which of the following is an ethical requirement before conducting a penetration test?",
+    "options": {
+      "A": "Administrator credentials",
+      "B": "Written authorization",
+      "C": "Zero-day exploit",
+      "D": "Network diagram"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which type of hacker intentionally violates the law for personal or financial gain?",
+    "options": {
+      "A": "White hat",
+      "B": "Gray hat",
+      "C": "Black hat",
+      "D": "Blue team"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "Which of the following are examples of physical security breaches?",
+    "options": {
+      "A": "Tailgating",
+      "B": "Shoulder surfing",
+      "C": "Privilege escalation",
+      "D": "Dumpster diving"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which phase focuses on identifying open ports and services?",
+    "options": {
+      "A": "Gaining Access",
+      "B": "Scanning",
+      "C": "Maintaining Access",
+      "D": "Enumeration"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "What is the main objective of reconnaissance?",
+    "options": {
+      "A": "Gain root access",
+      "B": "Collect information about the target",
+      "C": "Install backdoors",
+      "D": "Execute payloads"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which tools can be used for reconnaissance?",
+    "options": {
+      "A": "WHOIS",
+      "B": "Nmap",
+      "C": "Shodan",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which hacking type refers to activities performed with legal and authorized intent?",
+    "options": {
+      "A": "Black Hat",
+      "B": "Gray Hat",
+      "C": "White Hat",
+      "D": "Red Team"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "Which of the following are considered passive reconnaissance methods?",
+    "options": {
+      "A": "Google Dorking",
+      "B": "WHOIS Lookup",
+      "C": "Port Scanning",
+      "D": "Reading press releases"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which attack vector is commonly used in phishing attacks?",
+    "options": {
+      "A": "Email attachments",
+      "B": "FTP brute-force",
+      "C": "XSS payloads",
+      "D": "Fake login pages"
+    },
+    "correct_answers": ["A", "D"]
+  },
+  {
+    "question": "Which of the following can be categorized as insider threats?",
+    "options": {
+      "A": "Unintentional data leakage",
+      "B": "Disgruntled employees",
+      "C": "Competitors",
+      "D": "Trusted contractors"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which principle ensures that information is only accessible to those authorized?",
+    "options": {
+      "A": "Availability",
+      "B": "Confidentiality",
+      "C": "Authentication",
+      "D": "Non-repudiation"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which of the following should be clearly defined in a penetration test agreement?",
+    "options": {
+      "A": "Targets in scope",
+      "B": "Testing schedule",
+      "C": "Exploit techniques allowed",
+      "D": "Incident response procedures"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the primary function of the Red Team?",
+    "options": {
+      "A": "Conduct audits",
+      "B": "Simulate attacks",
+      "C": "Respond to incidents",
+      "D": "Run compliance checks"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which of the following are goals of ethical hacking?",
+    "options": {
+      "A": "Secure network systems",
+      "B": "Exploit production systems anonymously",
+      "C": "Improve incident response",
+      "D": "Find vulnerabilities before attackers do"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "What is the difference between white box and black box testing?",
+    "options": {
+      "A": "White box is blind testing",
+      "B": "Black box uses full access",
+      "C": "White box has full internal knowledge",
+      "D": "Black box simulates an external attacker"
+    },
+    "correct_answers": ["C", "D"]
+  },
+  {
+    "question": "Which of the following are typical post-engagement deliverables?",
+    "options": {
+      "A": "Exploit source code",
+      "B": "Executive report",
+      "C": "Technical findings",
+      "D": "Remediation guidance"
+    },
+    "correct_answers": ["B", "C", "D"]
+  },
+  {
+    "question": "Which of these are considered threat actors?",
+    "options": {
+      "A": "Hacktivists",
+      "B": "Red Team",
+      "C": "Script Kiddies",
+      "D": "Nation States"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "Which activities occur during the scanning phase?",
+    "options": {
+      "A": "Banner grabbing",
+      "B": "Port scanning",
+      "C": "Password cracking",
+      "D": "Network mapping"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which frameworks are useful in ethical hacking and threat modeling?",
+    "options": {
+      "A": "OWASP",
+      "B": "NIST",
+      "C": "MITRE ATT&CK",
+      "D": "CIS Top 20"
+    },
+    "correct_answers": ["A", "B", "C", "D"]
+  },
+  {
+    "question": "What is the goal of the 'covering tracks' phase?",
+    "options": {
+      "A": "Install rootkits",
+      "B": "Avoid detection",
+      "C": "Delete logs",
+      "D": "Escalate privileges"
+    },
+    "correct_answers": ["B", "C"]
+  },
+  {
+    "question": "Which of the following are examples of open-source intelligence (OSINT)?",
+    "options": {
+      "A": "Facebook profiles",
+      "B": "WHOIS data",
+      "C": "Public GitHub repositories",
+      "D": "Packet sniffing on a LAN"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which statement best describes an ethical hacker?",
+    "options": {
+      "A": "Performs attacks for money",
+      "B": "Works under legal authorization",
+      "C": "Shares exploits on forums",
+      "D": "Assesses security vulnerabilities"
+    },
+    "correct_answers": ["B", "D"]
+  },
+  {
+    "question": "Which roles are typically assigned to Blue Teams?",
+    "options": {
+      "A": "Patch management",
+      "B": "Threat detection",
+      "C": "Simulate adversaries",
+      "D": "Monitor system logs"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which CEH phase involves gaining access to the target?",
+    "options": {
+      "A": "Scanning",
+      "B": "Enumeration",
+      "C": "Exploitation",
+      "D": "Gaining Access"
+    },
+    "correct_answers": ["D"]
+  },
+  {
+    "question": "What are common tools for active reconnaissance?",
+    "options": {
+      "A": "Nmap",
+      "B": "Nikto",
+      "C": "Wireshark",
+      "D": "WHOIS"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What is an example of a non-technical attack?",
+    "options": {
+      "A": "SQL injection",
+      "B": "Phishing",
+      "C": "Brute-force",
+      "D": "Tailgating"
+    },
+    "correct_answers": ["B", "D"]
+  },
+  {
+    "question": "Which of the following can help prevent insider threats?",
+    "options": {
+      "A": "User behavior analytics",
+      "B": "Access control policies",
+      "C": "Physical security training",
+      "D": "Firewall updates"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which entities commonly perform Red Team operations?",
+    "options": {
+      "A": "Internal IT audit teams",
+      "B": "External offensive security consultants",
+      "C": "Blue team SOC staff",
+      "D": "Military cyber units"
+    },
+    "correct_answers": ["B", "D"]
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "question": "What is a staged payload in Metasploit?",
+    "options": {
+      "A": "A payload sent in multiple parts",
+      "B": "A payload that installs in the background",
+      "C": "A payload that targets multiple systems at once",
+      "D": "A payload used for password cracking"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Metasploit command sets the target IP address for an exploit?",
+    "options": {
+      "A": "set RHOST",
+      "B": "set LHOST",
+      "C": "use exploit",
+      "D": "exploit"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which type of vulnerability does a race condition exploit?",
+    "options": {
+      "A": "Timing-based inconsistencies in code execution",
+      "B": "Weak password hashing algorithms",
+      "C": "Unrestricted file uploads",
+      "D": "Buffer size misconfiguration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which payload maintains a session within memory without writing to disk?",
+    "options": {
+      "A": "Meterpreter",
+      "B": "Reverse shell",
+      "C": "Bind shell",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Linux file lists users that can run sudo commands?",
+    "options": {
+      "A": "/etc/sudoers",
+      "B": "/etc/passwd",
+      "C": "/etc/shadow",
+      "D": "/etc/group"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a commonly used evasion technique during access attempts?",
+    "options": {
+      "A": "Encoding payloads",
+      "B": "Using custom encryption",
+      "C": "Using default ports",
+      "D": "Running nmap scans"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is a bind shell most vulnerable to?",
+    "options": {
+      "A": "Firewall filtering",
+      "B": "Antivirus evasion",
+      "C": "Encoding issues",
+      "D": "Script errors"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does 'post' in Metasploit modules refer to?",
+    "options": {
+      "A": "Actions taken after initial access is gained",
+      "B": "Exploit scripts",
+      "C": "Payload types",
+      "D": "Network scanning"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which type of shell is opened using Metasploit's meterpreter/reverse_tcp payload?",
+    "options": {
+      "A": "Reverse shell",
+      "B": "Bind shell",
+      "C": "Web shell",
+      "D": "Command prompt"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these attack vectors would likely involve spear-phishing?",
+    "options": {
+      "A": "Client-side attack",
+      "B": "Service-side attack",
+      "C": "ARP spoofing",
+      "D": "Network reconnaissance"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What Metasploit command launches an exploit after configuration?",
+    "options": {
+      "A": "exploit",
+      "B": "run",
+      "C": "start",
+      "D": "init"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which Windows binary is often abused in LOLBin attacks?",
+    "options": {
+      "A": "rundll32.exe",
+      "B": "winlogon.exe",
+      "C": "svchost.exe",
+      "D": "explorer.exe"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What kind of shell allows command execution over an existing TCP connection initiated by the victim?",
+    "options": {
+      "A": "Reverse shell",
+      "B": "Bind shell",
+      "C": "Interactive shell",
+      "D": "Local shell"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command in Meterpreter searches for files by name?",
+    "options": {
+      "A": "search",
+      "B": "find",
+      "C": "locate",
+      "D": "grep"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool allows generation of custom payloads with encoding options?",
+    "options": {
+      "A": "msfvenom",
+      "B": "Hydra",
+      "C": "John the Ripper",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following allows for command execution via a web browser?",
+    "options": {
+      "A": "Web shell",
+      "B": "Meterpreter shell",
+      "C": "Reverse shell",
+      "D": "Bind shell"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the goal of a Trojan horse in the context of gaining access?",
+    "options": {
+      "A": "Disguise malware as legitimate software",
+      "B": "Execute SQL commands",
+      "C": "Crack passwords",
+      "D": "Monitor network traffic"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What technique allows running unauthorized code by taking advantage of vulnerable scheduled tasks?",
+    "options": {
+      "A": "Abusing cron jobs",
+      "B": "DNS poisoning",
+      "C": "ARP spoofing",
+      "D": "Keylogging"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the primary function of the Netcat tool?",
+    "options": {
+      "A": "Establish TCP/UDP connections for shell access",
+      "B": "Decode passwords",
+      "C": "Scan ports aggressively",
+      "D": "Intercept encrypted traffic"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools is commonly used for privilege escalation enumeration on Linux?",
+    "options": {
+      "A": "LinPEAS",
+      "B": "nmap",
+      "C": "sqlmap",
+      "D": "hydra"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which type of exploit relies on input exceeding buffer size limits?",
+    "options": {
+      "A": "Buffer overflow",
+      "B": "XSS",
+      "C": "RFI",
+      "D": "LFI"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Windows feature can be used to execute commands during system startup?",
+    "options": {
+      "A": "Startup folder",
+      "B": "Device Manager",
+      "C": "Task Manager",
+      "D": "Disk Cleanup"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is true about setuid programs on Linux?",
+    "options": {
+      "A": "They run with the privileges of the file owner",
+      "B": "They automatically escalate privileges",
+      "C": "They only work with root accounts",
+      "D": "They are always safe to use"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What technique allows an attacker to escalate privileges via DLL misplacement?",
+    "options": {
+      "A": "DLL hijacking",
+      "B": "Privilege hopping",
+      "C": "DLL spoofing",
+      "D": "Code injection"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which option in msfvenom is used to specify the payload platform?",
+    "options": {
+      "A": "-p",
+      "B": "-f",
+      "C": "--platform",
+      "D": "-a"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "What is a commonly exploited privilege escalation vector in Linux environments?",
+    "options": {
+      "A": "Writable /etc/passwd",
+      "B": "Open FTP",
+      "C": "Default admin credentials",
+      "D": "Weak wireless encryption"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool can create an executable payload for Windows?",
+    "options": {
+      "A": "msfvenom",
+      "B": "sqlmap",
+      "C": "wpscan",
+      "D": "nmap"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the Meterpreter 'shell' command do?",
+    "options": {
+      "A": "Drops into a command prompt on the victim machine",
+      "B": "Opens a reverse shell",
+      "C": "Closes the session",
+      "D": "Restarts the target system"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What type of file can contain malicious macros for gaining access?",
+    "options": {
+      "A": "Microsoft Office document",
+      "B": "PNG image",
+      "C": "MP3 audio",
+      "D": "JSON config"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does privilege escalation mean in the context of a Linux system?",
+    "options": {
+      "A": "Moving from a normal user to root",
+      "B": "Opening new network connections",
+      "C": "Running port scans",
+      "D": "Installing a firewall"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What are common indicators of successful privilege escalation?",
+    "options": {
+      "A": "Access to restricted files",
+      "B": "Root shell prompt",
+      "C": "Ability to install software",
+      "D": "All of the above"
+    },
+    "correct_answers": ["D"]
+  },
+  {
+    "question": "Which tool helps automate privilege escalation discovery on Windows?",
+    "options": {
+      "A": "WinPEAS",
+      "B": "nmap",
+      "C": "John the Ripper",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Windows feature is commonly misconfigured and exploitable for escalation?",
+    "options": {
+      "A": "AlwaysInstallElevated",
+      "B": "Event Viewer",
+      "C": "System Restore",
+      "D": "Firewall rules"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which PowerShell command can bypass execution policies for script execution?",
+    "options": {
+      "A": "powershell -ExecutionPolicy Bypass",
+      "B": "bypass -ps",
+      "C": "Start-Process policy",
+      "D": "Bypass-Ps1"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is an example of in-memory payload execution?",
+    "options": {
+      "A": "Reflective DLL injection",
+      "B": "Crontab manipulation",
+      "C": "SQL injection",
+      "D": "Ping sweep"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of 'exploit/multi/handler' in Metasploit?",
+    "options": {
+      "A": "To receive incoming connections from exploited systems",
+      "B": "To enumerate network shares",
+      "C": "To scan for vulnerable ports",
+      "D": "To decrypt credentials"
+    },
+    "correct_answers": ["A"]
+  }
+]

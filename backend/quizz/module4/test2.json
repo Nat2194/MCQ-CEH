@@ -1,0 +1,332 @@
+[
+  {
+    "question": "Which of the following protocols is most commonly associated with Unix/Linux remote procedure call (RPC) enumeration?",
+    "options": {
+      "A": "Portmapper (port 111)",
+      "B": "SMB",
+      "C": "FTP",
+      "D": "SNMP"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the 'rpcclient' tool allow an attacker to do?",
+    "options": {
+      "A": "Enumerate users and groups on a Windows system",
+      "B": "Crack passwords",
+      "C": "Modify firewall rules",
+      "D": "Exploit buffer overflows"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the output of 'enum4linux -a' typically used for?",
+    "options": {
+      "A": "Comprehensive SMB enumeration",
+      "B": "ARP poisoning",
+      "C": "Scanning for open HTTP ports",
+      "D": "Banner grabbing"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the 'smbclient -L //<target>' command display?",
+    "options": {
+      "A": "List of available shares on the SMB target",
+      "B": "ARP table",
+      "C": "List of usernames",
+      "D": "DNS records"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration method would help find hidden shared folders?",
+    "options": {
+      "A": "SMB enumeration",
+      "B": "NFS enumeration",
+      "C": "SMTP enumeration",
+      "D": "DNS enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which SNMP version is considered insecure due to lack of encryption?",
+    "options": {
+      "A": "SNMPv1",
+      "B": "SNMPv2c",
+      "C": "SNMPv3",
+      "D": "SNMPx"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which port is commonly used for Microsoft RPC endpoint mapping?",
+    "options": {
+      "A": "135",
+      "B": "139",
+      "C": "445",
+      "D": "3389"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following commands can test if SNMP is enabled on a host?",
+    "options": {
+      "A": "snmpwalk -v1 -c public <IP>",
+      "B": "ping <IP>",
+      "C": "nmap -sS <IP>",
+      "D": "ssh <IP>"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of the tool 'JXplorer'?",
+    "options": {
+      "A": "Graphical LDAP browser for enumeration",
+      "B": "SMB share enumeration",
+      "C": "FTP file download",
+      "D": "DNS enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools is used for enumerating RPC services on UNIX systems?",
+    "options": {
+      "A": "rpcinfo",
+      "B": "showmount",
+      "C": "nmap",
+      "D": "netstat"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following can be used to list active NFS mounts from a remote host?",
+    "options": {
+      "A": "showmount -e <target>",
+      "B": "smbclient -L",
+      "C": "nbtstat -A",
+      "D": "net view"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a potential risk of SNMP enumeration?",
+    "options": {
+      "A": "Disclosure of network infrastructure details",
+      "B": "Brute-force password cracking",
+      "C": "Wireless hijacking",
+      "D": "SQL injection"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Linux command can be used to query an LDAP server?",
+    "options": {
+      "A": "ldapsearch",
+      "B": "whois",
+      "C": "dig",
+      "D": "finger"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration technique targets port 111 on UNIX systems?",
+    "options": {
+      "A": "RPC enumeration",
+      "B": "DNS zone transfer",
+      "C": "SMTP banner grabbing",
+      "D": "LDAP enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these services is commonly targeted for email account enumeration?",
+    "options": {
+      "A": "SMTP",
+      "B": "IMAP",
+      "C": "SNMP",
+      "D": "POP3"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What does the SMTP 'VRFY' command attempt to do?",
+    "options": {
+      "A": "Verify if an email address exists",
+      "B": "Return server version",
+      "C": "Transfer file via FTP",
+      "D": "Update DNS records"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following may allow access to an NFS share without credentials?",
+    "options": {
+      "A": "Anonymous mount",
+      "B": "Null session",
+      "C": "SNMPv1 query",
+      "D": "DNS AXFR"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool can be used to brute force usernames via SMB enumeration?",
+    "options": {
+      "A": "enum4linux",
+      "B": "Metasploit",
+      "C": "rpcclient",
+      "D": "Hydra"
+    },
+    "correct_answers": ["D"]
+  },
+  {
+    "question": "What is the purpose of the 'finger' service in older UNIX systems?",
+    "options": {
+      "A": "Provide user and login information",
+      "B": "List shared folders",
+      "C": "Manage LDAP entries",
+      "D": "Authenticate remote users"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command can enumerate LDAP entries using simple queries?",
+    "options": {
+      "A": "ldapsearch",
+      "B": "nbtscan",
+      "C": "enum4linux",
+      "D": "showmount"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Nmap script category would you use for enumeration tasks?",
+    "options": {
+      "A": "discovery",
+      "B": "exploit",
+      "C": "brute",
+      "D": "fuzzer"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is a null session in SMB?",
+    "options": {
+      "A": "Unauthenticated connection using no credentials",
+      "B": "Encrypted SMB session",
+      "C": "SSH session with blank password",
+      "D": "SMTP enumeration command"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following can be retrieved through RPC enumeration?",
+    "options": {
+      "A": "User accounts",
+      "B": "Group memberships",
+      "C": "Running services",
+      "D": "File contents"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is an advantage of SNMPv3 over SNMPv1/v2c?",
+    "options": {
+      "A": "Supports encryption and authentication",
+      "B": "Uses UDP instead of TCP",
+      "C": "No configuration needed",
+      "D": "Faster than other versions"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is typically revealed by a successful SNMP walk?",
+    "options": {
+      "A": "Network device configuration and performance data",
+      "B": "User password hashes",
+      "C": "DNS server secrets",
+      "D": "Firewall policies"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools is used for enumerating exposed NetBIOS names?",
+    "options": {
+      "A": "nbtscan",
+      "B": "smbclient",
+      "C": "netcat",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which protocol and port does SMB typically use?",
+    "options": {
+      "A": "TCP 445",
+      "B": "TCP 80",
+      "C": "UDP 161",
+      "D": "TCP 22"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these LDAP attributes typically stores a username?",
+    "options": {
+      "A": "uid",
+      "B": "cn",
+      "C": "dc",
+      "D": "sn"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What can be discovered through DNS zone transfer?",
+    "options": {
+      "A": "Subdomains and internal hostnames",
+      "B": "Open ports",
+      "C": "OS version",
+      "D": "User passwords"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What risk is associated with allowing anonymous FTP access?",
+    "options": {
+      "A": "Unauthorized file enumeration",
+      "B": "SSH tunneling",
+      "C": "Port spoofing",
+      "D": "ARP cache poisoning"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool allows automated enumeration of SMB, RPC, and NetBIOS data from Linux?",
+    "options": {
+      "A": "enum4linux",
+      "B": "netstat",
+      "C": "nmap -sT",
+      "D": "hydra"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following techniques may be used to enumerate SMTP servers?",
+    "options": {
+      "A": "VRFY",
+      "B": "EXPN",
+      "C": "RCPT TO",
+      "D": "DIG"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the purpose of the MIB in SNMP enumeration?",
+    "options": {
+      "A": "Defines the structure of managed objects",
+      "B": "Decrypts SNMP messages",
+      "C": "Enumerates active ports",
+      "D": "Analyzes packet loss"
+    },
+    "correct_answers": ["A"]
+  }
+]

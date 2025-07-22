@@ -1,0 +1,312 @@
+[
+  {
+    "question": "Which of the following best defines the purpose of ethical hacking?",
+    "options": {
+      "A": "To damage and destroy systems",
+      "B": "To gain unauthorized access to systems",
+      "C": "To assess and improve security with permission",
+      "D": "To monitor users without detection"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "Which phase involves identifying live systems, open ports, and services?",
+    "options": {
+      "A": "Reconnaissance",
+      "B": "Scanning",
+      "C": "Gaining Access",
+      "D": "Maintaining Access"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "What is the role of a vulnerability assessment?",
+    "options": {
+      "A": "Exploit vulnerabilities in a network",
+      "B": "Identify and classify known security issues",
+      "C": "Patch detected vulnerabilities automatically",
+      "D": "Simulate real-world attacks"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which of the following actions are permitted for ethical hackers with authorization?",
+    "options": {
+      "A": "Scanning target systems",
+      "B": "Collecting confidential data for analysis",
+      "C": "Reporting discovered vulnerabilities",
+      "D": "Selling discovered zero-day exploits"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which hacker type operates legally and with prior approval?",
+    "options": {
+      "A": "Black Hat",
+      "B": "Script Kiddie",
+      "C": "Gray Hat",
+      "D": "White Hat"
+    },
+    "correct_answers": ["D"]
+  },
+  {
+    "question": "Which of the following are common deliverables in an ethical hacking report?",
+    "options": {
+      "A": "Executive summary",
+      "B": "Proof of concept (PoC) for vulnerabilities",
+      "C": "Exploit code sales link",
+      "D": "Technical vulnerability list"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What are common examples of social engineering?",
+    "options": {
+      "A": "Phishing emails",
+      "B": "SQL injection",
+      "C": "Baiting with USB drives",
+      "D": "Pretexting"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "What is an ethical hacker legally allowed to do?",
+    "options": {
+      "A": "Test any public-facing server without permission",
+      "B": "Scan internal networks with written consent",
+      "C": "Perform phishing simulations within scope",
+      "D": "Access unscoped third-party services"
+    },
+    "correct_answers": ["B", "C"]
+  },
+  {
+    "question": "Which of these are part of the CEH hacking cycle?",
+    "options": {
+      "A": "Reconnaissance",
+      "B": "Scanning",
+      "C": "Data Exfiltration",
+      "D": "Covering Tracks"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What is the primary goal of the Blue Team?",
+    "options": {
+      "A": "Perform attack simulations",
+      "B": "Identify and respond to security incidents",
+      "C": "Write zero-day exploits",
+      "D": "Penetrate organizational defenses"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which best describes a Red Team?",
+    "options": {
+      "A": "Performs compliance audits",
+      "B": "Simulates realistic threat actors",
+      "C": "Monitors firewalls",
+      "D": "Handles malware cleanup"
+    },
+    "correct_answers": ["B"]
+  },
+  {
+    "question": "Which of the following are forms of reconnaissance?",
+    "options": {
+      "A": "WHOIS lookup",
+      "B": "Banner grabbing",
+      "C": "Privilege escalation",
+      "D": "Social media scraping"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of these are reasons companies hire ethical hackers?",
+    "options": {
+      "A": "Compliance requirements",
+      "B": "Threat simulation",
+      "C": "System destruction",
+      "D": "Security validation"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which best describes a gray hat hacker?",
+    "options": {
+      "A": "Always acts legally",
+      "B": "Has no technical knowledge",
+      "C": "Acts without permission but without malicious intent",
+      "D": "Is part of a SOC"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "Which of the following are valid components of a Rules of Engagement (RoE)?",
+    "options": {
+      "A": "IP ranges in scope",
+      "B": "Permitted attack types",
+      "C": "Usernames to target",
+      "D": "Time window for testing"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following are examples of technical security controls?",
+    "options": {
+      "A": "Firewall rules",
+      "B": "User training",
+      "C": "Antivirus software",
+      "D": "Network segmentation"
+    },
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "question": "What is the main risk of performing unauthorized security testing?",
+    "options": {
+      "A": "Loss of certification",
+      "B": "Improved system security",
+      "C": "Legal action or criminal charges",
+      "D": "Better CV for the tester"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "Which of the following are considered open-source intelligence (OSINT) sources?",
+    "options": {
+      "A": "WHOIS records",
+      "B": "DNS zone data",
+      "C": "Dark web marketplaces",
+      "D": "News articles"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following are key elements of the CIA triad?",
+    "options": {
+      "A": "Confidentiality",
+      "B": "Integrity",
+      "C": "Authentication",
+      "D": "Availability"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "What are potential consequences of an unscoped penetration test?",
+    "options": {
+      "A": "Legal violations",
+      "B": "Service disruption",
+      "C": "Accidental data exfiltration",
+      "D": "Increased revenue"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of the following is a major difference between a vulnerability scan and a penetration test?",
+    "options": {
+      "A": "Pen tests include exploitation",
+      "B": "Vulnerability scans are non-intrusive",
+      "C": "Pen tests are always automated",
+      "D": "Vulnerability scans detect zero-days"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which tools can be used in scanning or enumeration?",
+    "options": {
+      "A": "Nmap",
+      "B": "SNMPwalk",
+      "C": "Aircrack-ng",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following tools would help discover subdomains?",
+    "options": {
+      "A": "Sublist3r",
+      "B": "Dig",
+      "C": "Gobuster",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which legal or regulatory frameworks affect ethical hacking?",
+    "options": {
+      "A": "GDPR",
+      "B": "CFAA",
+      "C": "PCI-DSS",
+      "D": "DMCA"
+    },
+    "correct_answers": ["A", "B", "C", "D"]
+  },
+  {
+    "question": "What makes phishing so effective?",
+    "options": {
+      "A": "It targets technical flaws",
+      "B": "It exploits human behavior",
+      "C": "It's difficult to detect",
+      "D": "It often bypasses traditional filters"
+    },
+    "correct_answers": ["B", "C", "D"]
+  },
+  {
+    "question": "Which activities occur during the gaining access phase?",
+    "options": {
+      "A": "Credential brute-forcing",
+      "B": "Social engineering",
+      "C": "Post-exploitation persistence",
+      "D": "Exploitation of system flaws"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which type of hacker often uses publicly available tools without understanding them?",
+    "options": {
+      "A": "Gray hat",
+      "B": "Black hat",
+      "C": "Script kiddie",
+      "D": "Red teamer"
+    },
+    "correct_answers": ["C"]
+  },
+  {
+    "question": "Which of the following are examples of threats?",
+    "options": {
+      "A": "Ransomware",
+      "B": "SQL injection",
+      "C": "Hackers",
+      "D": "Firewalls"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which of the following are examples of risk mitigation strategies?",
+    "options": {
+      "A": "Patch management",
+      "B": "User training",
+      "C": "Disabling unused services",
+      "D": "Logging and monitoring"
+    },
+    "correct_answers": ["A", "B", "C", "D"]
+  },
+  {
+    "question": "Which of the following are information disclosure risks?",
+    "options": {
+      "A": "Directory listing",
+      "B": "Verbose error messages",
+      "C": "Login banners",
+      "D": "Port forwarding"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "What is the main advantage of using OSINT tools?",
+    "options": {
+      "A": "No interaction with target",
+      "B": "Stealthy data gathering",
+      "C": "High risk of detection",
+      "D": "They use exploit code automatically"
+    },
+    "correct_answers": ["A", "B"]
+  }
+]

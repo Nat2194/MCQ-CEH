@@ -1,23 +1,32 @@
-
-import { Injectable } from '@nestjs/common';
+// results.service.ts
+import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import * as fs from 'fs-extra';
 import * as path from 'path';
+import { QuizResult } from './dto/results.interface';
 
 @Injectable()
 export class ResultsService {
   private readonly resultFile = path.join(__dirname, '../../results.json');
 
-  saveResult(data: any) {
-    const results = this.getAllResults();
-    results.push({ ...data, date: new Date().toISOString() });
-    fs.writeJsonSync(this.resultFile, results);
-    return { status: 'saved' };
+  async saveResult(
+    data: QuizResult,
+  ): Promise<{ status: string; data?: QuizResult }> {
+    try {
+      const results = await this.getAllResults();
+      results.push({ ...data, date: new Date().toISOString() });
+      await fs.writeJson(this.resultFile, results);
+      return { status: 'success', data };
+    } catch (error) {
+      throw new InternalServerErrorException(
+        `{Failed to save results : ${error}`,
+      );
+    }
   }
 
-  getAllResults() {
+  async getAllResults(): Promise<QuizResult[]> {
     if (!fs.existsSync(this.resultFile)) {
       return [];
     }
-    return fs.readJsonSync(this.resultFile);
+    return (await fs.readJson(this.resultFile)) as QuizResult[];
   }
 }

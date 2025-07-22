@@ -1,0 +1,443 @@
+[
+  {
+    "question": "What is the primary objective of scanning in the ethical hacking process?",
+    "options": {
+      "A": "Identify live hosts, open ports, and services",
+      "B": "Exploit discovered vulnerabilities",
+      "C": "Maintain access",
+      "D": "Cover tracks"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following scan types completes the full TCP handshake?",
+    "options": {
+      "A": "TCP Connect Scan",
+      "B": "SYN Scan",
+      "C": "NULL Scan",
+      "D": "FIN Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which Nmap scan type is often referred to as a half-open scan?",
+    "options": {
+      "A": "SYN Scan",
+      "B": "TCP Connect Scan",
+      "C": "UDP Scan",
+      "D": "ACK Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What is the purpose of a NULL scan?",
+    "options": {
+      "A": "Bypass some firewalls and IDS systems",
+      "B": "Complete the TCP handshake",
+      "C": "Identify UDP services",
+      "D": "Perform banner grabbing"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following tools is commonly used for network scanning?",
+    "options": {
+      "A": "Nmap",
+      "B": "Angry IP Scanner",
+      "C": "Nessus",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "question": "What is the typical behavior of a host during a TCP SYN scan if a port is open?",
+    "options": {
+      "A": "Sends a SYN-ACK response",
+      "B": "Sends a FIN response",
+      "C": "Ignores the request",
+      "D": "Sends a RST response"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following scanning types is used to detect the operating system of a target?",
+    "options": {
+      "A": "OS Fingerprinting",
+      "B": "Port Scanning",
+      "C": "Vulnerability Scanning",
+      "D": "NULL Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What is the purpose of a TCP ACK scan?",
+    "options": {
+      "A": "Map firewall rules",
+      "B": "Detect UDP services",
+      "C": "Complete TCP handshake",
+      "D": "Identify OS version"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following can be used for service version detection?",
+    "options": {
+      "A": "Nmap -sV",
+      "B": "Nessus",
+      "C": "Netcat",
+      "D": "Snort"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "question": "What does the '-O' option in Nmap do?",
+    "options": {
+      "A": "Performs OS detection",
+      "B": "Performs a ping sweep",
+      "C": "Initiates a UDP scan",
+      "D": "Increases verbosity"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following scans can be used to check for UDP services?",
+    "options": {
+      "A": "Nmap -sU",
+      "B": "TCP Connect Scan",
+      "C": "SYN Scan",
+      "D": "ACK Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which scanning method can be used to bypass stateless firewalls?",
+    "options": {
+      "A": "ACK Scan",
+      "B": "SYN Scan",
+      "C": "FIN Scan",
+      "D": "XMAS Scan"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "question": "Which of these scan types uses a sequence of unusual TCP flags to elicit a response?",
+    "options": {
+      "A": "XMAS Scan",
+      "B": "SYN Scan",
+      "C": "ACK Scan",
+      "D": "NULL Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What does a RST response in a TCP scan typically indicate?",
+    "options": {
+      "A": "Closed port",
+      "B": "Open port",
+      "C": "Filtered port",
+      "D": "Active firewall"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following tools can be used to detect open shares and printers on a network?",
+    "options": {
+      "A": "Net View",
+      "B": "Nmap smb-enum-shares",
+      "C": "Nessus",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "question": "What is a key characteristic of stealth scanning?",
+    "options": {
+      "A": "Avoids completing the full TCP handshake",
+      "B": "Launches high-volume traffic",
+      "C": "Only scans UDP ports",
+      "D": "Always uses FIN packets"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which scanning technique could be most effective in discovering services behind a firewall?",
+    "options": {
+      "A": "TCP ACK Scan",
+      "B": "XMAS Scan",
+      "C": "SYN Scan",
+      "D": "Connect Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following tools is used to perform a high-speed port scan?",
+    "options": {
+      "A": "Masscan",
+      "B": "Nmap",
+      "C": "Netdiscover",
+      "D": "Wireshark"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which scan type sends packets with no flags set in the TCP header?",
+    "options": {
+      "A": "NULL Scan",
+      "B": "XMAS Scan",
+      "C": "ACK Scan",
+      "D": "FIN Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What is the default port scanning technique used by Nmap?",
+    "options": {
+      "A": "SYN Scan",
+      "B": "Connect Scan",
+      "C": "NULL Scan",
+      "D": "FIN Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which scanning technique would be most effective against a stateless packet filter?",
+    "options": {
+      "A": "TCP ACK Scan",
+      "B": "XMAS Scan",
+      "C": "TCP Connect Scan",
+      "D": "OS Fingerprinting"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which type of scan can be used to identify live hosts in a network?",
+    "options": {
+      "A": "Ping Sweep",
+      "B": "UDP Scan",
+      "C": "SYN Scan",
+      "D": "NULL Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What does the term 'banner grabbing' refer to in network scanning?",
+    "options": {
+      "A": "Retrieving service version information",
+      "B": "Flooding the network with packets",
+      "C": "Changing MAC address",
+      "D": "Disabling host firewalls"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following are potential scan results for a filtered port?",
+    "options": {
+      "A": "No response",
+      "B": "ICMP unreachable",
+      "C": "SYN-ACK",
+      "D": "RST"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "question": "Which layer of the OSI model does port scanning primarily target?",
+    "options": {
+      "A": "Transport",
+      "B": "Network",
+      "C": "Application",
+      "D": "Data Link"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following is true about UDP scanning?",
+    "options": {
+      "A": "It is slower and less reliable than TCP scanning",
+      "B": "Always receives immediate responses",
+      "C": "Does not need root privileges",
+      "D": "Only works with Windows hosts"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which tool can be used to perform stealth scans with decoy IPs?",
+    "options": {
+      "A": "Nmap",
+      "B": "Wireshark",
+      "C": "Nikto",
+      "D": "Hydra"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What does the '-sS' option in Nmap command stand for?",
+    "options": {
+      "A": "TCP SYN scan",
+      "B": "TCP Connect scan",
+      "C": "UDP scan",
+      "D": "Service scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following techniques attempts to detect the target’s firewall rules?",
+    "options": {
+      "A": "ACK Scan",
+      "B": "FIN Scan",
+      "C": "Ping Sweep",
+      "D": "OS Fingerprinting"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following tools is used to capture and analyze network packets?",
+    "options": {
+      "A": "Wireshark",
+      "B": "tcpdump",
+      "C": "Burp Suite",
+      "D": "Netcat"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "question": "Which scanning phase identifies vulnerabilities in systems and applications?",
+    "options": {
+      "A": "Vulnerability Scanning",
+      "B": "Port Scanning",
+      "C": "OS Fingerprinting",
+      "D": "Network Discovery"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "What is the role of the Nmap scripting engine (NSE)?",
+    "options": {
+      "A": "Automate scanning tasks and detect vulnerabilities",
+      "B": "Capture network traffic",
+      "C": "Enumerate SMB shares",
+      "D": "Detect phishing domains"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which Nmap switch would you use for a ping scan only?",
+    "options": {
+      "A": "-sn",
+      "B": "-sP",
+      "C": "-sS",
+      "D": "-O"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "question": "Which scanning technique sends crafted packets to analyze responses and determine the OS?",
+    "options": {
+      "A": "OS Fingerprinting",
+      "B": "Banner Grabbing",
+      "C": "ACK Scanning",
+      "D": "NULL Scan"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of these is a reason for using stealth scans?",
+    "options": {
+      "A": "Avoid detection by firewalls and IDS",
+      "B": "Speed up scanning",
+      "C": "Gather routing table data",
+      "D": "Intercept network credentials"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "question": "Which of the following is a common legal concern with scanning activities?",
+    "options": {
+      "A": "Scanning without authorization may be illegal",
+      "B": "Port scanning is allowed under GDPR",
+      "C": "Nmap encrypts scan traffic",
+      "D": "Scanning always requires root access"
+    },
+    "correct_answers": [
+      "A"
+    ]
+  }
+]

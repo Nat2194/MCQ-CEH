@@ -7,36 +7,63 @@ interface QuizQuestion {
   correct_answers: string[];
 }
 
-interface QuizSelectorProps {
+export interface QuizSelectorProps {
   onStart: (data: QuizQuestion[], title: string) => void;
+  onViewResults: () => void;
 }
 
-export default function QuizSelector({ onStart }: QuizSelectorProps) {
-  const [files, setFiles] = useState<string[]>([]);
-  const [count, setCount] = useState<number>(5);
+export default function QuizSelector({
+  onStart,
+  onViewResults,
+}: QuizSelectorProps) {
+  const [modules, setModules] = useState<string[]>([]);
+  const [selectedModule, setSelectedModule] = useState<string>("");
+  const [quizzes, setQuizzes] = useState<string[]>([]);
+  const [count, setCount] = useState<number>(10);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    axios
-      .get<string[]>("/quiz/list")
-      .then((res) => {
-        // Ensure we have an array, fallback to empty array if not
-        const fileList = Array.isArray(res.data) ? res.data : [];
-        setFiles(fileList);
-      })
-      .catch((err) => {
-        console.error("Error loading quiz list:", err);
-        setFiles([]); // Set empty array on error
-      });
+    const fetchModules = async () => {
+      try {
+        const res = await axios.get<string[]>("/quiz/modules");
+        setModules(res.data);
+        setLoading(false);
+      } catch (err) {
+        console.error("Error loading modules:", err);
+        setModules([]);
+        setLoading(false);
+      }
+    };
+
+    fetchModules();
   }, []);
+
+  useEffect(() => {
+    if (selectedModule) {
+      const fetchQuizzes = async () => {
+        try {
+          const res = await axios.get<string[]>(`/quiz/list/${selectedModule}`);
+          setQuizzes(res.data);
+        } catch (err) {
+          console.error("Error loading quizzes:", err);
+          setQuizzes([]);
+        }
+      };
+
+      fetchQuizzes();
+    } else {
+      setQuizzes([]);
+    }
+  }, [selectedModule]);
 
   const loadQuiz = async (filename: string) => {
     try {
-      const res = await axios.get<QuizQuestion[]>(`/quiz/load/${filename}`);
-      console.log("Quiz API response:", res.data); // Debug log
+      const res = await axios.get<QuizQuestion[]>(
+        `/quiz/load/${filename}?module=${selectedModule}`
+      );
 
-      // The API returns the quiz data directly as an array
       if (Array.isArray(res.data)) {
-        onStart(res.data, filename);
+        onStart(res.data, `${selectedModule}/${filename}`);
       } else {
         console.error("Expected array but got:", res.data);
         alert("Unexpected quiz data format received.");
@@ -49,14 +76,17 @@ export default function QuizSelector({ onStart }: QuizSelectorProps) {
 
   const loadCombined = async () => {
     try {
-      const res = await axios.get<QuizQuestion[]>(
-        `/quiz/combined?count=${count}`
-      );
-      console.log("Combined quiz API response:", res.data); // Debug log
+      const endpoint = selectedModule
+        ? `/quiz/combined?count=${count}&module=${selectedModule}`
+        : `/quiz/combined?count=${count}`;
 
-      // The API returns the quiz data directly as an array
+      const res = await axios.get<QuizQuestion[]>(endpoint);
+
       if (Array.isArray(res.data)) {
-        onStart(res.data, `Combined-${count}`);
+        const title = selectedModule
+          ? `Combined-${selectedModule}-${count}`
+          : `Combined-All-${count}`;
+        onStart(res.data, title);
       } else {
         console.error("Expected array but got:", res.data);
         alert("Unexpected combined quiz data format received.");
@@ -68,34 +98,76 @@ export default function QuizSelector({ onStart }: QuizSelectorProps) {
   };
 
   const handleCountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCount(Number(e.target.value));
+    const value = Math.min(Math.max(1, Number(e.target.value)), 1000);
+    setCount(value);
   };
+
+  const handleModuleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedModule(e.target.value);
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="text-white">Loading modules...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center py-8">
       <div className="max-w-md w-full mx-4">
-        <div className="bg-gray-800 border border-gray-700 p-6 rounded-lg">
-          <h2 className="text-2xl font-bold text-white mb-6 text-center">
+        <div className="bg-gray-800 border border-gray-700 p-6 rounded-lg space-y-6">
+          <h2 className="text-2xl font-bold text-white text-center">
             Select a Quiz
           </h2>
 
-          <div className="space-y-3 mb-6">
-            {files.map((file) => (
-              <button
-                key={file}
-                onClick={() => loadQuiz(file)}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors font-medium"
+          <div className="space-y-4">
+            <div>
+              <label className="block text-gray-300 font-medium mb-2">
+                Module:
+              </label>
+              <select
+                value={selectedModule}
+                onChange={handleModuleChange}
+                className="w-full bg-gray-700 border border-gray-600 text-white px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                {file}
-              </button>
-            ))}
+                <option value="">All Modules</option>
+                {modules.map((module) => (
+                  <option key={module} value={module}>
+                    {module}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {selectedModule && (
+              <div className="space-y-3">
+                <h3 className="text-lg font-semibold text-white">
+                  Module Quizzes:
+                </h3>
+                {quizzes.length > 0 ? (
+                  quizzes.map((quiz) => (
+                    <button
+                      key={quiz}
+                      onClick={() => loadQuiz(quiz)}
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors font-medium"
+                    >
+                      {quiz}
+                    </button>
+                  ))
+                ) : (
+                  <p className="text-gray-400">
+                    No quizzes found in this module
+                  </p>
+                )}
+              </div>
+            )}
           </div>
 
-          <div className="border-t border-gray-700 pt-6">
-            <h3 className="text-lg font-semibold text-white mb-4">
-              Combined Quiz
-            </h3>
-            <div className="flex items-center space-x-3 mb-4">
+          <div className="border-t border-gray-700 pt-6 space-y-4">
+            <h3 className="text-lg font-semibold text-white">Combined Quiz</h3>
+            <div className="flex items-center space-x-3">
               <label className="text-gray-300 font-medium">Questions:</label>
               <input
                 type="number"
@@ -103,15 +175,25 @@ export default function QuizSelector({ onStart }: QuizSelectorProps) {
                 value={count}
                 onChange={handleCountChange}
                 min="1"
-                max="50"
+                max="1000"
               />
             </div>
             <button
               onClick={loadCombined}
               className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg transition-colors font-medium"
             >
-              Start Combined Quiz
+              {selectedModule
+                ? `Start Combined ${selectedModule} Quiz`
+                : "Start Combined All Modules Quiz"}
             </button>
+            <div className="flex justify-center pt-4">
+              <button
+                onClick={onViewResults}
+                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
+              >
+                View Previous Results
+              </button>
+            </div>
           </div>
         </div>
       </div>

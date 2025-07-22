@@ -1,0 +1,342 @@
+[
+  {
+    "question": "Which enumeration technique relies on collecting information from open SMB shares?",
+    "options": {
+      "A": "SMB Enumeration",
+      "B": "DNS Enumeration",
+      "C": "SMTP Enumeration",
+      "D": "ARP Poisoning"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which service can expose user and group information if anonymous binds are allowed?",
+    "options": {
+      "A": "LDAP",
+      "B": "FTP",
+      "C": "SSH",
+      "D": "DNS"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is NOT typically used for enumeration?",
+    "options": {
+      "A": "SSH",
+      "B": "SMB",
+      "C": "RPC",
+      "D": "SNMP"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which port number is commonly used for NFS service?",
+    "options": {
+      "A": "2049",
+      "B": "161",
+      "C": "53",
+      "D": "80"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the EXPN SMTP command do?",
+    "options": {
+      "A": "Expands a mailing list to reveal its members",
+      "B": "Checks mail server uptime",
+      "C": "Scans open ports",
+      "D": "Performs email spoofing"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What information does 'ldapsearch' typically retrieve?",
+    "options": {
+      "A": "User and group data from directory services",
+      "B": "SNMP credentials",
+      "C": "DNS records",
+      "D": "Firewall rules"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is used to enumerate users through NetBIOS?",
+    "options": {
+      "A": "nbtstat",
+      "B": "whoami",
+      "C": "nslookup",
+      "D": "netstat"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What kind of enumeration does the 'showmount -e' command perform?",
+    "options": {
+      "A": "NFS Export Enumeration",
+      "B": "SMB Share Enumeration",
+      "C": "SNMP Enumeration",
+      "D": "RPC Enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration technique is used to gather printer information over the network?",
+    "options": {
+      "A": "SNMP Enumeration",
+      "B": "DNS Enumeration",
+      "C": "NFS Enumeration",
+      "D": "SMTP Enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Windows command can show a list of sessions on a remote computer?",
+    "options": {
+      "A": "net session",
+      "B": "netstat -a",
+      "C": "ipconfig /displaydns",
+      "D": "arp -a"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a lightweight protocol used to access and maintain directory information?",
+    "options": {
+      "A": "LDAP",
+      "B": "SMB",
+      "C": "DNS",
+      "D": "RPC"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration method would you use to retrieve a list of user accounts on a Windows domain?",
+    "options": {
+      "A": "SMB Enumeration",
+      "B": "ARP Spoofing",
+      "C": "DNS Zone Transfer",
+      "D": "ICMP Echo Request"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What information does a 'null session' provide access to?",
+    "options": {
+      "A": "Usernames, shares, policies",
+      "B": "Encrypted login credentials",
+      "C": "Firewall configurations",
+      "D": "VPN keys"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following services uses port 389 for enumeration?",
+    "options": {
+      "A": "LDAP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "SSH"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is a risk of poorly configured SNMP?",
+    "options": {
+      "A": "Exposure of routing tables and device info",
+      "B": "Man-in-the-middle attacks",
+      "C": "SQL injection",
+      "D": "Brute-force password attacks"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the function of the 'smb-enum-users' script in Nmap?",
+    "options": {
+      "A": "Enumerates valid SMB usernames",
+      "B": "Tests web application security",
+      "C": "Maps firewall ports",
+      "D": "Launches phishing attacks"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration tool can be used to test SNMP community strings?",
+    "options": {
+      "A": "onesixtyone",
+      "B": "smbclient",
+      "C": "nbtscan",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following services can be abused by attackers to enumerate users using EXPN and VRFY?",
+    "options": {
+      "A": "SMTP",
+      "B": "DNS",
+      "C": "HTTP",
+      "D": "SNMP"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What type of enumeration does 'net group /domain' perform?",
+    "options": {
+      "A": "Windows domain group enumeration",
+      "B": "SMB share listing",
+      "C": "Active FTP detection",
+      "D": "ARP table inspection"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these is a graphical LDAP client for browsing directory structures?",
+    "options": {
+      "A": "JXplorer",
+      "B": "Wireshark",
+      "C": "Dirbuster",
+      "D": "Gobuster"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools can help identify open SMB shares using brute-force attacks?",
+    "options": {
+      "A": "Hydra",
+      "B": "Metasploit",
+      "C": "Nikto",
+      "D": "tcpdump"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What information can be found in an NFS export list?",
+    "options": {
+      "A": "Directory paths shared over NFS",
+      "B": "Firewall rules",
+      "C": "Web directory structure",
+      "D": "VPN credentials"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which protocol allows anonymous access and shares files over the network using port 2049?",
+    "options": {
+      "A": "NFS",
+      "B": "SMB",
+      "C": "FTP",
+      "D": "Telnet"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Windows command can list local users on a system?",
+    "options": {
+      "A": "net user",
+      "B": "ipconfig",
+      "C": "netstat -an",
+      "D": "dir /a"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following indicates that LDAP anonymous binding is enabled?",
+    "options": {
+      "A": "ldapsearch returns user list without credentials",
+      "B": "Active Directory login required",
+      "C": "SMB enumeration blocked",
+      "D": "SNMP walk fails"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these enumeration protocols typically uses UDP by default?",
+    "options": {
+      "A": "SNMP",
+      "B": "LDAP",
+      "C": "HTTP",
+      "D": "RPC"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Nmap script category is best suited for identifying accessible shares on Windows systems?",
+    "options": {
+      "A": "smb-enum-shares",
+      "B": "smb-os-discovery",
+      "C": "http-title",
+      "D": "ftp-anon"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which Linux utility is used to send LDAP queries from the command line?",
+    "options": {
+      "A": "ldapsearch",
+      "B": "whois",
+      "C": "dig",
+      "D": "showmount"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following services allows file sharing and printer access over the network?",
+    "options": {
+      "A": "SMB",
+      "B": "DNS",
+      "C": "LDAP",
+      "D": "Telnet"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following would be the most appropriate for NFS enumeration?",
+    "options": {
+      "A": "showmount",
+      "B": "nbtstat",
+      "C": "finger",
+      "D": "nmap -sU"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the primary goal of enumeration in the ethical hacking process?",
+    "options": {
+      "A": "Gather detailed user and resource information from systems",
+      "B": "Launch a DDoS attack",
+      "C": "Destroy logs",
+      "D": "Crack encryption algorithms"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following SNMP strings provides write access if misconfigured?",
+    "options": {
+      "A": "private",
+      "B": "public",
+      "C": "admin",
+      "D": "root"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command can enumerate mounted NFS directories?",
+    "options": {
+      "A": "showmount -e <IP>",
+      "B": "net use",
+      "C": "rpcinfo -p",
+      "D": "nbtstat -A"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these services is most susceptible to user enumeration via 'EXPN'?",
+    "options": {
+      "A": "SMTP",
+      "B": "DNS",
+      "C": "LDAP",
+      "D": "SSH"
+    },
+    "correct_answers": ["A"]
+  }
+]

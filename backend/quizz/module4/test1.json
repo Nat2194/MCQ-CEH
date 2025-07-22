@@ -1,0 +1,352 @@
+[
+  {
+    "question": "What is the main objective of enumeration in ethical hacking?",
+    "options": {
+      "A": "Extract user names, machine names, network resources, shares, and services",
+      "B": "Identify live hosts in a network",
+      "C": "Sniff network traffic",
+      "D": "Launch a brute-force attack"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which protocol is commonly used for enumerating Windows systems?",
+    "options": {
+      "A": "SMB",
+      "B": "HTTP",
+      "C": "FTP",
+      "D": "SSH"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools can perform NetBIOS enumeration?",
+    "options": {
+      "A": "nbtscan",
+      "B": "enum4linux",
+      "C": "nslookup",
+      "D": "rpcclient"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following commands is used to enumerate NetBIOS names on Windows?",
+    "options": {
+      "A": "nbtstat -A <IP>",
+      "B": "ping <IP>",
+      "C": "tracert <IP>",
+      "D": "nslookup <IP>"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration technique allows an attacker to gather user and group names from a target machine?",
+    "options": {
+      "A": "SMB enumeration",
+      "B": "WHOIS lookup",
+      "C": "Traceroute analysis",
+      "D": "DNS zone transfer"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which port is typically used for LDAP enumeration?",
+    "options": {
+      "A": "389",
+      "B": "445",
+      "C": "3389",
+      "D": "22"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following are valid tools for SNMP enumeration?",
+    "options": {
+      "A": "snmpwalk",
+      "B": "onesixtyone",
+      "C": "Wireshark",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "What is the default community string for SNMP read access?",
+    "options": {
+      "A": "public",
+      "B": "admin",
+      "C": "read",
+      "D": "access"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which protocol is used for RPC enumeration on Windows?",
+    "options": {
+      "A": "DCOM",
+      "B": "SMB",
+      "C": "HTTP",
+      "D": "DNS"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following tools can enumerate shares on a Windows system?",
+    "options": {
+      "A": "Net View",
+      "B": "enum4linux",
+      "C": "smbclient",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A", "B", "C"]
+  },
+  {
+    "question": "Which service typically listens on TCP port 445?",
+    "options": {
+      "A": "SMB over TCP",
+      "B": "FTP",
+      "C": "Telnet",
+      "D": "LDAP"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the 'rpcinfo' command do?",
+    "options": {
+      "A": "Displays RPC services on a Unix/Linux machine",
+      "B": "Performs OS fingerprinting",
+      "C": "Grabs HTTP banners",
+      "D": "Starts SMB enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the primary purpose of LDAP enumeration?",
+    "options": {
+      "A": "Extract directory service information like users and groups",
+      "B": "Scan for open ports",
+      "C": "Capture packets",
+      "D": "Crack passwords"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is true about SNMPv1?",
+    "options": {
+      "A": "It does not support encryption",
+      "B": "It uses TCP by default",
+      "C": "It is deprecated and no longer usable",
+      "D": "It requires complex authentication"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What can be discovered via SNMP enumeration?",
+    "options": {
+      "A": "System name, description, interfaces, routing tables",
+      "B": "SSH keys",
+      "C": "Web application vulnerabilities",
+      "D": "FTP credentials"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which tool can extract NetBIOS information from a target system?",
+    "options": {
+      "A": "nbtstat",
+      "B": "netstat",
+      "C": "ipconfig",
+      "D": "traceroute"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration technique targets port 161/UDP?",
+    "options": {
+      "A": "SNMP Enumeration",
+      "B": "LDAP Enumeration",
+      "C": "NetBIOS Enumeration",
+      "D": "FTP Enumeration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of the enum4linux tool?",
+    "options": {
+      "A": "Enumerate information from Windows systems via SMB",
+      "B": "Perform DNS brute force",
+      "C": "Capture HTTP traffic",
+      "D": "Analyze network packets"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following ports is typically used for RPC services?",
+    "options": {
+      "A": "135",
+      "B": "80",
+      "C": "21",
+      "D": "3389"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following is NOT a valid SNMP enumeration tool?",
+    "options": {
+      "A": "Hydra",
+      "B": "snmpwalk",
+      "C": "snmpcheck",
+      "D": "onesixtyone"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following can be extracted using LDAP enumeration?",
+    "options": {
+      "A": "Usernames",
+      "B": "Group memberships",
+      "C": "Password hashes",
+      "D": "Organizational units"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which command on Windows displays shared resources?",
+    "options": {
+      "A": "net view",
+      "B": "dir /s",
+      "C": "ipconfig /all",
+      "D": "tasklist"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which enumeration technique is useful for identifying exposed email accounts via SMTP?",
+    "options": {
+      "A": "SMTP VRFY/EXPN",
+      "B": "SNMP walk",
+      "C": "WHOIS lookup",
+      "D": "Traceroute"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does a null session in SMB enumeration allow?",
+    "options": {
+      "A": "Unauthenticated access to share and user info",
+      "B": "Remote desktop login",
+      "C": "Firewall bypassing",
+      "D": "Web proxy configuration"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of the following Windows versions are vulnerable to null sessions by default?",
+    "options": {
+      "A": "Windows 2000",
+      "B": "Windows XP",
+      "C": "Windows 10",
+      "D": "Windows Server 2003"
+    },
+    "correct_answers": ["A", "B", "D"]
+  },
+  {
+    "question": "Which of the following tools supports automated LDAP queries?",
+    "options": {
+      "A": "ldapsearch",
+      "B": "JXplorer",
+      "C": "Burp Suite",
+      "D": "Metasploit"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which enumeration technique allows identification of remote printers?",
+    "options": {
+      "A": "SMB enumeration",
+      "B": "SNMP walk",
+      "C": "FTP banner grabbing",
+      "D": "Traceroute"
+    },
+    "correct_answers": ["A", "B"]
+  },
+  {
+    "question": "Which Metasploit auxiliary module can perform SMB enumeration?",
+    "options": {
+      "A": "scanner/smb/smb_enumusers",
+      "B": "scanner/ftp/anonymous",
+      "C": "scanner/http/title",
+      "D": "scanner/snmp/snmp_enum"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the purpose of the 'showmount' command on Linux?",
+    "options": {
+      "A": "Display available NFS shares",
+      "B": "Show mounted drives",
+      "C": "Display SMB shares",
+      "D": "List user accounts"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is an organizational unit (OU) in LDAP?",
+    "options": {
+      "A": "A container for users and groups",
+      "B": "A shared printer",
+      "C": "A user password field",
+      "D": "A firewall rule"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which port is associated with NFS enumeration?",
+    "options": {
+      "A": "2049",
+      "B": "139",
+      "C": "389",
+      "D": "135"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which file in a Linux system lists exported NFS directories?",
+    "options": {
+      "A": "/etc/exports",
+      "B": "/etc/fstab",
+      "C": "/etc/hosts.allow",
+      "D": "/etc/resolv.conf"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What does the 'finger' service allow enumeration of?",
+    "options": {
+      "A": "Usernames and login times",
+      "B": "Printer drivers",
+      "C": "Network topology",
+      "D": "Router settings"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which command can be used to enumerate users via finger protocol?",
+    "options": {
+      "A": "finger @target",
+      "B": "nbtstat -A",
+      "C": "net view",
+      "D": "dig -x"
+    },
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "Which of these services is considered high-value for enumeration?",
+    "options": {
+      "A": "SMB",
+      "B": "LDAP",
+      "C": "SNMP",
+      "D": "SMTP"
+    },
+    "correct_answers": ["A", "B", "C", "D"]
+  }
+]
