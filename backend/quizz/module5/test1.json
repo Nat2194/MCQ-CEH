@@ -55,7 +55,7 @@
     "explanation": "A zero-day exploit targets an unknown flaw that has not yet been patched by the vendor, making it particularly dangerous."
   },
   {
-    "question": "Which of the following attacks exploits poor input validation in applications?",
+    "question": "Which of the following attacks exploit poor input validation in applications?",
     "options": {
       "A": "SQL Injection",
       "B": "Command Injection",
@@ -339,5 +339,106 @@
     },
     "correct_answers": ["A"],
     "explanation": "Keeping systems updated helps prevent exploitation of known vulnerabilities used for privilege escalation."
-  }
+  },
+  [
+    {
+      "question": "What is the primary goal of vulnerability analysis?",
+      "options": {
+        "A": "To identify security weaknesses in systems and applications",
+        "B": "To exploit discovered vulnerabilities",
+        "C": "To scan network ports for open services",
+        "D": "To conduct phishing campaigns"
+      },
+      "correct_answers": ["A"],
+      "explanation": "Vulnerability analysis aims to identify and assess security flaws that could be exploited by attackers."
+    },
+    {
+      "question": "Which of the following is a widely used vulnerability scanning tool?",
+      "options": {
+        "A": "Nessus",
+        "B": "Ettercap",
+        "C": "Aircrack-ng",
+        "D": "Burp Suite"
+      },
+      "correct_answers": ["A"],
+      "explanation": "Nessus is a well-known vulnerability scanner that identifies known vulnerabilities, misconfigurations, and missing patches."
+    },
+    {
+      "question": "What does CVSS stand for?",
+      "options": {
+        "A": "Common Vulnerability Scoring System",
+        "B": "Centralized Vulnerability Security Scanner",
+        "C": "Cyber Vulnerability Search Suite",
+        "D": "Common Verified Security Standard"
+      },
+      "correct_answers": ["A"],
+      "explanation": "CVSS is a standard for rating the severity of software vulnerabilities using a numeric score from 0 to 10."
+    },
+    {
+      "question": "Which of the following describes a false positive in vulnerability scanning?",
+      "options": {
+        "A": "A vulnerability that is reported but does not actually exist",
+        "B": "A vulnerability that causes system failure",
+        "C": "A vulnerability missed by the scanner",
+        "D": "A confirmed zero-day vulnerability"
+      },
+      "correct_answers": ["A"],
+      "explanation": "A false positive occurs when the scanner reports a vulnerability that isn't actually present or exploitable."
+    },
+    {
+      "question": "What kind of vulnerability is caused by improper input validation?",
+      "options": {
+        "A": "Injection vulnerability",
+        "B": "Denial of Service",
+        "C": "Privilege Escalation",
+        "D": "Phishing"
+      },
+      "correct_answers": ["A"],
+      "explanation": "Improper input validation can lead to injection attacks such as SQL injection or command injection."
+    },
+    {
+      "question": "Which database tracks publicly known security vulnerabilities?",
+      "options": {
+        "A": "NVD (National Vulnerability Database)",
+        "B": "WHOIS",
+        "C": "Shodan",
+        "D": "Wayback Machine"
+      },
+      "correct_answers": ["A"],
+      "explanation": "NVD is maintained by NIST and provides a repository of known vulnerabilities and their CVSS scores."
+    },
+    {
+      "question": "What is the role of a vulnerability scanner's plugin?",
+      "options": {
+        "A": "To perform specific checks for known vulnerabilities",
+        "B": "To store scanned data",
+        "C": "To intercept packets",
+        "D": "To manage firewall rules"
+      },
+      "correct_answers": ["A"],
+      "explanation": "Plugins in a vulnerability scanner define how to test for specific vulnerabilities or misconfigurations."
+    },
+    {
+      "question": "Which of the following best describes credentialed scanning?",
+      "options": {
+        "A": "Scanning performed with valid login credentials",
+        "B": "Scanning restricted to public IP ranges",
+        "C": "Scanning performed by administrators only",
+        "D": "Scanning performed using open-source tools"
+      },
+      "correct_answers": ["A"],
+      "explanation": "Credentialed scanning uses valid credentials to access and analyze systems with deeper insight and accuracy."
+    },
+    {
+      "question": "Which of the following is an example of a misconfiguration vulnerability?",
+      "options": {
+        "A": "Default credentials left unchanged",
+        "B": "Strong encryption used",
+        "C": "Firewall blocking all traffic",
+        "D": "Timely patching of software"
+      },
+      "correct_answers": ["A"],
+      "explanation": "Leaving default credentials active is a common and dangerous misconfiguration that can be exploited easily."
+    }
+  ]
 ]

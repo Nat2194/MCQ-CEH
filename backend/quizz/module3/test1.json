@@ -7,9 +7,7 @@
       "C": "Maintain access",
       "D": "Cover tracks"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following scan types completes the full TCP handshake?",
@@ -19,9 +17,7 @@
       "C": "NULL Scan",
       "D": "FIN Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which Nmap scan type is often referred to as a half-open scan?",
@@ -31,9 +27,7 @@
       "C": "UDP Scan",
       "D": "ACK Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What is the purpose of a NULL scan?",
@@ -43,9 +37,7 @@
       "C": "Identify UDP services",
       "D": "Perform banner grabbing"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following tools is commonly used for network scanning?",
@@ -55,10 +47,7 @@
       "C": "Nessus",
       "D": "Aircrack-ng"
     },
-    "correct_answers": [
-      "A",
-      "B"
-    ]
+    "correct_answers": ["A", "B"]
   },
   {
     "question": "What is the typical behavior of a host during a TCP SYN scan if a port is open?",
@@ -68,9 +57,7 @@
       "C": "Ignores the request",
       "D": "Sends a RST response"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following scanning types is used to detect the operating system of a target?",
@@ -80,9 +67,7 @@
       "C": "Vulnerability Scanning",
       "D": "NULL Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What is the purpose of a TCP ACK scan?",
@@ -92,9 +77,7 @@
       "C": "Complete TCP handshake",
       "D": "Identify OS version"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following can be used for service version detection?",
@@ -104,11 +87,7 @@
       "C": "Netcat",
       "D": "Snort"
     },
-    "correct_answers": [
-      "A",
-      "B",
-      "C"
-    ]
+    "correct_answers": ["A", "B", "C"]
   },
   {
     "question": "What does the '-O' option in Nmap do?",
@@ -118,9 +97,7 @@
       "C": "Initiates a UDP scan",
       "D": "Increases verbosity"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following scans can be used to check for UDP services?",
@@ -130,9 +107,7 @@
       "C": "SYN Scan",
       "D": "ACK Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which scanning method can be used to bypass stateless firewalls?",
@@ -142,11 +117,7 @@
       "C": "FIN Scan",
       "D": "XMAS Scan"
     },
-    "correct_answers": [
-      "A",
-      "C",
-      "D"
-    ]
+    "correct_answers": ["A", "C", "D"]
   },
   {
     "question": "Which of these scan types uses a sequence of unusual TCP flags to elicit a response?",
@@ -156,9 +127,7 @@
       "C": "ACK Scan",
       "D": "NULL Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What does a RST response in a TCP scan typically indicate?",
@@ -168,9 +137,7 @@
       "C": "Filtered port",
       "D": "Active firewall"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following tools can be used to detect open shares and printers on a network?",
@@ -180,10 +147,7 @@
       "C": "Nessus",
       "D": "Aircrack-ng"
     },
-    "correct_answers": [
-      "A",
-      "B"
-    ]
+    "correct_answers": ["A", "B"]
   },
   {
     "question": "What is a key characteristic of stealth scanning?",
@@ -193,9 +157,7 @@
       "C": "Only scans UDP ports",
       "D": "Always uses FIN packets"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which scanning technique could be most effective in discovering services behind a firewall?",
@@ -205,9 +167,7 @@
       "C": "SYN Scan",
       "D": "Connect Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following tools is used to perform a high-speed port scan?",
@@ -217,9 +177,7 @@
       "C": "Netdiscover",
       "D": "Wireshark"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which scan type sends packets with no flags set in the TCP header?",
@@ -229,9 +187,7 @@
       "C": "ACK Scan",
       "D": "FIN Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What is the default port scanning technique used by Nmap?",
@@ -241,9 +197,7 @@
       "C": "NULL Scan",
       "D": "FIN Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which scanning technique would be most effective against a stateless packet filter?",
@@ -253,9 +207,7 @@
       "C": "TCP Connect Scan",
       "D": "OS Fingerprinting"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which type of scan can be used to identify live hosts in a network?",
@@ -265,9 +217,7 @@
       "C": "SYN Scan",
       "D": "NULL Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What does the term 'banner grabbing' refer to in network scanning?",
@@ -277,9 +227,7 @@
       "C": "Changing MAC address",
       "D": "Disabling host firewalls"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following are potential scan results for a filtered port?",
@@ -289,10 +237,7 @@
       "C": "SYN-ACK",
       "D": "RST"
     },
-    "correct_answers": [
-      "A",
-      "B"
-    ]
+    "correct_answers": ["A", "B"]
   },
   {
     "question": "Which layer of the OSI model does port scanning primarily target?",
@@ -302,9 +247,7 @@
       "C": "Application",
       "D": "Data Link"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following is true about UDP scanning?",
@@ -314,9 +257,7 @@
       "C": "Does not need root privileges",
       "D": "Only works with Windows hosts"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which tool can be used to perform stealth scans with decoy IPs?",
@@ -326,9 +267,7 @@
       "C": "Nikto",
       "D": "Hydra"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What does the '-sS' option in Nmap command stand for?",
@@ -338,9 +277,7 @@
       "C": "UDP scan",
       "D": "Service scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following techniques attempts to detect the target’s firewall rules?",
@@ -350,9 +287,7 @@
       "C": "Ping Sweep",
       "D": "OS Fingerprinting"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following tools is used to capture and analyze network packets?",
@@ -362,10 +297,7 @@
       "C": "Burp Suite",
       "D": "Netcat"
     },
-    "correct_answers": [
-      "A",
-      "B"
-    ]
+    "correct_answers": ["A", "B"]
   },
   {
     "question": "Which scanning phase identifies vulnerabilities in systems and applications?",
@@ -375,9 +307,7 @@
       "C": "OS Fingerprinting",
       "D": "Network Discovery"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "What is the role of the Nmap scripting engine (NSE)?",
@@ -387,9 +317,7 @@
       "C": "Enumerate SMB shares",
       "D": "Detect phishing domains"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which Nmap switch would you use for a ping scan only?",
@@ -399,10 +327,7 @@
       "C": "-sS",
       "D": "-O"
     },
-    "correct_answers": [
-      "A",
-      "B"
-    ]
+    "correct_answers": ["A", "B"]
   },
   {
     "question": "Which scanning technique sends crafted packets to analyze responses and determine the OS?",
@@ -412,9 +337,7 @@
       "C": "ACK Scanning",
       "D": "NULL Scan"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of these is a reason for using stealth scans?",
@@ -424,9 +347,7 @@
       "C": "Gather routing table data",
       "D": "Intercept network credentials"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "question": "Which of the following is a common legal concern with scanning activities?",
@@ -436,8 +357,105 @@
       "C": "Nmap encrypts scan traffic",
       "D": "Scanning always requires root access"
     },
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
+  },
+  {
+    "question": "What is the primary goal of vulnerability analysis?",
+    "options": {
+      "A": "To identify security weaknesses in systems and applications",
+      "B": "To exploit discovered vulnerabilities",
+      "C": "To scan network ports for open services",
+      "D": "To conduct phishing campaigns"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Vulnerability analysis aims to identify and assess security flaws that could be exploited by attackers."
+  },
+  {
+    "question": "Which of the following is a widely used vulnerability scanning tool?",
+    "options": {
+      "A": "Nessus",
+      "B": "Ettercap",
+      "C": "Aircrack-ng",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Nessus is a well-known vulnerability scanner that identifies known vulnerabilities, misconfigurations, and missing patches."
+  },
+  {
+    "question": "What does CVSS stand for?",
+    "options": {
+      "A": "Common Vulnerability Scoring System",
+      "B": "Centralized Vulnerability Security Scanner",
+      "C": "Cyber Vulnerability Search Suite",
+      "D": "Common Verified Security Standard"
+    },
+    "correct_answers": ["A"],
+    "explanation": "CVSS is a standard for rating the severity of software vulnerabilities using a numeric score from 0 to 10."
+  },
+  {
+    "question": "Which of the following describes a false positive in vulnerability scanning?",
+    "options": {
+      "A": "A vulnerability that is reported but does not actually exist",
+      "B": "A vulnerability that causes system failure",
+      "C": "A vulnerability missed by the scanner",
+      "D": "A confirmed zero-day vulnerability"
+    },
+    "correct_answers": ["A"],
+    "explanation": "A false positive occurs when the scanner reports a vulnerability that isn't actually present or exploitable."
+  },
+  {
+    "question": "What kind of vulnerability is caused by improper input validation?",
+    "options": {
+      "A": "Injection vulnerability",
+      "B": "Denial of Service",
+      "C": "Privilege Escalation",
+      "D": "Phishing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Improper input validation can lead to injection attacks such as SQL injection or command injection."
+  },
+  {
+    "question": "Which database tracks publicly known security vulnerabilities?",
+    "options": {
+      "A": "NVD (National Vulnerability Database)",
+      "B": "WHOIS",
+      "C": "Shodan",
+      "D": "Wayback Machine"
+    },
+    "correct_answers": ["A"],
+    "explanation": "NVD is maintained by NIST and provides a repository of known vulnerabilities and their CVSS scores."
+  },
+  {
+    "question": "What is the role of a vulnerability scanner's plugin?",
+    "options": {
+      "A": "To perform specific checks for known vulnerabilities",
+      "B": "To store scanned data",
+      "C": "To intercept packets",
+      "D": "To manage firewall rules"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Plugins in a vulnerability scanner define how to test for specific vulnerabilities or misconfigurations."
+  },
+  {
+    "question": "Which of the following best describes credentialed scanning?",
+    "options": {
+      "A": "Scanning performed with valid login credentials",
+      "B": "Scanning restricted to public IP ranges",
+      "C": "Scanning performed by administrators only",
+      "D": "Scanning performed using open-source tools"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Credentialed scanning uses valid credentials to access and analyze systems with deeper insight and accuracy."
+  },
+  {
+    "question": "Which of the following is an example of a misconfiguration vulnerability?",
+    "options": {
+      "A": "Default credentials left unchanged",
+      "B": "Strong encryption used",
+      "C": "Firewall blocking all traffic",
+      "D": "Timely patching of software"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Leaving default credentials active is a common and dangerous misconfiguration that can be exploited easily."
   }
 ]

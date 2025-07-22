@@ -7,7 +7,8 @@
       "C": "SMTP Enumeration",
       "D": "ARP Poisoning"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SMB enumeration targets open Windows shares to retrieve data like usernames, shared folders, and permissions."
   },
   {
     "question": "Which service can expose user and group information if anonymous binds are allowed?",
@@ -17,7 +18,8 @@
       "C": "SSH",
       "D": "DNS"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "LDAP services may leak sensitive user/group info when configured to allow anonymous binding."
   },
   {
     "question": "Which of the following is NOT typically used for enumeration?",
@@ -27,7 +29,8 @@
       "C": "RPC",
       "D": "SNMP"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SSH is primarily used for remote access and command execution, not enumeration."
   },
   {
     "question": "Which port number is commonly used for NFS service?",
@@ -37,7 +40,8 @@
       "C": "53",
       "D": "80"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Network File System (NFS) uses TCP/UDP port 2049 to provide file sharing services."
   },
   {
     "question": "What does the EXPN SMTP command do?",
@@ -47,7 +51,8 @@
       "C": "Scans open ports",
       "D": "Performs email spoofing"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "EXPN is used to enumerate members of a mailing list via SMTP."
   },
   {
     "question": "What information does 'ldapsearch' typically retrieve?",
@@ -57,7 +62,8 @@
       "C": "DNS records",
       "D": "Firewall rules"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'ldapsearch' queries LDAP directories and extracts user, group, and policy information."
   },
   {
     "question": "Which of the following is used to enumerate users through NetBIOS?",
@@ -67,7 +73,8 @@
       "C": "nslookup",
       "D": "netstat"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'nbtstat' provides NetBIOS name table and user session info useful in enumeration."
   },
   {
     "question": "What kind of enumeration does the 'showmount -e' command perform?",
@@ -77,7 +84,8 @@
       "C": "SNMP Enumeration",
       "D": "RPC Enumeration"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'showmount -e <IP>' lists NFS-shared directories accessible on a remote host."
   },
   {
     "question": "Which enumeration technique is used to gather printer information over the network?",
@@ -87,7 +95,8 @@
       "C": "NFS Enumeration",
       "D": "SMTP Enumeration"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SNMP can be queried to discover printers, routers, and device configurations."
   },
   {
     "question": "Which Windows command can show a list of sessions on a remote computer?",
@@ -97,7 +106,8 @@
       "C": "ipconfig /displaydns",
       "D": "arp -a"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'net session' lists open sessions, useful for identifying active network users."
   },
   {
     "question": "Which of the following is a lightweight protocol used to access and maintain directory information?",
@@ -107,7 +117,8 @@
       "C": "DNS",
       "D": "RPC"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "LDAP is designed for querying and managing directory structures such as user databases."
   },
   {
     "question": "Which enumeration method would you use to retrieve a list of user accounts on a Windows domain?",
@@ -117,7 +128,8 @@
       "C": "DNS Zone Transfer",
       "D": "ICMP Echo Request"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SMB enumeration can uncover user lists and share info on Windows systems."
   },
   {
     "question": "What information does a 'null session' provide access to?",
@@ -127,7 +139,8 @@
       "C": "Firewall configurations",
       "D": "VPN keys"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Null sessions exploit SMB's unauthenticated connections to list shares and users."
   },
   {
     "question": "Which of the following services uses port 389 for enumeration?",
@@ -137,7 +150,8 @@
       "C": "SMTP",
       "D": "SSH"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Port 389 is the default for LDAP services used in directory enumeration."
   },
   {
     "question": "Which of the following is a risk of poorly configured SNMP?",
@@ -147,7 +161,8 @@
       "C": "SQL injection",
       "D": "Brute-force password attacks"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Insecure SNMP can expose sensitive info like routing tables and device status."
   },
   {
     "question": "What is the function of the 'smb-enum-users' script in Nmap?",
@@ -157,7 +172,8 @@
       "C": "Maps firewall ports",
       "D": "Launches phishing attacks"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "This Nmap NSE script extracts user lists from SMB shares using available credentials or null sessions."
   },
   {
     "question": "Which enumeration tool can be used to test SNMP community strings?",
@@ -167,7 +183,8 @@
       "C": "nbtscan",
       "D": "Nikto"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'onesixtyone' scans networks using dictionaries of SNMP community strings."
   },
   {
     "question": "Which of the following services can be abused by attackers to enumerate users using EXPN and VRFY?",
@@ -177,7 +194,8 @@
       "C": "HTTP",
       "D": "SNMP"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SMTP commands like EXPN and VRFY can be used to verify and enumerate email accounts."
   },
   {
     "question": "What type of enumeration does 'net group /domain' perform?",
@@ -187,7 +205,8 @@
       "C": "Active FTP detection",
       "D": "ARP table inspection"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'net group /domain' lists user groups in a Windows Active Directory domain."
   },
   {
     "question": "Which of these is a graphical LDAP client for browsing directory structures?",
@@ -197,146 +216,227 @@
       "C": "Dirbuster",
       "D": "Gobuster"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "JXplorer is a GUI LDAP browser used to explore and interact with directory entries."
   },
   {
-    "question": "Which of the following tools can help identify open SMB shares using brute-force attacks?",
+    "question": "What type of data can be revealed through RPC enumeration on Unix systems?",
     "options": {
-      "A": "Hydra",
-      "B": "Metasploit",
-      "C": "Nikto",
-      "D": "tcpdump"
+      "A": "Mounted file systems and user services",
+      "B": "DNS records",
+      "C": "Web application vulnerabilities",
+      "D": "SMTP servers"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "RPC enumeration can reveal system processes, services, and file shares registered with the portmapper."
   },
   {
-    "question": "What information can be found in an NFS export list?",
+    "question": "Which of the following is a purpose of the 'finger' service in enumeration?",
     "options": {
-      "A": "Directory paths shared over NFS",
-      "B": "Firewall rules",
-      "C": "Web directory structure",
-      "D": "VPN credentials"
+      "A": "Retrieve user login info on Unix systems",
+      "B": "Determine DNS server location",
+      "C": "Exploit HTTP vulnerabilities",
+      "D": "Monitor system performance"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'finger' provides information about logged-in users and their activity—useful for initial recon."
   },
   {
-    "question": "Which protocol allows anonymous access and shares files over the network using port 2049?",
+    "question": "Which port is commonly used for SNMP?",
     "options": {
-      "A": "NFS",
-      "B": "SMB",
-      "C": "FTP",
-      "D": "Telnet"
+      "A": "161",
+      "B": "389",
+      "C": "22",
+      "D": "445"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Simple Network Management Protocol (SNMP) uses UDP port 161 for monitoring and enumeration."
   },
   {
-    "question": "Which Windows command can list local users on a system?",
+    "question": "What risk is introduced by DNS Zone Transfers if not properly restricted?",
     "options": {
-      "A": "net user",
+      "A": "Full exposure of internal hostnames and IPs",
+      "B": "Cross-site scripting",
+      "C": "SQL database enumeration",
+      "D": "Unauthorized RDP access"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Zone transfers reveal DNS records, exposing internal structure to attackers."
+  },
+  {
+    "question": "Which of the following tools supports SMB enumeration and is Linux-based?",
+    "options": {
+      "A": "enum4linux",
+      "B": "rpcclient",
+      "C": "Hydra",
+      "D": "netcat"
+    },
+    "correct_answers": ["A"],
+    "explanation": "enum4linux is a Linux tool for extracting user, group, and share information from SMB services."
+  },
+  {
+    "question": "Which SNMP version introduces support for authentication and encryption?",
+    "options": {
+      "A": "SNMPv3",
+      "B": "SNMPv1",
+      "C": "SNMPv2c",
+      "D": "SNMPv2"
+    },
+    "correct_answers": ["A"],
+    "explanation": "SNMPv3 offers secure authentication and encryption, unlike earlier versions."
+  },
+  {
+    "question": "Which command can help list SMB shared resources on a Windows host?",
+    "options": {
+      "A": "net view \\\\<target>",
       "B": "ipconfig",
-      "C": "netstat -an",
-      "D": "dir /a"
+      "C": "whoami",
+      "D": "tracert"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'net view' shows available shared folders on a remote Windows system."
   },
   {
-    "question": "Which of the following indicates that LDAP anonymous binding is enabled?",
-    "options": {
-      "A": "ldapsearch returns user list without credentials",
-      "B": "Active Directory login required",
-      "C": "SMB enumeration blocked",
-      "D": "SNMP walk fails"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of these enumeration protocols typically uses UDP by default?",
+    "question": "Which protocol is typically used for printer and switch enumeration?",
     "options": {
       "A": "SNMP",
-      "B": "LDAP",
-      "C": "HTTP",
-      "D": "RPC"
+      "B": "RDP",
+      "C": "SSH",
+      "D": "DNS"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SNMP is used for managing and querying network devices like switches and printers."
   },
   {
-    "question": "Which Nmap script category is best suited for identifying accessible shares on Windows systems?",
+    "question": "Which of the following statements is true about NetBIOS over TCP/IP?",
     "options": {
-      "A": "smb-enum-shares",
-      "B": "smb-os-discovery",
-      "C": "http-title",
-      "D": "ftp-anon"
+      "A": "Used to enumerate users and shared folders in Windows environments",
+      "B": "Used for secure HTTPS transfers",
+      "C": "Used by Unix to authenticate SSH",
+      "D": "Encrypted by default"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "NetBIOS over TCP/IP helps discover system names, users, and shared resources in Windows networks."
   },
   {
-    "question": "Which Linux utility is used to send LDAP queries from the command line?",
+    "question": "Which port is used for the NetBIOS Name Service?",
     "options": {
-      "A": "ldapsearch",
-      "B": "whois",
-      "C": "dig",
-      "D": "showmount"
+      "A": "137",
+      "B": "139",
+      "C": "445",
+      "D": "161"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "NetBIOS Name Service operates on UDP port 137 and resolves NetBIOS names to IP addresses."
   },
   {
-    "question": "Which of the following services allows file sharing and printer access over the network?",
+    "question": "What is the purpose of the 'nmblookup' tool?",
     "options": {
-      "A": "SMB",
-      "B": "DNS",
-      "C": "LDAP",
-      "D": "Telnet"
+      "A": "Resolve NetBIOS names to IP addresses",
+      "B": "List open network ports",
+      "C": "Inspect LDAP structure",
+      "D": "View SNMP traps"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'nmblookup' queries NetBIOS names and returns corresponding IP addresses."
   },
   {
-    "question": "Which of the following would be the most appropriate for NFS enumeration?",
-    "options": {
-      "A": "showmount",
-      "B": "nbtstat",
-      "C": "finger",
-      "D": "nmap -sU"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "What is the primary goal of enumeration in the ethical hacking process?",
-    "options": {
-      "A": "Gather detailed user and resource information from systems",
-      "B": "Launch a DDoS attack",
-      "C": "Destroy logs",
-      "D": "Crack encryption algorithms"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following SNMP strings provides write access if misconfigured?",
-    "options": {
-      "A": "private",
-      "B": "public",
-      "C": "admin",
-      "D": "root"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which command can enumerate mounted NFS directories?",
-    "options": {
-      "A": "showmount -e <IP>",
-      "B": "net use",
-      "C": "rpcinfo -p",
-      "D": "nbtstat -A"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of these services is most susceptible to user enumeration via 'EXPN'?",
+    "question": "Which service may be vulnerable if a VRFY command discloses usernames?",
     "options": {
       "A": "SMTP",
-      "B": "DNS",
-      "C": "LDAP",
-      "D": "SSH"
+      "B": "LDAP",
+      "C": "DNS",
+      "D": "FTP"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The VRFY command in SMTP checks whether a username is valid, leading to user enumeration."
+  },
+  {
+    "question": "Which tool can discover RPC services on a target host?",
+    "options": {
+      "A": "rpcinfo",
+      "B": "tcpdump",
+      "C": "hydra",
+      "D": "nmap -sL"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'rpcinfo' queries portmapper to list running RPC services on Unix-based systems."
+  },
+  {
+    "question": "Which command helps identify shared folders in a Windows system?",
+    "options": {
+      "A": "net share",
+      "B": "arp -a",
+      "C": "whoami",
+      "D": "route print"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'net share' displays all shared folders configured on the local Windows system."
+  },
+  {
+    "question": "What kind of data can be extracted using SNMP if configured poorly?",
+    "options": {
+      "A": "Device uptime, running services, interface details",
+      "B": "Password hashes",
+      "C": "SSL private keys",
+      "D": "SSH session logs"
+    },
+    "correct_answers": ["A"],
+    "explanation": "SNMP may leak detailed system data such as routing tables, device info, and uptime metrics."
+  },
+  {
+    "question": "Which port is used by SMB over TCP for direct host communication?",
+    "options": {
+      "A": "445",
+      "B": "21",
+      "C": "22",
+      "D": "80"
+    },
+    "correct_answers": ["A"],
+    "explanation": "SMB over TCP bypasses NetBIOS and communicates directly via port 445."
+  },
+  {
+    "question": "Which command lists users on a Windows system via command line?",
+    "options": {
+      "A": "net user",
+      "B": "ipconfig /all",
+      "C": "nbtstat -n",
+      "D": "arp -a"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'net user' displays all user accounts on a local Windows system."
+  },
+  {
+    "question": "What does the 'nbtscan' tool do?",
+    "options": {
+      "A": "Scans a network for NetBIOS name information",
+      "B": "Scans web apps for SQLi",
+      "C": "Captures DNS packets",
+      "D": "Brute forces SSH"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'nbtscan' performs NetBIOS name scans on a network, identifying Windows systems and shared resources."
+  },
+  {
+    "question": "What is the role of the 'finger' service in enumeration?",
+    "options": {
+      "A": "Displays user login times and shell details",
+      "B": "Redirects port traffic",
+      "C": "Scans HTTP headers",
+      "D": "Queries LDAP schema"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'finger' provides basic user info like name, shell, and last login—mainly on older Unix systems."
+  },
+  {
+    "question": "What is typically the first step in enumeration?",
+    "options": {
+      "A": "Identify active services and open ports",
+      "B": "Exploit buffer overflows",
+      "C": "Launch phishing attacks",
+      "D": "Bypass authentication"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Enumeration starts after service discovery, allowing focused extraction of detailed system information."
   }
 ]

@@ -7,7 +7,8 @@
       "C": "Nikto",
       "D": "FOCA"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "WhatWeb and Wappalyzer are fingerprinting tools that identify technologies like CMS, frameworks, and libraries used on websites."
   },
   {
     "question": "Which DNS record type provides information about email servers?",
@@ -17,7 +18,8 @@
       "C": "CNAME",
       "D": "TXT"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "MX (Mail Exchange) records specify the mail servers responsible for receiving email on behalf of a domain."
   },
   {
     "question": "Which of the following is a characteristic of an authoritative DNS server?",
@@ -27,7 +29,8 @@
       "C": "It performs DNSSEC signing",
       "D": "It caches query results temporarily"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "An authoritative DNS server contains the original zone file for a domain and provides definitive responses."
   },
   {
     "question": "Which of these is a valid reason to avoid active reconnaissance in some assessments?",
@@ -37,7 +40,8 @@
       "C": "It reveals employee credentials",
       "D": "It collects insufficient information"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Active reconnaissance may trigger IDS/IPS or alert the blue team, making it risky in stealth-focused engagements."
   },
   {
     "question": "What kind of reconnaissance can be performed through job board postings?",
@@ -47,7 +51,8 @@
       "C": "Firewall evasion",
       "D": "Privilege escalation"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Job postings can reveal technologies in use, software versions, and internal project details valuable for recon."
   },
   {
     "question": "Which of these tools can be used for subdomain discovery?",
@@ -57,7 +62,8 @@
       "C": "Netdiscover",
       "D": "theHarvester"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sublist3r, Amass, and theHarvester are passive recon tools used to enumerate subdomains from public sources."
   },
   {
     "question": "What is the purpose of fingerprinting during reconnaissance?",
@@ -67,7 +73,8 @@
       "C": "Encrypt web traffic",
       "D": "Perform ARP spoofing"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Fingerprinting helps identify OS, software versions, and configurations to tailor specific exploits."
   },
   {
     "question": "Which of the following is most commonly used in passive web reconnaissance?",
@@ -77,7 +84,8 @@
       "C": "Burp Suite",
       "D": "Nikto"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The Wayback Machine archives websites over time, revealing outdated content and sensitive information."
   },
   {
     "question": "Which of the following are DNS reconnaissance tools?",
@@ -87,7 +95,8 @@
       "C": "tcpdump",
       "D": "netdiscover"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "dnsrecon and dnsenum are used to enumerate DNS records, zone transfers, and subdomains for target domains."
   },
   {
     "question": "Which of the following information can be retrieved using Shodan?",
@@ -97,7 +106,8 @@
       "C": "Internal credentials",
       "D": "Service banners"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Shodan indexes publicly available devices and reveals open services, banners, and misconfigured IoT systems."
   },
   {
     "question": "Which of these are signs of a poorly configured DNS server?",
@@ -107,7 +117,8 @@
       "C": "Supports only TCP",
       "D": "No DNSSEC"
     },
-    "correct_answers": ["A", "D"]
+    "correct_answers": ["A", "D"],
+    "explanation": "Zone transfers should not be publicly accessible; lack of DNSSEC makes domains vulnerable to spoofing."
   },
   {
     "question": "Which of these nmap options enables service version detection?",
@@ -117,7 +128,8 @@
       "C": "-sS",
       "D": "-T4"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The -sV option in nmap enables detection of service versions on open ports, useful for vulnerability analysis."
   },
   {
     "question": "Which of the following techniques can be used to enumerate router configurations?",
@@ -127,7 +139,8 @@
       "C": "nmap -p 23",
       "D": "Traceroute"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SNMP walks and banner grabbing via Telnet (port 23) can reveal router configurations and firmware details."
   },
   {
     "question": "Which HTTP method is often misconfigured and leads to data exposure?",
@@ -137,7 +150,8 @@
       "C": "HEAD",
       "D": "TRACE"
     },
-    "correct_answers": ["A", "D"]
+    "correct_answers": ["A", "D"],
+    "explanation": "PUT and TRACE methods are rarely needed but often misconfigured, allowing file upload or XST attacks."
   },
   {
     "question": "Which of the following is a legal concern when performing reconnaissance?",
@@ -147,7 +161,8 @@
       "C": "Analyzing DNS records",
       "D": "Reading job postings"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Accessing data that requires credentials or is not public could violate laws or ethical guidelines."
   },
   {
     "question": "Which tool is primarily used to automate reconnaissance tasks in a modular fashion?",
@@ -157,7 +172,8 @@
       "C": "Hydra",
       "D": "Aircrack-ng"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Recon-ng is a framework that automates OSINT gathering with a modular, scriptable approach."
   },
   {
     "question": "Which of the following indicates a host is up during scanning?",
@@ -167,7 +183,8 @@
       "C": "No response to ARP",
       "D": "HTTP 200 OK"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "ICMP replies, SYN-ACK responses, and valid HTTP responses all indicate the host is reachable and active."
   },
   {
     "question": "Which SNMP versions support encryption?",
@@ -177,7 +194,8 @@
       "C": "v3",
       "D": "v4"
     },
-    "correct_answers": ["C"]
+    "correct_answers": ["C"],
+    "explanation": "SNMPv3 supports authentication and encryption, while v1 and v2c do not provide confidentiality."
   },
   {
     "question": "What does TTL reveal about a target system during scanning?",
@@ -187,7 +205,8 @@
       "C": "Uptime",
       "D": "Firewall status"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "TTL values differ between OS types; e.g., Linux and Windows use different default TTLs, useful for OS fingerprinting."
   },
   {
     "question": "Which Linux tool is used to capture and analyze packets for reconnaissance?",
@@ -197,176 +216,227 @@
       "C": "airmon-ng",
       "D": "hydra"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Wireshark and tcpdump are packet analyzers used to monitor and examine network traffic during passive recon."
   },
   {
-    "question": "Which enumeration tool is primarily used for Linux systems?",
+    "question": "Which of the following tools is commonly used for banner grabbing?",
     "options": {
-      "A": "enum4linux",
-      "B": "rpcclient",
-      "C": "smbclient",
-      "D": "winfingerprint"
+      "A": "Netcat",
+      "B": "Telnet",
+      "C": "Wireshark",
+      "D": "Aircrack-ng"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Netcat and Telnet can connect to open ports and display service banners, revealing software versions."
   },
   {
-    "question": "Which field in DNS records can help with SPF and DMARC verification?",
+    "question": "Which service typically runs on TCP port 443?",
     "options": {
-      "A": "TXT",
-      "B": "MX",
-      "C": "A",
-      "D": "PTR"
+      "A": "HTTPS",
+      "B": "HTTP",
+      "C": "FTP",
+      "D": "SSH"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "HTTPS (secure HTTP) runs over TCP port 443 and is commonly used for encrypted web communication."
   },
   {
-    "question": "Which command is used in Linux to view ARP entries?",
+    "question": "What does passive reconnaissance primarily rely on?",
     "options": {
-      "A": "arp -a",
-      "B": "ifconfig",
-      "C": "netstat -r",
-      "D": "dig -x"
+      "A": "Public sources and observation",
+      "B": "Exploiting vulnerabilities",
+      "C": "Sending probes to the target",
+      "D": "Installing keyloggers"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Passive reconnaissance avoids direct interaction with the target by using public resources and observation techniques."
   },
   {
-    "question": "Which Google Dork query reveals login portals?",
+    "question": "Which record type maps domain names to IP addresses?",
     "options": {
-      "A": "intitle:\"Login\"",
-      "B": "filetype:xls password",
-      "C": "site:example.com",
-      "D": "ext:php inurl:admin"
+      "A": "A record",
+      "B": "MX record",
+      "C": "PTR record",
+      "D": "SOA record"
     },
-    "correct_answers": ["A", "D"]
+    "correct_answers": ["A"],
+    "explanation": "An A record maps a domain name to an IPv4 address in DNS."
   },
   {
-    "question": "Which of the following are supported methods for discovering live hosts?",
+    "question": "What information can a PTR record provide?",
     "options": {
-      "A": "ICMP ping sweep",
-      "B": "ARP scan",
-      "C": "DNS brute-force",
-      "D": "TCP ACK scan"
+      "A": "Hostname for an IP address",
+      "B": "Email server",
+      "C": "TTL",
+      "D": "Network mask"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A"],
+    "explanation": "PTR (pointer) records are used in reverse DNS lookups to map an IP address to a hostname."
   },
   {
-    "question": "Which of these services is often targeted for user enumeration?",
+    "question": "Which tool provides a graphical OSINT framework?",
     "options": {
-      "A": "FTP",
-      "B": "SSH",
-      "C": "SMTP",
-      "D": "DNS"
+      "A": "Maltego",
+      "B": "Burp Suite",
+      "C": "John the Ripper",
+      "D": "nmap"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A"],
+    "explanation": "Maltego provides a graphical interface for OSINT investigations and relationship mapping."
   },
   {
-    "question": "What is the primary function of netcat during reconnaissance?",
+    "question": "Which service is typically associated with TCP port 22?",
     "options": {
-      "A": "Banner grabbing",
-      "B": "Exploit development",
-      "C": "Port forwarding",
-      "D": "Data encryption"
+      "A": "SSH",
+      "B": "HTTP",
+      "C": "Telnet",
+      "D": "FTP"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A"],
+    "explanation": "TCP port 22 is used by SSH (Secure Shell) for encrypted remote logins and file transfers."
   },
   {
-    "question": "Which of the following sources can provide leaked credentials?",
+    "question": "What is an example of active information gathering?",
     "options": {
-      "A": "Pastebin",
-      "B": "HaveIBeenPwned",
-      "C": "DNS zone files",
-      "D": "LinkedIn"
+      "A": "Sending a ping to the target",
+      "B": "Using Google Dorks",
+      "C": "Analyzing DNS records via public tools",
+      "D": "Reading LinkedIn job posts"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A"],
+    "explanation": "Sending pings involves interacting directly with the target, classifying it as active reconnaissance."
   },
   {
-    "question": "Which of these protocols are typically found using service detection scans?",
+    "question": "What is FOCA commonly used for?",
     "options": {
-      "A": "HTTP",
-      "B": "SSH",
-      "C": "POP3",
-      "D": "UDP"
+      "A": "Extracting metadata from documents",
+      "B": "SQL injection",
+      "C": "Password cracking",
+      "D": "Network sniffing"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A"],
+    "explanation": "FOCA extracts metadata like usernames, software versions, and file paths from documents."
   },
   {
-    "question": "Which online tool is used to view historical snapshots of websites?",
+    "question": "Which protocol can be used to perform zone transfers?",
     "options": {
-      "A": "Wayback Machine",
-      "B": "Netcraft",
-      "C": "Nmap",
-      "D": "Maltego"
+      "A": "DNS",
+      "B": "SMTP",
+      "C": "FTP",
+      "D": "HTTP"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "DNS zone transfers use the DNS protocol to replicate domain records between servers."
   },
   {
-    "question": "Which of these techniques is effective for gathering Wi-Fi network data?",
-    "options": {
-      "A": "Wardriving",
-      "B": "Packet injection",
-      "C": "ARP scanning",
-      "D": "SSID sniffing"
-    },
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "question": "Which log file on a Linux system might contain evidence of scanning?",
-    "options": {
-      "A": "/var/log/auth.log",
-      "B": "/var/log/syslog",
-      "C": "/etc/shadow",
-      "D": "/proc/net/arp"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "Which command reveals all listening services on a Windows system?",
-    "options": {
-      "A": "netstat -an",
-      "B": "tasklist",
-      "C": "services.msc",
-      "D": "ipconfig /all"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following is NOT a valid DNS record type?",
-    "options": {
-      "A": "A",
-      "B": "MX",
-      "C": "TXT",
-      "D": "PX"
-    },
-    "correct_answers": ["D"]
-  },
-  {
-    "question": "Which of these can be used to analyze email headers for reconnaissance?",
-    "options": {
-      "A": "MxToolbox",
-      "B": "theHarvester",
-      "C": "Email Header Analyzer",
-      "D": "Traceroute"
-    },
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "question": "Which technique is used to identify the services running on open ports?",
-    "options": {
-      "A": "Banner grabbing",
-      "B": "Port knocking",
-      "C": "ARP poisoning",
-      "D": "SSL stripping"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which tool can automate large-scale subdomain enumeration?",
+    "question": "Which tool allows the user to map a domain’s infrastructure using multiple passive sources?",
     "options": {
       "A": "Amass",
-      "B": "nmap",
-      "C": "Metasploit",
-      "D": "hydra"
+      "B": "sqlmap",
+      "C": "Nessus",
+      "D": "Netcat"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Amass performs DNS enumeration and subdomain discovery using both passive and active techniques."
+  },
+  {
+    "question": "What is the main risk of allowing zone transfers to unauthorized parties?",
+    "options": {
+      "A": "It reveals internal DNS structure",
+      "B": "It changes MX records",
+      "C": "It encrypts traffic",
+      "D": "It blocks port 53"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Improperly configured zone transfers can expose detailed internal domain structure to attackers."
+  },
+  {
+    "question": "Which of the following services does WHOIS provide?",
+    "options": {
+      "A": "Registrant information of domains",
+      "B": "Subdomain enumeration",
+      "C": "Reverse IP lookup",
+      "D": "Firewall status"
+    },
+    "correct_answers": ["A"],
+    "explanation": "WHOIS reveals domain ownership details, including registrant name, organization, and registration dates."
+  },
+  {
+    "question": "Which web reconnaissance technique involves retrieving old versions of web pages?",
+    "options": {
+      "A": "Wayback Machine",
+      "B": "DNS lookup",
+      "C": "Traceroute",
+      "D": "SQL injection"
+    },
+    "correct_answers": ["A"],
+    "explanation": "The Wayback Machine archives past versions of websites, useful for discovering old content and directories."
+  },
+  {
+    "question": "What is the purpose of using Google Dorks in reconnaissance?",
+    "options": {
+      "A": "To find indexed sensitive information",
+      "B": "To perform brute-force attacks",
+      "C": "To create phishing sites",
+      "D": "To execute shell scripts"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Google Dorking uses advanced search operators to uncover sensitive data like login pages and credentials in public results."
+  },
+  {
+    "question": "Which of these commands can help enumerate DNS records?",
+    "options": {
+      "A": "nslookup",
+      "B": "dig",
+      "C": "whois",
+      "D": "netstat"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "nslookup and dig are tools used to query DNS servers for various record types."
+  },
+  {
+    "question": "What type of reconnaissance is it when you gather information without interacting with the target?",
+    "options": {
+      "A": "Passive reconnaissance",
+      "B": "Active reconnaissance",
+      "C": "Enumeration",
+      "D": "Exploitation"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Passive reconnaissance gathers information from public sources without directly engaging the target system."
+  },
+  {
+    "question": "What tool can be used to perform a reverse DNS lookup?",
+    "options": {
+      "A": "dig -x",
+      "B": "nmap -sS",
+      "C": "traceroute",
+      "D": "ftp"
+    },
+    "correct_answers": ["A"],
+    "explanation": "The 'dig -x' command performs a reverse DNS query to resolve an IP address to a hostname."
+  },
+  {
+    "question": "Which of the following can reveal a target's public-facing devices and services?",
+    "options": {
+      "A": "Shodan",
+      "B": "Metasploit",
+      "C": "Cain and Abel",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Shodan scans the internet and catalogs connected devices and their services, making it ideal for infrastructure discovery."
+  },
+  {
+    "question": "Which of the following would be considered a legal reconnaissance activity?",
+    "options": {
+      "A": "Gathering metadata from public documents",
+      "B": "Accessing admin panels without login",
+      "C": "Intercepting encrypted traffic",
+      "D": "Performing DNS cache poisoning"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Gathering metadata from publicly accessible documents is legal and ethical if done without bypassing protections."
   }
 ]

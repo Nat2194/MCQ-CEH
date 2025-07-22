@@ -7,7 +7,8 @@
       "C": "-F",
       "D": "-A"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The -iL option in Nmap lets you supply a file containing a list of IPs or hostnames to scan."
   },
   {
     "question": "What does the '-F' flag do in Nmap?",
@@ -17,7 +18,8 @@
       "C": "Performs a FIN scan",
       "D": "Forces script execution"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-F performs a fast scan by scanning fewer ports, using Nmap's top 100 ports list."
   },
   {
     "question": "Which scan type sends TCP packets with URG, PSH, and FIN flags set?",
@@ -27,7 +29,8 @@
       "C": "ACK Scan",
       "D": "Connect Scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "XMAS scans set the URG, PSH, and FIN flags to confuse the target OS and potentially bypass firewalls."
   },
   {
     "question": "Which of these tools is primarily used for vulnerability scanning?",
@@ -37,7 +40,8 @@
       "C": "Nmap",
       "D": "Burp Suite"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Nessus and Nikto are both vulnerability scanners, used for identifying known issues in systems and web servers respectively."
   },
   {
     "question": "Which protocol is most commonly scanned with a UDP scan on port 161?",
@@ -47,7 +51,8 @@
       "C": "FTP",
       "D": "Telnet"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Port 161 is the default port for SNMP, which operates over UDP and is commonly targeted in recon."
   },
   {
     "question": "What does the Nmap '-sN' option perform?",
@@ -57,7 +62,8 @@
       "C": "Name resolution",
       "D": "Normal scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-sN initiates a NULL scan, sending TCP packets with no flags to elicit port state responses."
   },
   {
     "question": "What is one benefit of a ping sweep?",
@@ -67,7 +73,8 @@
       "C": "Discover all open ports",
       "D": "Perform OS fingerprinting"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Ping sweeps are used to determine which hosts are alive and responding within a network."
   },
   {
     "question": "Which of the following tools can perform directory and file brute-forcing?",
@@ -77,7 +84,8 @@
       "C": "Nmap",
       "D": "Netcat"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Dirb and Gobuster are tools that brute-force web directories and files to find hidden paths."
   },
   {
     "question": "Which Nmap option disables DNS resolution for faster scanning?",
@@ -87,7 +95,8 @@
       "C": "--dns-disable",
       "D": "-R"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Using -n disables DNS resolution, making Nmap scans faster and avoiding reverse lookups."
   },
   {
     "question": "Which technique can help detect network topology during scanning?",
@@ -97,7 +106,8 @@
       "C": "ACK Scan",
       "D": "Port scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Traceroute identifies the path packets take, revealing intermediate routers and helping map network layout."
   },
   {
     "question": "What does a SYN-ACK response followed by an RST from the scanner indicate?",
@@ -107,7 +117,8 @@
       "C": "Filtered port",
       "D": "Host unreachable"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "In a SYN scan, a SYN-ACK from the target followed by a RST from the scanner indicates the port is open."
   },
   {
     "question": "Which command will perform an OS detection in Nmap?",
@@ -117,7 +128,8 @@
       "C": "nmap -A",
       "D": "nmap -sS"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A", "C"],
+    "explanation": "Both -O and -A perform OS detection. -A includes OS detection plus script and version scanning."
   },
   {
     "question": "What does a RST response from a TCP scan typically indicate?",
@@ -127,7 +139,8 @@
       "C": "Open port",
       "D": "Timeout occurred"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A TCP RST response typically means the port is closed and rejecting the connection."
   },
   {
     "question": "Which option sets the maximum number of parallel probes in Nmap?",
@@ -137,7 +150,8 @@
       "C": "--min-rate",
       "D": "--max-rate"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "--max-parallelism limits the number of concurrent probes Nmap sends, affecting scan intensity."
   },
   {
     "question": "What is the main goal of service version detection?",
@@ -147,7 +161,8 @@
       "C": "Perform buffer overflow",
       "D": "Find DNS records"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Service version detection identifies the software name and version running on open ports."
   },
   {
     "question": "Which scan type can detect if a firewall is doing stateful inspection?",
@@ -157,7 +172,8 @@
       "C": "FIN Scan",
       "D": "XMAS Scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "ACK scans check if packets get through the firewall without initiating a TCP handshake, revealing filtering behavior."
   },
   {
     "question": "What is an idle scan?",
@@ -167,7 +183,8 @@
       "C": "A scan of inactive hosts only",
       "D": "A scan that skips known addresses"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Idle scans spoof packets from an idle 'zombie' host, masking the attacker’s IP and avoiding detection."
   },
   {
     "question": "Which flag combination is used in XMAS scans?",
@@ -177,7 +194,8 @@
       "C": "FIN, ACK",
       "D": "RST, SYN"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "XMAS scans are named for their 'lit-up' TCP packets using URG, PSH, and FIN flags."
   },
   {
     "question": "Which ports are scanned by default in a standard Nmap scan?",
@@ -187,7 +205,8 @@
       "C": "Only well-known ports",
       "D": "Only open ports"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "By default, Nmap scans the top 1000 TCP ports based on the most commonly used ones."
   },
   {
     "question": "What does Nmap's '-sL' option do?",
@@ -197,146 +216,227 @@
       "C": "Localhost scan",
       "D": "Load-balancing scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-sL performs a list scan, displaying the targets that would be scanned, without sending probes."
   },
   {
-    "question": "Which tool can discover hosts using ARP requests instead of ICMP?",
+    "question": "Which of the following Nmap timing templates is considered the most stealthy?",
     "options": {
-      "A": "Netdiscover",
-      "B": "Nmap -PR",
-      "C": "ARPing",
-      "D": "Wireshark"
+      "A": "-T0",
+      "B": "-T3",
+      "C": "-T4",
+      "D": "-T5"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A"],
+    "explanation": "The -T0 timing template is the slowest and stealthiest, used to evade intrusion detection systems (IDS)."
   },
   {
-    "question": "Which scan type sends probes from a spoofed IP using another host as a zombie?",
+    "question": "What does the '-sV' option do in Nmap?",
     "options": {
-      "A": "Idle Scan",
-      "B": "ACK Scan",
-      "C": "XMAS Scan",
-      "D": "SYN Scan"
+      "A": "Performs version detection",
+      "B": "Performs vulnerability scanning",
+      "C": "Performs verbose scan",
+      "D": "Performs OS fingerprinting"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The -sV option enables Nmap's service version detection to identify the version of services running on open ports."
   },
   {
-    "question": "Which scanning technique helps fingerprint TCP/IP stack behavior?",
+    "question": "Which of the following scan types can be used to identify open UDP ports?",
     "options": {
-      "A": "OS Detection",
-      "B": "ACK Scan",
-      "C": "Banner Grabbing",
-      "D": "Ping Sweep"
+      "A": "-sU",
+      "B": "-sS",
+      "C": "-sN",
+      "D": "-sX"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-sU performs a UDP scan to identify services running over UDP, which don't respond with standard TCP flags."
   },
   {
-    "question": "What is the purpose of decoy scanning?",
+    "question": "Which protocol is associated with port 514?",
     "options": {
-      "A": "Mask the origin of the scan",
-      "B": "Scan faster by using multiple systems",
-      "C": "Bypass authentication",
-      "D": "Exploit backdoors"
+      "A": "Syslog",
+      "B": "SNMP",
+      "C": "SSH",
+      "D": "DNS"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Port 514 is used by Syslog for logging system messages over UDP or TCP."
   },
   {
-    "question": "Which technique involves retrieving protocol headers to fingerprint services?",
+    "question": "Which of these tools can perform OS fingerprinting besides Nmap?",
     "options": {
-      "A": "Banner Grabbing",
-      "B": "Ping Sweep",
-      "C": "Idle Scan",
-      "D": "Port Knocking"
+      "A": "xProbe2",
+      "B": "NetScanTools",
+      "C": "Wireshark",
+      "D": "OpenVAS"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A", "B"],
+    "explanation": "xProbe2 and NetScanTools are alternatives to Nmap for remote OS fingerprinting through stack behavior analysis."
   },
   {
-    "question": "What does a lack of response during a UDP scan likely indicate?",
+    "question": "Which response indicates a closed port during a TCP SYN scan?",
     "options": {
-      "A": "Open or filtered port",
-      "B": "Closed port",
-      "C": "Host down",
-      "D": "TCP-only service"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which scanning method can use spoofed source IP addresses?",
-    "options": {
-      "A": "Idle Scan",
-      "B": "FIN Scan",
-      "C": "XMAS Scan",
-      "D": "NULL Scan"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which technique can help identify if ICMP is blocked on a network?",
-    "options": {
-      "A": "Ping Sweep",
-      "B": "Traceroute",
-      "C": "TCP ACK Scan",
-      "D": "Idle Scan"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "Which of the following is a characteristic of an open port during a SYN scan?",
-    "options": {
-      "A": "Responds with SYN-ACK",
-      "B": "Responds with RST",
+      "A": "RST",
+      "B": "SYN-ACK",
       "C": "No response",
-      "D": "Sends FIN"
+      "D": "ICMP unreachable"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A TCP RST response to a SYN probe indicates the port is closed."
   },
   {
-    "question": "Which ports are commonly used for web services?",
+    "question": "Which of the following is not a TCP scanning technique?",
     "options": {
-      "A": "80",
-      "B": "443",
-      "C": "21",
-      "D": "53"
+      "A": "UDP Scan",
+      "B": "SYN Scan",
+      "C": "FIN Scan",
+      "D": "Connect Scan"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A"],
+    "explanation": "UDP scan targets the UDP protocol and is not considered a TCP scanning technique."
   },
   {
-    "question": "Which scanning method would most likely detect shadow IT assets?",
+    "question": "What does the '-p-' option in Nmap do?",
     "options": {
-      "A": "Wide-range IP scanning",
-      "B": "Passive DNS enumeration",
-      "C": "MAC spoofing",
-      "D": "ARP poisoning"
+      "A": "Scans all 65535 ports",
+      "B": "Performs ping scan",
+      "C": "Scans privileged ports only",
+      "D": "Skips port scanning"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-p- tells Nmap to scan all ports from 1 to 65535 rather than the default top 1000."
   },
   {
-    "question": "Which technique checks firewall rules by sending TCP packets with specific flags?",
+    "question": "Which Nmap feature attempts to bypass firewalls and filters by randomizing scan order?",
     "options": {
-      "A": "ACK Scan",
-      "B": "FIN Scan",
+      "A": "--randomize-hosts",
+      "B": "--spoof-mac",
+      "C": "--bypass-firewall",
+      "D": "--osscan-limit"
+    },
+    "correct_answers": ["A"],
+    "explanation": "--randomize-hosts randomizes the order of IPs being scanned to help avoid detection and blocking."
+  },
+  {
+    "question": "Which protocol is typically used in reconnaissance to discover network shares?",
+    "options": {
+      "A": "SMB",
+      "B": "HTTP",
+      "C": "SMTP",
+      "D": "DNS"
+    },
+    "correct_answers": ["A"],
+    "explanation": "SMB (Server Message Block) is used to share files and printers across networks and is often scanned to find shared resources."
+  },
+  {
+    "question": "What does the '-O' flag in Nmap do?",
+    "options": {
+      "A": "Enables OS detection",
+      "B": "Opens a report file",
+      "C": "Optimizes scan for stealth",
+      "D": "Organizes output by IP"
+    },
+    "correct_answers": ["A"],
+    "explanation": "-O enables OS detection in Nmap by analyzing TCP/IP stack behavior and comparing it to a signature database."
+  },
+  {
+    "question": "Which port is commonly associated with RDP?",
+    "options": {
+      "A": "3389",
+      "B": "21",
+      "C": "445",
+      "D": "80"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Remote Desktop Protocol (RDP) uses TCP port 3389 for remote access to Windows machines."
+  },
+  {
+    "question": "Which scan type is used to determine the existence of firewall rules?",
+    "options": {
+      "A": "ACK scan",
+      "B": "SYN scan",
+      "C": "UDP scan",
+      "D": "XMAS scan"
+    },
+    "correct_answers": ["A"],
+    "explanation": "ACK scans can determine if a firewall is filtering traffic, based on whether a RST is returned or not."
+  },
+  {
+    "question": "Which of these tools is most suited for HTTP vulnerability scanning?",
+    "options": {
+      "A": "Nikto",
+      "B": "Burp Suite",
+      "C": "Netcat",
+      "D": "nmap --script http-*"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Nikto, Burp Suite, and Nmap's HTTP scripts are specialized for scanning and testing web servers and apps."
+  },
+  {
+    "question": "Which flag combination initiates a TCP three-way handshake?",
+    "options": {
+      "A": "SYN → SYN-ACK → ACK",
+      "B": "ACK → SYN → RST",
+      "C": "SYN → RST → FIN",
+      "D": "PSH → ACK → RST"
+    },
+    "correct_answers": ["A"],
+    "explanation": "A complete TCP handshake is made with SYN from client, SYN-ACK from server, then ACK from client."
+  },
+  {
+    "question": "What type of scan is used to enumerate UDP-based services?",
+    "options": {
+      "A": "UDP Scan",
+      "B": "XMAS Scan",
       "C": "NULL Scan",
-      "D": "UDP Scan"
+      "D": "ACK Scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "UDP scans probe UDP services and rely on ICMP 'port unreachable' responses to determine closed ports."
   },
   {
-    "question": "What is the purpose of using the '-p' flag in Nmap?",
+    "question": "Which option in Nmap can output the results in XML format?",
     "options": {
-      "A": "Specify port numbers or ranges to scan",
-      "B": "Print scan results to file",
-      "C": "Ping sweep",
-      "D": "Perform passive scan"
+      "A": "-oX",
+      "B": "-oG",
+      "C": "-oN",
+      "D": "--log-xml"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-oX writes the Nmap output to an XML file, useful for parsing or integrating with other tools."
   },
   {
-    "question": "Which of the following does a filtered port typically indicate in a SYN scan?",
+    "question": "Which scan sends a TCP packet with just the FIN flag?",
     "options": {
-      "A": "No response or ICMP unreachable message",
+      "A": "FIN Scan",
+      "B": "XMAS Scan",
+      "C": "NULL Scan",
+      "D": "ACK Scan"
+    },
+    "correct_answers": ["A"],
+    "explanation": "FIN scans send a single TCP packet with the FIN flag to identify open ports based on the target's response."
+  },
+  {
+    "question": "What is the result if a UDP port is closed and probed by Nmap?",
+    "options": {
+      "A": "ICMP Port Unreachable response",
       "B": "RST response",
       "C": "SYN-ACK response",
-      "D": "FIN response"
+      "D": "No response"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "If a UDP port is closed, the target usually sends back an ICMP Port Unreachable message."
+  },
+  {
+    "question": "Which of the following is a reason to use decoy scanning?",
+    "options": {
+      "A": "To obscure the source of the scan",
+      "B": "To bypass firewalls",
+      "C": "To speed up scanning",
+      "D": "To find vulnerabilities"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Decoy scanning involves spoofing multiple source IPs to mask the actual scanning host's identity."
   }
 ]

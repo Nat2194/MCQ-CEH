@@ -11,17 +11,6 @@
     "explanation": "The gaining access phase is all about establishing an initial foothold or entry point into the target system."
   },
   {
-    "question": "Which technique is commonly used during password cracking to guess passwords systematically?",
-    "options": {
-      "A": "Brute force",
-      "B": "DDOS",
-      "C": "ARP poisoning",
-      "D": "DNS spoofing"
-    },
-    "correct_answers": ["A"],
-    "explanation": "Brute force involves trying all possible password combinations until the correct one is found."
-  },
-  {
     "question": "Which tool is typically used for offline password hash cracking?",
     "options": {
       "A": "John the Ripper",

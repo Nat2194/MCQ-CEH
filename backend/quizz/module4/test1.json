@@ -1,352 +1,442 @@
 [
   {
-    "question": "What is the main objective of enumeration in ethical hacking?",
+    "question": "Which of the following Nmap timing templates is considered the most stealthy?",
     "options": {
-      "A": "Extract user names, machine names, network resources, shares, and services",
-      "B": "Identify live hosts in a network",
-      "C": "Sniff network traffic",
-      "D": "Launch a brute-force attack"
+      "A": "-T0",
+      "B": "-T3",
+      "C": "-T4",
+      "D": "-T5"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The -T0 timing template is the slowest and stealthiest, used to evade intrusion detection systems (IDS)."
   },
   {
-    "question": "Which protocol is commonly used for enumerating Windows systems?",
+    "question": "What does the '-sV' option do in Nmap?",
+    "options": {
+      "A": "Performs version detection",
+      "B": "Performs vulnerability scanning",
+      "C": "Performs verbose scan",
+      "D": "Performs OS fingerprinting"
+    },
+    "correct_answers": ["A"],
+    "explanation": "The -sV option enables Nmap's service version detection to identify the version of services running on open ports."
+  },
+  {
+    "question": "Which of the following scan types can be used to identify open UDP ports?",
+    "options": {
+      "A": "-sU",
+      "B": "-sS",
+      "C": "-sN",
+      "D": "-sX"
+    },
+    "correct_answers": ["A"],
+    "explanation": "-sU performs a UDP scan to identify services running over UDP, which don't respond with standard TCP flags."
+  },
+  {
+    "question": "Which protocol is associated with port 514?",
+    "options": {
+      "A": "Syslog",
+      "B": "SNMP",
+      "C": "SSH",
+      "D": "DNS"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Port 514 is used by Syslog for logging system messages over UDP or TCP."
+  },
+  {
+    "question": "Which of these tools can perform OS fingerprinting besides Nmap?",
+    "options": {
+      "A": "xProbe2",
+      "B": "NetScanTools",
+      "C": "Wireshark",
+      "D": "OpenVAS"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "xProbe2 and NetScanTools are alternatives to Nmap for remote OS fingerprinting through stack behavior analysis."
+  },
+  {
+    "question": "Which response indicates a closed port during a TCP SYN scan?",
+    "options": {
+      "A": "RST",
+      "B": "SYN-ACK",
+      "C": "No response",
+      "D": "ICMP unreachable"
+    },
+    "correct_answers": ["A"],
+    "explanation": "A TCP RST response to a SYN probe indicates the port is closed."
+  },
+  {
+    "question": "Which of the following is not a TCP scanning technique?",
+    "options": {
+      "A": "UDP Scan",
+      "B": "SYN Scan",
+      "C": "FIN Scan",
+      "D": "Connect Scan"
+    },
+    "correct_answers": ["A"],
+    "explanation": "UDP scan targets the UDP protocol and is not considered a TCP scanning technique."
+  },
+  {
+    "question": "What does the '-p-' option in Nmap do?",
+    "options": {
+      "A": "Scans all 65535 ports",
+      "B": "Performs ping scan",
+      "C": "Scans privileged ports only",
+      "D": "Skips port scanning"
+    },
+    "correct_answers": ["A"],
+    "explanation": "-p- tells Nmap to scan all ports from 1 to 65535 rather than the default top 1000."
+  },
+  {
+    "question": "Which Nmap feature attempts to bypass firewalls and filters by randomizing scan order?",
+    "options": {
+      "A": "--randomize-hosts",
+      "B": "--spoof-mac",
+      "C": "--bypass-firewall",
+      "D": "--osscan-limit"
+    },
+    "correct_answers": ["A"],
+    "explanation": "--randomize-hosts randomizes the order of IPs being scanned to help avoid detection and blocking."
+  },
+  {
+    "question": "Which protocol is typically used in reconnaissance to discover network shares?",
     "options": {
       "A": "SMB",
       "B": "HTTP",
-      "C": "FTP",
-      "D": "SSH"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following tools can perform NetBIOS enumeration?",
-    "options": {
-      "A": "nbtscan",
-      "B": "enum4linux",
-      "C": "nslookup",
-      "D": "rpcclient"
-    },
-    "correct_answers": ["A", "B", "D"]
-  },
-  {
-    "question": "Which of the following commands is used to enumerate NetBIOS names on Windows?",
-    "options": {
-      "A": "nbtstat -A <IP>",
-      "B": "ping <IP>",
-      "C": "tracert <IP>",
-      "D": "nslookup <IP>"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which enumeration technique allows an attacker to gather user and group names from a target machine?",
-    "options": {
-      "A": "SMB enumeration",
-      "B": "WHOIS lookup",
-      "C": "Traceroute analysis",
-      "D": "DNS zone transfer"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which port is typically used for LDAP enumeration?",
-    "options": {
-      "A": "389",
-      "B": "445",
-      "C": "3389",
-      "D": "22"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following are valid tools for SNMP enumeration?",
-    "options": {
-      "A": "snmpwalk",
-      "B": "onesixtyone",
-      "C": "Wireshark",
-      "D": "Netcat"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "What is the default community string for SNMP read access?",
-    "options": {
-      "A": "public",
-      "B": "admin",
-      "C": "read",
-      "D": "access"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which protocol is used for RPC enumeration on Windows?",
-    "options": {
-      "A": "DCOM",
-      "B": "SMB",
-      "C": "HTTP",
+      "C": "SMTP",
       "D": "DNS"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SMB (Server Message Block) is used to share files and printers across networks and is often scanned to find shared resources."
   },
   {
-    "question": "Which of the following tools can enumerate shares on a Windows system?",
+    "question": "What does the '-O' flag in Nmap do?",
     "options": {
-      "A": "Net View",
-      "B": "enum4linux",
-      "C": "smbclient",
-      "D": "Burp Suite"
+      "A": "Enables OS detection",
+      "B": "Opens a report file",
+      "C": "Optimizes scan for stealth",
+      "D": "Organizes output by IP"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A"],
+    "explanation": "-O enables OS detection in Nmap by analyzing TCP/IP stack behavior and comparing it to a signature database."
   },
   {
-    "question": "Which service typically listens on TCP port 445?",
+    "question": "Which port is commonly associated with RDP?",
     "options": {
-      "A": "SMB over TCP",
-      "B": "FTP",
-      "C": "Telnet",
-      "D": "LDAP"
+      "A": "3389",
+      "B": "21",
+      "C": "445",
+      "D": "80"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Remote Desktop Protocol (RDP) uses TCP port 3389 for remote access to Windows machines."
   },
   {
-    "question": "What does the 'rpcinfo' command do?",
+    "question": "Which scan type is used to determine the existence of firewall rules?",
     "options": {
-      "A": "Displays RPC services on a Unix/Linux machine",
-      "B": "Performs OS fingerprinting",
-      "C": "Grabs HTTP banners",
-      "D": "Starts SMB enumeration"
+      "A": "ACK scan",
+      "B": "SYN scan",
+      "C": "UDP scan",
+      "D": "XMAS scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "ACK scans can determine if a firewall is filtering traffic, based on whether a RST is returned or not."
   },
   {
-    "question": "What is the primary purpose of LDAP enumeration?",
+    "question": "Which of these tools is most suited for HTTP vulnerability scanning?",
     "options": {
-      "A": "Extract directory service information like users and groups",
-      "B": "Scan for open ports",
-      "C": "Capture packets",
-      "D": "Crack passwords"
+      "A": "Nikto",
+      "B": "Burp Suite",
+      "C": "Netcat",
+      "D": "nmap --script http-*"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Nikto, Burp Suite, and Nmap's HTTP scripts are specialized for scanning and testing web servers and apps."
   },
   {
-    "question": "Which of the following is true about SNMPv1?",
+    "question": "Which flag combination initiates a TCP three-way handshake?",
     "options": {
-      "A": "It does not support encryption",
-      "B": "It uses TCP by default",
-      "C": "It is deprecated and no longer usable",
-      "D": "It requires complex authentication"
+      "A": "SYN → SYN-ACK → ACK",
+      "B": "ACK → SYN → RST",
+      "C": "SYN → RST → FIN",
+      "D": "PSH → ACK → RST"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A complete TCP handshake is made with SYN from client, SYN-ACK from server, then ACK from client."
   },
   {
-    "question": "What can be discovered via SNMP enumeration?",
+    "question": "What type of scan is used to enumerate UDP-based services?",
     "options": {
-      "A": "System name, description, interfaces, routing tables",
-      "B": "SSH keys",
-      "C": "Web application vulnerabilities",
-      "D": "FTP credentials"
+      "A": "UDP Scan",
+      "B": "XMAS Scan",
+      "C": "NULL Scan",
+      "D": "ACK Scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "UDP scans probe UDP services and rely on ICMP 'port unreachable' responses to determine closed ports."
   },
   {
-    "question": "Which tool can extract NetBIOS information from a target system?",
+    "question": "Which option in Nmap can output the results in XML format?",
     "options": {
-      "A": "nbtstat",
-      "B": "netstat",
-      "C": "ipconfig",
-      "D": "traceroute"
+      "A": "-oX",
+      "B": "-oG",
+      "C": "-oN",
+      "D": "--log-xml"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "-oX writes the Nmap output to an XML file, useful for parsing or integrating with other tools."
   },
   {
-    "question": "Which enumeration technique targets port 161/UDP?",
+    "question": "Which scan sends a TCP packet with just the FIN flag?",
     "options": {
-      "A": "SNMP Enumeration",
-      "B": "LDAP Enumeration",
-      "C": "NetBIOS Enumeration",
-      "D": "FTP Enumeration"
+      "A": "FIN Scan",
+      "B": "XMAS Scan",
+      "C": "NULL Scan",
+      "D": "ACK Scan"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "FIN scans send a single TCP packet with the FIN flag to identify open ports based on the target's response."
   },
   {
-    "question": "What is the purpose of the enum4linux tool?",
+    "question": "What is the result if a UDP port is closed and probed by Nmap?",
     "options": {
-      "A": "Enumerate information from Windows systems via SMB",
-      "B": "Perform DNS brute force",
-      "C": "Capture HTTP traffic",
-      "D": "Analyze network packets"
+      "A": "ICMP Port Unreachable response",
+      "B": "RST response",
+      "C": "SYN-ACK response",
+      "D": "No response"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "If a UDP port is closed, the target usually sends back an ICMP Port Unreachable message."
   },
   {
-    "question": "Which of the following ports is typically used for RPC services?",
+    "question": "Which of the following is a reason to use decoy scanning?",
     "options": {
-      "A": "135",
-      "B": "80",
-      "C": "21",
-      "D": "3389"
+      "A": "To obscure the source of the scan",
+      "B": "To bypass firewalls",
+      "C": "To speed up scanning",
+      "D": "To find vulnerabilities"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Decoy scanning involves spoofing multiple source IPs to mask the actual scanning host's identity."
   },
   {
-    "question": "Which of the following is NOT a valid SNMP enumeration tool?",
+    "question": "Which protocol allows for querying directory services like Active Directory?",
     "options": {
-      "A": "Hydra",
-      "B": "snmpwalk",
-      "C": "snmpcheck",
-      "D": "onesixtyone"
+      "A": "LDAP",
+      "B": "SMB",
+      "C": "SNMP",
+      "D": "FTP"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "LDAP (Lightweight Directory Access Protocol) is used to query and modify items in directory services such as Active Directory."
   },
   {
-    "question": "Which of the following can be extracted using LDAP enumeration?",
+    "question": "Which of the following enumeration tools targets Unix/Linux RPC services?",
     "options": {
-      "A": "Usernames",
-      "B": "Group memberships",
-      "C": "Password hashes",
-      "D": "Organizational units"
+      "A": "rpcinfo",
+      "B": "showmount",
+      "C": "snmpwalk",
+      "D": "smbclient"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B"],
+    "explanation": "rpcinfo lists RPC services, and showmount reveals NFS shares—both useful for enumerating Unix/Linux systems."
   },
   {
-    "question": "Which command on Windows displays shared resources?",
+    "question": "What information can be retrieved using the 'showmount -e' command?",
     "options": {
-      "A": "net view",
-      "B": "dir /s",
-      "C": "ipconfig /all",
-      "D": "tasklist"
+      "A": "Exported NFS shares",
+      "B": "Running processes",
+      "C": "SNMP data",
+      "D": "ARP table"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "'showmount -e <host>' displays the list of directories exported via NFS on the target host."
   },
   {
-    "question": "Which enumeration technique is useful for identifying exposed email accounts via SMTP?",
-    "options": {
-      "A": "SMTP VRFY/EXPN",
-      "B": "SNMP walk",
-      "C": "WHOIS lookup",
-      "D": "Traceroute"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "What does a null session in SMB enumeration allow?",
-    "options": {
-      "A": "Unauthenticated access to share and user info",
-      "B": "Remote desktop login",
-      "C": "Firewall bypassing",
-      "D": "Web proxy configuration"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following Windows versions are vulnerable to null sessions by default?",
-    "options": {
-      "A": "Windows 2000",
-      "B": "Windows XP",
-      "C": "Windows 10",
-      "D": "Windows Server 2003"
-    },
-    "correct_answers": ["A", "B", "D"]
-  },
-  {
-    "question": "Which of the following tools supports automated LDAP queries?",
-    "options": {
-      "A": "ldapsearch",
-      "B": "JXplorer",
-      "C": "Burp Suite",
-      "D": "Metasploit"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "Which enumeration technique allows identification of remote printers?",
-    "options": {
-      "A": "SMB enumeration",
-      "B": "SNMP walk",
-      "C": "FTP banner grabbing",
-      "D": "Traceroute"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "Which Metasploit auxiliary module can perform SMB enumeration?",
-    "options": {
-      "A": "scanner/smb/smb_enumusers",
-      "B": "scanner/ftp/anonymous",
-      "C": "scanner/http/title",
-      "D": "scanner/snmp/snmp_enum"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "What is the purpose of the 'showmount' command on Linux?",
-    "options": {
-      "A": "Display available NFS shares",
-      "B": "Show mounted drives",
-      "C": "Display SMB shares",
-      "D": "List user accounts"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "What is an organizational unit (OU) in LDAP?",
-    "options": {
-      "A": "A container for users and groups",
-      "B": "A shared printer",
-      "C": "A user password field",
-      "D": "A firewall rule"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which port is associated with NFS enumeration?",
+    "question": "Which port is used by the Network File System (NFS)?",
     "options": {
       "A": "2049",
-      "B": "139",
+      "B": "161",
       "C": "389",
       "D": "135"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "NFS typically operates on TCP/UDP port 2049, making it a target for share and permission enumeration."
   },
   {
-    "question": "Which file in a Linux system lists exported NFS directories?",
+    "question": "What kind of attack is possible when SMB allows anonymous logins?",
     "options": {
-      "A": "/etc/exports",
-      "B": "/etc/fstab",
-      "C": "/etc/hosts.allow",
-      "D": "/etc/resolv.conf"
+      "A": "Null session attack",
+      "B": "Buffer overflow",
+      "C": "Cross-site scripting",
+      "D": "SQL injection"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A null session allows unauthenticated access to SMB resources, which attackers exploit to enumerate users, shares, and services."
   },
   {
-    "question": "What does the 'finger' service allow enumeration of?",
+    "question": "Which of the following enumeration techniques uses UDP port 161?",
     "options": {
-      "A": "Usernames and login times",
-      "B": "Printer drivers",
-      "C": "Network topology",
-      "D": "Router settings"
+      "A": "SNMP Enumeration",
+      "B": "LDAP Enumeration",
+      "C": "DNS Zone Transfer",
+      "D": "SMTP Banner Grabbing"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SNMP runs over UDP port 161 and can be queried to reveal device and system information."
   },
   {
-    "question": "Which command can be used to enumerate users via finger protocol?",
+    "question": "Which of the following statements about LDAP is true?",
     "options": {
-      "A": "finger @target",
-      "B": "nbtstat -A",
-      "C": "net view",
-      "D": "dig -x"
+      "A": "It is used for accessing and maintaining distributed directory services",
+      "B": "It is a protocol for file transfer",
+      "C": "It is primarily used in Unix for process management",
+      "D": "It is used for web application enumeration"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "LDAP is designed to access and manage directory information, such as user credentials and policies."
   },
   {
-    "question": "Which of these services is considered high-value for enumeration?",
+    "question": "Which command is used to view RPC services on a remote Linux machine?",
     "options": {
-      "A": "SMB",
+      "A": "rpcinfo -p <IP>",
+      "B": "net view <IP>",
+      "C": "smbclient -L <IP>",
+      "D": "enum4linux <IP>"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'rpcinfo -p <IP>' lists the registered RPC services running on a Unix/Linux host."
+  },
+  {
+    "question": "What is the purpose of the NetBIOS Name Service (NBNS)?",
+    "options": {
+      "A": "It resolves NetBIOS names to IP addresses",
+      "B": "It transfers files between systems",
+      "C": "It provides SNMP metrics",
+      "D": "It authenticates remote logins"
+    },
+    "correct_answers": ["A"],
+    "explanation": "NBNS resolves NetBIOS names (used by Windows) to IP addresses, helping systems communicate over networks."
+  },
+  {
+    "question": "Which command will list available SMB shares on a Linux system?",
+    "options": {
+      "A": "smbclient -L //<IP>",
+      "B": "netstat -an",
+      "C": "rpcclient -L //<IP>",
+      "D": "whois //<IP>"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'smbclient -L //<IP>' attempts to list SMB shares on a target system, often requiring valid credentials or null sessions."
+  },
+  {
+    "question": "Which of the following enumeration tools is Windows-based?",
+    "options": {
+      "A": "Hyena",
+      "B": "enum4linux",
+      "C": "nbtscan",
+      "D": "rpcclient"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Hyena is a GUI-based Windows tool that helps administrators enumerate local and remote systems."
+  },
+  {
+    "question": "Which enumeration protocol relies on MIBs (Management Information Bases)?",
+    "options": {
+      "A": "SNMP",
       "B": "LDAP",
-      "C": "SNMP",
-      "D": "SMTP"
+      "C": "SMTP",
+      "D": "RPC"
     },
-    "correct_answers": ["A", "B", "C", "D"]
+    "correct_answers": ["A"],
+    "explanation": "SNMP uses MIBs to define the structure of the information being exchanged about devices on a network."
+  },
+  {
+    "question": "Which enumeration technique is most likely used to gather printer queues and user lists?",
+    "options": {
+      "A": "SMB enumeration",
+      "B": "DNS enumeration",
+      "C": "ARP enumeration",
+      "D": "SSL enumeration"
+    },
+    "correct_answers": ["A"],
+    "explanation": "SMB enumeration can retrieve detailed information about shared resources such as printers and user lists."
+  },
+  {
+    "question": "Which of these is an active enumeration method?",
+    "options": {
+      "A": "Sending SNMP requests to UDP 161",
+      "B": "Passive DNS resolution",
+      "C": "Reading website footers",
+      "D": "Parsing WHOIS records"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Actively sending SNMP requests to devices is an active form of enumeration because it interacts with the target system."
+  },
+  {
+    "question": "What command is used to map SMB shares via the command line in Windows?",
+    "options": {
+      "A": "net use",
+      "B": "map smb",
+      "C": "mount -t smbfs",
+      "D": "dir smb"
+    },
+    "correct_answers": ["A"],
+    "explanation": "The 'net use' command in Windows is used to map or disconnect from shared SMB folders."
+  },
+  {
+    "question": "Which enumeration technique may reveal a company's internal structure?",
+    "options": {
+      "A": "LDAP enumeration",
+      "B": "ICMP enumeration",
+      "C": "FTP enumeration",
+      "D": "ARP enumeration"
+    },
+    "correct_answers": ["A"],
+    "explanation": "LDAP directories often contain organizational units and titles, revealing internal company structure."
+  },
+  {
+    "question": "Which port is used by NetBIOS Name Service (NBNS)?",
+    "options": {
+      "A": "137",
+      "B": "139",
+      "C": "445",
+      "D": "67"
+    },
+    "correct_answers": ["A"],
+    "explanation": "UDP port 137 is used for NetBIOS name resolution services in Windows environments."
+  },
+  {
+    "question": "What is the function of the 'enum' tool in enumeration?",
+    "options": {
+      "A": "Enumerates user accounts and shares via SMB null sessions",
+      "B": "Captures traffic from a switch",
+      "C": "Analyzes HTML content",
+      "D": "Performs reverse lookups"
+    },
+    "correct_answers": ["A"],
+    "explanation": "'enum' is a legacy Windows tool that connects via SMB null sessions to extract usernames, shares, and policies."
+  },
+  {
+    "question": "Which of the following is a risk associated with unfiltered SNMP access?",
+    "options": {
+      "A": "Exposure of sensitive system configurations",
+      "B": "XSS vulnerability",
+      "C": "SQL injection",
+      "D": "Password spraying"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Unfiltered SNMP access can expose valuable system and configuration details like routing tables and OS versions."
+  },
+  {
+    "question": "Which port is used for Microsoft RPC Endpoint Mapper?",
+    "options": {
+      "A": "135",
+      "B": "1433",
+      "C": "3389",
+      "D": "445"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Port 135 is used by the Microsoft RPC Endpoint Mapper, which helps clients discover RPC services on the host."
   }
 ]
