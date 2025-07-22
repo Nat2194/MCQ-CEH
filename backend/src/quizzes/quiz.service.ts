@@ -55,26 +55,43 @@ export class QuizService {
     }
   }
 
-  async loadQuizFile(filename: string): Promise<QuizQuestion[]> {
+  async loadQuizFile(
+    filename: string,
+    module?: string,
+  ): Promise<QuizQuestion[]> {
     try {
       // Search through all modules to find the file
-      const modules = await this.getModuleList();
-      for (const module of modules) {
+      if (module) {
         const filePath = path.join(this.quizBaseDir, module, filename);
-        try {
-          if (
-            await fs
-              .access(filePath)
-              .then(() => true)
-              .catch(() => false)
-          ) {
-            const data = await fs.readFile(filePath, 'utf-8');
-            return JSON.parse(data) as QuizQuestion[];
+        if (
+          await fs
+            .access(filePath)
+            .then(() => true)
+            .catch(() => false)
+        ) {
+          const data = await fs.readFile(filePath, 'utf-8');
+          return JSON.parse(data) as QuizQuestion[];
+        }
+      } else {
+        const modules = await this.getModuleList();
+        for (const module of modules) {
+          const filePath = path.join(this.quizBaseDir, module, filename);
+          try {
+            if (
+              await fs
+                .access(filePath)
+                .then(() => true)
+                .catch(() => false)
+            ) {
+              const data = await fs.readFile(filePath, 'utf-8');
+              return JSON.parse(data) as QuizQuestion[];
+            }
+          } catch (error) {
+            continue;
           }
-        } catch (error) {
-          continue;
         }
       }
+
       throw new Error(`Quiz file ${filename} not found`);
     } catch (error) {
       console.error(`Error loading quiz file ${filename}:`, error);
