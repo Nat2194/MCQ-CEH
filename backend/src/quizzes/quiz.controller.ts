@@ -22,11 +22,14 @@ export class QuizController {
   }
 
   @Get('load/:filename')
-  async loadQuiz(@Param('filename') filename: string) {
+  async loadQuiz(
+    @Param('filename') filename: string,
+    @Query('module') module?: string,
+  ) {
     if (!filename || !filename.endsWith('.json')) {
       throw new BadRequestException('Invalid filename. Must be a .json file');
     }
-    return await this.quizService.loadQuizFile(filename);
+    return await this.quizService.loadQuizFile(filename, module);
   }
 
   @Get('combined')
