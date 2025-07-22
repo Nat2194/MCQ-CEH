@@ -7,7 +7,8 @@
       "C": "Gain direct access to systems",
       "D": "Erase evidence of attack"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "Reconnaissance is the initial phase where information about the target is collected without engaging or exploiting systems."
   },
   {
     "question": "Which of the following are passive reconnaissance techniques?",
@@ -17,7 +18,8 @@
       "C": "Social media profile research",
       "D": "Direct port scanning"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A", "C"],
+    "explanation": "Passive techniques gather data without alerting the target, such as WHOIS and social media analysis."
   },
   {
     "question": "Which tool can be used for DNS enumeration?",
@@ -27,7 +29,8 @@
       "C": "dig",
       "D": "metasploit"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A", "C"],
+    "explanation": "Both nslookup and dig are commonly used to query DNS records for enumeration purposes."
   },
   {
     "question": "What type of reconnaissance involves interacting directly with the target?",
@@ -37,7 +40,8 @@
       "C": "Social engineering",
       "D": "Foothold insertion"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Active reconnaissance involves sending requests or probing the target system, making detection more likely."
   },
   {
     "question": "Which of the following are valid sources for OSINT?",
@@ -47,7 +51,8 @@
       "C": "Social media",
       "D": "Employee resumes"
     },
-    "correct_answers": ["A", "C", "D"]
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "OSINT includes publicly available sources like Shodan, LinkedIn profiles, and social platforms."
   },
   {
     "question": "What is Google dorking used for?",
@@ -57,7 +62,8 @@
       "C": "Finding vulnerable web applications",
       "D": "Generating phishing emails"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A", "C"],
+    "explanation": "Google dorking uses advanced search queries to uncover sensitive files and exposed web apps."
   },
   {
     "question": "Which port is commonly used for SSH?",
@@ -67,7 +73,8 @@
       "C": "443",
       "D": "3389"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SSH typically operates on port 22 and is used for secure remote administration."
   },
   {
     "question": "What is the purpose of banner grabbing?",
@@ -77,7 +84,8 @@
       "C": "Disrupt service availability",
       "D": "Bypass firewall"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Banner grabbing reveals software versions and service info from responses—useful for identifying vulnerabilities."
   },
   {
     "question": "Which of these are common banner grabbing tools?",
@@ -87,7 +95,8 @@
       "C": "Burp Suite",
       "D": "Traceroute"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Netcat and Telnet allow manual connections to services and reading banners returned by those services."
   },
   {
     "question": "What is a vulnerability scanner used for?",
@@ -97,336 +106,227 @@
       "C": "Automate reconnaissance",
       "D": "Capture network traffic"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A", "C"],
+    "explanation": "Vulnerability scanners automate scanning to find known security flaws across systems."
   },
   {
-    "question": "Which of the following are vulnerability scanners?",
+    "question": "Which of the following tools are commonly used for network scanning?",
     "options": {
-      "A": "Nessus",
-      "B": "OpenVAS",
-      "C": "Nikto",
+      "A": "Nmap",
+      "B": "Nessus",
+      "C": "Wireshark",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Nmap is a port scanner, Nessus is a vulnerability scanner, and Netcat can scan ports or open connections."
+  },
+  {
+    "question": "Which command can be used in Linux to check active network connections?",
+    "options": {
+      "A": "netstat",
+      "B": "nmap",
+      "C": "top",
+      "D": "ifconfig"
+    },
+    "correct_answers": ["A"],
+    "explanation": "The `netstat` command displays current TCP/UDP connections and listening ports on the system."
+  },
+  {
+    "question": "Which term describes an attacker who scans an environment without being noticed?",
+    "options": {
+      "A": "White hat",
+      "B": "Red teamer",
+      "C": "Stealth scanner",
+      "D": "Passive attacker"
+    },
+    "correct_answers": ["D"],
+    "explanation": "A passive attacker gathers information quietly without interacting directly with the system to avoid detection."
+  },
+  {
+    "question": "What does the 'ping' command primarily test?",
+    "options": {
+      "A": "Port status",
+      "B": "Host availability and latency",
+      "C": "DNS resolution",
+      "D": "Firewall configuration"
+    },
+    "correct_answers": ["B"],
+    "explanation": "The `ping` command checks if a host is reachable and how long it takes to respond."
+  },
+  {
+    "question": "Which scan type is considered stealthy and sends only SYN packets?",
+    "options": {
+      "A": "Connect scan",
+      "B": "UDP scan",
+      "C": "SYN scan",
+      "D": "ACK scan"
+    },
+    "correct_answers": ["C"],
+    "explanation": "SYN scans (also called half-open scans) send SYN packets and analyze the response without completing the TCP handshake."
+  },
+  {
+    "question": "Which of the following are active reconnaissance techniques?",
+    "options": {
+      "A": "Port scanning",
+      "B": "Banner grabbing",
+      "C": "Traceroute",
+      "D": "WHOIS search"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Active reconnaissance interacts directly with the target, including scanning, grabbing banners, and tracing routes."
+  },
+  {
+    "question": "Which Nmap command performs OS detection?",
+    "options": {
+      "A": "nmap -sP",
+      "B": "nmap -O",
+      "C": "nmap -sU",
+      "D": "nmap -A"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "`-O` enables OS detection, and `-A` enables OS detection along with version detection, script scanning, and traceroute."
+  },
+  {
+    "question": "Which of the following tools is useful for sniffing network traffic?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Tcpdump",
+      "C": "Burp Suite",
       "D": "Metasploit"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Wireshark and Tcpdump are packet analyzers that capture and analyze network traffic."
   },
   {
-    "question": "Which stage in CEH methodology comes after enumeration?",
+    "question": "What does traceroute help identify?",
     "options": {
-      "A": "Gaining access",
-      "B": "Scanning",
-      "C": "Covering tracks",
-      "D": "Reporting"
+      "A": "IP addresses of email servers",
+      "B": "Path taken by packets across networks",
+      "C": "Running services on a host",
+      "D": "Credentials over the wire"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["B"],
+    "explanation": "Traceroute shows the path packets take to reach a destination, helping map network topology."
   },
   {
-    "question": "What is the goal of scanning in ethical hacking?",
+    "question": "Which of the following actions best describes the enumeration process?",
     "options": {
-      "A": "Create network outages",
-      "B": "Map the network and identify open ports",
-      "C": "Change firewall rules",
-      "D": "Install backdoors"
+      "A": "Discovering devices on a network",
+      "B": "Extracting user names and shares",
+      "C": "Performing a DoS attack",
+      "D": "Flooding a target with traffic"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "Enumeration involves retrieving more detailed information like usernames, shares, and group memberships."
   },
   {
-    "question": "Which scanning technique sends SYN packets and analyzes responses?",
+    "question": "Which tool is used to automate web application reconnaissance?",
     "options": {
-      "A": "TCP connect scan",
-      "B": "SYN scan",
-      "C": "UDP scan",
-      "D": "FIN scan"
+      "A": "Burp Suite",
+      "B": "Nikto",
+      "C": "John the Ripper",
+      "D": "Aircrack-ng"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Burp Suite and Nikto scan web apps for vulnerabilities and misconfigurations."
   },
   {
-    "question": "What does the term 'pivoting' refer to?",
+    "question": "Which scan type checks for open UDP ports?",
     "options": {
-      "A": "Using one compromised host to attack others",
-      "B": "Changing network topology",
-      "C": "Switching reconnaissance techniques",
-      "D": "Exfiltrating data"
+      "A": "nmap -sU",
+      "B": "nmap -sS",
+      "C": "nmap -O",
+      "D": "nmap -sT"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "`-sU` tells Nmap to perform a UDP scan, which checks for open UDP-based services."
   },
   {
-    "question": "Which method can be used for passive network sniffing?",
+    "question": "Which Nmap switch enables service version detection?",
     "options": {
-      "A": "Wireshark in promisc mode on a mirror port",
-      "B": "ARP poisoning",
-      "C": "DNS zone transfer",
-      "D": "SSL stripping"
-    },
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "question": "What is the ARP table used for?",
-    "options": {
-      "A": "Mapping IP addresses to MAC addresses",
-      "B": "Resolving DNS names",
-      "C": "Tracking open ports",
-      "D": "Logging network sessions"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which commands can reveal network routing information?",
-    "options": {
-      "A": "traceroute",
-      "B": "route",
-      "C": "netstat",
-      "D": "arp"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "What is social engineering reconnaissance?",
-    "options": {
-      "A": "Hacking routers",
-      "B": "Gathering info via human interaction",
-      "C": "Port scanning",
-      "D": "Sniffing packets"
-    },
-    "correct_answers": ["B"]
-  },
-  {
-    "question": "Which are social engineering reconnaissance techniques?",
-    "options": {
-      "A": "Dumpster diving",
-      "B": "Shoulder surfing",
-      "C": "SQL injection",
-      "D": "Voice phishing"
-    },
-    "correct_answers": ["A", "B", "D"]
-  },
-  {
-    "question": "What is the main advantage of passive over active reconnaissance?",
-    "options": {
-      "A": "Faster data collection",
-      "B": "Lower risk of detection",
-      "C": "Ability to exploit vulnerabilities",
-      "D": "Immediate access to systems"
-    },
-    "correct_answers": ["B"]
-  },
-  {
-    "question": "Which public service enumerations can dump detailed info?",
-    "options": {
-      "A": "SNMP walk",
-      "B": "DNS AXFR",
-      "C": "LDAP enumeration",
-      "D": "ICMP echo request"
-    },
-    "correct_answers": ["A", "B", "C"]
-  },
-  {
-    "question": "What is Google hacking database (GHDB)?",
-    "options": {
-      "A": "Exploit database",
-      "B": "Collection of Google dork queries",
-      "C": "Malware repository",
-      "D": "Firewall ruleset"
-    },
-    "correct_answers": ["B"]
-  },
-  {
-    "question": "Which of the following is a sign of open SNMP?",
-    "options": {
-      "A": "Responds to community string 'public'",
-      "B": "Port 161 is open",
-      "C": "Requires authentication",
-      "D": "Encrypted traffic"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "What is the difference between footprinting and enumeration?",
-    "options": {
-      "A": "Footprinting is passive data gathering",
-      "B": "Enumeration discovers active resources",
-      "C": "Footprinting interferes with systems",
-      "D": "Enumeration is hands-off research"
-    },
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "question": "Which NT host will respond to a null session on SMB?",
-    "options": {
-      "A": "Windows 2000 with SMB v1",
-      "B": "Windows 10 with SMB v3",
-      "C": "Linux Samba",
-      "D": "MacOS SMB"
-    },
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "question": "What does SNMP enumeration allow attackers to do?",
-    "options": {
-      "A": "Retrieve device configuration",
-      "B": "Change system clock",
-      "C": "Discover active services",
-      "D": "Install rootkits"
-    },
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "question": "Which ports are associated with SNMP?",
-    "options": {
-      "A": "161/UDP",
-      "B": "162/TCP",
-      "C": "161/TCP",
-      "D": "162/UDP"
-    },
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "question": "Which enumeration method extracts NetBIOS information?",
-    "options": {
-      "A": "nbtstat -A <IP>",
-      "B": "rpcclient",
-      "C": "ssh-keyscan",
-      "D": "enum4linux"
-    },
-    "correct_answers": ["A", "B", "D"]
-  },
-  {
-    "question": "What is a null session in Windows?",
-    "options": {
-      "A": "Anonymous SMB connection",
-      "B": "SSH tunnel without key",
-      "C": "Open Telnet session",
-      "D": "Unencrypted FTP login"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which technique can detect superseded DNS entries?",
-    "options": {
-      "A": "DNS zone transfer",
-      "B": "Packet crafting",
-      "C": "DNS brute-forcing",
-      "D": "ARP poisoning"
-    },
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "question": "What is the role of a SOCKS proxy in scanning?",
-    "options": {
-      "A": "Hide the attacker’s identity",
-      "B": "Speed up scanning",
-      "C": "Provide encrypted tunnel",
-      "D": "Bypass access controls"
-    },
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "question": "Which of the following are valid email reconnaissance steps?",
-    "options": {
-      "A": "Check MX records",
-      "B": "Harvest email addresses",
-      "C": "Send phishing emails directly",
-      "D": "Perform SMTP VRFY/EXPN"
-    },
-    "correct_answers": ["A", "B", "D"]
-  },
-  {
-    "question": "Which port is used for SMTP enumeration?",
-    "options": {
-      "A": "25",
-      "B": "110",
-      "C": "143",
-      "D": "587"
-    },
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "question": "What TCP flag sends no response unless packet is unexpected?",
-    "options": {
-      "A": "FIN",
-      "B": "SYN",
-      "C": "RST",
-      "D": "ACK"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following techniques are used in banner grabbing for SMTP?",
-    "options": {
-      "A": "telnet mail.example.com 25",
-      "B": "smtp-vrfy",
-      "C": "VRFY commands",
-      "D": "Using Metasploit smtp_enum"
-    },
-    "correct_answers": ["A", "C", "D"]
-  },
-  {
-    "question": "What is the difference between active and passive network mapping?",
-    "options": {
-      "A": "Active uses live probes; passive uses traffic monitoring",
-      "B": "Passive requires login credentials",
-      "C": "Active is harder to detect",
-      "D": "Passive can identify open ports"
-    },
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "question": "Which of these are flags for nmap’s aggressive scan?",
-    "options": {
-      "A": "-A",
-      "B": "-sS",
+      "A": "-sV",
+      "B": "-A",
       "C": "-O",
-      "D": "-T4"
+      "D": "-v"
     },
-    "correct_answers": ["A", "C", "D"]
+    "correct_answers": ["A", "B"],
+    "explanation": "`-sV` enables version detection; `-A` includes version detection plus OS detection and more."
   },
   {
-    "question": "What does the -O option do in nmap?",
+    "question": "Which command shows the ARP cache in Windows?",
     "options": {
-      "A": "Perform OS detection",
-      "B": "Optimize speed",
-      "C": "Obfuscate source IP",
-      "D": "Open output file"
+      "A": "arp -a",
+      "B": "ipconfig /displaydns",
+      "C": "netstat -an",
+      "D": "route print"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "`arp -a` lists the ARP table that maps IP addresses to MAC addresses on the local network."
   },
   {
-    "question": "Which UDP enumeration tools can be used?",
+    "question": "Which of the following identifies publicly exposed files and folders on a web server?",
     "options": {
-      "A": "hping",
-      "B": "nmap -sU",
-      "C": "tcpdump",
-      "D": "dig"
+      "A": "Gobuster",
+      "B": "Nikto",
+      "C": "Sqlmap",
+      "D": "Nmap"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Gobuster brute-forces directories; Nikto checks for dangerous files and misconfigurations."
   },
   {
-    "question": "What is the primary risk of TCP ACK scanning?",
+    "question": "Which protocol is commonly exploited in enumeration?",
     "options": {
-      "A": "Firewall rule discovery",
-      "B": "Service exploitation",
-      "C": "Denial of service",
-      "D": "ARP spoofing"
+      "A": "SNMP",
+      "B": "SMTP",
+      "C": "HTTP",
+      "D": "HTTPS"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "SNMP provides detailed system information that can be enumerated if poorly configured."
   },
   {
-    "question": "Which steps belong to OSINT tool reconnaissance?",
+    "question": "Which Windows command displays NetBIOS name tables and sessions?",
     "options": {
-      "A": "Searching DNS records",
-      "B": "Enumerating network shares",
-      "C": "Querying Censys/Shodan",
-      "D": "Passive foot printing"
+      "A": "nbtstat",
+      "B": "netstat",
+      "C": "ipconfig",
+      "D": "nslookup"
     },
-    "correct_answers": ["A", "C", "D"]
+    "correct_answers": ["A"],
+    "explanation": "`nbtstat` shows NetBIOS over TCP/IP information like name tables and active connections."
   },
   {
-    "question": "What information can Shodan provide?",
+    "question": "What does the 'robots.txt' file typically contain?",
     "options": {
-      "A": "Open ports on internet-facing hosts",
-      "B": "Public webcams",
-      "C": "Employee email addresses",
-      "D": "Service banners"
+      "A": "Email addresses",
+      "B": "Admin credentials",
+      "C": "Directories to exclude from web crawlers",
+      "D": "SQL database dumps"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["C"],
+    "explanation": "robots.txt tells search engines which directories to avoid indexing, often revealing sensitive paths."
+  },
+  {
+    "question": "Which command can help map out open ports on a network range?",
+    "options": {
+      "A": "nmap -p- 192.168.1.0/24",
+      "B": "netstat -r",
+      "C": "ipconfig /all",
+      "D": "tracert 192.168.1.1"
+    },
+    "correct_answers": ["A"],
+    "explanation": "The Nmap command scans all 65535 TCP ports on the entire subnet."
+  },
+  {
+    "question": "What is the main risk of using active scanning techniques?",
+    "options": {
+      "A": "Slow scanning speed",
+      "B": "Detection by IDS/IPS systems",
+      "C": "Incomplete results",
+      "D": "Loss of internet access"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Active scanning sends packets to targets, which can trigger alerts from intrusion detection systems."
   }
 ]

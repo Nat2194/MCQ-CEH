@@ -1,0 +1,453 @@
+[
+  {
+    "question": "Which of the following best describes the primary goal of the 'gaining access' phase in system hacking?",
+    "options": {
+      "A": "To elevate privileges within a system",
+      "B": "To establish initial foothold on a target",
+      "C": "To clear evidence of intrusion",
+      "D": "To exfiltrate data"
+    },
+    "correct_answers": ["B"],
+    "explanation": "The gaining access phase is all about establishing an initial foothold or entry point into the target system."
+  },
+  {
+    "question": "Which technique is commonly used during password cracking to guess passwords systematically?",
+    "options": {
+      "A": "Brute force",
+      "B": "DDOS",
+      "C": "ARP poisoning",
+      "D": "DNS spoofing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Brute force involves trying all possible password combinations until the correct one is found."
+  },
+  {
+    "question": "Which tool is typically used for offline password hash cracking?",
+    "options": {
+      "A": "John the Ripper",
+      "B": "Nmap",
+      "C": "Metasploit",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A"],
+    "explanation": "John the Ripper is widely used to crack password hashes offline."
+  },
+  {
+    "question": "What is the purpose of a rainbow table in password cracking?",
+    "options": {
+      "A": "To perform real-time network attacks",
+      "B": "To speed up hash reversing using precomputed values",
+      "C": "To scan open ports",
+      "D": "To escalate privileges"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Rainbow tables are precomputed tables of hash values to speed up the cracking process."
+  },
+  {
+    "question": "Which attack tries every combination from a wordlist to guess passwords?",
+    "options": {
+      "A": "Dictionary attack",
+      "B": "ARP poisoning",
+      "C": "Privilege escalation",
+      "D": "Log clearing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Dictionary attacks use large wordlists to guess passwords based on common words."
+  },
+  {
+    "question": "What method of privilege escalation uses flaws in services or binaries to gain higher rights?",
+    "options": {
+      "A": "DLL hijacking",
+      "B": "ARP poisoning",
+      "C": "Man-in-the-middle",
+      "D": "Phishing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "DLL hijacking exploits service loading paths to execute malicious DLLs and escalate privileges."
+  },
+  {
+    "question": "What is DLL hijacking?",
+    "options": {
+      "A": "Injecting DLL into running processes",
+      "B": "Using incorrectly loaded DLLs by replacing them",
+      "C": "Sniffing network traffic",
+      "D": "Creating rogue access points"
+    },
+    "correct_answers": ["B"],
+    "explanation": "DLL hijacking involves placing malicious DLLs in a directory where the application will load it instead of the legitimate one."
+  },
+  {
+    "question": "Which tool or framework is most frequently used to escalate privileges on Windows?",
+    "options": {
+      "A": "Metasploit",
+      "B": "Snort",
+      "C": "Zenmap",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Metasploit contains many exploits for local privilege escalation on Windows."
+  },
+  {
+    "question": "What is a rootkit primarily used for on a compromised system?",
+    "options": {
+      "A": "To scan for vulnerabilities",
+      "B": "To hide malware or tools",
+      "C": "To exfiltrate data",
+      "D": "To encrypt files"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Rootkits hide malicious processes, tools, or files, evading detection."
+  },
+  {
+    "question": "What is the main goal of covering tracks after hacking a system?",
+    "options": {
+      "A": "To gain access again",
+      "B": "To prevent detection by defenders",
+      "C": "To exfiltrate data",
+      "D": "To scan network ports"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Covering tracks aims to erase evidence of the compromise."
+  },
+  {
+    "question": "Which action is part of clearing logs on a compromised system?",
+    "options": {
+      "A": "Resetting user passwords",
+      "B": "Deleting or modifying log files and events",
+      "C": "Creating new user accounts",
+      "D": "Running a port scan"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Clearing logs involves deleting or manipulating logs to hide the attacker's presence."
+  },
+  {
+    "question": "Why might an attacker maintain remote access on a compromised machine?",
+    "options": {
+      "A": "To scan network ports",
+      "B": "To ensure they can return later",
+      "C": "To clear the disk space",
+      "D": "To enable firewall rules"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Maintaining remote access ensures persistent entry into the target system."
+  },
+  {
+    "question": "Which technique allows attackers to remotely control a compromised system?",
+    "options": {
+      "A": "Backdoor installation",
+      "B": "ARP poisoning",
+      "C": "Wireless sniffing",
+      "D": "DNS enumeration"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Backdoors provide hidden remote access to compromised systems."
+  },
+  {
+    "question": "Which of the following is considered a form of lateral movement post-compromise?",
+    "options": {
+      "A": "Scanning external hosts",
+      "B": "Moving from one internal system to another",
+      "C": "Clearing logs",
+      "D": "Injecting traffic"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Lateral movement is when an attacker uses one compromised system to compromise others."
+  },
+  {
+    "question": "Active Directory attacks in Module 6 focus on which of these?",
+    "options": {
+      "A": "Kerberoasting",
+      "B": "ARP poisoning",
+      "C": "Wireless jamming",
+      "D": "Physical lock picking"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Kerberoasting targets service account credentials in Active Directory environments."
+  },
+  {
+    "question": "What is Kerberoasting?",
+    "options": {
+      "A": "Hijacking DLL files",
+      "B": "Requesting service tickets and cracking them offline",
+      "C": "Sniffing network traffic",
+      "D": "Hijacking browser cookies"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Kerberoasting involves requesting Kerberos service tickets and cracking them offline to gain credentials."
+  },
+  {
+    "question": "Which type of password attack uses trial and error with patterns based on known user info?",
+    "options": {
+      "A": "Hybrid attack",
+      "B": "ARP spoofing",
+      "C": "DLL hijacking",
+      "D": "Credential stuffing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Hybrid attacks combine dictionary words with common patterns and mutations."
+  },
+  {
+    "question": "What role does the SAM database play in Windows hacking?",
+    "options": {
+      "A": "It logs DNS queries",
+      "B": "It stores user password hashes",
+      "C": "It manages routing tables",
+      "D": "It stores firewall rules"
+    },
+    "correct_answers": ["B"],
+    "explanation": "The SAM (Security Accounts Manager) database stores user password hashes for Windows."
+  },
+  {
+    "question": "NTLM and LM hashes can be retrieved from which of these locations?",
+    "options": {
+      "A": "/etc/shadow",
+      "B": "SAM hive or memory",
+      "C": "Active Directory logs",
+      "D": "ARP cache"
+    },
+    "correct_answers": ["B"],
+    "explanation": "NTLM/LM hashes are stored in the SAM database file or can be dumped from memory."
+  },
+  {
+    "question": "Which attack intercepts communication between two hosts during system hacking?",
+    "options": {
+      "A": "Man-in-the-middle",
+      "B": "Brute force",
+      "C": "Privilege escalation",
+      "D": "Password cracking"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Man-in-the-middle (MITM) attacks intercept and manipulate communications between hosts."
+  },
+  {
+    "question": "Why are rootkits hard to detect?",
+    "options": {
+      "A": "They encrypt all files",
+      "B": "They modify the OS to hide their presence",
+      "C": "They crash the system",
+      "D": "They broadcast packets"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Rootkits hook into the OS to hide files, processes, or network connections."
+  },
+  {
+    "question": "Which method helps an attacker escalate privileges after initial access?",
+    "options": {
+      "A": "Exploit development",
+      "B": "Wireless jamming",
+      "C": "Port scanning",
+      "D": "Log cleaning"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Developing or leveraging exploits for vulnerabilities can allow privilege escalation."
+  },
+  {
+    "question": "What is the purpose of clear log functionality in Meterpreter sessions?",
+    "options": {
+      "A": "To scan network",
+      "B": "To erase evidence of commands executed",
+      "C": "To bypass antivirus",
+      "D": "To crack passwords"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Clearing logs in Meterpreter is done to hide the attacker’s tracks by removing evidence of activities from the system logs."
+  },
+  {
+    "question": "Which technique is used to maintain long-term access after exploiting a system?",
+    "options": {
+      "A": "Creating a scheduled task",
+      "B": "Using a packet sniffer",
+      "C": "Performing an Nmap scan",
+      "D": "Exploiting XSS"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Scheduled tasks can ensure persistence by launching backdoors or reverse shells at regular intervals."
+  },
+  {
+    "question": "Which tool is commonly used to dump Windows credentials from memory?",
+    "options": {
+      "A": "Cain and Abel",
+      "B": "Wireshark",
+      "C": "Mimikatz",
+      "D": "Ettercap"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Mimikatz is a powerful post-exploitation tool used to extract plaintext passwords and hashes from memory."
+  },
+  {
+    "question": "In Windows, where are password hashes stored by default?",
+    "options": {
+      "A": "/etc/shadow",
+      "B": "System32\\config\\security",
+      "C": "System32\\config\\SAM",
+      "D": "AppData\\Local"
+    },
+    "correct_answers": ["C"],
+    "explanation": "The SAM file located at System32\\config\\SAM stores local user password hashes."
+  },
+  {
+    "question": "What is token impersonation used for in system hacking?",
+    "options": {
+      "A": "To hide logs",
+      "B": "To execute code on a remote machine",
+      "C": "To perform actions using another user’s privileges",
+      "D": "To sniff passwords"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Token impersonation allows attackers to use the security token of another user, often an admin, to perform privileged actions."
+  },
+  {
+    "question": "What Windows command allows you to create a new user account?",
+    "options": {
+      "A": "net add user",
+      "B": "useradd",
+      "C": "net user /add",
+      "D": "create user"
+    },
+    "correct_answers": ["C"],
+    "explanation": "The `net user /add` command is used to create new user accounts in Windows."
+  },
+  {
+    "question": "Which technique involves modifying system binaries to avoid detection?",
+    "options": {
+      "A": "Rootkit installation",
+      "B": "Packet sniffing",
+      "C": "ARP spoofing",
+      "D": "Keylogging"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Rootkits can replace system binaries or load kernel modules to hide malicious activity."
+  },
+  {
+    "question": "What is a keylogger typically used for in the context of system hacking?",
+    "options": {
+      "A": "To clear logs",
+      "B": "To crack passwords",
+      "C": "To capture user input, especially credentials",
+      "D": "To disable antivirus"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Keyloggers record every keystroke, which may include usernames, passwords, and other sensitive information."
+  },
+  {
+    "question": "Which Windows utility shows user logon events?",
+    "options": {
+      "A": "Event Viewer",
+      "B": "Task Manager",
+      "C": "Services.msc",
+      "D": "Regedit"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Event Viewer can be used to view system logs including security logs that record user logins."
+  },
+  {
+    "question": "What command in Linux shows currently logged-in users?",
+    "options": {
+      "A": "ps aux",
+      "B": "whoami",
+      "C": "w",
+      "D": "ifconfig"
+    },
+    "correct_answers": ["C"],
+    "explanation": "The `w` command shows who is logged in and what they are doing."
+  },
+  {
+    "question": "Which type of malware hides its presence by altering system-level functions?",
+    "options": {
+      "A": "Trojan",
+      "B": "Worm",
+      "C": "Rootkit",
+      "D": "Keylogger"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Rootkits integrate with the operating system to conceal files, processes, and registry keys."
+  },
+  {
+    "question": "Which of the following allows privilege escalation in a Linux system?",
+    "options": {
+      "A": "Editing /etc/passwd to change UID to 0",
+      "B": "Sniffing DNS traffic",
+      "C": "Clearing bash history",
+      "D": "ARP poisoning"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Changing a user’s UID to 0 in /etc/passwd effectively gives them root privileges."
+  },
+  {
+    "question": "Which of the following is a persistence technique on Linux systems?",
+    "options": {
+      "A": "Modifying .bashrc",
+      "B": "ARP spoofing",
+      "C": "Sniffing traffic",
+      "D": "Privilege escalation"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Adding backdoor commands to .bashrc ensures they are run every time a shell session is opened."
+  },
+  {
+    "question": "Which of these is an effective method for password sniffing on a network?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Nmap",
+      "C": "Nikto",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Wireshark captures packets on the network, including credentials if sent in plaintext."
+  },
+  {
+    "question": "What is the function of a bind shell?",
+    "options": {
+      "A": "It opens a listening port on the attacker’s machine",
+      "B": "It connects back to the attacker's IP",
+      "C": "It opens a port on the victim’s system and waits for a connection",
+      "D": "It encrypts all outbound traffic"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Bind shells open a port on the victim's machine and wait for the attacker to connect to it."
+  },
+  {
+    "question": "What’s the purpose of a reverse shell?",
+    "options": {
+      "A": "To execute commands on a local system",
+      "B": "To bypass NAT/firewall restrictions by connecting back to attacker",
+      "C": "To create user accounts",
+      "D": "To exploit a buffer overflow"
+    },
+    "correct_answers": ["B"],
+    "explanation": "A reverse shell is useful when the victim is behind a firewall or NAT, as it initiates the outbound connection."
+  },
+  {
+    "question": "Which of these is a post-exploitation technique?",
+    "options": {
+      "A": "Hash dumping",
+      "B": "Vulnerability scanning",
+      "C": "Social engineering",
+      "D": "Network mapping"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Hash dumping is commonly done after initial access, to gather credentials and move laterally."
+  },
+  {
+    "question": "What privilege level does a user with UID 0 have in Linux?",
+    "options": {
+      "A": "User",
+      "B": "Guest",
+      "C": "Root",
+      "D": "Service"
+    },
+    "correct_answers": ["C"],
+    "explanation": "UID 0 is assigned to the root user, who has full administrative access on a Linux system."
+  },
+  {
+    "question": "Which method can help cover tracks on a Linux machine?",
+    "options": {
+      "A": "Removing bash history",
+      "B": "Running nmap",
+      "C": "Installing netcat",
+      "D": "Enabling root login"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Attackers often remove or modify the .bash_history file to hide commands that were executed."
+  }
+]

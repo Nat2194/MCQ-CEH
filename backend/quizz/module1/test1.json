@@ -7,7 +7,8 @@
       "C": "Zero-day exploit",
       "D": "Network diagram"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "Ethical hacking requires written authorization to ensure all testing activities are legally approved."
   },
   {
     "question": "Which type of hacker intentionally violates the law for personal or financial gain?",
@@ -17,7 +18,8 @@
       "C": "Black hat",
       "D": "Blue team"
     },
-    "correct_answers": ["C"]
+    "correct_answers": ["C"],
+    "explanation": "Black hat hackers break into systems illegally for personal, financial, or malicious purposes."
   },
   {
     "question": "Which of the following are examples of physical security breaches?",
@@ -27,7 +29,8 @@
       "C": "Privilege escalation",
       "D": "Dumpster diving"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Tailgating, shoulder surfing, and dumpster diving all involve physical methods to access sensitive information."
   },
   {
     "question": "Which phase focuses on identifying open ports and services?",
@@ -37,7 +40,8 @@
       "C": "Maintaining Access",
       "D": "Enumeration"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "The scanning phase involves detecting open ports and services that can be exploited."
   },
   {
     "question": "What is the main objective of reconnaissance?",
@@ -47,7 +51,8 @@
       "C": "Install backdoors",
       "D": "Execute payloads"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "Reconnaissance gathers intelligence on a target to plan attacks more effectively."
   },
   {
     "question": "Which tools can be used for reconnaissance?",
@@ -57,7 +62,8 @@
       "C": "Shodan",
       "D": "Nikto"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "WHOIS, Nmap, and Shodan are all used to gather public information about systems and networks."
   },
   {
     "question": "Which hacking type refers to activities performed with legal and authorized intent?",
@@ -67,7 +73,8 @@
       "C": "White Hat",
       "D": "Red Team"
     },
-    "correct_answers": ["C"]
+    "correct_answers": ["C"],
+    "explanation": "White hat hackers perform authorized and legal testing to improve security."
   },
   {
     "question": "Which of the following are considered passive reconnaissance methods?",
@@ -77,7 +84,8 @@
       "C": "Port Scanning",
       "D": "Reading press releases"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Passive reconnaissance methods gather information without directly interacting with the target."
   },
   {
     "question": "Which attack vector is commonly used in phishing attacks?",
@@ -87,7 +95,8 @@
       "C": "XSS payloads",
       "D": "Fake login pages"
     },
-    "correct_answers": ["A", "D"]
+    "correct_answers": ["A", "D"],
+    "explanation": "Phishing often uses malicious email attachments and fake login pages to steal credentials."
   },
   {
     "question": "Which of the following can be categorized as insider threats?",
@@ -97,7 +106,8 @@
       "C": "Competitors",
       "D": "Trusted contractors"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Insider threats come from within the organization, whether intentional or accidental."
   },
   {
     "question": "Which principle ensures that information is only accessible to those authorized?",
@@ -107,7 +117,8 @@
       "C": "Authentication",
       "D": "Non-repudiation"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "Confidentiality is a core security principle that ensures data is accessed only by authorized users."
   },
   {
     "question": "Which of the following should be clearly defined in a penetration test agreement?",
@@ -117,7 +128,8 @@
       "C": "Exploit techniques allowed",
       "D": "Incident response procedures"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Defining scope, schedule, and allowed techniques helps avoid legal issues and keeps the test controlled."
   },
   {
     "question": "What is the primary function of the Red Team?",
@@ -127,7 +139,8 @@
       "C": "Respond to incidents",
       "D": "Run compliance checks"
     },
-    "correct_answers": ["B"]
+    "correct_answers": ["B"],
+    "explanation": "Red Teams simulate real-world attacks to test the security posture of an organization."
   },
   {
     "question": "Which of the following are goals of ethical hacking?",
@@ -137,7 +150,8 @@
       "C": "Improve incident response",
       "D": "Find vulnerabilities before attackers do"
     },
-    "correct_answers": ["A", "C", "D"]
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Ethical hackers aim to proactively identify and help fix security issues before malicious actors do."
   },
   {
     "question": "What is the difference between white box and black box testing?",
@@ -147,7 +161,8 @@
       "C": "White box has full internal knowledge",
       "D": "Black box simulates an external attacker"
     },
-    "correct_answers": ["C", "D"]
+    "correct_answers": ["C", "D"],
+    "explanation": "White box provides the tester with full system knowledge; black box simulates external attacks with no prior access."
   },
   {
     "question": "Which of the following are typical post-engagement deliverables?",
@@ -157,7 +172,8 @@
       "C": "Technical findings",
       "D": "Remediation guidance"
     },
-    "correct_answers": ["B", "C", "D"]
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Post-engagement reports include executive summaries, technical results, and suggestions for remediation."
   },
   {
     "question": "Which of these are considered threat actors?",
@@ -167,7 +183,8 @@
       "C": "Script Kiddies",
       "D": "Nation States"
     },
-    "correct_answers": ["A", "C", "D"]
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Hacktivists, script kiddies, and nation-state actors all represent categories of cyber threat actors."
   },
   {
     "question": "Which activities occur during the scanning phase?",
@@ -177,7 +194,8 @@
       "C": "Password cracking",
       "D": "Network mapping"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Scanning involves identifying open ports, services, and mapping the network to find vulnerabilities."
   },
   {
     "question": "Which frameworks are useful in ethical hacking and threat modeling?",
@@ -187,7 +205,8 @@
       "C": "MITRE ATT&CK",
       "D": "CIS Top 20"
     },
-    "correct_answers": ["A", "B", "C", "D"]
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All listed frameworks provide guidance and structure for identifying, modeling, and mitigating threats."
   },
   {
     "question": "What is the goal of the 'covering tracks' phase?",
@@ -197,7 +216,8 @@
       "C": "Delete logs",
       "D": "Escalate privileges"
     },
-    "correct_answers": ["B", "C"]
+    "correct_answers": ["B", "C"],
+    "explanation": "Covering tracks involves hiding the attacker’s activities by deleting logs and masking intrusion signs."
   },
   {
     "question": "Which of the following are examples of open-source intelligence (OSINT)?",
@@ -207,7 +227,8 @@
       "C": "Public GitHub repositories",
       "D": "Packet sniffing on a LAN"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "OSINT involves gathering publicly available information from open sources such as social media and public repositories."
   },
   {
     "question": "Which statement best describes an ethical hacker?",
@@ -217,7 +238,8 @@
       "C": "Shares exploits on forums",
       "D": "Assesses security vulnerabilities"
     },
-    "correct_answers": ["B", "D"]
+    "correct_answers": ["B", "D"],
+    "explanation": "Ethical hackers assess vulnerabilities and work with permission to strengthen security."
   },
   {
     "question": "Which roles are typically assigned to Blue Teams?",
@@ -227,7 +249,8 @@
       "C": "Simulate adversaries",
       "D": "Monitor system logs"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Blue Teams are responsible for defense, monitoring, and applying patches to secure systems."
   },
   {
     "question": "Which CEH phase involves gaining access to the target?",
@@ -237,7 +260,8 @@
       "C": "Exploitation",
       "D": "Gaining Access"
     },
-    "correct_answers": ["D"]
+    "correct_answers": ["D"],
+    "explanation": "The 'Gaining Access' phase includes using exploits to penetrate systems."
   },
   {
     "question": "What are common tools for active reconnaissance?",
@@ -247,7 +271,8 @@
       "C": "Wireshark",
       "D": "WHOIS"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B"],
+    "explanation": "Active reconnaissance involves interacting with the target using tools like Nmap and Nikto to identify weaknesses."
   },
   {
     "question": "What is an example of a non-technical attack?",
@@ -257,7 +282,8 @@
       "C": "Brute-force",
       "D": "Tailgating"
     },
-    "correct_answers": ["B", "D"]
+    "correct_answers": ["B", "D"],
+    "explanation": "Phishing and tailgating exploit human behavior rather than technical flaws."
   },
   {
     "question": "Which of the following can help prevent insider threats?",
@@ -267,7 +293,8 @@
       "C": "Physical security training",
       "D": "Firewall updates"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Monitoring user behavior and enforcing security policies/training are effective against insider threats."
   },
   {
     "question": "Which entities commonly perform Red Team operations?",
@@ -277,6 +304,7 @@
       "C": "Blue team SOC staff",
       "D": "Military cyber units"
     },
-    "correct_answers": ["B", "D"]
+    "correct_answers": ["B", "D"],
+    "explanation": "Red Team operations are often performed by specialized consultants or national cyber units to simulate advanced threats."
   }
 ]

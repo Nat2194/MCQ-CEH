@@ -5,6 +5,7 @@ interface QuizQuestion {
   question: string;
   options: Record<string, string>;
   correct_answers: string[];
+  explanation?: string;
 }
 
 interface Quiz {
@@ -226,6 +227,16 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
                       ))}
                     </div>
                   </div>
+
+                  {/* Explanation for failed questions */}
+                  {!correct && question.explanation && (
+                    <div className="mt-4 pt-4 border-t border-gray-700">
+                      <p className="font-medium text-gray-300 mb-2">
+                        Explanation:
+                      </p>
+                      <p className="text-gray-400">{question.explanation}</p>
+                    </div>
+                  )}
                 </div>
               );
             })}

@@ -7,7 +7,8 @@
       "C": "To perform a network scan",
       "D": "To fingerprint the operating system"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Gaining access is the phase where the attacker attempts to exploit vulnerabilities to enter a system, often without authorization."
   },
   {
     "question": "Which of the following is a common technique used to gain access to a target system?",
@@ -17,7 +18,8 @@
       "C": "Buffer overflow exploitation",
       "D": "Port scanning"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Password cracking, phishing, and buffer overflow attacks are direct methods of compromising systems; port scanning is part of the reconnaissance phase."
   },
   {
     "question": "What is the role of Metasploit in gaining access?",
@@ -27,7 +29,8 @@
       "C": "Tool for wireless packet capture",
       "D": "Password manager"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Metasploit is a powerful penetration testing framework used to develop, test, and execute exploit code against a remote target."
   },
   {
     "question": "Which of the following types of exploits allows remote code execution?",
@@ -37,7 +40,8 @@
       "C": "Privilege escalation exploits",
       "D": "Web application exploits"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Remote exploits are designed to allow code execution on a target machine over a network without prior access."
   },
   {
     "question": "What is a zero-day exploit?",
@@ -47,7 +51,8 @@
       "C": "A proof-of-concept script",
       "D": "A common vulnerability used for training"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A zero-day exploit targets an unknown flaw that has not yet been patched by the vendor, making it particularly dangerous."
   },
   {
     "question": "Which of the following attacks exploits poor input validation in applications?",
@@ -57,7 +62,8 @@
       "C": "ARP Spoofing",
       "D": "Cross-site scripting"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "SQLi, command injection, and XSS all exploit insufficient input validation; ARP spoofing targets network protocols."
   },
   {
     "question": "What is the goal of privilege escalation?",
@@ -67,7 +73,8 @@
       "C": "To launch a DDoS attack",
       "D": "To exfiltrate data"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Privilege escalation is used to gain elevated access rights (e.g., from a regular user to root/admin)."
   },
   {
     "question": "Which tool is commonly used for brute-force attacks against SSH?",
@@ -77,7 +84,8 @@
       "C": "Aircrack-ng",
       "D": "Metasploit"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Hydra is a fast and flexible tool for performing brute-force attacks on various protocols, including SSH."
   },
   {
     "question": "What kind of payload maintains a persistent connection with the attacker's system?",
@@ -87,7 +95,8 @@
       "C": "Trojan",
       "D": "Meterpreter"
     },
-    "correct_answers": ["D"]
+    "correct_answers": ["D"],
+    "explanation": "Meterpreter is an advanced payload that provides persistent and stealthy access, allowing post-exploitation tasks."
   },
   {
     "question": "Which type of malware disguises itself as legitimate software?",
@@ -97,266 +106,238 @@
       "C": "RAT",
       "D": "Keylogger"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A Trojan hides its malicious intent by masquerading as a benign application to trick users into installing it."
   },
   {
-    "question": "Which of the following is a client-side attack vector?",
+    "question": "Which method helps an attacker escalate privileges after initial access?",
     "options": {
-      "A": "Phishing email",
-      "B": "Browser exploit",
-      "C": "DNS poisoning",
-      "D": "Rogue access point"
+      "A": "Exploiting kernel vulnerabilities",
+      "B": "Installing antivirus software",
+      "C": "Performing SYN scans",
+      "D": "Using firewalls"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A"],
+    "explanation": "Kernel vulnerabilities can be used to escalate privileges from a user-level account to root/admin."
   },
   {
-    "question": "Which of these tools can be used to create and execute exploits?",
+    "question": "Which of the following tools is commonly used for privilege escalation in Windows?",
     "options": {
-      "A": "Metasploit",
-      "B": "ExploitDB",
-      "C": "msfvenom",
-      "D": "Aircrack-ng"
+      "A": "PowerUp",
+      "B": "Mimikatz",
+      "C": "Empire",
+      "D": "Hydra"
     },
-    "correct_answers": ["A", "C"]
+    "correct_answers": ["A"],
+    "explanation": "PowerUp is designed to enumerate and exploit privilege escalation opportunities on Windows systems."
   },
   {
-    "question": "What is shellcode?",
+    "question": "What is the purpose of Mimikatz?",
     "options": {
-      "A": "A small piece of code used as the payload in an exploit",
-      "B": "A command line utility",
-      "C": "A script that executes in a web browser",
-      "D": "Encrypted malware"
+      "A": "Exploiting web applications",
+      "B": "Cracking Wi-Fi passwords",
+      "C": "Extracting Windows credentials",
+      "D": "Creating phishing emails"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["C"],
+    "explanation": "Mimikatz is a post-exploitation tool that can extract plaintext passwords and hashes from memory on Windows."
   },
   {
-    "question": "Which Linux command can be used to escalate privileges if misconfigured?",
+    "question": "Which file in Windows stores user password hashes?",
     "options": {
-      "A": "sudo",
-      "B": "passwd",
-      "C": "chmod",
-      "D": "crontab"
+      "A": "SAM",
+      "B": "System32.dll",
+      "C": "boot.ini",
+      "D": "NTUSER.DAT"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The Security Account Manager (SAM) file holds password hashes and is located in the Windows system directory."
   },
   {
-    "question": "What is DLL injection primarily used for?",
+    "question": "What is the default hashing algorithm for Windows passwords?",
     "options": {
-      "A": "Injecting malicious code into running processes on Windows",
-      "B": "Extracting password hashes",
-      "C": "Disabling firewalls",
-      "D": "Creating user accounts"
+      "A": "SHA-256",
+      "B": "MD5",
+      "C": "NTLM",
+      "D": "SHA-1"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["C"],
+    "explanation": "Windows stores password hashes using the NTLM algorithm by default, though it's considered weak by modern standards."
   },
   {
-    "question": "Which type of vulnerability allows attackers to upload malicious files?",
+    "question": "Which type of attack involves reusing stolen password hashes to authenticate?",
     "options": {
-      "A": "Unrestricted file upload",
-      "B": "CSRF",
-      "C": "Buffer overflow",
-      "D": "Privilege escalation"
+      "A": "Pass-the-hash",
+      "B": "Rainbow table attack",
+      "C": "Dictionary attack",
+      "D": "Credential stuffing"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "In a pass-the-hash attack, attackers use captured hashes directly to authenticate without cracking them."
   },
   {
-    "question": "What is the purpose of msfvenom in penetration testing?",
+    "question": "What is a keylogger used for?",
     "options": {
-      "A": "Generate custom payloads",
-      "B": "Scan for open ports",
-      "C": "Intercept HTTP traffic",
-      "D": "Enumerate usernames"
+      "A": "Logging system crashes",
+      "B": "Capturing keyboard input",
+      "C": "Monitoring network traffic",
+      "D": "Erasing user files"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["B"],
+    "explanation": "A keylogger captures keystrokes typed by the user, which may include usernames and passwords."
   },
   {
-    "question": "Which scripting language is most commonly used in exploit development?",
+    "question": "Which of the following techniques is used to hide malicious processes?",
     "options": {
-      "A": "Python",
-      "B": "PHP",
-      "C": "Java",
-      "D": "Perl"
+      "A": "Rootkit",
+      "B": "Trojan",
+      "C": "Worm",
+      "D": "Sniffer"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Rootkits are used to hide processes, files, or system activity from detection tools."
   },
   {
-    "question": "Which of the following techniques is used to bypass antivirus software?",
+    "question": "What is the purpose of a backdoor?",
     "options": {
-      "A": "Encoding payloads",
-      "B": "Using polymorphic malware",
-      "C": "Code obfuscation",
-      "D": "Port scanning"
+      "A": "To increase encryption",
+      "B": "To gain unauthorized remote access",
+      "C": "To close network ports",
+      "D": "To monitor firewalls"
     },
-    "correct_answers": ["A", "B", "C"]
+    "correct_answers": ["B"],
+    "explanation": "A backdoor allows attackers to access the system at will, bypassing authentication mechanisms."
   },
   {
-    "question": "Which file is typically targeted in Linux for password cracking?",
+    "question": "Which of the following is considered a post-exploitation activity?",
     "options": {
-      "A": "/etc/shadow",
-      "B": "/etc/passwd",
-      "C": "/var/log/auth.log",
-      "D": "/boot/grub.cfg"
+      "A": "Port scanning",
+      "B": "Installing a rootkit",
+      "C": "Conducting reconnaissance",
+      "D": "Banner grabbing"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["B"],
+    "explanation": "Post-exploitation involves maintaining access and hiding presence—often through tools like rootkits."
   },
   {
-    "question": "Which of the following is used to maintain remote access after exploiting a system?",
+    "question": "What is the primary goal of covering tracks?",
     "options": {
-      "A": "Backdoor",
-      "B": "RAT",
-      "C": "Bind shell",
-      "D": "Ping sweep"
+      "A": "To retain admin access",
+      "B": "To avoid detection by security teams",
+      "C": "To extract more data",
+      "D": "To perform lateral movement"
     },
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["B"],
+    "explanation": "Covering tracks helps attackers erase logs and hide indicators of compromise to remain undetected."
   },
   {
-    "question": "What is buffer overflow?",
+    "question": "Which command is used to clear event logs in Windows?",
     "options": {
-      "A": "Overwriting memory due to excess input",
-      "B": "Using brute force to crack a password",
-      "C": "Intercepting network packets",
-      "D": "Using a dictionary attack"
+      "A": "wevtutil cl",
+      "B": "clear-logs",
+      "C": "logoff",
+      "D": "net use /delete"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "`wevtutil cl` clears specified Windows event logs, a common method for covering tracks."
   },
   {
-    "question": "Which type of access is required for privilege escalation exploits?",
+    "question": "Which tool allows an attacker to maintain access on a compromised system?",
     "options": {
-      "A": "Local access",
-      "B": "Remote access",
-      "C": "VPN access",
-      "D": "Telnet access"
+      "A": "Netcat",
+      "B": "Meterpreter",
+      "C": "Nmap",
+      "D": "Burp Suite"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["B"],
+    "explanation": "Meterpreter includes post-exploitation modules to establish persistence, gather info, and control the system."
   },
   {
-    "question": "Which of the following are considered lateral movement techniques?",
+    "question": "Which of the following are ways to maintain access after exploitation?",
     "options": {
-      "A": "Pass-the-Hash",
-      "B": "Exploiting trust relationships",
-      "C": "VPN brute-force",
-      "D": "Pivoting"
+      "A": "Creating new user accounts",
+      "B": "Adding registry run keys",
+      "C": "Changing system clock",
+      "D": "Installing scheduled tasks"
     },
-    "correct_answers": ["A", "B", "D"]
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Persistence can be achieved by adding users, modifying autorun keys, and scheduling malicious tasks."
   },
   {
-    "question": "Which Metasploit module is used for executing payloads?",
+    "question": "Which type of shell gives an attacker control over the victim’s system from a remote location?",
     "options": {
-      "A": "Exploit",
-      "B": "Auxiliary",
-      "C": "Post",
-      "D": "Payload"
+      "A": "Reverse shell",
+      "B": "Local shell",
+      "C": "Interactive shell",
+      "D": "Command shell"
     },
-    "correct_answers": ["D"]
+    "correct_answers": ["A"],
+    "explanation": "A reverse shell connects back to the attacker's system, allowing remote control of the compromised host."
   },
   {
-    "question": "What does the 'exploit/multi/handler' module in Metasploit do?",
+    "question": "What does a bind shell do?",
     "options": {
-      "A": "Handles reverse shells",
-      "B": "Performs brute-force attacks",
-      "C": "Enumerates users",
-      "D": "Scans for vulnerabilities"
+      "A": "Listens on a port on the victim's machine",
+      "B": "Connects back to the attacker",
+      "C": "Encrypts traffic",
+      "D": "Shuts down the host"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "A bind shell opens a listener on the victim's machine, allowing the attacker to connect directly to it."
   },
   {
-    "question": "Which technique abuses legitimate applications to execute malicious payloads?",
+    "question": "Which tool can be used to create custom payloads?",
     "options": {
-      "A": "Living off the Land Binaries (LOLBins)",
-      "B": "DLL hijacking",
-      "C": "RAT deployment",
-      "D": "Keylogging"
+      "A": "MSFvenom",
+      "B": "John the Ripper",
+      "C": "Wireshark",
+      "D": "Snort"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "MSFvenom is used to craft custom shellcode and payloads for exploitation."
   },
   {
-    "question": "What is the purpose of privilege escalation?",
+    "question": "What is the function of the 'schtasks' command in Windows?",
     "options": {
-      "A": "Move from low-level to high-level access",
-      "B": "Crack user passwords",
-      "C": "Sniff network traffic",
-      "D": "Scan for vulnerabilities"
+      "A": "Manage scheduled tasks",
+      "B": "Create firewall rules",
+      "C": "List network interfaces",
+      "D": "Display user logs"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "The `schtasks` command schedules and manages tasks that can be used for persistence by attackers."
   },
   {
-    "question": "Which Windows feature, if misconfigured, can allow for unauthorized privilege escalation?",
+    "question": "What is the goal of lateral movement?",
     "options": {
-      "A": "AlwaysInstallElevated",
-      "B": "Windows Defender",
-      "C": "Firewall rules",
-      "D": "UAC"
+      "A": "Covering tracks",
+      "B": "Escaping a sandbox",
+      "C": "Expanding access across a network",
+      "D": "Encrypting files"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["C"],
+    "explanation": "Lateral movement is used to move from one system to another to gain deeper access in the network."
   },
   {
-    "question": "What kind of file is typically used in a social engineering attack to gain access?",
+    "question": "Which tool can extract passwords stored in memory in plaintext on Windows?",
     "options": {
-      "A": "Malicious PDF or Office document",
-      "B": "Encrypted ZIP archive",
-      "C": "Binary ISO file",
-      "D": "Signed certificate"
+      "A": "Cain and Abel",
+      "B": "Mimikatz",
+      "C": "Hydra",
+      "D": "John the Ripper"
     },
-    "correct_answers": ["A"]
+    "correct_answers": ["B"],
+    "explanation": "Mimikatz can dump credentials, including plaintext passwords, from Windows memory using LSASS."
   },
   {
-    "question": "Which technique involves relaying authentication information to impersonate a user?",
+    "question": "Which of the following is a defense against privilege escalation?",
     "options": {
-      "A": "Pass-the-Hash",
-      "B": "Keylogging",
-      "C": "Credential stuffing",
-      "D": "Packet replay"
+      "A": "Patch management",
+      "B": "User awareness training",
+      "C": "Installing rogue software",
+      "D": "Disabling UAC"
     },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which of the following best describes a reverse shell?",
-    "options": {
-      "A": "Target system connects back to attacker’s system",
-      "B": "Attacker directly connects to the target system",
-      "C": "Encrypted SSH session",
-      "D": "Malware that encrypts files"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "What does the term 'exploit chaining' refer to?",
-    "options": {
-      "A": "Using multiple exploits in sequence",
-      "B": "Brute-forcing a password",
-      "C": "Sniffing packets on the network",
-      "D": "Enumerating usernames"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which payload type is most stealthy and interactive in Metasploit?",
-    "options": {
-      "A": "Meterpreter",
-      "B": "Reverse shell",
-      "C": "Bind shell",
-      "D": "Command prompt"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "Which command in Meterpreter uploads files to the target?",
-    "options": {
-      "A": "upload",
-      "B": "put",
-      "C": "send",
-      "D": "scp"
-    },
-    "correct_answers": ["A"]
-  },
-  {
-    "question": "What does UAC bypass allow in a Windows environment?",
-    "options": {
-      "A": "Execute code with elevated privileges",
-      "B": "Disable antivirus",
-      "C": "Capture keyboard input",
-      "D": "Restart system"
-    },
-    "correct_answers": ["A"]
+    "correct_answers": ["A"],
+    "explanation": "Keeping systems updated helps prevent exploitation of known vulnerabilities used for privilege escalation."
   }
 ]
