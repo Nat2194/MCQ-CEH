@@ -111,7 +111,7 @@ export class QuizService {
 
         for (const file of files) {
           try {
-            const questions = await this.loadQuizFile(file);
+            const questions = await this.loadQuizFile(file, module);
             allQuestions = allQuestions.concat(questions);
           } catch (error) {
             console.error(`Error reading file ${file}:`, error);

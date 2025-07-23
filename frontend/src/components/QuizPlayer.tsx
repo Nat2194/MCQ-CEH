@@ -27,6 +27,8 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
   const [submitted, setSubmitted] = useState<boolean>(false);
   const [score, setScore] = useState<number>(0);
 
+  console.log(quiz.data);
+
   const handleSelect = (index: number, option: string) => {
     setAnswers((prev) => {
       const currentAnswers = prev[index] || [];
