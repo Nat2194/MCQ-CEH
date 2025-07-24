@@ -1,0 +1,442 @@
+[
+  {
+    "question": "What is the primary goal of IDS evasion techniques?",
+    "options": {
+      "A": "To gain persistence on the target system",
+      "B": "To avoid detection while performing malicious actions",
+      "C": "To escalate privileges on the host",
+      "D": "To brute force passwords"
+    },
+    "correct_answers": ["B"],
+    "explanation": "IDS evasion aims to bypass detection mechanisms so attackers can execute actions without alerting security systems."
+  },
+  {
+    "question": "Which of the following techniques are commonly used to evade IDS detection?",
+    "options": {
+      "A": "Fragmentation of packets",
+      "B": "Obfuscating payloads",
+      "C": "Using encrypted tunnels",
+      "D": "Brute-forcing login portals"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Fragmentation, encryption, and obfuscation hide attack traffic from signature-based IDS. Brute-forcing is detectable."
+  },
+  {
+    "question": "Which method can be used to bypass a stateful firewall?",
+    "options": {
+      "A": "Source port spoofing",
+      "B": "Reverse shell via HTTP",
+      "C": "Port knocking",
+      "D": "Using SYN floods"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These techniques can bypass stateful inspections by exploiting trusted traffic or opening ports covertly."
+  },
+  {
+    "question": "What is the main purpose of a honeypot in a network?",
+    "options": {
+      "A": "To trap attackers and study their behavior",
+      "B": "To boost network performance",
+      "C": "To encrypt internal data",
+      "D": "To scan for open ports"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Honeypots are decoys that attract attackers and collect intel on their tactics, techniques, and procedures."
+  },
+  {
+    "question": "Which tools can help attackers evade firewalls?",
+    "options": {
+      "A": "Nmap with fragmented packets",
+      "B": "Hping3 with spoofed packets",
+      "C": "Metasploit with encoder modules",
+      "D": "Tcpdump"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Nmap and Hping3 can manipulate packets, and Metasploit can encode payloads to bypass detection. Tcpdump is a sniffer."
+  },
+  {
+    "question": "Which of the following can be signs that you're interacting with a honeypot?",
+    "options": {
+      "A": "No outbound connections allowed",
+      "B": "Unexpectedly high interaction",
+      "C": "Very outdated services with no real data",
+      "D": "System allows privilege escalation too easily"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these can be signs of honeypots designed to lure and monitor attackers without compromising real systems."
+  },
+  {
+    "question": "What is the purpose of 'tunneling' techniques in evasion?",
+    "options": {
+      "A": "To encrypt traffic to bypass inspection",
+      "B": "To reduce bandwidth usage",
+      "C": "To exploit SQL injection",
+      "D": "To speed up exfiltration"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Tunneling hides data inside allowed protocols like DNS or HTTPS, allowing attackers to bypass filtering."
+  },
+  {
+    "question": "Which of the following can be used to detect honeypots?",
+    "options": {
+      "A": "Timing responses",
+      "B": "Checking for known honeypot banners",
+      "C": "Performing fingerprinting",
+      "D": "Using firewall rules"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Timing, banners, and behavioral analysis can help detect honeypots. Firewall rules won’t typically expose honeypots directly."
+  },
+  {
+    "question": "Which evasion tactic manipulates the way traffic is fragmented?",
+    "options": {
+      "A": "Packet fragmentation",
+      "B": "Content encoding",
+      "C": "Shell obfuscation",
+      "D": "Base64 encoding"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Fragmenting packets breaks up malicious payloads so IDS systems may not properly reassemble or analyze them."
+  },
+  {
+    "question": "What are common protocols used for tunneling to evade detection?",
+    "options": {
+      "A": "HTTPS",
+      "B": "DNS",
+      "C": "ICMP",
+      "D": "FTP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS, HTTPS, and ICMP are commonly abused for tunneling because they are often allowed through firewalls."
+  },
+  {
+    "question": "Which of the following best describes polymorphic shellcode?",
+    "options": {
+      "A": "Code that changes its appearance while maintaining function",
+      "B": "Encrypted shellcode used for ransomware",
+      "C": "Static code that performs privilege escalation",
+      "D": "Any script that scans for ports"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Polymorphic shellcode evades detection by mutating its structure but keeping its behavior intact."
+  },
+  {
+    "question": "What is the goal of using encoders in Metasploit payloads?",
+    "options": {
+      "A": "To bypass antivirus and IDS",
+      "B": "To increase payload size",
+      "C": "To fingerprint a system",
+      "D": "To change default exploit ports"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Encoders in Metasploit modify payloads to avoid detection by AV/IDS while retaining functionality."
+  },
+  {
+    "question": "Which of these tools can be used to send fragmented TCP packets?",
+    "options": {
+      "A": "Hping3",
+      "B": "Scapy",
+      "C": "Wireshark",
+      "D": "Nmap"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Hping3, Scapy, and Nmap can craft and send custom packets, including fragments. Wireshark is passive."
+  },
+  {
+    "question": "What is the main risk of interacting with a honeypot as an attacker?",
+    "options": {
+      "A": "Getting access to sensitive data",
+      "B": "Triggering antivirus alerts",
+      "C": "Exposing your TTPs to defenders",
+      "D": "Breaking encryption algorithms"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Honeypots are designed to observe and log attacker behavior, which can compromise their tools and methods."
+  },
+  {
+    "question": "What is a common way to detect if an IDS is in place on a network?",
+    "options": {
+      "A": "Sending malformed packets and observing responses",
+      "B": "Brute forcing all ports",
+      "C": "Port scanning using default TTL values",
+      "D": "Flooding network with broadcast packets"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Malicious or malformed packets may trigger IDS alerts or generate unexpected behavior, revealing its presence."
+  },
+  {
+    "question": "Which of the following tactics can evade signature-based IDS systems?",
+    "options": {
+      "A": "Encoding payloads",
+      "B": "Using uncommon protocols",
+      "C": "Timing-based obfuscation",
+      "D": "Repeated password attempts"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Changing how payloads appear or are delivered avoids pattern matching. Repeated passwords are easy to detect."
+  },
+  {
+    "question": "Which of these practices are used by attackers to evade honeypots?",
+    "options": {
+      "A": "Deliberately crashing the honeypot",
+      "B": "Checking OS fingerprint inconsistencies",
+      "C": "Analyzing filesystem behavior",
+      "D": "Using geolocation to verify targets"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Fingerprinting, filesystem traps, and location mismatches can reveal honeypots. Crashing them isn't an evasion method."
+  },
+  {
+    "question": "Which of the following is an advanced technique to evade detection during lateral movement?",
+    "options": {
+      "A": "Using PowerShell with obfuscation",
+      "B": "Tunneling traffic through DNS",
+      "C": "RDP brute forcing",
+      "D": "Using signed binaries for malicious payloads"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "These stealthy techniques hide lateral movement. RDP brute forcing is noisy and often logged."
+  },
+  {
+    "question": "What is a characteristic of a low-interaction honeypot?",
+    "options": {
+      "A": "Simulates services with limited functionality",
+      "B": "Allows full OS interaction",
+      "C": "Acts as a proxy to internal systems",
+      "D": "Captures real malware samples"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Low-interaction honeypots emulate services to detect attacks but don’t allow real exploitation."
+  },
+  {
+    "question": "Which of the following are defensive measures against evasion tactics?",
+    "options": {
+      "A": "Protocol normalization",
+      "B": "Behavioral IDS rules",
+      "C": "Deep packet inspection",
+      "D": "Static IP routing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These methods improve IDS accuracy by inspecting behavior, normalizing inputs, and analyzing deeper payloads."
+  },
+  {
+    "question": "Which of the following are benefits attackers gain by bypassing firewalls?",
+    "options": {
+      "A": "Unrestricted access to internal resources",
+      "B": "Ability to escalate privileges automatically",
+      "C": "Conducting lateral movement",
+      "D": "Executing remote code without detection"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Bypassing firewalls allows access to internal hosts, lateral movement, and covert command execution."
+  },
+  {
+    "question": "What is the primary purpose of reverse shells in evasion?",
+    "options": {
+      "A": "To receive inbound connections from a target",
+      "B": "To bypass outbound firewall rules by initiating connections from the victim",
+      "C": "To download files over FTP",
+      "D": "To brute force RDP sessions"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Reverse shells help evade outbound restrictions by making the victim initiate the connection to the attacker's machine."
+  },
+  {
+    "question": "Which types of firewalls are easiest to bypass using tunneling protocols?",
+    "options": {
+      "A": "Packet-filtering firewalls",
+      "B": "Next-gen firewalls",
+      "C": "Application-aware firewalls",
+      "D": "Stateful firewalls"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Basic packet-filtering firewalls typically lack deep inspection, making them easier to bypass with tunneling techniques."
+  },
+  {
+    "question": "Which tool allows attackers to spoof packets and test firewall rules?",
+    "options": {
+      "A": "Hping3",
+      "B": "Nikto",
+      "C": "Ettercap",
+      "D": "Snort"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Hping3 can create custom spoofed packets and is commonly used to test IDS and firewall configurations."
+  },
+  {
+    "question": "Which of the following traffic patterns may indicate firewall evasion attempts?",
+    "options": {
+      "A": "Port scanning with unusual flags",
+      "B": "Fragmented packets",
+      "C": "Excessive ICMP tunneling",
+      "D": "Frequent DNS queries with large payloads"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All listed behaviors may indicate attempts to bypass network defenses or tunnel traffic through allowed protocols."
+  },
+  {
+    "question": "What is a signature of a high-interaction honeypot?",
+    "options": {
+      "A": "Limited command support",
+      "B": "Real operating system interaction",
+      "C": "Virtualized services with minimal response",
+      "D": "No logging capabilities"
+    },
+    "correct_answers": ["B"],
+    "explanation": "High-interaction honeypots run real operating systems, offering attackers full interaction to study behaviors."
+  },
+  {
+    "question": "Which of the following tools can help detect honeypots?",
+    "options": {
+      "A": "Nmap",
+      "B": "Honeyd",
+      "C": "TCP fingerprinting scripts",
+      "D": "OSINT databases"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Nmap and fingerprinting scripts can identify fake services or anomalies. OSINT can reveal decoy IPs. Honeyd is used to deploy honeypots."
+  },
+  {
+    "question": "What type of evasion technique uses time delays between packets to avoid detection?",
+    "options": {
+      "A": "Timing-based evasion",
+      "B": "Payload encoding",
+      "C": "Protocol tunneling",
+      "D": "Header injection"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Timing-based evasion slows traffic flow or introduces delays to avoid triggering IDS rate-based rules."
+  },
+  {
+    "question": "Which of these actions can help attackers avoid IDS detection during port scans?",
+    "options": {
+      "A": "Randomizing scan order",
+      "B": "Using decoys",
+      "C": "Slow scanning (low rate)",
+      "D": "Sending scans from spoofed IPs"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these techniques help evade IDS detection by masking patterns or sources of scanning activity."
+  },
+  {
+    "question": "Which evasion method relies on encoding commands to prevent detection by signature-based systems?",
+    "options": {
+      "A": "Base64 encoding",
+      "B": "URL encoding",
+      "C": "Unicode obfuscation",
+      "D": "Token rotation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Encoding attacks in Base64, URL format, or Unicode obfuscates the payload, avoiding pattern-based detection."
+  },
+  {
+    "question": "What is the role of decoy IPs in Nmap scanning?",
+    "options": {
+      "A": "To overwhelm the IDS sensor",
+      "B": "To confuse source attribution of scans",
+      "C": "To accelerate the scanning process",
+      "D": "To test for DNS poisoning"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Decoy IPs make it harder for defenders to identify the real source of a scan, thus aiding in evasion."
+  },
+  {
+    "question": "What is the primary function of protocol normalization in IDS?",
+    "options": {
+      "A": "To analyze only encrypted traffic",
+      "B": "To convert variations of protocol usage into a standard form",
+      "C": "To filter IP spoofing attempts",
+      "D": "To create firewall rules"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Normalization helps IDS detect attacks by transforming protocols into a consistent format for analysis."
+  },
+  {
+    "question": "Which evasion techniques may leverage split payload delivery?",
+    "options": {
+      "A": "Packet fragmentation",
+      "B": "Content obfuscation",
+      "C": "Multi-part encoding",
+      "D": "Unicode manipulation"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Fragmenting or splitting payloads into multiple parts helps bypass inspection systems that do not reassemble properly."
+  },
+  {
+    "question": "How can the use of custom protocol headers assist in evasion?",
+    "options": {
+      "A": "They avoid triggering default signatures",
+      "B": "They are encrypted by nature",
+      "C": "They disable deep packet inspection",
+      "D": "They allow browser-based execution"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Custom headers may not match known IDS signatures, thus evading detection."
+  },
+  {
+    "question": "Which of the following firewall evasion techniques exploits trust relationships?",
+    "options": {
+      "A": "Source routing",
+      "B": "Proxy chaining",
+      "C": "Pivoting",
+      "D": "Using known allowed services like DNS"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Source routing and pivoting abuse trusted paths, and DNS is often trusted by firewalls, allowing covert traffic."
+  },
+  {
+    "question": "What is one way attackers identify emulated services in honeypots?",
+    "options": {
+      "A": "Banner grabbing",
+      "B": "Buffer overflow testing",
+      "C": "Timing response variations",
+      "D": "IP geolocation"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Attackers may analyze service banners and response timing to detect fake or emulated services."
+  },
+  {
+    "question": "What type of IDS analyzes traffic behavior over time rather than relying on signatures?",
+    "options": {
+      "A": "Anomaly-based IDS",
+      "B": "Signature-based IDS",
+      "C": "Heuristic firewall",
+      "D": "Token-based detection"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Anomaly-based IDS identifies deviations from normal traffic behavior to detect unknown or novel attacks."
+  },
+  {
+    "question": "Which of the following are goals of evading a honeypot?",
+    "options": {
+      "A": "Avoiding behavioral analysis",
+      "B": "Preventing command logging",
+      "C": "Confusing threat intel collection",
+      "D": "Gaining root access"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Evasion is focused on avoiding logging, analysis, and intel gathering. Root access is usually a honeypot trap."
+  },
+  {
+    "question": "What is one reason attackers use HTTP tunneling?",
+    "options": {
+      "A": "HTTP traffic is rarely blocked by firewalls",
+      "B": "It hides payloads in DNS requests",
+      "C": "It triggers IDS alerts faster",
+      "D": "It encrypts packets at Layer 2"
+    },
+    "correct_answers": ["A"],
+    "explanation": "HTTP is typically allowed through firewalls, making it a useful protocol for tunneling and evasion."
+  },
+  {
+    "question": "Which of the following methods best improves IDS resistance to evasion techniques?",
+    "options": {
+      "A": "Deep packet inspection",
+      "B": "Protocol anomaly detection",
+      "C": "Port forwarding",
+      "D": "Encrypted payload comparison"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "DPI and protocol anomaly detection enhance an IDS's ability to detect hidden or non-standard attack traffic."
+  }
+]

@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which of the following are common goals of social engineering attacks?",
+    "options": {
+      "A": "To obtain sensitive information",
+      "B": "To install keyloggers via USB",
+      "C": "To test system bandwidth",
+      "D": "To gain physical access to secure areas"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Social engineering is often used to extract confidential data, install malware, or bypass physical security."
+  },
+  {
+    "question": "What makes social engineering effective against technical controls?",
+    "options": {
+      "A": "Exploits human trust",
+      "B": "Bypasses technical authentication",
+      "C": "Uses encryption flaws",
+      "D": "Relies on social manipulation"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Social engineering works by manipulating human behavior, often bypassing purely technical safeguards."
+  },
+  {
+    "question": "Which of the following are types of social engineering?",
+    "options": {
+      "A": "Phishing",
+      "B": "Tailgating",
+      "C": "Dumpster diving",
+      "D": "Port scanning"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Phishing, tailgating, and dumpster diving are all social engineering techniques; port scanning is not."
+  },
+  {
+    "question": "What are characteristics of phishing emails?",
+    "options": {
+      "A": "Urgent or threatening language",
+      "B": "Unusual sender email addresses",
+      "C": "Hyperlinks to login pages",
+      "D": "Encrypted digital signatures"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Phishing emails often appear urgent, spoof the sender, and link to fake login pages."
+  },
+  {
+    "question": "Which of the following are types of phishing attacks?",
+    "options": {
+      "A": "Spear phishing",
+      "B": "Whaling",
+      "C": "Smishing",
+      "D": "Vishing"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Spear phishing (targeted), whaling (executives), smishing (SMS), and vishing (voice) are all phishing variants."
+  },
+  {
+    "question": "How does pretexting differ from phishing?",
+    "options": {
+      "A": "Pretexting builds a false identity",
+      "B": "Phishing uses email as a vector",
+      "C": "Pretexting involves direct conversation",
+      "D": "Phishing always includes malware"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Pretexting uses fabricated identities in conversations; phishing typically relies on electronic messages."
+  },
+  {
+    "question": "Which tools can be used to create phishing simulations?",
+    "options": {
+      "A": "SET (Social Engineering Toolkit)",
+      "B": "Gophish",
+      "C": "PhishTool",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SET, Gophish, and PhishTool are designed for phishing campaigns; Netcat is a network utility."
+  },
+  {
+    "question": "What are indicators of a vishing attack?",
+    "options": {
+      "A": "Caller claims to be tech support",
+      "B": "Requests to install software",
+      "C": "Unsolicited financial queries",
+      "D": "Misspelled email links"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Vishing uses voice communication to trick victims, often mimicking support or financial institutions."
+  },
+  {
+    "question": "Which methods are used in physical social engineering?",
+    "options": {
+      "A": "Tailgating",
+      "B": "Impersonation",
+      "C": "USB drop attack",
+      "D": "XSS injection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Physical attacks rely on face-to-face deception or exploiting curiosity with USB drops."
+  },
+  {
+    "question": "What can organizations do to defend against social engineering?",
+    "options": {
+      "A": "Security awareness training",
+      "B": "Implementing two-factor authentication",
+      "C": "Limiting public information",
+      "D": "Upgrading firewalls"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "While firewalls help, social engineering is best mitigated with training, access controls, and information minimization."
+  },
+  {
+    "question": "Which of these are social engineering red flags?",
+    "options": {
+      "A": "Unusual sense of urgency",
+      "B": "Request for confidential information",
+      "C": "Generic greetings in emails",
+      "D": "Use of digital certificates"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Red flags include urgency, sensitive requests, and impersonal communication. Certificates often enhance legitimacy, not reduce it."
+  },
+  {
+    "question": "Why is tailgating effective?",
+    "options": {
+      "A": "Relies on politeness and human behavior",
+      "B": "Takes advantage of weak badge policies",
+      "C": "Works even in high-security areas",
+      "D": "Requires phishing emails"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Tailgating works by exploiting politeness or lax enforcement of access controls. No phishing required."
+  },
+  {
+    "question": "Which types of users are common targets of whaling?",
+    "options": {
+      "A": "CEOs and CFOs",
+      "B": "Helpdesk staff",
+      "C": "HR executives",
+      "D": "System administrators"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Whaling targets high-level executives or departments with access to valuable data like payroll or W-2s."
+  },
+  {
+    "question": "Which are goals of a social engineering red team assessment?",
+    "options": {
+      "A": "To test employee susceptibility",
+      "B": "To identify gaps in security culture",
+      "C": "To evaluate firewall rules",
+      "D": "To assess phishing detection rates"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Red teaming includes phishing and physical entry attempts to test human awareness and response."
+  },
+  {
+    "question": "Which of the following are best practices against USB baiting?",
+    "options": {
+      "A": "Disable USB ports when not in use",
+      "B": "Use endpoint protection to scan devices",
+      "C": "Train employees not to insert unknown devices",
+      "D": "Monitor USB port voltage"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Technical and human countermeasures are essential against USB baiting; voltage monitoring is irrelevant."
+  },
+  {
+    "question": "What makes smishing difficult to detect?",
+    "options": {
+      "A": "Short messages mimic legitimate alerts",
+      "B": "Uses fake sender IDs",
+      "C": "Bypasses email spam filters",
+      "D": "Requires in-person interaction"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Smishing comes via SMS, bypassing email controls, and may use spoofed numbers with brief deceptive content."
+  },
+  {
+    "question": "Which behaviors may indicate an impersonation attempt?",
+    "options": {
+      "A": "Claims to be from IT but avoids using official channels",
+      "B": "Urgent request to reset a password",
+      "C": "Requests badge access without credentials",
+      "D": "Sends encrypted messages with digital signatures"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Impersonators rely on urgency, fake identity, and requests to bypass procedures. Signed messages enhance trust."
+  },
+  {
+    "question": "Which information is commonly collected through open source intelligence (OSINT) for social engineering?",
+    "options": {
+      "A": "Employee names and titles",
+      "B": "Organizational hierarchy",
+      "C": "VPN tunnel configurations",
+      "D": "Corporate event schedules"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "OSINT gathering includes people, structure, and events that can be used in social engineering scenarios."
+  },
+  {
+    "question": "Which of the following are common payloads in phishing emails?",
+    "options": {
+      "A": "Fake login links",
+      "B": "Malicious attachments",
+      "C": "QR codes leading to exploit pages",
+      "D": "Nmap scan results"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Phishing emails may include fake links, attachments, or QR codes. Nmap results are irrelevant here."
+  },
+  {
+    "question": "How can attackers use LinkedIn for social engineering?",
+    "options": {
+      "A": "Identify company personnel",
+      "B": "Craft personalized spear phishing messages",
+      "C": "Track organizational changes",
+      "D": "Brute force login portals"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "LinkedIn is a rich source of personal and organizational data for targeting and customization of attacks."
+  },
+  {
+    "question": "Which principles of influence are commonly used in social engineering?",
+    "options": {
+      "A": "Authority",
+      "B": "Scarcity",
+      "C": "Reciprocity",
+      "D": "Privilege escalation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Social engineers exploit psychological principles like authority, scarcity, and reciprocity to manipulate targets."
+  },
+  {
+    "question": "What actions may a social engineer take during a pretexting scenario?",
+    "options": {
+      "A": "Pretend to be from IT support",
+      "B": "Call pretending to be a bank representative",
+      "C": "Pose as a job applicant",
+      "D": "Ping a server to check uptime"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Pretexting involves creating a believable story to extract information. Pinging servers is unrelated."
+  },
+  {
+    "question": "Which attack types may involve social engineering techniques?",
+    "options": {
+      "A": "Business Email Compromise (BEC)",
+      "B": "Rogue software installation",
+      "C": "Watering hole attacks",
+      "D": "Pharming"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "BEC, rogue installs, and watering hole attacks often rely on human manipulation. Pharming is more technical."
+  },
+  {
+    "question": "Which vectors are used in smishing attacks?",
+    "options": {
+      "A": "SMS messages",
+      "B": "Malicious app links",
+      "C": "Voicemail phishing",
+      "D": "Phone call scripts"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Smishing uses SMS to deliver malicious links or apps. Voicemail and phone calls relate to vishing."
+  },
+  {
+    "question": "What tactics might be used in a successful impersonation attack?",
+    "options": {
+      "A": "Wearing a company badge",
+      "B": "Using insider jargon",
+      "C": "Claiming authority",
+      "D": "Asking for Wi-Fi passwords politely"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Impersonators may use appearance, language, authority, and social interaction to gain trust or access."
+  },
+  {
+    "question": "What measures reduce the effectiveness of social engineering attacks?",
+    "options": {
+      "A": "Security awareness campaigns",
+      "B": "Employee phishing simulations",
+      "C": "Strict access control policies",
+      "D": "Running antivirus on servers only"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Training, simulations, and policy enforcement help reduce human vulnerabilities. AV on servers is insufficient."
+  },
+  {
+    "question": "Which tools help simulate social engineering attacks for training?",
+    "options": {
+      "A": "Gophish",
+      "B": "SET (Social Engineering Toolkit)",
+      "C": "King Phisher",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Gophish, SET, and King Phisher are phishing simulation tools. Nikto is a web scanner."
+  },
+  {
+    "question": "Which types of data are typically targeted during social engineering?",
+    "options": {
+      "A": "User credentials",
+      "B": "Personal identifiable information (PII)",
+      "C": "Financial account details",
+      "D": "Internal IP addressing schemes"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Social engineers aim for credentials and sensitive data. Internal IPs are more relevant to technical recon."
+  },
+  {
+    "question": "Which roles in a company are common targets for social engineering?",
+    "options": {
+      "A": "Receptionists",
+      "B": "HR personnel",
+      "C": "IT support",
+      "D": "Legal counsel"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Attackers may target any employee with access to valuable or confidential information."
+  },
+  {
+    "question": "What are valid characteristics of spear phishing?",
+    "options": {
+      "A": "Personalized email content",
+      "B": "Appears to come from trusted contacts",
+      "C": "Targets large groups indiscriminately",
+      "D": "Contains context-specific requests"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Spear phishing is highly targeted and tailored, unlike broad spam campaigns."
+  },
+  {
+    "question": "What makes whaling attacks high risk?",
+    "options": {
+      "A": "They target senior executives",
+      "B": "They can result in large financial losses",
+      "C": "They often bypass email filters",
+      "D": "They include ransomware payloads"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Whaling targets executives with authority to transfer funds or disclose sensitive data. Malware is not always involved."
+  },
+  {
+    "question": "Which countermeasures are effective against tailgating?",
+    "options": {
+      "A": "Security turnstiles",
+      "B": "Security guards at entrances",
+      "C": "Employee badge verification",
+      "D": "Firewall rule enforcement"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Physical access controls like turnstiles and guards help prevent unauthorized entry. Firewalls are unrelated."
+  },
+  {
+    "question": "What makes social engineering dangerous for an organization?",
+    "options": {
+      "A": "It targets the human element",
+      "B": "It can bypass multi-layered security",
+      "C": "It’s difficult to detect in real time",
+      "D": "It affects only technical infrastructure"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Social engineering is subtle, human-focused, and often circumvents standard defenses."
+  },
+  {
+    "question": "Which of the following can be part of a baiting attack?",
+    "options": {
+      "A": "Malicious USB left in a parking lot",
+      "B": "Free download offers with malware",
+      "C": "Bogus job offers on LinkedIn",
+      "D": "Privilege escalation on Windows"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Baiting tricks users into interacting with infected devices or links. Privilege escalation is a post-exploitation step."
+  },
+  {
+    "question": "What types of payloads are commonly used in rogue software scams?",
+    "options": {
+      "A": "Fake antivirus software",
+      "B": "Ransomware",
+      "C": "Keyloggers",
+      "D": "VLAN hopping scripts"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Rogue software can deliver various malware types; VLAN hopping relates to network segmentation abuse."
+  },
+  {
+    "question": "Which social engineering techniques use time pressure as a tactic?",
+    "options": {
+      "A": "Urgent password reset emails",
+      "B": "Calls warning of account suspension",
+      "C": "Phishing emails with countdown timers",
+      "D": "Brute-force authentication attacks"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Time pressure increases compliance in social engineering. Brute force is a technical attack."
+  },
+  {
+    "question": "Which of the following best describe the purpose of social engineering assessments?",
+    "options": {
+      "A": "Identify vulnerable employees",
+      "B": "Improve organizational awareness",
+      "C": "Evaluate security training effectiveness",
+      "D": "Bypass web application firewalls"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Assessments are meant to test and improve human-related defenses, not bypass technical web controls."
+  },
+  {
+    "question": "Which of the following are true about piggybacking?",
+    "options": {
+      "A": "It is always malicious",
+      "B": "It involves authorized person allowing access",
+      "C": "It may be accidental",
+      "D": "It is a social engineering technique"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Piggybacking may occur intentionally or accidentally, often involving a legitimate user assisting an intruder."
+  },
+  {
+    "question": "How do attackers use fear as a social engineering tactic?",
+    "options": {
+      "A": "Claiming system will be locked unless acted upon",
+      "B": "Threatening account suspension",
+      "C": "Saying a boss needs a task completed immediately",
+      "D": "Performing DoS attacks"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Fear-based tactics create urgency or panic, leading users to comply without verifying the source."
+  },
+  {
+    "question": "Which of the following types of media might be used in baiting attacks?",
+    "options": {
+      "A": "USB drives",
+      "B": "CDs or DVDs",
+      "C": "QR codes on flyers",
+      "D": "Firewall logs"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Baiting uses enticing media to lure users. Logs are not a vector for social engineering."
+  }
+]

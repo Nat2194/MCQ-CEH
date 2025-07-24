@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which packet details can be used to identify a TCP handshake in Wireshark?",
+    "options": {
+      "A": "SYN",
+      "B": "SYN-ACK",
+      "C": "ACK",
+      "D": "FIN"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "A TCP handshake involves SYN → SYN-ACK → ACK. FIN indicates session termination."
+  },
+  {
+    "question": "Which techniques make sniffing on switched networks more difficult?",
+    "options": {
+      "A": "Using VLAN segmentation",
+      "B": "Enabling port security",
+      "C": "Using a hub",
+      "D": "Enabling 802.1X authentication"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Switch security features like VLANs, port security, and 802.1X prevent unauthorized sniffing."
+  },
+  {
+    "question": "Which of the following protocols are known to leak sensitive data when sniffed?",
+    "options": {
+      "A": "IMAP",
+      "B": "SMTP",
+      "C": "HTTP",
+      "D": "SCP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "IMAP, SMTP, and HTTP may transmit data unencrypted; SCP is encrypted via SSH."
+  },
+  {
+    "question": "Which attacks are facilitated by information gathered through sniffing?",
+    "options": {
+      "A": "Session hijacking",
+      "B": "Credential harvesting",
+      "C": "Man-in-the-middle",
+      "D": "Web cache poisoning"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Sniffing supports MITM, session hijacking, and stealing cleartext credentials."
+  },
+  {
+    "question": "Which of the following are common outputs of packet sniffers?",
+    "options": {
+      "A": "Protocol details",
+      "B": "Source and destination IPs",
+      "C": "Payload data",
+      "D": "Operating system fingerprints"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Sniffers log packet headers and data; OS fingerprinting is done through other techniques like banner grabbing."
+  },
+  {
+    "question": "Which flags are typically set in a TCP 3-way handshake?",
+    "options": {
+      "A": "SYN",
+      "B": "ACK",
+      "C": "RST",
+      "D": "SYN-ACK"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "The TCP handshake uses SYN → SYN-ACK → ACK. RST is used for abrupt session termination."
+  },
+  {
+    "question": "Which types of data can be recovered from an unencrypted VoIP call using sniffing?",
+    "options": {
+      "A": "Caller ID",
+      "B": "Audio stream (RTP)",
+      "C": "DTMF tones",
+      "D": "SSL certificates"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "VoIP data like RTP streams, call IDs, and tones are exposed if unencrypted. SSL certificates are unrelated."
+  },
+  {
+    "question": "Which of these tools are capable of capturing wireless traffic?",
+    "options": {
+      "A": "Aircrack-ng",
+      "B": "Wireshark",
+      "C": "Kismet",
+      "D": "Tcpdump"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All listed tools can capture wireless traffic with appropriate interfaces and modes."
+  },
+  {
+    "question": "Which attacks can be detected by monitoring packet behavior in Wireshark?",
+    "options": {
+      "A": "ARP spoofing",
+      "B": "DHCP starvation",
+      "C": "DNS poisoning",
+      "D": "SMB relay"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Wireshark can detect suspicious ARP, DNS, and SMB traffic patterns. DHCP starvation may require other tools."
+  },
+  {
+    "question": "What characteristics define a successful sniffing session?",
+    "options": {
+      "A": "Data is unencrypted",
+      "B": "Traffic is flowing through the attacker’s NIC",
+      "C": "Session tokens are readable",
+      "D": "Network latency spikes"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Sniffing requires access to readable, unencrypted traffic routed through the attacker's interface."
+  },
+  {
+    "question": "Which filtering expressions are used in Tcpdump?",
+    "options": {
+      "A": "port 80",
+      "B": "tcp",
+      "C": "src host 192.168.0.1",
+      "D": "http.request"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Tcpdump uses BPF syntax like 'port' or 'src host'. 'http.request' is a Wireshark display filter."
+  },
+  {
+    "question": "Which network architectures reduce sniffing risk?",
+    "options": {
+      "A": "Switched Ethernet with port security",
+      "B": "Encrypted VPN tunnels",
+      "C": "Flat broadcast domains",
+      "D": "Segregated VLANs"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Switches with security, VPNs, and VLANs help contain traffic and protect from sniffers."
+  },
+  {
+    "question": "What kind of information can a successful SSLStrip attack expose?",
+    "options": {
+      "A": "Login credentials",
+      "B": "Session cookies",
+      "C": "HTTPS certificate fingerprints",
+      "D": "Plaintext web forms"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "SSLStrip downgrades HTTPS to HTTP, capturing login forms and cookies in plaintext."
+  },
+  {
+    "question": "Which network devices are immune to traditional MAC flooding attacks?",
+    "options": {
+      "A": "Hubs",
+      "B": "Layer 3 switches with port security",
+      "C": "Unmanaged switches",
+      "D": "Routers"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "Routers and switches with port security are hardened against MAC table exhaustion."
+  },
+  {
+    "question": "What does the term 'sniffing in promiscuous mode' imply?",
+    "options": {
+      "A": "Capturing all packets regardless of destination",
+      "B": "Sending ARP probes to clients",
+      "C": "Capturing only packets to the host",
+      "D": "NIC discards MAC filters"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "Promiscuous mode disables NIC filtering, allowing all traffic to be processed."
+  },
+  {
+    "question": "Which services or protocols support SSL/TLS encryption to mitigate sniffing?",
+    "options": {
+      "A": "HTTPS",
+      "B": "FTPS",
+      "C": "SMTP with STARTTLS",
+      "D": "Telnet"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SSL/TLS protects traffic in HTTPS, FTPS, and SMTP (if STARTTLS is used). Telnet is unencrypted."
+  },
+  {
+    "question": "Which protocol pairs are considered vulnerable to sniffing unless encrypted?",
+    "options": {
+      "A": "Telnet & FTP",
+      "B": "SMTP & POP3",
+      "C": "SSH & HTTPS",
+      "D": "IMAP & HTTP"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "All except SSH/HTTPS can leak data in transit unless encrypted with SSL/TLS."
+  },
+  {
+    "question": "Which of these can increase the effectiveness of a sniffing attack?",
+    "options": {
+      "A": "Running a rogue DHCP server",
+      "B": "ARP cache poisoning",
+      "C": "Exploiting switch misconfigurations",
+      "D": "Flooding DNS responses"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Each technique helps redirect or intercept traffic, enhancing sniffing opportunities."
+  },
+  {
+    "question": "What is the purpose of session replay in sniffing-based attacks?",
+    "options": {
+      "A": "To resend captured authentication tokens",
+      "B": "To inject TCP RST packets",
+      "C": "To bypass authentication steps",
+      "D": "To exfiltrate captured VoIP audio"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Replay attacks use captured sessions to skip authentication or mimic valid user behavior."
+  },
+  {
+    "question": "Which packet sniffing methods are effective on wireless networks?",
+    "options": {
+      "A": "Monitor mode sniffing",
+      "B": "Deauthentication injection",
+      "C": "Beacon flooding",
+      "D": "Passive channel hopping"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Wireless sniffing benefits from monitor mode and passive tools that hop channels to capture traffic."
+  },
+  {
+    "question": "Which of the following attacks often rely on packet sniffing as a precursor?",
+    "options": {
+      "A": "Credential theft",
+      "B": "Session hijacking",
+      "C": "SQL injection",
+      "D": "Replay attacks"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sniffing often leads to credential harvesting, session hijacking, and replay attacks. SQL injection is unrelated."
+  },
+  {
+    "question": "What are signs of ARP spoofing observable in packet captures?",
+    "options": {
+      "A": "Multiple MAC addresses for the same IP",
+      "B": "Frequent unsolicited ARP replies",
+      "C": "Incorrect IP-to-MAC mappings",
+      "D": "Flooded TCP RST packets"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "ARP spoofing causes unusual ARP traffic, inconsistent MAC-IP bindings, and unsolicited replies."
+  },
+  {
+    "question": "Which components of a packet are visible during sniffing?",
+    "options": {
+      "A": "MAC address",
+      "B": "IP address",
+      "C": "Payload data",
+      "D": "CPU usage"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Sniffers capture network-layer and transport-layer data; CPU metrics are unrelated."
+  },
+  {
+    "question": "What information can be obtained by sniffing DNS queries?",
+    "options": {
+      "A": "Domain names visited",
+      "B": "Query source IP",
+      "C": "Query type (e.g., A, MX)",
+      "D": "SSL certificate expiration"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS traffic reveals user behavior like domains and types of records queried. SSL data isn’t part of DNS."
+  },
+  {
+    "question": "Which tools can be used to perform packet injection alongside sniffing?",
+    "options": {
+      "A": "Ettercap",
+      "B": "Scapy",
+      "C": "Aircrack-ng",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Ettercap, Scapy, and Aircrack-ng can generate or inject packets; Wireshark is passive only."
+  },
+  {
+    "question": "Which protocols are commonly analyzed during email sniffing?",
+    "options": {
+      "A": "SMTP",
+      "B": "POP3",
+      "C": "IMAP",
+      "D": "SNMP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Email sniffing targets unencrypted email protocols like SMTP, POP3, and IMAP. SNMP is unrelated."
+  },
+  {
+    "question": "What configuration allows attackers to sniff all traffic on a wireless channel?",
+    "options": {
+      "A": "NIC in monitor mode",
+      "B": "NIC in promiscuous mode",
+      "C": "SSID broadcast disabled",
+      "D": "Weak WPA key used"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Monitor mode (wireless) and promiscuous mode (wired/wireless) enable full-channel capture."
+  },
+  {
+    "question": "Which of these are reliable indicators of wireless sniffing in progress?",
+    "options": {
+      "A": "Rapid deauthentication frames",
+      "B": "Unusual beacon traffic",
+      "C": "Hidden SSIDs",
+      "D": "Increased retransmissions"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sniffers might trigger deauth floods or inject excessive beacon/retransmit packets. SSID hiding is common but not an indicator."
+  },
+  {
+    "question": "Which command-line tools can be used to perform packet sniffing on Linux?",
+    "options": {
+      "A": "Tcpdump",
+      "B": "Tshark",
+      "C": "Ngrep",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Tcpdump, Tshark, and Ngrep support CLI sniffing. Nikto is a web vulnerability scanner."
+  },
+  {
+    "question": "Which protocols are encrypted and resistant to sniffing by default?",
+    "options": {
+      "A": "SSH",
+      "B": "HTTPS",
+      "C": "RDP",
+      "D": "Telnet"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SSH, HTTPS, and RDP use encryption; Telnet transmits plaintext data."
+  },
+  {
+    "question": "What security controls can be enforced to limit wireless sniffing?",
+    "options": {
+      "A": "WPA3 encryption",
+      "B": "802.1X authentication",
+      "C": "MAC address filtering",
+      "D": "SSID hiding"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Strong encryption (WPA3) and port-based authentication (802.1X) are effective. MAC filtering and SSID hiding are easily bypassed."
+  },
+  {
+    "question": "Which scenarios are appropriate for ethical sniffing?",
+    "options": {
+      "A": "During internal penetration testing",
+      "B": "To verify VPN encryption",
+      "C": "Without authorization to test security",
+      "D": "As part of red teaming with scope approval"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sniffing is ethical only within scope, with consent, during assessments or security validation."
+  },
+  {
+    "question": "Which of these are potential outcomes of sniffing FTP sessions?",
+    "options": {
+      "A": "Cleartext username and password",
+      "B": "Uploaded file content",
+      "C": "Control commands (e.g., LIST, RETR)",
+      "D": "Encrypted tunnel creation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "FTP transmits credentials, commands, and data in plaintext unless secured via FTPS or SFTP."
+  },
+  {
+    "question": "Which tools support real-time sniffing and visualization of protocols?",
+    "options": {
+      "A": "Wireshark",
+      "B": "NetWitness",
+      "C": "SolarWinds Packet Sniffer",
+      "D": "Cain & Abel"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All listed tools provide real-time sniffing; some with visual analytics and protocol decoding."
+  },
+  {
+    "question": "What types of frames are visible during wireless sniffing in monitor mode?",
+    "options": {
+      "A": "Beacon frames",
+      "B": "Probe requests",
+      "C": "Deauthentication frames",
+      "D": "IPSec tunnels"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Beacon, probe, and control frames are visible; IPSec is encrypted and not directly viewable."
+  },
+  {
+    "question": "Which actions should follow identifying sensitive data via sniffing in a pen test?",
+    "options": {
+      "A": "Report it in findings with proof of capture",
+      "B": "Use it to access target systems (if in scope)",
+      "C": "Share data with external parties",
+      "D": "Validate encryption is missing or weak"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Captured data should be documented, responsibly used (with permission), and validated for security gaps."
+  },
+  {
+    "question": "Which Wireshark display filters are valid for protocol-based analysis?",
+    "options": {
+      "A": "http.request.method == \"POST\"",
+      "B": "tcp.port == 21",
+      "C": "ip.addr == 10.0.0.1",
+      "D": "dns.qry.name == \"example.com\""
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All are valid Wireshark filters to isolate traffic by protocol, port, IP, or DNS query."
+  },
+  {
+    "question": "Which of the following increase the difficulty of wireless sniffing?",
+    "options": {
+      "A": "WPA2/3 with strong passphrases",
+      "B": "MAC address randomization",
+      "C": "Client isolation",
+      "D": "Hidden SSID"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Encryption, randomized MACs, and isolation prevent easy interception; SSID hiding is superficial."
+  },
+  {
+    "question": "Which of the following are used by attackers to avoid detection during sniffing?",
+    "options": {
+      "A": "Using passive sniffers only",
+      "B": "Changing MAC addresses",
+      "C": "Running on stealth mode NICs",
+      "D": "Avoiding packet injection"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Attackers avoid noisy actions like injections and spoofing to remain undetected while sniffing passively."
+  },
+  {
+    "question": "Which of the following apply to sniffing encrypted traffic?",
+    "options": {
+      "A": "Encrypted payload is captured",
+      "B": "Header information is still visible",
+      "C": "Source/destination IPs remain readable",
+      "D": "Content is readable if symmetric key is known"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Even if payloads are encrypted, metadata is visible; decryption is possible with known keys."
+  }
+]

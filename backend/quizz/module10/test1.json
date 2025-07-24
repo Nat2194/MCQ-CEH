@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which of the following are objectives of a DoS attack?",
+    "options": {
+      "A": "Exhaust system resources",
+      "B": "Crash applications or services",
+      "C": "Gain administrator access",
+      "D": "Disrupt availability of services"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "DoS attacks aim to overwhelm or crash services to deny access; privilege escalation is not a primary goal."
+  },
+  {
+    "question": "Which protocols are commonly abused in amplification attacks?",
+    "options": {
+      "A": "DNS",
+      "B": "NTP",
+      "C": "ICMP",
+      "D": "FTP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS, NTP, and ICMP can be exploited to amplify traffic toward a victim. FTP is less commonly used for amplification."
+  },
+  {
+    "question": "Which are characteristics of a SYN flood attack?",
+    "options": {
+      "A": "Sends numerous TCP SYN packets",
+      "B": "Overloads the TCP connection queue",
+      "C": "Completes TCP handshakes to cause reset",
+      "D": "Leaves connections half-open"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "SYN floods send fake connection requests without completing the handshake, exhausting resources."
+  },
+  {
+    "question": "What are common symptoms of a DoS attack?",
+    "options": {
+      "A": "Slow network performance",
+      "B": "Unreachable services",
+      "C": "Sudden server restarts",
+      "D": "High CPU or memory usage"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "DoS causes degraded performance, outages, and resource exhaustion. Server restarts may happen but are less common."
+  },
+  {
+    "question": "Which of the following are types of DoS attacks?",
+    "options": {
+      "A": "Ping of Death",
+      "B": "Smurf attack",
+      "C": "Buffer overflow",
+      "D": "SQL injection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Ping of Death, Smurf, and buffer overflows can crash systems or services. SQL injection is a different class of attack."
+  },
+  {
+    "question": "Which tools are commonly used to perform DoS attacks?",
+    "options": {
+      "A": "LOIC",
+      "B": "HOIC",
+      "C": "Hping3",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "LOIC, HOIC, and Hping3 can generate traffic for DoS. Wireshark is a passive network analysis tool."
+  },
+  {
+    "question": "What makes a Distributed DoS (DDoS) different from a traditional DoS?",
+    "options": {
+      "A": "Uses multiple systems to attack",
+      "B": "Targets only cloud services",
+      "C": "Is harder to trace",
+      "D": "Relies on malware infections"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "DDoS attacks use many systems (often infected with malware) to attack, making them difficult to stop or trace."
+  },
+  {
+    "question": "What are potential consequences of a successful DoS attack?",
+    "options": {
+      "A": "Financial losses",
+      "B": "Damaged reputation",
+      "C": "Data theft",
+      "D": "Loss of service availability"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "DoS affects availability and can impact business operations and reputation. Data theft is typically not the focus."
+  },
+  {
+    "question": "What is the function of a botnet in DDoS attacks?",
+    "options": {
+      "A": "Serves as a network of attack nodes",
+      "B": "Improves response times",
+      "C": "Allows attackers to remain anonymous",
+      "D": "Automates distributed attack commands"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Botnets distribute the attack load, obscure the attacker, and automate coordination of the attack."
+  },
+  {
+    "question": "Which of the following describe an HTTP flood?",
+    "options": {
+      "A": "Overwhelms web servers with GET/POST requests",
+      "B": "Exploits application-layer vulnerabilities",
+      "C": "Saturates bandwidth using UDP",
+      "D": "Bypasses simple firewalls"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "HTTP floods target the application layer, often bypassing firewalls that don't inspect app-layer traffic."
+  },
+  {
+    "question": "Which systems are typically targeted by a Smurf attack?",
+    "options": {
+      "A": "Routers",
+      "B": "Broadcast addresses",
+      "C": "DNS servers",
+      "D": "Hosts with IP spoofing"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "Smurf attacks use ICMP to broadcast spoofed packets to amplify traffic toward the victim."
+  },
+  {
+    "question": "What mitigation techniques help protect against DoS attacks?",
+    "options": {
+      "A": "Rate limiting",
+      "B": "Traffic filtering",
+      "C": "Load balancing",
+      "D": "Privilege escalation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Rate limiting, filtering, and balancing reduce the impact of DoS attacks. Privilege escalation is unrelated."
+  },
+  {
+    "question": "What is an example of a reflective DoS attack?",
+    "options": {
+      "A": "SYN flood",
+      "B": "NTP amplification",
+      "C": "DNS amplification",
+      "D": "Teardrop attack"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Reflective attacks use a third party to send responses to the victim, as seen in NTP and DNS amplification."
+  },
+  {
+    "question": "Which type of attack involves sending fragmented IP packets?",
+    "options": {
+      "A": "Teardrop",
+      "B": "Ping of Death",
+      "C": "SYN flood",
+      "D": "Land attack"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Teardrop and Ping of Death manipulate packet structure, often using fragmentation to crash targets."
+  },
+  {
+    "question": "What characteristics make an attack a Layer 7 (application layer) DoS?",
+    "options": {
+      "A": "Targets web applications",
+      "B": "Uses HTTP, HTTPS, or DNS",
+      "C": "Overwhelms the CPU, not bandwidth",
+      "D": "Injects SQL commands"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Layer 7 DoS exploits application resources using normal-looking traffic. SQL injection is different."
+  },
+  {
+    "question": "Which Linux command-line tools can generate DoS test traffic?",
+    "options": {
+      "A": "Hping3",
+      "B": "nping",
+      "C": "curl",
+      "D": "nmap"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Hping3, nping, and Nmap can craft test packets; curl is used for HTTP requests but not DoS generation."
+  },
+  {
+    "question": "Which protocols can be spoofed in a DoS attack?",
+    "options": {
+      "A": "ICMP",
+      "B": "UDP",
+      "C": "TCP",
+      "D": "ARP"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "DoS attackers can spoof multiple protocol headers to hide identity or redirect attacks."
+  },
+  {
+    "question": "Which of the following are symptoms of a DDoS on a web server?",
+    "options": {
+      "A": "Web pages not loading",
+      "B": "Multiple requests from global IPs",
+      "C": "Increased 500 server errors",
+      "D": "Certificate expiration alerts"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Web-based DDoS causes high error rates, unresponsive services, and abnormal traffic spikes."
+  },
+  {
+    "question": "What differentiates a volumetric DoS from other types?",
+    "options": {
+      "A": "Exhausts bandwidth",
+      "B": "Uses high-packet-rate floods",
+      "C": "Targets application logic",
+      "D": "Saturates upstream network capacity"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Volumetric attacks flood bandwidth, affecting network and ISP layers rather than app resources."
+  },
+  {
+    "question": "Which of these are true about slowloris attacks?",
+    "options": {
+      "A": "Keep HTTP sessions open by sending partial headers",
+      "B": "Exploit web servers with long timeout configurations",
+      "C": "Are fast and bandwidth-intensive",
+      "D": "Can crash Apache-based servers"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Slowloris sends partial HTTP requests to exhaust connection slots without flooding bandwidth."
+  },
+  {
+    "question": "Which services are commonly targeted in DoS attacks?",
+    "options": {
+      "A": "Web servers (HTTP/HTTPS)",
+      "B": "Email servers (SMTP)",
+      "C": "DNS servers",
+      "D": "BIOS firmware"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Attackers often target web, mail, and DNS servers to disrupt critical services. BIOS is not targeted via DoS."
+  },
+  {
+    "question": "What is a 'land attack'?",
+    "options": {
+      "A": "An attack that uses source and destination IP as the victim's IP",
+      "B": "A flood of large UDP packets",
+      "C": "A DoS that sends malformed packets",
+      "D": "An application-layer DoS attack"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Land attacks send packets with the victim's IP as both source and destination, causing confusion or crashes."
+  },
+  {
+    "question": "Which features help firewalls mitigate DoS attacks?",
+    "options": {
+      "A": "Connection rate limiting",
+      "B": "Stateful packet inspection",
+      "C": "Geo-IP filtering",
+      "D": "Time-based access control"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Modern firewalls use multiple techniques including rate limiting, SPI, and geo/time filters to reduce DoS risk."
+  },
+  {
+    "question": "What defines an application-layer DoS attack?",
+    "options": {
+      "A": "Targets services like HTTP or DNS",
+      "B": "Uses legitimate-looking traffic",
+      "C": "Can exploit server logic",
+      "D": "Requires bandwidth exhaustion"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Application-layer DoS mimics real traffic and targets high-resource services without needing large bandwidth."
+  },
+  {
+    "question": "What makes DDoS hard to defend against?",
+    "options": {
+      "A": "Traffic comes from many sources",
+      "B": "Attack traffic often mimics normal behavior",
+      "C": "Attackers use botnets",
+      "D": "It's encrypted"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DDoS is difficult to trace and filter due to distributed origins and normal-looking traffic patterns."
+  },
+  {
+    "question": "Which are components of a typical botnet architecture?",
+    "options": {
+      "A": "Command and Control (C2) server",
+      "B": "Zombie hosts",
+      "C": "Target server",
+      "D": "Load balancer"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "A botnet includes a C2 server (controller), zombies (infected systems), and a chosen target."
+  },
+  {
+    "question": "Which defense mechanisms are cloud-based DoS mitigation services known for?",
+    "options": {
+      "A": "Global traffic distribution",
+      "B": "Real-time filtering and scrubbing",
+      "C": "IP blacklisting",
+      "D": "Brute-force password prevention"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Cloud mitigators filter traffic at scale, block malicious IPs, and spread the load globally. Brute-force attacks are outside DoS scope."
+  },
+  {
+    "question": "Which of the following are types of flooding attacks?",
+    "options": {
+      "A": "UDP flood",
+      "B": "ICMP flood",
+      "C": "DNS flood",
+      "D": "ARP cache poisoning"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Flood attacks use excessive packets (UDP, ICMP, DNS) to exhaust system/network resources. ARP poisoning is different."
+  },
+  {
+    "question": "Which methods help identify ongoing DoS attacks?",
+    "options": {
+      "A": "Monitoring traffic spikes",
+      "B": "Log correlation",
+      "C": "Using IDS/IPS alerts",
+      "D": "Firewall timeout logs"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these help detect DoS patterns based on anomalies, logging, or threshold alerts."
+  },
+  {
+    "question": "Which DoS variants exploit fragmented packets?",
+    "options": {
+      "A": "Teardrop",
+      "B": "Ping of Death",
+      "C": "Slowloris",
+      "D": "IP fragmentation attacks"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Teardrop and IP fragmentation attacks send malformed fragmented packets. Slowloris does not use fragmentation."
+  },
+  {
+    "question": "Which techniques can be used to reduce exposure to DoS attacks?",
+    "options": {
+      "A": "Blocking unused ports",
+      "B": "Enabling SYN cookies",
+      "C": "Rate limiting ICMP traffic",
+      "D": "Allowing unrestricted Telnet access"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Disabling unused services, using SYN cookies, and throttling ICMP reduce DoS risk. Telnet is insecure."
+  },
+  {
+    "question": "What are common causes of unintentional DoS?",
+    "options": {
+      "A": "Software bugs",
+      "B": "Heavy user load during promotions",
+      "C": "Misconfigured servers",
+      "D": "Using TLS encryption"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Poor coding, unexpected traffic spikes, and misconfigurations can unintentionally result in service denial."
+  },
+  {
+    "question": "Which of the following describe a SYN-ACK flood?",
+    "options": {
+      "A": "Sends many SYN-ACK responses to spoofed requests",
+      "B": "Leverages spoofed IPs",
+      "C": "Forces victim to respond with ACK",
+      "D": "Involves broadcast amplification"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SYN-ACK floods respond to spoofed SYNs, confusing the victim and overloading their response queue."
+  },
+  {
+    "question": "Which mitigation tools can identify and filter DDoS traffic?",
+    "options": {
+      "A": "Snort",
+      "B": "Suricata",
+      "C": "Fail2ban",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Snort and Suricata (IDS) detect patterns, Fail2ban can block malicious IPs. Wireshark is diagnostic, not preventive."
+  },
+  {
+    "question": "How does a Slow POST attack work?",
+    "options": {
+      "A": "Sends HTTP POST data in tiny pieces",
+      "B": "Occupies server threads with long uploads",
+      "C": "Floods the server with UDP packets",
+      "D": "Keeps connections alive to exhaust resources"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Slow POST attacks drip data to maintain connections and consume web server resources."
+  },
+  {
+    "question": "What is the main goal of an application-layer DoS?",
+    "options": {
+      "A": "Consume server-side resources",
+      "B": "Bypass web application firewalls",
+      "C": "Crash network devices",
+      "D": "Make the application unresponsive"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Application-layer DoS targets server resources and often bypasses basic firewalls to make services unusable."
+  },
+  {
+    "question": "What behavior is typical of a DNS amplification attack?",
+    "options": {
+      "A": "Spoofs victim’s IP in DNS queries",
+      "B": "Targets open DNS resolvers",
+      "C": "Generates large DNS responses",
+      "D": "Hijacks domain name ownership"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS amplification uses small requests to generate large responses aimed at a spoofed IP."
+  },
+  {
+    "question": "Which aspects make HTTP-based DoS attacks stealthy?",
+    "options": {
+      "A": "Use of legitimate requests",
+      "B": "Lack of protocol anomalies",
+      "C": "Difficult to differentiate from real users",
+      "D": "High packet rate"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "HTTP DoS mimics valid user behavior, evading signature detection. High packet rates aren’t always present."
+  },
+  {
+    "question": "Which network behaviors may indicate a volumetric DDoS in progress?",
+    "options": {
+      "A": "Sudden bandwidth spikes",
+      "B": "Network saturation",
+      "C": "Dropped or timed-out connections",
+      "D": "Low CPU usage on servers"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Volumetric DDoS causes bandwidth surges and packet loss. CPU usage might remain unaffected initially."
+  },
+  {
+    "question": "Which protocols can be misused for reflection and amplification?",
+    "options": {
+      "A": "DNS",
+      "B": "NTP",
+      "C": "SNMP",
+      "D": "RDP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS, NTP, and SNMP can be exploited for reflection/amplification attacks. RDP is not used this way."
+  }
+]

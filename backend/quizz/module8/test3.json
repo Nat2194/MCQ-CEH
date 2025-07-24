@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which of the following tools can be used for packet sniffing?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Tcpdump",
+      "C": "Ettercap",
+      "D": "Nessus"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Wireshark, Tcpdump, and Ettercap are sniffing tools; Nessus is a vulnerability scanner."
+  },
+  {
+    "question": "Which of the following protocols are most vulnerable to sniffing attacks?",
+    "options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "Telnet",
+      "D": "HTTPS"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "HTTP, FTP, and Telnet transmit data in plaintext, making them vulnerable to sniffing."
+  },
+  {
+    "question": "What can be captured using packet sniffing tools?",
+    "options": {
+      "A": "Usernames and passwords",
+      "B": "Session cookies",
+      "C": "Encrypted SSH keys",
+      "D": "Email content in plaintext"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sniffers can capture sensitive data like credentials, cookies, and unencrypted communications."
+  },
+  {
+    "question": "Which of the following are common types of sniffing attacks?",
+    "options": {
+      "A": "MAC flooding",
+      "B": "DHCP starvation",
+      "C": "ARP spoofing",
+      "D": "DNS tunneling"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "MAC flooding and ARP spoofing are techniques used to enable sniffing on switched networks."
+  },
+  {
+    "question": "Which of the following methods can be used to prevent packet sniffing?",
+    "options": {
+      "A": "Use of encryption protocols",
+      "B": "Using static ARP entries",
+      "C": "Using a VPN",
+      "D": "Running a sniffer on the network"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Encryption, static ARP tables, and VPNs help prevent sniffing; sniffers themselves are attack tools."
+  },
+  {
+    "question": "Which of these tools supports MITM and sniffing attacks?",
+    "options": {
+      "A": "Cain & Abel",
+      "B": "Ettercap",
+      "C": "Burp Suite",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Cain & Abel and Ettercap support man-in-the-middle attacks and packet sniffing."
+  },
+  {
+    "question": "Which mode must a NIC be in to sniff all network traffic?",
+    "options": {
+      "A": "Promiscuous mode",
+      "B": "Monitor mode",
+      "C": "Active mode",
+      "D": "Stealth mode"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Promiscuous mode captures all packets on wired networks; monitor mode is used for wireless networks."
+  },
+  {
+    "question": "Which of the following tools can be used to detect sniffing on a network?",
+    "options": {
+      "A": "Promiscan",
+      "B": "Wireshark",
+      "C": "Nmap",
+      "D": "Antisniff"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Promiscan, Nmap scripts, and Antisniff can detect NICs in promiscuous mode."
+  },
+  {
+    "question": "What is the primary goal of ARP spoofing in sniffing attacks?",
+    "options": {
+      "A": "To redirect traffic through an attacker's machine",
+      "B": "To perform DNS resolution",
+      "C": "To gather MAC addresses only",
+      "D": "To crash the target system"
+    },
+    "correct_answers": ["A"],
+    "explanation": "ARP spoofing tricks devices into sending traffic to the attacker for interception."
+  },
+  {
+    "question": "Which of the following best describe 'switch port stealing'?",
+    "options": {
+      "A": "Sniffing technique on switched networks",
+      "B": "MAC address duplication method",
+      "C": "An attack to flood the switch with fake MACs",
+      "D": "Sniffing on wireless access points"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Switch port stealing involves duplicating MAC addresses to hijack a switch port and sniff traffic."
+  },
+  {
+    "question": "Which tool is best for capturing and analyzing network packets graphically?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Tcpdump",
+      "C": "Netcat",
+      "D": "Cain & Abel"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Wireshark is a GUI-based network protocol analyzer ideal for packet inspection."
+  },
+  {
+    "question": "Which wireless encryption protocols are weak and vulnerable to sniffing?",
+    "options": {
+      "A": "WEP",
+      "B": "WPA",
+      "C": "WPA2-PSK",
+      "D": "WPA3"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "WEP and early WPA are vulnerable to sniffing and cracking; WPA2-PSK is stronger but still has flaws."
+  },
+  {
+    "question": "What is a key characteristic of passive sniffing?",
+    "options": {
+      "A": "No interaction with the target system",
+      "B": "ARP spoofing is used",
+      "C": "Easily detectable",
+      "D": "It involves DoS attacks"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Passive sniffing simply listens to traffic without sending any packets, making it hard to detect."
+  },
+  {
+    "question": "Which tools are primarily CLI-based packet sniffers?",
+    "options": {
+      "A": "Tcpdump",
+      "B": "Wireshark",
+      "C": "Tshark",
+      "D": "Netstat"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Tcpdump and Tshark are CLI tools for packet capture; netstat shows active connections."
+  },
+  {
+    "question": "Which of the following are symptoms of a network being sniffed?",
+    "options": {
+      "A": "Unusual ARP replies",
+      "B": "Multiple MAC addresses on a single port",
+      "C": "Higher network latency",
+      "D": "Frequent port resets"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Anomalies like odd ARP activity or duplicated MAC addresses can indicate sniffing."
+  },
+  {
+    "question": "What attack uses packet sniffing combined with DNS manipulation?",
+    "options": {
+      "A": "DNS spoofing",
+      "B": "Man-in-the-middle",
+      "C": "MAC flooding",
+      "D": "Sniffing replay"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "DNS spoofing and MITM attacks both benefit from sniffed traffic for interception and redirection."
+  },
+  {
+    "question": "Which of these protocols offer end-to-end encryption to mitigate sniffing?",
+    "options": {
+      "A": "HTTPS",
+      "B": "SSH",
+      "C": "Telnet",
+      "D": "FTP over SSL"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "HTTPS, SSH, and FTPS encrypt traffic; Telnet does not and is vulnerable to sniffing."
+  },
+  {
+    "question": "Which filter would capture only HTTP traffic in Wireshark?",
+    "options": {
+      "A": "http",
+      "B": "tcp.port == 80",
+      "C": "udp.port == 80",
+      "D": "ip.proto == 6"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Both 'http' and 'tcp.port == 80' filters show HTTP traffic; UDP is not used for HTTP."
+  },
+  {
+    "question": "Which of these are real-time sniffing tools?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Tcpdump",
+      "C": "Aircrack-ng",
+      "D": "Metasploit"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Wireshark and Tcpdump capture traffic in real time; Aircrack-ng analyzes wireless traffic offline."
+  },
+  {
+    "question": "Which of the following tools can perform sniffing on wireless networks?",
+    "options": {
+      "A": "Kismet",
+      "B": "Aircrack-ng",
+      "C": "Ettercap",
+      "D": "Wireshark"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Kismet, Aircrack-ng, and Wireshark can all sniff wireless traffic when the NIC is in monitor mode."
+  },
+  {
+    "question": "Which types of networks are particularly vulnerable to sniffing?",
+    "options": {
+      "A": "Unsecured wireless networks",
+      "B": "Switched Ethernet networks",
+      "C": "Hub-based Ethernet networks",
+      "D": "Encrypted VPNs"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Unsecured wireless and hub-based networks broadcast traffic to all connected systems, making them easy to sniff."
+  },
+  {
+    "question": "What is a key difference between passive and active sniffing?",
+    "options": {
+      "A": "Passive sniffing is stealthy",
+      "B": "Active sniffing uses ARP poisoning",
+      "C": "Active sniffing can be detected more easily",
+      "D": "Passive sniffing floods the network"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Passive sniffing is silent and harder to detect, while active sniffing requires interaction like ARP poisoning."
+  },
+  {
+    "question": "Which layer of the OSI model does sniffing primarily operate on?",
+    "options": {
+      "A": "Data Link Layer",
+      "B": "Network Layer",
+      "C": "Transport Layer",
+      "D": "Application Layer"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Sniffing can capture packets from Layer 2 (MAC), Layer 3 (IP), and Layer 4 (TCP/UDP)."
+  },
+  {
+    "question": "Which tools support sniffing on wireless networks?",
+    "options": {
+      "A": "Kismet",
+      "B": "Wireshark",
+      "C": "Aircrack-ng",
+      "D": "John the Ripper"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Kismet, Wireshark, and Aircrack-ng can all sniff wireless packets; John the Ripper is for password cracking."
+  },
+  {
+    "question": "What actions can help mitigate sniffing on a corporate network?",
+    "options": {
+      "A": "Using static ARP entries",
+      "B": "Implementing VLANs",
+      "C": "Enabling port security",
+      "D": "Disabling encryption"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "VLANs isolate traffic, port security locks MAC addresses, and static ARP prevents spoofing."
+  },
+  {
+    "question": "Which of the following is a wireless sniffing tool?",
+    "options": {
+      "A": "Kismet",
+      "B": "Acrylic Wi-Fi",
+      "C": "NetStumbler",
+      "D": "Netcat"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Kismet, Acrylic Wi-Fi, and NetStumbler are used for wireless sniffing and network discovery."
+  },
+  {
+    "question": "What does 'promiscuous mode' enable a NIC to do?",
+    "options": {
+      "A": "Capture all traffic on the network segment",
+      "B": "Transmit malicious packets",
+      "C": "Bypass firewall rules",
+      "D": "Send malformed packets"
+    },
+    "correct_answers": ["A"],
+    "explanation": "In promiscuous mode, a NIC captures all packets, not just those addressed to it."
+  },
+  {
+    "question": "Which Linux tools can be used for packet sniffing?",
+    "options": {
+      "A": "Tcpdump",
+      "B": "Wireshark",
+      "C": "Tshark",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Tcpdump, Wireshark, and Tshark are Linux sniffing tools; Nikto is a web vulnerability scanner."
+  },
+  {
+    "question": "Which of the following indicate a switch may be under a sniffing attack?",
+    "options": {
+      "A": "Excessive MAC address entries",
+      "B": "Frequent ARP replies",
+      "C": "Broadcast storms",
+      "D": "DHCP lease failures"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "MAC flooding and ARP spoofing can cause unusual behavior in switches."
+  },
+  {
+    "question": "Which protocols encrypt their data and are safe from sniffing?",
+    "options": {
+      "A": "HTTPS",
+      "B": "SCP",
+      "C": "Telnet",
+      "D": "FTPS"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "HTTPS, SCP, and FTPS use encryption; Telnet is plaintext and vulnerable."
+  },
+  {
+    "question": "Which protocols are used to exploit switched networks via sniffing?",
+    "options": {
+      "A": "ARP",
+      "B": "STP",
+      "C": "LLDP",
+      "D": "DHCP"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "ARP can be spoofed to redirect traffic; STP may be abused to change switch root paths."
+  },
+  {
+    "question": "What is a defense against MAC flooding?",
+    "options": {
+      "A": "Port security",
+      "B": "802.1X authentication",
+      "C": "Disable unused ports",
+      "D": "Enable SNMP traps"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Port security limits MACs; 802.1X requires user auth; disabling unused ports reduces attack surface."
+  },
+  {
+    "question": "Which tools are used to analyze pcap files?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Tshark",
+      "C": "Tcpdump",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Wireshark, Tshark, and Tcpdump can read and analyze packet capture (pcap) files."
+  },
+  {
+    "question": "Which sniffing method involves manipulating switch behavior?",
+    "options": {
+      "A": "MAC flooding",
+      "B": "ARP spoofing",
+      "C": "Passive sniffing",
+      "D": "DHCP starvation"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "MAC flooding overwhelms the switch CAM table, while ARP spoofing diverts traffic to the attacker."
+  },
+  {
+    "question": "Which option best describes a sniffer’s use in penetration testing?",
+    "options": {
+      "A": "Identifying insecure protocols",
+      "B": "Capturing authentication tokens",
+      "C": "Generating shellcode",
+      "D": "Monitoring traffic patterns"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sniffers help identify unencrypted data and observe network behavior during pen tests."
+  },
+  {
+    "question": "Which filter shows only DNS packets in Wireshark?",
+    "options": {
+      "A": "dns",
+      "B": "udp.port == 53",
+      "C": "tcp.port == 53",
+      "D": "ip.addr == 8.8.8.8"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "'dns' and 'udp.port == 53' isolate DNS traffic; DNS typically uses UDP on port 53."
+  },
+  {
+    "question": "What is a symptom of a MITM attack using sniffing techniques?",
+    "options": {
+      "A": "Unexpected certificate warnings",
+      "B": "Increased response time",
+      "C": "MAC address changes",
+      "D": "Multiple DHCP offers"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Certificate errors and MAC spoofing may indicate MITM attacks involving sniffing."
+  },
+  {
+    "question": "Which of the following can sniff VoIP traffic?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Cain & Abel",
+      "C": "Ettercap",
+      "D": "Snort"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Wireshark, Cain & Abel, and Ettercap can capture and analyze VoIP traffic like SIP or RTP."
+  },
+  {
+    "question": "Which operating systems come with built-in sniffing tools?",
+    "options": {
+      "A": "Kali Linux",
+      "B": "Parrot OS",
+      "C": "Windows 10",
+      "D": "macOS"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Kali and Parrot OS are penetration testing distros with sniffers; macOS includes tcpdump."
+  },
+  {
+    "question": "What is a characteristic of Wireshark’s capture filters?",
+    "options": {
+      "A": "They limit what packets are captured",
+      "B": "They are set before the capture starts",
+      "C": "They work like display filters",
+      "D": "They can be changed mid-capture"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Capture filters define what packets are stored and must be set before the session begins."
+  }
+]

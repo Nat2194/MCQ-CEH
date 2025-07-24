@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which conditions allow a DNS amplification attack to succeed?",
+    "options": {
+      "A": "Open recursive resolvers",
+      "B": "Spoofable IP addresses",
+      "C": "Small request, large response ratio",
+      "D": "Disabled TCP handshake validation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS amplification relies on open resolvers, IP spoofing, and large responses to small queries. TCP is not used."
+  },
+  {
+    "question": "What are benefits of using SYN cookies to prevent DoS?",
+    "options": {
+      "A": "Avoids allocating memory until handshake is complete",
+      "B": "Protects against SYN flood attacks",
+      "C": "Validates client legitimacy",
+      "D": "Prevents buffer overflow exploits"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SYN cookies defer resource allocation, verify responses, and reduce the impact of SYN floods."
+  },
+  {
+    "question": "Which are viable signs of an application-layer DDoS?",
+    "options": {
+      "A": "Spike in GET/POST requests",
+      "B": "Increased CPU usage without bandwidth saturation",
+      "C": "Frequent 503 HTTP errors",
+      "D": "Abnormal SMTP traffic"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "App-layer DDoS causes CPU strain, request floods, and service errors. SMTP traffic relates to mail servers."
+  },
+  {
+    "question": "What techniques are used in Slowloris DoS attacks?",
+    "options": {
+      "A": "Sends partial HTTP headers",
+      "B": "Keeps connections open as long as possible",
+      "C": "Overwhelms thread-based servers",
+      "D": "Fills UDP sockets"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Slowloris slowly sends incomplete headers to tie up threads on web servers. It’s TCP-based, not UDP."
+  },
+  {
+    "question": "Which are preventive strategies for HTTP-based DoS attacks?",
+    "options": {
+      "A": "Reverse proxies with caching",
+      "B": "Web application firewalls (WAF)",
+      "C": "Rate limiting HTTP requests",
+      "D": "Allowing all traffic to port 80"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Caching, WAFs, and request throttling help mitigate HTTP DoS. Allowing unrestricted access increases risk."
+  },
+  {
+    "question": "What does a teardrop attack exploit?",
+    "options": {
+      "A": "Fragmented packet offset handling",
+      "B": "IP stack vulnerabilities",
+      "C": "Malformed IP header reassembly",
+      "D": "TCP handshake logic"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Teardrop attacks send overlapping fragments that some IP stacks cannot handle, causing crashes."
+  },
+  {
+    "question": "What is the primary impact of a resource exhaustion DoS?",
+    "options": {
+      "A": "Denial of availability",
+      "B": "Corruption of data",
+      "C": "Service unresponsiveness",
+      "D": "Memory leakage"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "The goal is to deplete resources (CPU, memory, sockets) to stop services. Data integrity isn't the focus."
+  },
+  {
+    "question": "Which network devices can be overwhelmed by DoS?",
+    "options": {
+      "A": "Routers",
+      "B": "Firewalls",
+      "C": "Load balancers",
+      "D": "Printers"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Any network-connected device with finite resources can be affected by a DoS attack, including printers."
+  },
+  {
+    "question": "What is an advantage of using cloud-based DDoS protection?",
+    "options": {
+      "A": "Global scrubbing centers",
+      "B": "On-premises control only",
+      "C": "Scaling beyond attacker’s bandwidth",
+      "D": "Low latency filtering"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Cloud mitigation uses scrubbing centers and scalable infrastructure. On-prem control is limited in comparison."
+  },
+  {
+    "question": "Which of the following are types of volumetric attacks?",
+    "options": {
+      "A": "UDP flood",
+      "B": "ICMP flood",
+      "C": "NTP amplification",
+      "D": "Slowloris"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Volumetric attacks flood the network layer with high-bandwidth traffic. Slowloris is application-layer."
+  },
+  {
+    "question": "What are challenges in mitigating zero-day DoS attacks?",
+    "options": {
+      "A": "Unknown signatures",
+      "B": "Bypass traditional IDS/IPS",
+      "C": "Evade heuristic detection",
+      "D": "Rely on obsolete protocols"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Zero-day attacks evade traditional detection due to lack of known patterns. Obsolete protocols aren’t required."
+  },
+  {
+    "question": "What methods do botnets use to communicate in DDoS attacks?",
+    "options": {
+      "A": "IRC channels",
+      "B": "Peer-to-peer networks",
+      "C": "Command and control servers",
+      "D": "Cloud storage synchronization"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Botnets coordinate via IRC, P2P, or C2 servers. Cloud sync isn't typically a C2 method."
+  },
+  {
+    "question": "What is the effect of a hybrid DoS attack?",
+    "options": {
+      "A": "Combines multiple DoS vectors",
+      "B": "Targets both network and application layers",
+      "C": "Requires human interaction",
+      "D": "Erodes layered defenses simultaneously"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Hybrid attacks combine techniques across layers to maximize disruption. They are fully automated."
+  },
+  {
+    "question": "What distinguishes reflected from non-reflected DoS attacks?",
+    "options": {
+      "A": "Source address spoofing",
+      "B": "Use of intermediary systems",
+      "C": "Direct connection to the target",
+      "D": "Encryption of payloads"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Reflected attacks use spoofed requests sent to third parties. Non-reflected attacks connect directly to the target."
+  },
+  {
+    "question": "Which types of firewalls are best suited to detect DoS attacks?",
+    "options": {
+      "A": "Stateful inspection firewalls",
+      "B": "Application-layer firewalls",
+      "C": "Stateless packet filters",
+      "D": "Proxy-based firewalls"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Stateful, application, and proxy firewalls can detect behavioral anomalies. Stateless filters lack context."
+  },
+  {
+    "question": "What is the function of a scrubbing center in DDoS mitigation?",
+    "options": {
+      "A": "Cleanse traffic of malicious packets",
+      "B": "Analyze and filter DDoS patterns",
+      "C": "Route traffic through VPN tunnels",
+      "D": "Forward clean traffic to destination"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Scrubbing centers offload and clean large volumes of traffic before sending it to the protected target."
+  },
+  {
+    "question": "Which of the following can amplify UDP traffic for DoS?",
+    "options": {
+      "A": "TFTP",
+      "B": "NTP",
+      "C": "Chargen",
+      "D": "DHCP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "TFTP, NTP, and Chargen can be exploited for amplification. DHCP is stateful and not used for this."
+  },
+  {
+    "question": "What differentiates Layer 3/4 and Layer 7 DoS attacks?",
+    "options": {
+      "A": "Layer 3/4 floods bandwidth, Layer 7 exhausts app resources",
+      "B": "Layer 3/4 uses TCP/UDP/ICMP, Layer 7 uses HTTP/HTTPS",
+      "C": "Layer 7 is harder to detect with volume-based monitoring",
+      "D": "Layer 3/4 only affects internal servers"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Layer 7 attacks use normal traffic to exhaust apps; Layer 3/4 is volume-based. Neither is limited to internal systems."
+  },
+  {
+    "question": "What is the outcome of a successful Smurf attack?",
+    "options": {
+      "A": "Flood of ICMP replies to a victim",
+      "B": "Use of broadcast addresses to amplify traffic",
+      "C": "Overloaded switches and routers",
+      "D": "Worm propagation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Smurf attacks reflect ICMP to the victim using broadcast amplification. Worms are unrelated."
+  },
+  {
+    "question": "What does 'HTTP pipelining abuse' involve in DoS?",
+    "options": {
+      "A": "Sending multiple HTTP requests over one connection",
+      "B": "Exploiting poor handling of pipelined requests",
+      "C": "Causing server thread exhaustion",
+      "D": "Triggering command injection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Abuse of HTTP pipelining can overwhelm servers by queueing requests faster than they’re processed."
+  },
+  {
+    "question": "Which of the following statements are true about a ping flood attack?",
+    "options": {
+      "A": "It uses ICMP echo request packets",
+      "B": "It requires high bandwidth from the attacker",
+      "C": "It targets the victim's processing power",
+      "D": "It manipulates TCP three-way handshake"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Ping floods use ICMP to overwhelm the victim’s CPU and bandwidth. It does not involve TCP handshakes."
+  },
+  {
+    "question": "What are common indicators of a DoS attack in system logs?",
+    "options": {
+      "A": "Repeated connection attempts from one IP",
+      "B": "Log entries showing service timeouts",
+      "C": "Abrupt server restarts",
+      "D": "Frequent successful logins"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Suspicious patterns like repeated access attempts, timeouts, and system crashes may signal DoS activity. Logins are unrelated."
+  },
+  {
+    "question": "Which attacks take advantage of HTTP keep-alive settings?",
+    "options": {
+      "A": "Slowloris",
+      "B": "Slow POST",
+      "C": "R-U-Dead-Yet (RUDY)",
+      "D": "ICMP tunneling"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Application-layer attacks like Slowloris, RUDY, and Slow POST hold connections open using HTTP keep-alive."
+  },
+  {
+    "question": "Which of the following are considered resource exhaustion attacks?",
+    "options": {
+      "A": "SYN flood",
+      "B": "Slowloris",
+      "C": "UDP flood",
+      "D": "SQL injection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Resource exhaustion attacks include SYN, UDP, and Slowloris floods. SQL injection is not DoS-focused."
+  },
+  {
+    "question": "Why are IoT devices commonly used in DDoS botnets?",
+    "options": {
+      "A": "They often lack strong authentication",
+      "B": "They run on lightweight operating systems",
+      "C": "They are rarely patched",
+      "D": "They use proprietary encryption standards"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "IoT devices are ideal for attackers due to weak/default credentials, lightweight OSes, and poor patching."
+  },
+  {
+    "question": "Which services are vulnerable to amplification if misconfigured?",
+    "options": {
+      "A": "DNS",
+      "B": "NTP",
+      "C": "LDAP",
+      "D": "FTP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS, NTP, and LDAP can be exploited for amplification when left open. FTP doesn’t offer amplification."
+  },
+  {
+    "question": "What is the primary purpose of a WAF during a DoS attack?",
+    "options": {
+      "A": "Block malicious HTTP requests",
+      "B": "Rate-limit application traffic",
+      "C": "Drop malformed UDP packets",
+      "D": "Analyze behavior of requests"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "A WAF protects web apps by inspecting and filtering HTTP traffic. It does not handle UDP traffic."
+  },
+  {
+    "question": "Which roles do honeypots play in DoS defense?",
+    "options": {
+      "A": "Divert attacker traffic",
+      "B": "Log attacker behavior",
+      "C": "Provide false services",
+      "D": "Automate mitigation via signatures"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Honeypots attract, observe, and mislead attackers. They don't actively mitigate traffic."
+  },
+  {
+    "question": "What is the purpose of TCP Intercept in Cisco devices?",
+    "options": {
+      "A": "Protect against SYN floods",
+      "B": "Intercept and validate handshakes",
+      "C": "Act as a transparent proxy",
+      "D": "Enable ICMP tunneling"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "TCP Intercept guards against SYN floods by proxying and validating connections. It does not use ICMP."
+  },
+  {
+    "question": "Which cloud-based platforms offer integrated DoS protection?",
+    "options": {
+      "A": "Cloudflare",
+      "B": "AWS Shield",
+      "C": "Azure DDoS Protection",
+      "D": "Kali Linux"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These platforms offer DDoS defense as part of their service stack. Kali Linux is a penetration testing OS."
+  },
+  {
+    "question": "What makes Layer 7 DoS attacks more difficult to detect?",
+    "options": {
+      "A": "They mimic normal user behavior",
+      "B": "They operate with lower traffic volumes",
+      "C": "They don’t rely on malformed packets",
+      "D": "They occur only at the physical layer"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Layer 7 DoS attacks use valid-looking traffic at low rates, making them stealthy. They don’t operate at physical layer."
+  },
+  {
+    "question": "Which tools are used for testing DoS defenses ethically?",
+    "options": {
+      "A": "LOIC",
+      "B": "Hping3",
+      "C": "Metasploit auxiliary modules",
+      "D": "Slowhttptest"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Hping3, Metasploit, and Slowhttptest can simulate attacks for defense testing. LOIC is typically used maliciously."
+  },
+  {
+    "question": "What is the purpose of blackhole routing?",
+    "options": {
+      "A": "Drop malicious traffic before reaching the host",
+      "B": "Redirect attack traffic to null interface",
+      "C": "Use dynamic routing to isolate attacker nodes",
+      "D": "Encrypt attacker packets"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Blackhole routing silently discards traffic sent to specific IPs, protecting servers. It doesn’t encrypt packets."
+  },
+  {
+    "question": "Which symptoms might appear during an NTP amplification attack?",
+    "options": {
+      "A": "Unusual outbound traffic from NTP server",
+      "B": "Increased UDP traffic on port 123",
+      "C": "Delayed time synchronization",
+      "D": "Frequent DNS resolution failures"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "NTP abuse increases UDP 123 traffic and outbound packets. DNS failures are unrelated to NTP."
+  },
+  {
+    "question": "Which of the following help defend against SYN floods?",
+    "options": {
+      "A": "SYN cookies",
+      "B": "TCP backlog tuning",
+      "C": "Stateless inspection",
+      "D": "Connection rate limiting"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "SYN cookies and tuning queues reduce DoS risk. Stateless inspection is less effective for SYN-based attacks."
+  },
+  {
+    "question": "What is the impact of a successful DoS on a business?",
+    "options": {
+      "A": "Loss of service availability",
+      "B": "Revenue loss",
+      "C": "Customer dissatisfaction",
+      "D": "Malware infection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DoS leads to service downtime, customer impact, and financial loss. Malware infection is not always involved."
+  },
+  {
+    "question": "Which services are commonly abused in reflection attacks?",
+    "options": {
+      "A": "NTP",
+      "B": "DNS",
+      "C": "SNMP",
+      "D": "HTTPS"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "NTP, DNS, and SNMP can reflect traffic toward a spoofed victim. HTTPS requires a handshake and cannot be easily used."
+  },
+  {
+    "question": "How can an attacker build a botnet for DDoS attacks?",
+    "options": {
+      "A": "Use exploit kits to infect devices",
+      "B": "Send phishing emails with malware",
+      "C": "Exploit unpatched systems",
+      "D": "Deploy public SSH honeypots"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Botnets are created by exploiting vulnerabilities or tricking users into installing malware."
+  },
+  {
+    "question": "Which log sources help detect early signs of DoS?",
+    "options": {
+      "A": "Firewall logs",
+      "B": "Web server access logs",
+      "C": "Network IDS logs",
+      "D": "Clipboard history"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Firewall, IDS, and web server logs show traffic anomalies. Clipboard history is irrelevant."
+  },
+  {
+    "question": "What makes application-layer DoS attractive to attackers?",
+    "options": {
+      "A": "Low bandwidth requirements",
+      "B": "High impact with minimal traffic",
+      "C": "Harder to detect by traditional firewalls",
+      "D": "Can disable BIOS"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Application-layer DoS uses fewer packets for disruption and evades basic security tools. It doesn’t affect BIOS."
+  }
+]

@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which of the following are key phases of a DoS attack lifecycle?",
+    "options": {
+      "A": "Reconnaissance",
+      "B": "Weaponization",
+      "C": "Delivery",
+      "D": "Command and control"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DoS attacks often follow the cyber kill chain: recon, weaponization (attack method), and delivery. C2 is more DDoS-related."
+  },
+  {
+    "question": "What factors determine the effectiveness of a DDoS attack?",
+    "options": {
+      "A": "Bandwidth of botnet",
+      "B": "Latency of the target network",
+      "C": "Response time of mitigation systems",
+      "D": "Encryption protocol used by the target"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Botnet strength, network latency, and response time affect DDoS impact. Encryption isn't a primary factor."
+  },
+  {
+    "question": "Which of these attacks aim to exhaust TCP stack resources?",
+    "options": {
+      "A": "SYN flood",
+      "B": "RST flood",
+      "C": "ACK flood",
+      "D": "FIN flood"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "TCP floods target different flags to exhaust the connection table and disrupt service."
+  },
+  {
+    "question": "Which are typical targets of a DNS flood attack?",
+    "options": {
+      "A": "Authoritative DNS servers",
+      "B": "Recursive resolvers",
+      "C": "Web application backends",
+      "D": "ISP DNS infrastructure"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "DNS floods target infrastructure components like resolvers and authoritative servers to block name resolution."
+  },
+  {
+    "question": "Which of the following describe a 'pulsing' DoS attack?",
+    "options": {
+      "A": "Occurs in intervals to avoid detection",
+      "B": "Creates periodic spikes in traffic",
+      "C": "Uses malware to scan endpoints",
+      "D": "Impacts availability inconsistently"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Pulsing attacks operate intermittently to evade rate-based detection systems and cause unstable service."
+  },
+  {
+    "question": "What are common responses to mitigate live DoS attacks?",
+    "options": {
+      "A": "Rate limit offending IPs",
+      "B": "Enable anti-DDoS rules on WAF",
+      "C": "Null route attacker IP addresses",
+      "D": "Disable all network interfaces"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Mitigations include rate limiting, dropping traffic (blackhole routing), and WAF tuning. Disabling interfaces isn't standard."
+  },
+  {
+    "question": "What are examples of low-and-slow DoS attacks?",
+    "options": {
+      "A": "Slowloris",
+      "B": "Slow POST",
+      "C": "HTTP/2 abuse",
+      "D": "SYN flood"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Low-and-slow attacks maintain long-lived connections to exhaust server resources without high traffic volume."
+  },
+  {
+    "question": "Which characteristics apply to protocol-based DoS attacks?",
+    "options": {
+      "A": "Exploit protocol flaws",
+      "B": "Use malformed packets",
+      "C": "Depend on bandwidth exhaustion",
+      "D": "Exploit connection state behavior"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Protocol-based attacks exploit stateful behavior and protocol vulnerabilities, not always using large bandwidth."
+  },
+  {
+    "question": "Which actions should be taken post-DoS incident?",
+    "options": {
+      "A": "Analyze logs for attack pattern",
+      "B": "Update firewall and IDS rules",
+      "C": "Notify upstream providers if needed",
+      "D": "Reinstall all servers"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Post-incident response includes log review, tuning controls, and coordination. Reinstallation is excessive for DoS."
+  },
+  {
+    "question": "Which cloud services are commonly abused in DDoS attacks?",
+    "options": {
+      "A": "Public CDN nodes",
+      "B": "Misconfigured open APIs",
+      "C": "Serverless computing endpoints",
+      "D": "SMTP email servers"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Cloud infrastructure, including CDNs, APIs, and serverless endpoints, may be used for reflection or abuse."
+  },
+  {
+    "question": "Which of these tools are used by attackers in DDoS campaigns?",
+    "options": {
+      "A": "LOIC",
+      "B": "HOIC",
+      "C": "Mirai",
+      "D": "Metasploit"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "LOIC/HOIC are user-driven DoS tools; Mirai is a famous IoT botnet. Metasploit is used more for exploitation."
+  },
+  {
+    "question": "Which DoS vectors exploit weaknesses in IoT devices?",
+    "options": {
+      "A": "Default credentials",
+      "B": "Unpatched firmware",
+      "C": "Lack of rate-limiting",
+      "D": "Application firewalls"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "IoT devices often lack proper security controls, making them easy to hijack and use in DoS attacks."
+  },
+  {
+    "question": "Which traffic anomalies are red flags for a DoS attack?",
+    "options": {
+      "A": "Sudden traffic from many geographic regions",
+      "B": "High volume of SYN packets",
+      "C": "Multiple incomplete handshakes",
+      "D": "High number of login failures"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DoS often shows SYN floods, half-open connections, and global traffic bursts. Login failures may suggest brute-force."
+  },
+  {
+    "question": "What does blackhole routing do in DoS defense?",
+    "options": {
+      "A": "Drops all traffic to/from targeted IPs",
+      "B": "Redirects attack traffic to null route",
+      "C": "Blocks outbound connections",
+      "D": "Encrypts malicious payloads"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Blackhole routing is used to nullify traffic to an IP address by dropping it at the network edge."
+  },
+  {
+    "question": "How do Content Delivery Networks (CDNs) help mitigate DoS?",
+    "options": {
+      "A": "Distribute incoming traffic",
+      "B": "Cache static content closer to users",
+      "C": "Detect and block layer 7 floods",
+      "D": "Route all DNS queries internally"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "CDNs help absorb traffic, reduce load on origin servers, and detect anomalies in app-layer traffic."
+  },
+  {
+    "question": "Which metrics are useful in detecting application-layer DoS?",
+    "options": {
+      "A": "Request per second rate",
+      "B": "Session duration anomalies",
+      "C": "Sudden spike in CPU usage",
+      "D": "VPN handshake failures"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Abnormal RPS, extended sessions, and server strain indicate layer 7 DoS. VPN issues are not directly related."
+  },
+  {
+    "question": "Which of the following are mitigation strategies for IoT-based DDoS?",
+    "options": {
+      "A": "Change default passwords",
+      "B": "Segment IoT networks",
+      "C": "Disable unused services",
+      "D": "Enable Telnet for debugging"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Basic hardening of IoT devices reduces their exposure. Telnet is insecure and should be disabled."
+  },
+  {
+    "question": "Which cloud providers offer built-in DDoS protection services?",
+    "options": {
+      "A": "AWS (Shield)",
+      "B": "Azure (DDoS Protection)",
+      "C": "Google Cloud (Cloud Armor)",
+      "D": "Wireshark Cloud"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Major cloud platforms provide native DDoS protection. Wireshark is not a cloud provider."
+  },
+  {
+    "question": "Which scenarios increase susceptibility to DoS attacks?",
+    "options": {
+      "A": "Single server without failover",
+      "B": "No traffic monitoring tools",
+      "C": "Open recursive DNS resolver",
+      "D": "Well-distributed infrastructure"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Lack of redundancy, visibility, and misconfigured services raise DoS risk. Distributed setups reduce impact."
+  },
+  {
+    "question": "Which attack targets stateful inspection firewalls to exhaust resources?",
+    "options": {
+      "A": "SYN flood",
+      "B": "RST flood",
+      "C": "ACK flood",
+      "D": "Ping sweep"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Flooding stateful packets (SYN, RST, ACK) can exhaust connection tables. Ping sweeps are for discovery, not DoS."
+  },
+  {
+    "question": "Which conditions make a service vulnerable to a DoS attack?",
+    "options": {
+      "A": "No input validation",
+      "B": "Long timeout configurations",
+      "C": "Lack of session limits",
+      "D": "Stateless design"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Services with no input validation, long timeouts, or unrestricted sessions are easier to exhaust."
+  },
+  {
+    "question": "What is the key difference between an application-layer DoS and a network-layer DoS?",
+    "options": {
+      "A": "Application DoS targets specific functions or APIs",
+      "B": "Network DoS consumes bandwidth",
+      "C": "Application DoS exploits HTTP/HTTPS protocols",
+      "D": "Network DoS involves port scanning"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Application DoS focuses on high-resource requests (e.g., HTTP), while network DoS floods basic traffic (e.g., ICMP)."
+  },
+  {
+    "question": "How does a reflected DoS attack work?",
+    "options": {
+      "A": "Sends spoofed requests to a third-party service",
+      "B": "Relies on amplifying responses toward the victim",
+      "C": "Performs IP spoofing to hide source identity",
+      "D": "Directly connects to victim ports"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "In reflection attacks, the attacker spoofs the victim’s IP and uses a third-party to reflect traffic toward them."
+  },
+  {
+    "question": "What role does ICMP play in DoS attacks?",
+    "options": {
+      "A": "Used in ping floods",
+      "B": "Used in Smurf attacks",
+      "C": "Used in Slowloris attacks",
+      "D": "Can trigger network device overload"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "ICMP is common in flooding (e.g., ping, Smurf), but not in HTTP-based attacks like Slowloris."
+  },
+  {
+    "question": "Which resources are commonly exhausted during a DoS attack?",
+    "options": {
+      "A": "CPU",
+      "B": "Memory",
+      "C": "Disk space",
+      "D": "Network bandwidth"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "DoS attacks commonly aim to exhaust processing power, RAM, and available bandwidth—not typically disk space."
+  },
+  {
+    "question": "Which symptoms might indicate a Slow HTTP DoS attack?",
+    "options": {
+      "A": "Slow server response to valid clients",
+      "B": "Many open but idle connections",
+      "C": "Steady CPU usage with low network traffic",
+      "D": "Spikes in outgoing SMTP traffic"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Slow HTTP attacks cause idle connections and resource starvation. SMTP spikes relate more to spam/malware."
+  },
+  {
+    "question": "Which DoS attacks are considered legacy but still pose risks on unpatched systems?",
+    "options": {
+      "A": "Teardrop",
+      "B": "Ping of Death",
+      "C": "Smurf",
+      "D": "ARP spoofing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Teardrop, Smurf, and Ping of Death are old but dangerous if the system lacks proper patches. ARP spoofing is MITM-related."
+  },
+  {
+    "question": "What is the goal of 'connection exhaustion' in DoS?",
+    "options": {
+      "A": "Prevent legitimate users from establishing sessions",
+      "B": "Fill up TCP backlog queues",
+      "C": "Flood a switch’s MAC table",
+      "D": "Consume application thread pools"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Connection exhaustion prevents new legitimate sessions by consuming system resources. MAC flooding is separate."
+  },
+  {
+    "question": "Which types of spoofing are used in DoS attacks?",
+    "options": {
+      "A": "IP spoofing",
+      "B": "MAC spoofing",
+      "C": "ARP spoofing",
+      "D": "Email spoofing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DoS attacks may use IP/MAC/ARP spoofing to hide source identity or redirect traffic."
+  },
+  {
+    "question": "What is a potential side effect of misconfigured DoS mitigation tools?",
+    "options": {
+      "A": "Blocking legitimate users",
+      "B": "Failing to block actual attacks",
+      "C": "Increased load on WAFs",
+      "D": "Corrupted DNS entries"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "False positives can block real users; improper tuning can fail to stop attacks or strain protection systems."
+  },
+  {
+    "question": "Which of the following are UDP-based amplification protocols?",
+    "options": {
+      "A": "DNS",
+      "B": "NTP",
+      "C": "SNMP",
+      "D": "SSH"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DNS, NTP, and SNMP all use UDP and are commonly abused in amplification/reflection attacks. SSH is TCP-based."
+  },
+  {
+    "question": "How does a DoS attack differ from a ransomware attack?",
+    "options": {
+      "A": "DoS attacks deny availability, not access to data",
+      "B": "Ransomware encrypts files and demands payment",
+      "C": "DoS attacks don’t involve malware",
+      "D": "Ransomware is typically network-based only"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DoS affects availability, ransomware affects data integrity and demands ransom. Ransomware may be delivered through many vectors."
+  },
+  {
+    "question": "Which defenses are recommended against SYN flood attacks?",
+    "options": {
+      "A": "Enable SYN cookies",
+      "B": "Use a proxy to terminate connections",
+      "C": "Increase backlog queue size",
+      "D": "Use UDP instead of TCP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "SYN cookies, proxies, and increased queue size help handle SYN floods. Switching protocols is not a viable fix."
+  },
+  {
+    "question": "Which of the following are signs of a UDP flood?",
+    "options": {
+      "A": "High number of destination unreachable messages",
+      "B": "Spikes in CPU usage from packet handling",
+      "C": "Excessive memory leaks",
+      "D": "ICMP rate-limiting being triggered"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "UDP floods generate unreachable responses and system strain. Memory leaks are not direct signs."
+  },
+  {
+    "question": "Which software-based DoS mitigations can be implemented on a Linux system?",
+    "options": {
+      "A": "iptables rate limiting",
+      "B": "Fail2ban rules",
+      "C": "TCP SYN cookie settings",
+      "D": "ARP poisoning rules"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Linux can mitigate DoS with iptables, Fail2ban, and sysctl options. ARP poisoning rules are unrelated."
+  },
+  {
+    "question": "Which challenges exist in detecting slow DoS attacks?",
+    "options": {
+      "A": "They appear as legitimate connections",
+      "B": "They consume resources slowly",
+      "C": "They use encryption to hide content",
+      "D": "They change source IPs rapidly"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Slow DoS attacks mimic normal clients and drain resources subtly. Changing IPs or encryption is not a core trait."
+  },
+  {
+    "question": "How can ISPs assist during a DDoS attack?",
+    "options": {
+      "A": "Provide upstream traffic filtering",
+      "B": "Blackhole malicious traffic",
+      "C": "Throttle incoming packets",
+      "D": "Perform SQL injection cleanup"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "ISPs can assist by blocking, rate limiting, or null routing traffic before it reaches the customer."
+  },
+  {
+    "question": "What does a DoS stress testing tool simulate?",
+    "options": {
+      "A": "Attack scenarios for resilience testing",
+      "B": "How systems react under load",
+      "C": "Security misconfigurations",
+      "D": "Data exfiltration methods"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "DoS stress tools simulate attacks to find resource exhaustion points or system flaws."
+  },
+  {
+    "question": "Which security controls can detect DoS attack attempts?",
+    "options": {
+      "A": "Intrusion Detection Systems (IDS)",
+      "B": "Intrusion Prevention Systems (IPS)",
+      "C": "Firewall logs",
+      "D": "SIEM solutions"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these systems contribute to identifying unusual patterns associated with DoS attempts."
+  },
+  {
+    "question": "What metrics can help identify volumetric DDoS attacks?",
+    "options": {
+      "A": "Packets per second (PPS)",
+      "B": "Bits per second (BPS)",
+      "C": "Connection attempts per second",
+      "D": "File I/O operations per minute"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "PPS, BPS, and connections/sec help measure attack intensity. File I/O is more related to disk performance."
+  }
+]

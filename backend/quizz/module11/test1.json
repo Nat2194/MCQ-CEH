@@ -1,0 +1,442 @@
+[
+  {
+    "question": "What is the primary goal of session hijacking?",
+    "options": {
+      "A": "To impersonate a legitimate user",
+      "B": "To steal login credentials",
+      "C": "To escalate privileges",
+      "D": "To bypass authentication mechanisms"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Session hijacking is mainly used to impersonate users by taking over active sessions, often bypassing authentication."
+  },
+  {
+    "question": "Which protocols are most commonly targeted in session hijacking?",
+    "options": {
+      "A": "HTTP",
+      "B": "HTTPS",
+      "C": "FTP",
+      "D": "Telnet"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "HTTP and Telnet sessions are often unencrypted and vulnerable to session hijacking. HTTPS encrypts session IDs."
+  },
+  {
+    "question": "Which of the following are common techniques used in session hijacking?",
+    "options": {
+      "A": "Session fixation",
+      "B": "Cross-site scripting (XSS)",
+      "C": "Session sniffing",
+      "D": "SQL injection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Fixation, sniffing, and XSS can be used to hijack sessions. SQLi is for database manipulation, not sessions."
+  },
+  {
+    "question": "Which tool is specifically used for session sniffing?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Ettercap",
+      "C": "Burp Suite",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Wireshark and Ettercap can capture packets and analyze session tokens. Burp is more for web app testing; Hydra is for brute force."
+  },
+  {
+    "question": "What is session fixation?",
+    "options": {
+      "A": "Fixing a user's session ID before login",
+      "B": "Resetting a session after logout",
+      "C": "Hijacking encrypted sessions",
+      "D": "Using cookies to extend session time"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Session fixation forces a known session ID onto the victim before login so the attacker can use it afterward."
+  },
+  {
+    "question": "Which of the following can help prevent session hijacking?",
+    "options": {
+      "A": "HTTPS everywhere",
+      "B": "Regenerating session ID after login",
+      "C": "URL-based session tokens",
+      "D": "Secure cookie attributes"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "HTTPS, session ID regeneration, and secure cookies help mitigate hijacking. URL-based tokens can be exposed easily."
+  },
+  {
+    "question": "How can an attacker steal a session ID through XSS?",
+    "options": {
+      "A": "Inject JavaScript to read cookies",
+      "B": "Use document.cookie in a malicious script",
+      "C": "Modify browser headers",
+      "D": "Use SQL queries to extract session info"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "XSS allows attackers to inject scripts that access session cookies via JavaScript."
+  },
+  {
+    "question": "What is the impact of session hijacking?",
+    "options": {
+      "A": "Data theft",
+      "B": "Unauthorized access",
+      "C": "Denial of service",
+      "D": "Privilege escalation"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Session hijacking gives unauthorized access and may allow privilege escalation. DoS is not typically a result."
+  },
+  {
+    "question": "Which tool is commonly used for HTTP session hijacking?",
+    "options": {
+      "A": "Cookie Cadger",
+      "B": "Firesheep",
+      "C": "John the Ripper",
+      "D": "Responder"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Firesheep and Cookie Cadger can sniff and replay session cookies over insecure HTTP."
+  },
+  {
+    "question": "What role does ARP spoofing play in session hijacking?",
+    "options": {
+      "A": "It allows interception of traffic on a LAN",
+      "B": "It injects malicious SQL queries",
+      "C": "It captures session tokens from the network",
+      "D": "It encrypts session cookies"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "ARP spoofing lets attackers intercept traffic and extract session tokens. It does not encrypt or affect SQL."
+  },
+  {
+    "question": "Why are session IDs passed via URL considered insecure?",
+    "options": {
+      "A": "They can be stored in browser history",
+      "B": "They are exposed in referrer headers",
+      "C": "They are encrypted by default",
+      "D": "They can be cached by proxies"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "URL session tokens may be exposed via referrers, browser history, and proxy logs. They're not encrypted unless explicitly handled."
+  },
+  {
+    "question": "Which layers of the OSI model are involved in session hijacking?",
+    "options": {
+      "A": "Transport",
+      "B": "Session",
+      "C": "Application",
+      "D": "Presentation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Session hijacking often targets the transport (e.g., TCP), session, and application (e.g., HTTP) layers."
+  },
+  {
+    "question": "Which characteristics make a session ID secure?",
+    "options": {
+      "A": "High entropy",
+      "B": "Predictable values",
+      "C": "Long and random strings",
+      "D": "Short and static strings"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Session IDs should be random and hard to predict. Predictable or short values are insecure."
+  },
+  {
+    "question": "Which of the following may be symptoms of session hijacking in an application?",
+    "options": {
+      "A": "User gets logged out unexpectedly",
+      "B": "User sees data from another user",
+      "C": "Session expires immediately after login",
+      "D": "Increased SQL query execution time"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Session hijacking may cause session interference, leading to forced logout or data confusion. SQL execution time is not a sign."
+  },
+  {
+    "question": "What is the main difference between session fixation and hijacking?",
+    "options": {
+      "A": "Fixation happens before login, hijacking after",
+      "B": "Fixation uses passive monitoring only",
+      "C": "Hijacking requires cookie manipulation",
+      "D": "Fixation is done via ARP spoofing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Session fixation exploits pre-authentication, while hijacking usually involves post-login cookie theft or manipulation."
+  },
+  {
+    "question": "Which HTTP headers can be used to secure cookies against hijacking?",
+    "options": {
+      "A": "Secure",
+      "B": "HttpOnly",
+      "C": "X-Frame-Options",
+      "D": "SameSite"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "`Secure`, `HttpOnly`, and `SameSite` headers help protect cookies. X-Frame-Options is for clickjacking."
+  },
+  {
+    "question": "Which network conditions allow successful session sniffing?",
+    "options": {
+      "A": "Open or unencrypted Wi-Fi",
+      "B": "Switched networks with ARP spoofing",
+      "C": "TLS 1.3 encryption",
+      "D": "HSTS enforcement"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Sniffing is possible on open Wi-Fi or when ARP spoofing defeats switches. TLS and HSTS prevent it."
+  },
+  {
+    "question": "What does the HttpOnly cookie flag do?",
+    "options": {
+      "A": "Prevents JavaScript from accessing cookies",
+      "B": "Prevents transmission over HTTP",
+      "C": "Protects against XSS-based theft",
+      "D": "Hides cookie in browser dev tools"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "HttpOnly ensures cookies can't be accessed via JavaScript, reducing XSS exploitation risk."
+  },
+  {
+    "question": "Which types of authentication mechanisms reduce session hijacking risk?",
+    "options": {
+      "A": "Multi-factor authentication",
+      "B": "Token-based authentication (e.g., JWT)",
+      "C": "HTTP Basic Authentication",
+      "D": "Session tokens bound to IP"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "MFA, JWTs, and IP-bound tokens make session hijacking harder. HTTP Basic Auth is vulnerable if unencrypted."
+  },
+  {
+    "question": "Which tools are useful in detecting or preventing session hijacking?",
+    "options": {
+      "A": "Snort",
+      "B": "Suricata",
+      "C": "Nmap",
+      "D": "ZAP Proxy"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Snort/Suricata detect network anomalies; ZAP Proxy can test session management. Nmap is more for network discovery."
+  },
+  {
+    "question": "Which types of session hijacking involve packet-level manipulation?",
+    "options": {
+      "A": "Active hijacking",
+      "B": "Passive hijacking",
+      "C": "Session sniffing",
+      "D": "Session fixation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Active and passive hijacking, as well as sniffing, involve monitoring or injecting packets. Fixation is a web-based attack."
+  },
+  {
+    "question": "What is required for successful TCP session hijacking?",
+    "options": {
+      "A": "Correct sequence number prediction",
+      "B": "Knowledge of source and destination IPs",
+      "C": "SYN flooding",
+      "D": "Access to the session's initial handshake"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "To hijack a TCP session, the attacker must know IPs and sequence numbers. SYN floods disrupt, not hijack."
+  },
+  {
+    "question": "Which tools support TCP session hijacking?",
+    "options": {
+      "A": "Hunt",
+      "B": "Ettercap",
+      "C": "dsniff",
+      "D": "Nikto"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Hunt, Ettercap, and dsniff can manipulate live sessions. Nikto is used for web server vulnerability scanning."
+  },
+  {
+    "question": "What makes wireless networks especially vulnerable to session hijacking?",
+    "options": {
+      "A": "Lack of encryption",
+      "B": "Shared media architecture",
+      "C": "Use of SSL by default",
+      "D": "Easier man-in-the-middle attacks"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Wireless networks often lack encryption and share the medium, making MITM and hijacking easier. SSL helps protect sessions."
+  },
+  {
+    "question": "Which attack scenario is most likely to succeed against a cookie-based session system?",
+    "options": {
+      "A": "XSS stealing the session cookie",
+      "B": "Capturing cookies via packet sniffing",
+      "C": "Forcing cookie reuse after logout",
+      "D": "Brute-forcing session cookies"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these methods can work if cookies aren't protected properly (e.g., not encrypted, predictable, or reused)."
+  },
+  {
+    "question": "Which security controls can help prevent TCP session hijacking?",
+    "options": {
+      "A": "Sequence number randomization",
+      "B": "IPsec encryption",
+      "C": "TCP reset on timeout",
+      "D": "HTTP Strict Transport Security (HSTS)"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Random sequence numbers and encryption (e.g., IPsec) make hijacking difficult. HSTS is HTTP-specific."
+  },
+  {
+    "question": "Which actions are considered part of an active session hijack?",
+    "options": {
+      "A": "Injecting packets into an existing session",
+      "B": "Terminating the victim's connection",
+      "C": "Intercepting session tokens",
+      "D": "Modifying ongoing communication"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Active hijacking involves taking control or disrupting a live session. Sniffing is passive."
+  },
+  {
+    "question": "What risks do unsecured public Wi-Fi networks pose for session hijacking?",
+    "options": {
+      "A": "Traffic is often unencrypted",
+      "B": "Attackers can run MITM tools",
+      "C": "Session cookies can be captured easily",
+      "D": "VPNs are enforced by default"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Unsecured Wi-Fi allows eavesdropping and session theft. VPNs are not enforced unless explicitly configured."
+  },
+  {
+    "question": "Which of the following increase session hijacking risk in web apps?",
+    "options": {
+      "A": "No session timeout",
+      "B": "Storing session IDs in URLs",
+      "C": "Predictable session tokens",
+      "D": "Forcing login over HTTPS"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Timeouts, predictable tokens, and poor token storage methods increase hijacking risk. HTTPS helps prevent it."
+  },
+  {
+    "question": "Why is regenerating session IDs on login recommended?",
+    "options": {
+      "A": "It prevents session fixation",
+      "B": "It ensures uniqueness for each user session",
+      "C": "It increases cookie length",
+      "D": "It helps enforce access control"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Regenerating IDs ensures attackers can’t reuse fixed session tokens and avoids predictable sessions."
+  },
+  {
+    "question": "What distinguishes passive from active session hijacking?",
+    "options": {
+      "A": "Passive hijacking involves monitoring only",
+      "B": "Active hijacking modifies the session",
+      "C": "Passive attacks are more stealthy",
+      "D": "Active hijacking requires physical access"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Passive hijacking involves eavesdropping. Active attacks manipulate or take over the session. Physical access is not required."
+  },
+  {
+    "question": "Which session protection techniques are client-side?",
+    "options": {
+      "A": "Disabling JavaScript",
+      "B": "Using secure browsers or extensions",
+      "C": "Enabling VPN",
+      "D": "Installing antivirus software"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Client-side measures like VPN, secure browsers, and limiting JavaScript help mitigate hijacking vectors like XSS."
+  },
+  {
+    "question": "What is the primary attack vector in a man-in-the-middle session hijack?",
+    "options": {
+      "A": "Interception of session data",
+      "B": "Injection of malicious packets",
+      "C": "Brute-force login attempts",
+      "D": "Replay of intercepted credentials"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "MITM can intercept and manipulate traffic and replay stolen data. Brute force is a different technique."
+  },
+  {
+    "question": "Which countermeasures prevent the reuse of session tokens?",
+    "options": {
+      "A": "Session expiration",
+      "B": "Token binding to IP",
+      "C": "Logout mechanism",
+      "D": "Token stored in URL"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Token expiration, binding to the user's IP, and proper logout reduce token reuse risks. URL storage is risky."
+  },
+  {
+    "question": "Which of these HTTP headers help mitigate session hijacking?",
+    "options": {
+      "A": "Set-Cookie: Secure",
+      "B": "Set-Cookie: HttpOnly",
+      "C": "Strict-Transport-Security",
+      "D": "Content-Security-Policy"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All listed headers help secure cookies, enforce HTTPS, or reduce script injection that leads to session theft."
+  },
+  {
+    "question": "How can secure cookie attributes help prevent session hijacking?",
+    "options": {
+      "A": "Secure flag ensures HTTPS transmission",
+      "B": "HttpOnly blocks JavaScript access",
+      "C": "SameSite controls cross-site behavior",
+      "D": "Expires deletes cookies after 5 seconds"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Secure, HttpOnly, and SameSite limit how and when cookies are sent or accessed, defending against XSS and CSRF."
+  },
+  {
+    "question": "What happens when a hijacked session is detected by the server?",
+    "options": {
+      "A": "The session is invalidated",
+      "B": "User is forced to reauthenticate",
+      "C": "Logs may show session anomalies",
+      "D": "Session tokens are stored permanently"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Servers should invalidate compromised sessions and require reauthentication. Permanent storage is insecure."
+  },
+  {
+    "question": "Which configurations reduce session hijacking risk in mobile apps?",
+    "options": {
+      "A": "Using secure storage for tokens",
+      "B": "Encrypting communication channels",
+      "C": "Avoiding token storage in localStorage",
+      "D": "Disabling TLS"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Mobile apps should store tokens securely, use TLS, and avoid exposing session data. TLS should be enabled."
+  },
+  {
+    "question": "Which attacks are similar in concept to session hijacking?",
+    "options": {
+      "A": "Cookie theft",
+      "B": "Token replay",
+      "C": "Credential stuffing",
+      "D": "Clickjacking"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Cookie theft and replay attacks aim to reuse valid session tokens. Credential stuffing involves stolen passwords."
+  },
+  {
+    "question": "Which of the following increase the difficulty of session hijacking?",
+    "options": {
+      "A": "Strong token randomness",
+      "B": "Session timeout on inactivity",
+      "C": "Token renewal on authentication",
+      "D": "Session sharing across users"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Random tokens, inactivity timeout, and token renewal help prevent hijacking. Session sharing is insecure."
+  }
+]
