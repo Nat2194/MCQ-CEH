@@ -1,0 +1,482 @@
+[
+  {
+    "question": "What is the purpose of SSL pinning in mobile apps?",
+    "options": {
+      "A": "Prevent access from jailbroken devices",
+      "B": "Enforce certificate matching to avoid MITM",
+      "C": "Disable certificate validation",
+      "D": "Bypass root detection"
+    },
+    "correct_answers": ["B"],
+    "explanation": "SSL pinning prevents man-in-the-middle attacks by ensuring the app only trusts a specific certificate.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following actions increase the risk of mobile compromise?",
+    "options": {
+      "A": "Installing apps from third-party stores",
+      "B": "Granting unnecessary permissions",
+      "C": "Keeping the OS updated",
+      "D": "Using default admin passwords"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Third-party stores, excessive permissions, and default passwords expose devices to malicious actors.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which file formats are used to distribute mobile apps?",
+    "options": {
+      "A": "APK",
+      "B": "EXE",
+      "C": "IPA",
+      "D": "DEB"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "APK is for Android, IPA for iOS. EXE and DEB are for Windows and Linux, respectively.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are examples of mobile API vulnerabilities?",
+    "options": {
+      "A": "Lack of input validation",
+      "B": "Exposed API keys",
+      "C": "Strong rate limiting",
+      "D": "Unencrypted communication"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Common API flaws include exposed credentials, lack of encryption, and missing input validation. Rate limiting is a good practice.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does dynamic analysis of a mobile app involve?",
+    "options": {
+      "A": "Decompiling the source code",
+      "B": "Observing runtime behavior",
+      "C": "Monitoring network traffic",
+      "D": "Checking app signing certificate"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Dynamic analysis focuses on behavior at runtime, including traffic and process changes.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the role of the AndroidManifest.xml file?",
+    "options": {
+      "A": "Stores app resources",
+      "B": "Defines app permissions and components",
+      "C": "Contains binary executable",
+      "D": "Hosts backend API"
+    },
+    "correct_answers": ["B"],
+    "explanation": "AndroidManifest.xml defines permissions, services, and components used by the app.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can help secure mobile apps during development?",
+    "options": {
+      "A": "Code obfuscation",
+      "B": "Storing secrets in plaintext",
+      "C": "Using secure coding practices",
+      "D": "Disabling certificate validation"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Obfuscation and secure coding improve security. Plaintext secrets and ignoring certs weaken it.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following frameworks support mobile app automation or dynamic testing?",
+    "options": {
+      "A": "Appium",
+      "B": "Frida",
+      "C": "Wireshark",
+      "D": "ZAP Proxy"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Appium automates UI testing; Frida is for runtime inspection. Wireshark and ZAP are network-oriented.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which mobile features can leak data to unauthorized apps if permissions are mishandled?",
+    "options": {
+      "A": "Clipboard",
+      "B": "Camera",
+      "C": "Call logs",
+      "D": "Screen brightness"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Improper permission handling on sensitive features can result in data leaks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following is a post-exploitation objective for a mobile attacker?",
+    "options": {
+      "A": "Collecting keystrokes",
+      "B": "Extracting authentication tokens",
+      "C": "Disabling app sandboxing",
+      "D": "Improving power efficiency"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Attackers may try to exfiltrate data or break containment. Power efficiency is irrelevant.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does the OWASP MASVS standard provide?",
+    "options": {
+      "A": "Secure mobile development checklist",
+      "B": "Exploit payload templates",
+      "C": "Network scanning tools",
+      "D": "Hardware vulnerability database"
+    },
+    "correct_answers": ["A"],
+    "explanation": "MASVS is a mobile app security verification standard used by developers and testers.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following types of data should never be stored unencrypted on mobile devices?",
+    "options": {
+      "A": "Authentication tokens",
+      "B": "Session cookies",
+      "C": "User PINs",
+      "D": "Wallpapers"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Storing sensitive data like tokens and PINs in plaintext risks compromise. Wallpapers are harmless.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which components are often targeted when attempting privilege escalation on mobile OSes?",
+    "options": {
+      "A": "Kernel drivers",
+      "B": "Bootloader",
+      "C": "App widgets",
+      "D": "System services"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Privilege escalation often exploits low-level components like drivers or services with elevated access.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Why is runtime instrumentation valuable during mobile app testing?",
+    "options": {
+      "A": "It reveals internal logic and variables during execution",
+      "B": "It tests power consumption patterns",
+      "C": "It helps scan the Wi-Fi network",
+      "D": "It allows modification of behavior without changing source code"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "Runtime tools like Frida allow observation and manipulation of app logic live without source code.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which mobile operating systems support app sandboxing by default?",
+    "options": {
+      "A": "iOS",
+      "B": "Android",
+      "C": "Windows XP",
+      "D": "KaiOS"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "iOS and Android use sandboxing to restrict app access to system resources. WinXP and KaiOS do not.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following tools are used to decompile Android apps?",
+    "options": {
+      "A": "JADX",
+      "B": "Apktool",
+      "C": "Frida",
+      "D": "MobSF"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "JADX and Apktool extract and reconstruct app code. MobSF includes decompilation as part of its analysis suite.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the potential risk of exposing an exported Android activity without permission checks?",
+    "options": {
+      "A": "It enables DoS via screen lock manipulation",
+      "B": "It may allow arbitrary execution of code paths",
+      "C": "It can be invoked by external apps to bypass logic",
+      "D": "It slows down the UI thread"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Exported activities can be exploited by malicious apps if not properly secured with permissions.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the primary function of the iOS Keychain?",
+    "options": {
+      "A": "Storing encryption keys securely",
+      "B": "Caching background app data",
+      "C": "Saving application source code",
+      "D": "Interfacing with Touch ID/Face ID"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "The Keychain securely stores credentials and integrates with biometric authentication systems.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are risks of over-permissive broadcast receivers on Android?",
+    "options": {
+      "A": "They may accept malicious inputs",
+      "B": "They can leak sensitive data",
+      "C": "They improve app performance",
+      "D": "They can be triggered by third-party apps"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Broadcast receivers should be restricted; otherwise, they may accept or leak data unintentionally.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following attacks target inter-app communication on mobile devices?",
+    "options": {
+      "A": "Intent spoofing",
+      "B": "Clipboard hijacking",
+      "C": "Activity injection",
+      "D": "Side-loading"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These techniques exploit communication channels between apps or misuse shared resources.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following tools can assist in identifying insecure Android components?",
+    "options": {
+      "A": "Drozer",
+      "B": "MobSF",
+      "C": "Aircrack-ng",
+      "D": "QARK"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Drozer, MobSF, and QARK help identify insecure activities, services, and broadcast receivers in Android apps. Aircrack-ng is used for Wi-Fi hacking.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What types of sensitive information are mobile apps often found leaking?",
+    "options": {
+      "A": "GPS location data",
+      "B": "Session tokens",
+      "C": "Clipboard content",
+      "D": "App UI themes"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Mobile apps have been known to leak GPS data, tokens, and clipboard contents. UI themes are not sensitive.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following methods are used to analyze iOS apps?",
+    "options": {
+      "A": "Class-dump",
+      "B": "Frida",
+      "C": "Cycript",
+      "D": "Metasploit"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Class-dump, Frida, and Cycript are used to inspect and manipulate iOS apps. Metasploit is not platform-specific for iOS.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are potential impacts of mobile app reverse engineering?",
+    "options": {
+      "A": "Credential exposure",
+      "B": "Business logic disclosure",
+      "C": "Improved app performance",
+      "D": "Bypassing authentication"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Reverse engineering can reveal secrets, internal logic, or allow bypassing checks. It does not improve performance.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which permissions should a flashlight app NOT normally require?",
+    "options": {
+      "A": "Internet access",
+      "B": "Read contacts",
+      "C": "Camera",
+      "D": "Modify system settings"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "A flashlight app may need the camera flash, but not internet, contact access, or system settings modification.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of jailbreak detection in iOS apps?",
+    "options": {
+      "A": "To enable root access",
+      "B": "To prevent app execution on insecure devices",
+      "C": "To protect sensitive app data",
+      "D": "To bypass App Store restrictions"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Jailbreak detection protects app logic and data by preventing operation on potentially compromised devices.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following Android vulnerabilities can result from insecure IPC mechanisms?",
+    "options": {
+      "A": "Activity hijacking",
+      "B": "Content provider injection",
+      "C": "Service misuse",
+      "D": "DNS spoofing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Android inter-process communication (IPC) flaws can allow hijacking or misuse of app components. DNS spoofing is a network-level issue.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which techniques are commonly used to obfuscate Android applications?",
+    "options": {
+      "A": "ProGuard",
+      "B": "DexGuard",
+      "C": "Base64 encoding",
+      "D": "Minification"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "ProGuard and DexGuard are common Android obfuscation tools; minification removes unused code. Base64 is encoding, not obfuscation.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of code signing in mobile app security?",
+    "options": {
+      "A": "To authenticate the app’s publisher",
+      "B": "To encrypt app logic",
+      "C": "To verify app integrity",
+      "D": "To enhance runtime performance"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Code signing verifies the source and ensures that the app has not been altered after signing.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which types of attacks are mitigated by app sandboxing?",
+    "options": {
+      "A": "Unauthorized file access",
+      "B": "Privilege escalation",
+      "C": "SQL injection",
+      "D": "Data leakage between apps"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "Sandboxing limits an app’s access to its own resources and prevents data sharing without permission.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which types of mobile malware typically attempt to elevate privileges?",
+    "options": {
+      "A": "Rootkits",
+      "B": "Adware",
+      "C": "Trojans",
+      "D": "Spyware"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Rootkits, Trojans, and spyware may try to gain root or elevated access to avoid detection and expand control.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are post-exploitation objectives in mobile hacking?",
+    "options": {
+      "A": "Data exfiltration",
+      "B": "Persistence via rootkits",
+      "C": "Disabling mobile network",
+      "D": "Lateral movement via Wi-Fi"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Once compromised, attackers aim to maintain access and pivot through local networks or exfiltrate data.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are mobile-specific vulnerability categories listed in OWASP Mobile Top 10?",
+    "options": {
+      "A": "Improper platform usage",
+      "B": "Insecure authentication",
+      "C": "Insecure data storage",
+      "D": "Command injection"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "OWASP Mobile Top 10 includes categories tailored for mobile, such as improper platform use and insecure storage.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What are the limitations of using only static analysis for mobile security testing?",
+    "options": {
+      "A": "Cannot detect runtime logic flaws",
+      "B": "May miss obfuscated behavior",
+      "C": "Does not monitor live traffic",
+      "D": "It increases attack surface"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Static analysis doesn’t see runtime issues or decrypted data and may miss obfuscated logic.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following file types can be analyzed for mobile malware?",
+    "options": {
+      "A": "APK",
+      "B": "IPA",
+      "C": "EXE",
+      "D": "DEX"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "APK and IPA are package formats; DEX is compiled code used in Android apps. EXE is Windows-specific.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which attack can be executed using a fake version of a legitimate mobile app?",
+    "options": {
+      "A": "App repackaging",
+      "B": "Phishing",
+      "C": "Data exfiltration",
+      "D": "Cross-site scripting"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Fake apps can mimic legitimate ones to phish credentials, exfiltrate data, or inject malware. XSS is not typical for mobile apps.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What can mobile threat emulation platforms simulate?",
+    "options": {
+      "A": "Malware behavior in sandboxed environments",
+      "B": "Network-level attacks",
+      "C": "UI/UX performance issues",
+      "D": "Reverse engineering scenarios"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Threat emulators replicate malware actions, network exploits, and code tampering for red team purposes.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following mobile hardware features can be abused by malware?",
+    "options": {
+      "A": "Microphone",
+      "B": "Accelerometer",
+      "C": "Camera",
+      "D": "Battery health API"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Malware can use sensors and hardware like camera or mic for spying. Battery health APIs are not commonly abused.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following increase the security posture of mobile devices?",
+    "options": {
+      "A": "Regular OS updates",
+      "B": "Using device encryption",
+      "C": "Installing APKs from unknown sources",
+      "D": "Biometric lock screens"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Encryption, biometrics, and patching enhance security. Installing APKs from unknown sources poses risks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are common mistakes in mobile app development that lead to security flaws?",
+    "options": {
+      "A": "Improper session management",
+      "B": "Ignoring SSL/TLS validation",
+      "C": "Storing credentials in plaintext",
+      "D": "Disabling verbose logging"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Poor session handling, skipping cert validation, and storing plaintext data are major security issues. Disabling logs is often positive.",
+    "multiple_answers": true
+  }
+]

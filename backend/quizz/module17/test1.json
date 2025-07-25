@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Which of the following are common mobile device attack vectors?",
+    "options": {
+      "A": "Malicious apps",
+      "B": "SMS phishing (SMiShing)",
+      "C": "Rogue Wi-Fi networks",
+      "D": "Packet fragmentation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Malicious apps, SMiShing, and rogue Wi-Fi are common mobile threats. Packet fragmentation is more common in network-layer exploits.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the primary purpose of mobile application reverse engineering?",
+    "options": {
+      "A": "Improving app UI design",
+      "B": "Discovering source code and vulnerabilities",
+      "C": "Monitoring battery consumption",
+      "D": "Bypassing two-factor authentication"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Reverse engineering is used to extract source code and analyze apps for vulnerabilities or hardcoded secrets.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are valid ways to perform mobile app tampering?",
+    "options": {
+      "A": "Modifying APK files",
+      "B": "Using Frida or Xposed",
+      "C": "Changing network MAC addresses",
+      "D": "Re-signing an app after code injection"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Tampering involves modifying APKs or runtime hooking with tools like Frida, and re-signing the app to make it installable.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following permissions may indicate that an app is overreaching or malicious?",
+    "options": {
+      "A": "Access to SMS messages",
+      "B": "Access to contacts",
+      "C": "Access to vibration motor",
+      "D": "Device administrator access"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Permissions like SMS, contacts, and device admin access are high-risk. Vibration control is low-risk.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the function of Mobile Device Management (MDM) systems?",
+    "options": {
+      "A": "Install malware remotely",
+      "B": "Secure and control mobile endpoints in an enterprise",
+      "C": "Allow root access on devices",
+      "D": "Provide remote support to clients"
+    },
+    "correct_answers": ["B"],
+    "explanation": "MDM platforms help enterprises enforce security policies and monitor mobile device usage.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which techniques are used in mobile application penetration testing?",
+    "options": {
+      "A": "Static analysis of app code",
+      "B": "Dynamic runtime manipulation",
+      "C": "SQL injection on backend APIs",
+      "D": "Firmware reflashing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Pen testers use static and dynamic analysis along with backend attack techniques. Firmware reflashing is not typically part of app testing.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What are some signs of a compromised mobile device?",
+    "options": {
+      "A": "Unusual battery drain",
+      "B": "High data usage",
+      "C": "Device operating in airplane mode constantly",
+      "D": "Presence of unknown apps"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Compromised devices often exhibit abnormal resource use and unauthorized apps. Constant airplane mode is not typical.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of rooting or jailbreaking a mobile device?",
+    "options": {
+      "A": "Unlock additional user features and privileges",
+      "B": "Improve wireless encryption",
+      "C": "Access hidden logs",
+      "D": "Install custom firmware"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Rooting/jailbreaking bypasses OS restrictions, giving users full access and the ability to flash firmware or read system data.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which mobile malware types are commonly found on Android devices?",
+    "options": {
+      "A": "Banking Trojans",
+      "B": "Ransomware",
+      "C": "Remote Access Trojans (RATs)",
+      "D": "Bootkits"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Banking malware, RATs, and ransomware are common threats. Bootkits are rare on mobile platforms.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tools can be used to analyze Android apps?",
+    "options": {
+      "A": "APKTool",
+      "B": "Drozer",
+      "C": "JADX",
+      "D": "Nessus"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "APKTool, Drozer, and JADX are specialized for mobile analysis. Nessus is a general vulnerability scanner.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following risks are associated with sideloading APK files?",
+    "options": {
+      "A": "Installing unverified applications",
+      "B": "Bypassing app store protections",
+      "C": "Receiving automatic security updates",
+      "D": "Increased risk of malware"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sideloading allows unverified apps to be installed, bypassing vetting processes, and increasing malware risk.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What mobile-specific technique is used in SMiShing?",
+    "options": {
+      "A": "Voice impersonation",
+      "B": "Malware via NFC",
+      "C": "Phishing via text message",
+      "D": "Exploit via mobile VPN"
+    },
+    "correct_answers": ["C"],
+    "explanation": "SMiShing refers to SMS phishing attacks, tricking users into revealing credentials via text.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which mobile OS security features can prevent app tampering?",
+    "options": {
+      "A": "Code signing",
+      "B": "App sandboxing",
+      "C": "Root detection",
+      "D": "Baseband flashing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Code signing, sandboxing, and root detection are defenses against app modification. Baseband flashing is unrelated.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of using Frida in mobile testing?",
+    "options": {
+      "A": "Dynamic code instrumentation",
+      "B": "Static binary disassembly",
+      "C": "Intercepting API calls at runtime",
+      "D": "Fuzzing firmware"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Frida is used for hooking functions and modifying runtime behavior of mobile apps.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are examples of insecure mobile coding practices?",
+    "options": {
+      "A": "Hardcoding API keys",
+      "B": "Using HTTP instead of HTTPS",
+      "C": "Storing credentials in plain text",
+      "D": "Using biometric authentication"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These are poor security practices. Biometric authentication is a strong practice if properly implemented.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following threats are most relevant to jailbroken iOS devices?",
+    "options": {
+      "A": "Bypassing app sandbox",
+      "B": "Unsigned code execution",
+      "C": "Mandatory access control",
+      "D": "Privilege escalation"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Jailbreaking removes Apple’s app isolation and security checks, allowing unsigned code and system privilege abuse.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these are categories of mobile app vulnerabilities as per OWASP Mobile Top 10?",
+    "options": {
+      "A": "Insecure Data Storage",
+      "B": "Improper Platform Usage",
+      "C": "Broken Cryptography",
+      "D": "Overloaded UI rendering"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "OWASP Mobile Top 10 includes categories like data storage, platform misuse, and crypto issues. UI performance is not a security issue.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are functions of Google Play Protect?",
+    "options": {
+      "A": "App scanning for malware",
+      "B": "Blocking known malicious apps",
+      "C": "Preventing device encryption",
+      "D": "Warning users of privacy risks"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Google Play Protect scans apps and warns users of risky ones. It does not disable device encryption.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is an example of a local mobile attack vector?",
+    "options": {
+      "A": "Malicious USB charging station",
+      "B": "Fake app in Play Store",
+      "C": "Open Bluetooth pairing",
+      "D": "SMiShing"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Local attack vectors require physical proximity, like USB or Bluetooth exploits.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following is a common goal of mobile malware?",
+    "options": {
+      "A": "Mining cryptocurrency",
+      "B": "Intercepting SMS messages",
+      "C": "Accessing camera or microphone",
+      "D": "Improving battery performance"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Mobile malware often seeks to spy, mine crypto, or intercept communications. Battery optimization is not a malware goal.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following Android tools are commonly used in dynamic analysis?",
+    "options": {
+      "A": "Frida",
+      "B": "Burp Suite",
+      "C": "APKTool",
+      "D": "Xposed Framework"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Frida and Xposed enable dynamic instrumentation and hooking. Burp Suite intercepts traffic. APKTool is for static analysis.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a major risk of rooted or jailbroken mobile devices?",
+    "options": {
+      "A": "Increased UI customization",
+      "B": "Reduced malware detection capabilities",
+      "C": "Bypassing app store security",
+      "D": "Increased access for malicious apps"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Rooting allows apps to bypass sandboxing and access system resources, increasing the attack surface.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which mobile-specific attacks exploit device proximity?",
+    "options": {
+      "A": "Bluetooth Bluesnarfing",
+      "B": "QR code phishing",
+      "C": "NFC spoofing",
+      "D": "SIM card cloning"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Bluesnarfing and NFC attacks require physical proximity to the target device.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following mobile security mechanisms help prevent app tampering?",
+    "options": {
+      "A": "App sandboxing",
+      "B": "Checksum verification",
+      "C": "JADX reverse engineering",
+      "D": "Code signing"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Sandboxing, checksums, and code signing help maintain app integrity. JADX is used by attackers for reverse engineering.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a secure alternative to SMS-based 2FA for mobile devices?",
+    "options": {
+      "A": "Email-based OTP",
+      "B": "Push-based 2FA apps",
+      "C": "Biometric authentication",
+      "D": "Voice-based OTP"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Push-based 2FA and biometrics are more resistant to SIM swap and SMiShing attacks than SMS or email OTPs.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following activities can an attacker perform by reverse engineering a mobile app?",
+    "options": {
+      "A": "Discover hardcoded API keys",
+      "B": "Modify authentication logic",
+      "C": "Exploit SQL injection",
+      "D": "Perform network scanning"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Reverse engineering allows visibility into app code and hardcoded secrets. SQLi and scanning are separate vectors.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What makes mobile apps particularly vulnerable to insecure data storage?",
+    "options": {
+      "A": "Lack of root protection",
+      "B": "Apps writing to shared preferences in plaintext",
+      "C": "Encrypted SQLite databases",
+      "D": "Insecure backup policies"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "Writing plaintext to shared preferences and poor backup practices can expose sensitive data on compromised devices.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which attack involves exploiting dynamic content in mobile apps using external inputs?",
+    "options": {
+      "A": "SMiShing",
+      "B": "Intent hijacking",
+      "C": "Deep link manipulation",
+      "D": "Brute-force pin guessing"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Intent hijacking and deep link manipulation exploit app communication and external URI handlers.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What are common consequences of poorly implemented biometric authentication?",
+    "options": {
+      "A": "Bypass with static images or recordings",
+      "B": "Increased resistance to malware",
+      "C": "Unauthorized access if fallback methods are weak",
+      "D": "Overheating of mobile device"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Weak fallback (e.g., PIN) or poor biometric checks (e.g., using 2D images) can allow bypasses.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which permissions should raise concern during app install on Android?",
+    "options": {
+      "A": "Read SMS",
+      "B": "Access fine location",
+      "C": "Modify system settings",
+      "D": "Access wallpaper color"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Sensitive permissions like SMS, location, and system settings should be reviewed closely. Wallpaper access is benign.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the primary use of Drozer in mobile app testing?",
+    "options": {
+      "A": "SQL injection detection",
+      "B": "Finding insecure Android components",
+      "C": "Traffic interception",
+      "D": "Fingerprinting iOS applications"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Drozer is used to find insecure Android components like exported activities or services.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are steps in mobile app static analysis?",
+    "options": {
+      "A": "Decompile APK",
+      "B": "Review source code",
+      "C": "Analyze network traffic",
+      "D": "Extract hardcoded secrets"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Static analysis involves inspecting the app code, often by decompiling and looking for embedded keys or logic flaws.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following best describes the SMiShing attack vector?",
+    "options": {
+      "A": "Sending fake emails with mobile links",
+      "B": "Exploiting Bluetooth pairing flaws",
+      "C": "Tricking users with malicious SMS messages",
+      "D": "Jamming mobile network frequencies"
+    },
+    "correct_answers": ["C"],
+    "explanation": "SMiShing refers to phishing via SMS, usually to trick users into clicking malicious links or providing credentials.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which storage mechanisms are considered insecure for sensitive mobile data?",
+    "options": {
+      "A": "Shared preferences in plaintext",
+      "B": "Internal app sandbox storage",
+      "C": "External storage (e.g., SD card)",
+      "D": "Encrypted SQLite database"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Plaintext preferences and external storage are vulnerable to unauthorized access. Sandboxed and encrypted storage are safer.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tools can be used for intercepting mobile application traffic?",
+    "options": {
+      "A": "Burp Suite",
+      "B": "ZAP Proxy",
+      "C": "APKTool",
+      "D": "mitmproxy"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "These tools allow you to inspect or modify HTTPS traffic. APKTool is used for static code analysis, not network interception.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What can attackers potentially gain from accessing a backup of an unencrypted iOS device?",
+    "options": {
+      "A": "App data and tokens",
+      "B": "User photos and messages",
+      "C": "iCloud login details",
+      "D": "Remote shell access"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Backups can contain sensitive data such as tokens, personal files, and even stored credentials.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following best describes the concept of 'Intent sniffing'?",
+    "options": {
+      "A": "Reading data passed between Android components",
+      "B": "Monitoring accelerometer motion",
+      "C": "Sniffing device-level events",
+      "D": "Intercepting encrypted push notifications"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Intent sniffing is a technique to read data sent between activities or apps via Android Intents, especially when not protected.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following protections should a secure mobile banking app implement?",
+    "options": {
+      "A": "Root detection",
+      "B": "SSL pinning",
+      "C": "Plaintext credential logging",
+      "D": "Code obfuscation"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Root detection, SSL pinning, and obfuscation help defend against reverse engineering and MITM. Plaintext logging is insecure.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are mobile-specific social engineering attacks?",
+    "options": {
+      "A": "QR code phishing",
+      "B": "Voice-based phishing (vishing)",
+      "C": "App store clone apps",
+      "D": "Rogue access point impersonation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "QR codes, fake app store listings, and voice phishing target mobile users uniquely. Rogue APs are more general.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a primary reason attackers target mobile applications?",
+    "options": {
+      "A": "To slow down device performance",
+      "B": "To gain access to backend APIs",
+      "C": "To update app UI themes",
+      "D": "To use the app as a pivot into internal networks"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "Apps can expose backend APIs or act as stepping stones into internal enterprise infrastructure.",
+    "multiple_answers": true
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Which of the following are common security risks in IoT devices?",
+    "options": {
+      "A": "Hardcoded credentials",
+      "B": "Unencrypted communication",
+      "C": "Regular firmware updates",
+      "D": "Lack of authentication mechanisms"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Many IoT devices ship with hardcoded credentials and use unencrypted communication. Regular firmware updates improve security, not weaken it.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the primary concern when IoT devices are exposed directly to the internet?",
+    "options": {
+      "A": "High bandwidth usage",
+      "B": "Unauthorized remote access",
+      "C": "Improved latency",
+      "D": "Increased power consumption"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Direct exposure makes IoT devices vulnerable to remote attacks without proper access control or patching.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which protocols are commonly used by IoT devices for communication?",
+    "options": {
+      "A": "MQTT",
+      "B": "Zigbee",
+      "C": "SNMP",
+      "D": "ICMP"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "MQTT and Zigbee are common in IoT; SNMP is used for managing devices. ICMP is diagnostic, not a standard IoT communication protocol.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the role of Shodan in IoT hacking?",
+    "options": {
+      "A": "Vulnerability exploitation tool",
+      "B": "Search engine for internet-connected devices",
+      "C": "Traffic analysis tool",
+      "D": "Password brute-force tool"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Shodan scans the internet for exposed devices and services, making it useful for identifying vulnerable IoT endpoints.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following actions can improve IoT security?",
+    "options": {
+      "A": "Disabling unused services",
+      "B": "Changing default credentials",
+      "C": "Using outdated firmware",
+      "D": "Network segmentation"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "IoT security is strengthened by disabling services, securing access credentials, and isolating devices from critical networks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What type of attacks exploit weak IoT authentication mechanisms?",
+    "options": {
+      "A": "Brute-force attacks",
+      "B": "Man-in-the-middle attacks",
+      "C": "Default credential exploitation",
+      "D": "DNS spoofing"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Weak or default credentials are vulnerable to brute-force and dictionary attacks. DNS spoofing is unrelated to authentication.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which wireless technologies are widely used in IoT ecosystems?",
+    "options": {
+      "A": "Z-Wave",
+      "B": "Bluetooth Low Energy (BLE)",
+      "C": "Wi-Fi",
+      "D": "Ethernet"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Z-Wave, BLE, and Wi-Fi are common in IoT devices. Ethernet is wired and less prevalent in smaller IoT devices.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which layer of the OSI model do most IoT communication protocols operate on?",
+    "options": {
+      "A": "Application",
+      "B": "Transport",
+      "C": "Network",
+      "D": "Data Link"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Most IoT protocols like MQTT and CoAP operate at the application layer.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are potential entry points for IoT exploitation?",
+    "options": {
+      "A": "Exposed admin interfaces",
+      "B": "Insecure APIs",
+      "C": "Encrypted login pages",
+      "D": "Firmware vulnerabilities"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Attackers target exposed interfaces, API flaws, and unpatched firmware. Encrypted login pages are a security feature, not a flaw.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What tool is used to sniff Zigbee traffic in IoT networks?",
+    "options": {
+      "A": "ZBOSS Sniffer",
+      "B": "Wireshark with Zigbee plugin",
+      "C": "Zigbee2MQTT",
+      "D": "Burp Suite"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "ZBOSS and Wireshark (with plugins) can be used to analyze Zigbee protocol traffic. Burp is for HTTP; Zigbee2MQTT is for integration.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is firmware extraction in the context of IoT hacking?",
+    "options": {
+      "A": "Downloading app logs",
+      "B": "Capturing network traffic",
+      "C": "Accessing device firmware for analysis",
+      "D": "Restoring factory settings"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Firmware extraction allows attackers to analyze the code and potentially discover hardcoded keys or vulnerabilities.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following tools can be used for IoT firmware analysis?",
+    "options": {
+      "A": "Binwalk",
+      "B": "Firmadyne",
+      "C": "Radare2",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Binwalk, Firmadyne, and Radare2 are popular tools for analyzing and reverse-engineering firmware. Hydra is for password attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these attacks could a vulnerable IoT camera be susceptible to?",
+    "options": {
+      "A": "Unauthorized live feed access",
+      "B": "DNS tunneling",
+      "C": "Remote code execution",
+      "D": "Cross-site scripting"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Many IoT cameras are vulnerable to RCE, XSS in web interfaces, and exposed video feeds. DNS tunneling is a broader network attack.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are common insecure defaults in IoT devices?",
+    "options": {
+      "A": "Open Telnet ports",
+      "B": "Hardcoded SSH credentials",
+      "C": "Signed firmware",
+      "D": "Lack of input validation in APIs"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Open services and hardcoded access credentials are serious security flaws. Signed firmware is a secure feature.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following best describes the Mirai botnet?",
+    "options": {
+      "A": "A Linux server rootkit",
+      "B": "A Windows ransomware variant",
+      "C": "An IoT-based DDoS malware",
+      "D": "An Android privilege escalation exploit"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Mirai is an IoT-focused botnet that uses infected devices to launch massive DDoS attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following security measures are effective in protecting IoT environments?",
+    "options": {
+      "A": "VLAN segmentation",
+      "B": "Using default passwords",
+      "C": "Disabling unused ports",
+      "D": "Regular firmware patching"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "IoT security can be improved by segmenting devices, patching firmware, and disabling unnecessary services.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tools are used to scan and identify IoT devices on a network?",
+    "options": {
+      "A": "Nmap",
+      "B": "Shodan",
+      "C": "Fing",
+      "D": "John the Ripper"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Nmap, Shodan, and Fing help discover IoT devices. John the Ripper is a password cracking tool.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are common weaknesses in smart home hubs?",
+    "options": {
+      "A": "Insecure local web interfaces",
+      "B": "Lack of firmware validation",
+      "C": "Robust access control models",
+      "D": "Unencrypted inter-device traffic"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Smart hubs often lack secure access controls and may use insecure communication protocols. Robust access control is a strength.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Why is device enumeration important during IoT penetration testing?",
+    "options": {
+      "A": "To identify protocols and services in use",
+      "B": "To brute-force user passwords",
+      "C": "To discover firmware update URLs",
+      "D": "To trigger smart contract flaws"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Enumeration reveals device behavior, services, and even update mechanisms that may be exploited.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following attacks target Zigbee-based IoT networks?",
+    "options": {
+      "A": "Replay attacks",
+      "B": "Beacon flooding",
+      "C": "Jamming attacks",
+      "D": "Privilege escalation via kernel drivers"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Zigbee can be affected by jamming, replay attacks, and fake beacon floods. Kernel exploits are not Zigbee-specific.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which IoT components are often overlooked but can be vulnerable to attack?",
+    "options": {
+      "A": "Companion mobile apps",
+      "B": "Web dashboards",
+      "C": "Device firmware",
+      "D": "Power cables"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Mobile apps and dashboards often expose APIs or credentials. Firmware may contain hardcoded vulnerabilities. Power cables are not typically a vector.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are examples of physical attacks on IoT devices?",
+    "options": {
+      "A": "JTAG interface exploitation",
+      "B": "UART console access",
+      "C": "SSH brute-force over WAN",
+      "D": "Firmware dumping via SPI"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "JTAG, UART, and SPI provide low-level hardware access. SSH brute-force is a network attack, not physical.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following best describes CoAP?",
+    "options": {
+      "A": "A secure file transfer protocol",
+      "B": "A lightweight IoT communication protocol",
+      "C": "A binary firmware format",
+      "D": "An authentication framework"
+    },
+    "correct_answers": ["B"],
+    "explanation": "CoAP (Constrained Application Protocol) is designed for resource-constrained IoT devices to communicate efficiently.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which hardware interfaces can be used to extract firmware from IoT devices?",
+    "options": {
+      "A": "SPI",
+      "B": "UART",
+      "C": "HDMI",
+      "D": "JTAG"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "SPI, UART, and JTAG allow firmware access or debugging. HDMI is a display interface, not for firmware access.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following represent poor IoT access control practices?",
+    "options": {
+      "A": "Lack of role-based access",
+      "B": "Global admin accounts",
+      "C": "Session timeout enforcement",
+      "D": "No account lockout after failed attempts"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Lack of RBAC, global admin use, and no lockout mechanisms make devices easier to compromise.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are ways attackers analyze IoT firmware images?",
+    "options": {
+      "A": "Extracting file systems",
+      "B": "Scanning for hardcoded credentials",
+      "C": "Recompiling firmware for testing",
+      "D": "Flashing it back to production devices"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "File systems and hardcoded credentials are inspected to find vulnerabilities. Recompilation and reflashing are less common in analysis.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which protocols are most susceptible to plaintext credential transmission in IoT?",
+    "options": {
+      "A": "Telnet",
+      "B": "HTTP",
+      "C": "SSH",
+      "D": "MQTT without TLS"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Telnet, HTTP, and unencrypted MQTT all transmit data in plaintext, exposing credentials.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are IoT attack surfaces?",
+    "options": {
+      "A": "Cloud APIs",
+      "B": "Local serial ports",
+      "C": "Companion web apps",
+      "D": "End-user license agreements"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "APIs, hardware ports, and front-end interfaces all represent attack surfaces. Legal agreements are not.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What tool is commonly used to analyze embedded Linux file systems in IoT firmware?",
+    "options": {
+      "A": "Binwalk",
+      "B": "Firmware-Mod-Kit",
+      "C": "Nmap",
+      "D": "Hydra"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Binwalk and Firmware-Mod-Kit extract and inspect embedded files. Nmap is for scanning, Hydra for brute-force.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following measures can secure IoT web interfaces?",
+    "options": {
+      "A": "Enabling HTTPS",
+      "B": "Input sanitization",
+      "C": "Disabling authentication",
+      "D": "Disabling unused features"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "HTTPS, sanitization, and disabling unused features help secure interfaces. Disabling authentication weakens it.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Why is it risky to use unsigned firmware in IoT devices?",
+    "options": {
+      "A": "Attackers can reverse-engineer it more easily",
+      "B": "It allows malicious firmware to be flashed",
+      "C": "It causes devices to overheat",
+      "D": "It can bypass secure boot mechanisms"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "Unsigned firmware opens the door for tampering and bypassing boot integrity mechanisms.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are useful for discovering IoT devices on a network?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Fing",
+      "C": "Nessus",
+      "D": "JTAG emulator"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Wireshark, Fing, and Nessus help scan or analyze devices. JTAG emulators are for physical hardware analysis.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a common IoT device misconfiguration?",
+    "options": {
+      "A": "Strong default passwords",
+      "B": "Open debug interfaces",
+      "C": "Enabled SSH with no login",
+      "D": "No rate-limiting on login pages"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Debug interfaces, unrestricted logins, and missing rate-limiting are exploitable weaknesses. Strong passwords are not a flaw.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are risks associated with public cloud integration in IoT?",
+    "options": {
+      "A": "Exposure of API keys",
+      "B": "Weak authentication for APIs",
+      "C": "Local Bluetooth hijacking",
+      "D": "Exposed cloud dashboards"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Public cloud dashboards and APIs must be protected. Bluetooth hijacking is a local risk, not cloud-related.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the function of UART in IoT hacking?",
+    "options": {
+      "A": "Transmitting firmware updates over Wi-Fi",
+      "B": "Providing serial access to the device console",
+      "C": "Encrypting communication",
+      "D": "Running JavaScript inside the app"
+    },
+    "correct_answers": ["B"],
+    "explanation": "UART allows attackers to access device consoles via serial connections, often giving shell access.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which issues are introduced when IoT firmware lacks signature validation?",
+    "options": {
+      "A": "Tampered firmware can be installed",
+      "B": "Devices may be bricked unintentionally",
+      "C": "Updates are rejected",
+      "D": "Attackers can install custom backdoors"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Unsigned or unchecked firmware can lead to malicious modifications or instability.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are examples of poor API design in IoT systems?",
+    "options": {
+      "A": "Lack of authentication",
+      "B": "Verbose error messages",
+      "C": "Use of HTTPS",
+      "D": "Rate limit misconfigurations"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Insecure APIs expose data or functionality due to poor auth, info leakage, or rate limiting flaws.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What are common post-exploitation goals in IoT attacks?",
+    "options": {
+      "A": "Exfiltration of sensor data",
+      "B": "Pivoting into internal networks",
+      "C": "Patching the device",
+      "D": "Persistence via rootkits"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Post-exploitation aims to maintain access, extract data, or use the device as a pivot point. Patching is defensive, not malicious.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following improve IoT firmware security?",
+    "options": {
+      "A": "Signed firmware updates",
+      "B": "Encrypted firmware storage",
+      "C": "Disabling update capabilities",
+      "D": "Secure boot mechanisms"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Secure boot, signed and encrypted updates ensure only verified firmware is executed. Disabling updates leaves vulnerabilities unpatched.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which techniques are used to reverse engineer IoT mobile apps?",
+    "options": {
+      "A": "Static code analysis",
+      "B": "Intercepting app traffic",
+      "C": "Using JTAG",
+      "D": "Analyzing APK or IPA files"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Mobile apps controlling IoT devices can be reverse-engineered using APK/IPA analysis and traffic interception. JTAG is for hardware.",
+    "multiple_answers": true
+  }
+]
