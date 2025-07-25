@@ -1,0 +1,599 @@
+[
+  {
+    "question": "What is the primary goal of web application hacking?",
+    "options": {
+      "A": "To perform denial-of-service attacks",
+      "B": "To exploit application-level vulnerabilities for unauthorized access or data theft",
+      "C": "To gain access to the network firewall",
+      "D": "To infect client-side devices"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "The main objective is to exploit flaws in the web application logic to access unauthorized data or functionality.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are common web application vulnerabilities?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "Cross-Site Scripting (XSS)",
+      "C": "Remote File Inclusion (RFI)",
+      "D": "ARP Poisoning"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "SQLi, XSS, and RFI target web apps. ARP poisoning is a network-level attack.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which attack type manipulates application input to access database records?",
+    "options": {
+      "A": "Command Injection",
+      "B": "SQL Injection",
+      "C": "Cross-Site Scripting",
+      "D": "LDAP Injection"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "SQL Injection alters SQL queries to access or modify database contents improperly.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tools are commonly used to test for web application vulnerabilities?",
+    "options": {
+      "A": "Burp Suite",
+      "B": "OWASP ZAP",
+      "C": "Nikto",
+      "D": "Cain and Abel"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Burp Suite, ZAP, and Nikto are web-focused tools. Cain and Abel is used for password cracking.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the function of a CSRF attack?",
+    "options": {
+      "A": "To execute arbitrary commands on the web server",
+      "B": "To redirect the user to a phishing site",
+      "C": "To make a user perform unauthorized actions using their session",
+      "D": "To inject malicious JavaScript into the page"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "CSRF tricks authenticated users into performing actions without their knowledge, abusing their session.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following help prevent SQL Injection attacks?",
+    "options": {
+      "A": "Input validation",
+      "B": "Parameterized queries",
+      "C": "Disabling cookies",
+      "D": "Stored procedures"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Validating input, using prepared statements, and stored procedures reduce SQLi risk. Cookies are unrelated.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What type of XSS attack stores malicious code on the target server?",
+    "options": {
+      "A": "Reflected XSS",
+      "B": "DOM-based XSS",
+      "C": "Persistent XSS",
+      "D": "Server-Side XSS"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Persistent XSS stores the payload on the server, often in a database or comment field.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which HTTP header is often exploited in web application attacks?",
+    "options": {
+      "A": "User-Agent",
+      "B": "Host",
+      "C": "Referer",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All can be manipulated to inject malicious input or bypass logic flaws in web applications.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are consequences of insecure direct object references (IDOR)?",
+    "options": {
+      "A": "Unauthorized data access",
+      "B": "Privilege escalation",
+      "C": "Code execution",
+      "D": "Session hijacking"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "IDOR allows users to access data or perform actions they shouldn't, leading to unauthorized access or privilege abuse.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these best describes input validation?",
+    "options": {
+      "A": "Checking whether a user exists",
+      "B": "Verifying and sanitizing user input before processing",
+      "C": "Encrypting cookies for users",
+      "D": "Filtering IP addresses"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Input validation ensures data from users is safe, reducing risks like SQLi, XSS, and command injection.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the role of the SameSite cookie attribute?",
+    "options": {
+      "A": "Encrypts cookies",
+      "B": "Prevents cross-site cookie transmission",
+      "C": "Makes cookies read-only",
+      "D": "Marks a cookie as secure"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "SameSite prevents cookies from being sent in cross-origin requests, mitigating CSRF.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are signs of a web application vulnerable to XSS?",
+    "options": {
+      "A": "Echoes user input without encoding",
+      "B": "Accepts HTML tags in input fields",
+      "C": "Displays JavaScript in URLs",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "XSS-prone apps reflect input, accept scripts, or allow URL manipulation.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which attack aims to gain information about web application structure and logic?",
+    "options": {
+      "A": "Brute-force attack",
+      "B": "Spidering",
+      "C": "Cross-site scripting",
+      "D": "Session fixation"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Spidering crawls the app to enumerate paths, parameters, and forms to aid in further exploitation.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which OWASP vulnerability category does 'Broken Authentication' fall under?",
+    "options": {
+      "A": "Injection flaws",
+      "B": "Security misconfiguration",
+      "C": "Access control vulnerabilities",
+      "D": "Authentication and session management"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Broken Authentication refers to flaws in user identity and session handling, under OWASP’s authentication category.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are typical causes of insecure session management?",
+    "options": {
+      "A": "Predictable session IDs",
+      "B": "Session tokens in URLs",
+      "C": "Short session expiration",
+      "D": "Lack of HTTPS"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Unpredictable tokens, secure transmission, and avoiding token leakage are essential for session security.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the goal of a Clickjacking attack?",
+    "options": {
+      "A": "To bypass firewalls",
+      "B": "To trick users into clicking hidden elements",
+      "C": "To redirect users to malicious domains",
+      "D": "To inject malware into browsers"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Clickjacking hides UI elements inside iframes, tricking users into unknowingly clicking on malicious buttons or links.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which input sanitization techniques are the most effective?",
+    "options": {
+      "A": "Escaping characters",
+      "B": "Blacklisting keywords",
+      "C": "Filtering user IPs",
+      "D": "Allowing only numeric input where expected"
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "Escaping special characters and enforcing strict input types reduce injection and XSS risk.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tools can be used to perform fuzzing on web application inputs?",
+    "options": {
+      "A": "WFuzz",
+      "B": "Burp Intruder",
+      "C": "Dirb",
+      "D": "Metasploit"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "WFuzz and Burp Intruder are ideal for fuzzing fields to discover logic flaws, buffer overflows, or error messages.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these are common targets for web application reconnaissance?",
+    "options": {
+      "A": "Hidden directories",
+      "B": "Session IDs",
+      "C": "Cookies",
+      "D": "Database connection strings"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Recon focuses on uncovering hidden paths, cookie behavior, and backend configuration to plan attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which OWASP Top 10 vulnerability can be mitigated by enforcing least privilege in access control?",
+    "options": {
+      "A": "Security misconfiguration",
+      "B": "Broken Access Control",
+      "C": "Insecure Deserialization",
+      "D": "Cross-Site Request Forgery"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Broken Access Control can be mitigated by strict role definitions, access rules, and enforcing least privilege.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following attacks can result from improper input validation in web applications?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "Cross-Site Scripting (XSS)",
+      "C": "Command Injection",
+      "D": "Denial of Service (DoS)"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Improper input validation can lead to multiple attack vectors including injection, DoS, and scripting flaws.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these tools can intercept and manipulate HTTP/HTTPS traffic between the browser and the server?",
+    "options": {
+      "A": "Burp Suite",
+      "B": "OWASP ZAP",
+      "C": "Netcat",
+      "D": "Fiddler"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Burp Suite, ZAP, and Fiddler act as proxy tools for testing and manipulating web requests.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What vulnerability is exploited when an attacker manipulates session identifiers to gain unauthorized access?",
+    "options": {
+      "A": "Session Fixation",
+      "B": "Broken Authentication",
+      "C": "SQL Injection",
+      "D": "Clickjacking"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Session fixation exploits flaws in session ID handling, allowing attackers to hijack valid sessions.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are considered secure session management practices?",
+    "options": {
+      "A": "Regenerating session IDs after login",
+      "B": "Using HTTPS for all session communication",
+      "C": "Storing session IDs in URLs",
+      "D": "Setting session timeouts"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Regenerating IDs, using HTTPS, and timeout policies enhance session security; storing in URLs is insecure.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which vulnerability arises when input is not properly encoded before being reflected in a web page?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "Reflected XSS",
+      "C": "Command Injection",
+      "D": "XML Injection"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Reflected XSS occurs when user input is returned in a response without proper sanitization or encoding.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What are common indicators of a vulnerable web application?",
+    "options": {
+      "A": "Use of default credentials",
+      "B": "Stack traces displayed on error pages",
+      "C": "Lack of HTTPS",
+      "D": "Hard-coded tokens in client-side code"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "All these issues reflect weak security posture, exposing the app to various exploits.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which header helps protect against clickjacking attacks?",
+    "options": {
+      "A": "X-Frame-Options",
+      "B": "Strict-Transport-Security",
+      "C": "Content-Type",
+      "D": "Content-Security-Policy"
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "X-Frame-Options and CSP prevent UI redressing and frame-based attacks like clickjacking.",
+    "multiple_answers": true
+  },
+  {
+    "question": "How can a web application implement proper access control?",
+    "options": {
+      "A": "Role-based access control",
+      "B": "Client-side enforcement",
+      "C": "Server-side authorization checks",
+      "D": "Token-based authentication"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Access control should be server-side, using roles and token validation; client-side controls are bypassable.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following describe characteristics of DOM-based XSS?",
+    "options": {
+      "A": "Executed entirely on the client-side",
+      "B": "Exploits DOM manipulation APIs",
+      "C": "Stored in the server’s database",
+      "D": "Requires vulnerable JavaScript code"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "DOM-based XSS is triggered via client-side scripts and JavaScript handling DOM objects without sanitization.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which techniques can be used to identify hidden directories and files on a web server?",
+    "options": {
+      "A": "Directory brute-forcing",
+      "B": "Fuzzing",
+      "C": "Spidering",
+      "D": "Command injection"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Brute-forcing, fuzzing, and spidering can all enumerate or discover hidden files and endpoints.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which response header enforces HTTPS communication?",
+    "options": {
+      "A": "X-Content-Type-Options",
+      "B": "Strict-Transport-Security",
+      "C": "X-XSS-Protection",
+      "D": "Access-Control-Allow-Origin"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Strict-Transport-Security (HSTS) enforces HTTPS by instructing browsers to reject insecure connections.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which security flaw allows unauthorized access to other users’ resources by manipulating URLs or parameters?",
+    "options": {
+      "A": "IDOR",
+      "B": "XSS",
+      "C": "SQLi",
+      "D": "CSRF"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "IDOR (Insecure Direct Object Reference) exposes internal objects that users can manipulate to access unauthorized data.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which practices are effective in preventing CSRF attacks?",
+    "options": {
+      "A": "Using anti-CSRF tokens",
+      "B": "Requiring CAPTCHA on sensitive actions",
+      "C": "Relying only on cookie validation",
+      "D": "Enforcing same-origin policies"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Tokens, CAPTCHA, and enforcing SOP help protect against unauthorized cross-site actions.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which vulnerability occurs when serialized data is tampered with and deserialized insecurely?",
+    "options": {
+      "A": "Insecure Deserialization",
+      "B": "Broken Access Control",
+      "C": "DOM-based XSS",
+      "D": "Clickjacking"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Insecure deserialization occurs when untrusted serialized input is deserialized without validation, leading to RCE or logic abuse.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the primary defense against command injection?",
+    "options": {
+      "A": "Escaping output in HTML responses",
+      "B": "Validating and sanitizing input",
+      "C": "Avoiding direct shell calls with user input",
+      "D": "Using client-side input filters"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Command injection relies on unsanitized input and unsafe shell execution; input should be validated and calls avoided where possible.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of these are common indicators of a web application vulnerable to parameter tampering?",
+    "options": {
+      "A": "Price fields passed in hidden form inputs",
+      "B": "Session data stored client-side",
+      "C": "Unencrypted traffic on login pages",
+      "D": "Parameters accepted without verification"
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "Parameter tampering is possible when sensitive data like prices or permissions are accepted without server-side verification.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a typical goal of reconnaissance against a web application?",
+    "options": {
+      "A": "Flooding the server with requests",
+      "B": "Gathering endpoints, parameters, and technologies",
+      "C": "Brute forcing passwords",
+      "D": "Uploading web shells"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Reconnaissance focuses on gathering data about the application’s structure and potential points of entry.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What security headers are used to limit browser-side behavior?",
+    "options": {
+      "A": "Content-Security-Policy",
+      "B": "X-Frame-Options",
+      "C": "Set-Cookie",
+      "D": "Referrer-Policy"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "These headers define how browsers handle content, frames, and referrals, reducing attack surface.",
+    "multiple_answers": true
+  },
+  {
+    "question": "How can an attacker exploit a reflected XSS vulnerability?",
+    "options": {
+      "A": "Injecting malicious code into URL parameters",
+      "B": "Uploading shell scripts via a form",
+      "C": "Logging into the admin panel",
+      "D": "Modifying .htaccess configuration"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Reflected XSS involves injecting scripts into parameters that get echoed back in the response.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are typical risks of exposing debug mode in a web application?",
+    "options": {
+      "A": "Reveals stack traces and error logs",
+      "B": "Exposes sensitive configuration data",
+      "C": "Allows direct access to internal tools",
+      "D": "Improves performance under load"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Debug mode often displays sensitive info that helps attackers reverse-engineer or exploit application logic.",
+    "multiple_answers": true
+  }
+]

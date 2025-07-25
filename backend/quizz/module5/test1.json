@@ -8,7 +8,8 @@
       "D": "To fingerprint the operating system"
     },
     "correct_answers": ["A"],
-    "explanation": "Gaining access is the phase where the attacker attempts to exploit vulnerabilities to enter a system, often without authorization."
+    "explanation": "Gaining access is the phase where the attacker attempts to exploit vulnerabilities to enter a system, often without authorization.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a common technique used to gain access to a target system?",
@@ -19,7 +20,8 @@
       "D": "Port scanning"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Password cracking, phishing, and buffer overflow attacks are direct methods of compromising systems; port scanning is part of the reconnaissance phase."
+    "explanation": "Password cracking, phishing, and buffer overflow attacks are direct methods of compromising systems; port scanning is part of the reconnaissance phase.",
+    "multiple_answers": true
   },
   {
     "question": "What is the role of Metasploit in gaining access?",
@@ -30,7 +32,8 @@
       "D": "Password manager"
     },
     "correct_answers": ["A"],
-    "explanation": "Metasploit is a powerful penetration testing framework used to develop, test, and execute exploit code against a remote target."
+    "explanation": "Metasploit is a powerful penetration testing framework used to develop, test, and execute exploit code against a remote target.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following types of exploits allows remote code execution?",
@@ -41,7 +44,8 @@
       "D": "Web application exploits"
     },
     "correct_answers": ["A"],
-    "explanation": "Remote exploits are designed to allow code execution on a target machine over a network without prior access."
+    "explanation": "Remote exploits are designed to allow code execution on a target machine over a network without prior access.",
+    "multiple_answers": false
   },
   {
     "question": "What is a zero-day exploit?",
@@ -52,7 +56,8 @@
       "D": "A common vulnerability used for training"
     },
     "correct_answers": ["A"],
-    "explanation": "A zero-day exploit targets an unknown flaw that has not yet been patched by the vendor, making it particularly dangerous."
+    "explanation": "A zero-day exploit targets an unknown flaw that has not yet been patched by the vendor, making it particularly dangerous.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following attacks exploit poor input validation in applications?",
@@ -63,7 +68,8 @@
       "D": "Cross-site scripting"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "SQLi, command injection, and XSS all exploit insufficient input validation; ARP spoofing targets network protocols."
+    "explanation": "SQLi, command injection, and XSS all exploit insufficient input validation; ARP spoofing targets network protocols.",
+    "multiple_answers": true
   },
   {
     "question": "What is the goal of privilege escalation?",
@@ -74,7 +80,8 @@
       "D": "To exfiltrate data"
     },
     "correct_answers": ["A"],
-    "explanation": "Privilege escalation is used to gain elevated access rights (e.g., from a regular user to root/admin)."
+    "explanation": "Privilege escalation is used to gain elevated access rights (e.g., from a regular user to root/admin).",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is commonly used for brute-force attacks against SSH?",
@@ -85,7 +92,8 @@
       "D": "Metasploit"
     },
     "correct_answers": ["A"],
-    "explanation": "Hydra is a fast and flexible tool for performing brute-force attacks on various protocols, including SSH."
+    "explanation": "Hydra is a fast and flexible tool for performing brute-force attacks on various protocols, including SSH.",
+    "multiple_answers": false
   },
   {
     "question": "What kind of payload maintains a persistent connection with the attacker's system?",
@@ -96,7 +104,8 @@
       "D": "Meterpreter"
     },
     "correct_answers": ["D"],
-    "explanation": "Meterpreter is an advanced payload that provides persistent and stealthy access, allowing post-exploitation tasks."
+    "explanation": "Meterpreter is an advanced payload that provides persistent and stealthy access, allowing post-exploitation tasks.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware disguises itself as legitimate software?",
@@ -107,7 +116,8 @@
       "D": "Keylogger"
     },
     "correct_answers": ["A"],
-    "explanation": "A Trojan hides its malicious intent by masquerading as a benign application to trick users into installing it."
+    "explanation": "A Trojan hides its malicious intent by masquerading as a benign application to trick users into installing it.",
+    "multiple_answers": false
   },
   {
     "question": "Which method helps an attacker escalate privileges after initial access?",
@@ -118,7 +128,8 @@
       "D": "Using firewalls"
     },
     "correct_answers": ["A"],
-    "explanation": "Kernel vulnerabilities can be used to escalate privileges from a user-level account to root/admin."
+    "explanation": "Kernel vulnerabilities can be used to escalate privileges from a user-level account to root/admin.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools is commonly used for privilege escalation in Windows?",
@@ -129,7 +140,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["A"],
-    "explanation": "PowerUp is designed to enumerate and exploit privilege escalation opportunities on Windows systems."
+    "explanation": "PowerUp is designed to enumerate and exploit privilege escalation opportunities on Windows systems.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of Mimikatz?",
@@ -140,7 +152,8 @@
       "D": "Creating phishing emails"
     },
     "correct_answers": ["C"],
-    "explanation": "Mimikatz is a post-exploitation tool that can extract plaintext passwords and hashes from memory on Windows."
+    "explanation": "Mimikatz is a post-exploitation tool that can extract plaintext passwords and hashes from memory on Windows.",
+    "multiple_answers": false
   },
   {
     "question": "Which file in Windows stores user password hashes?",
@@ -151,7 +164,8 @@
       "D": "NTUSER.DAT"
     },
     "correct_answers": ["A"],
-    "explanation": "The Security Account Manager (SAM) file holds password hashes and is located in the Windows system directory."
+    "explanation": "The Security Account Manager (SAM) file holds password hashes and is located in the Windows system directory.",
+    "multiple_answers": false
   },
   {
     "question": "What is the default hashing algorithm for Windows passwords?",
@@ -162,7 +176,8 @@
       "D": "SHA-1"
     },
     "correct_answers": ["C"],
-    "explanation": "Windows stores password hashes using the NTLM algorithm by default, though it's considered weak by modern standards."
+    "explanation": "Windows stores password hashes using the NTLM algorithm by default, though it's considered weak by modern standards.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of attack involves reusing stolen password hashes to authenticate?",
@@ -173,7 +188,8 @@
       "D": "Credential stuffing"
     },
     "correct_answers": ["A"],
-    "explanation": "In a pass-the-hash attack, attackers use captured hashes directly to authenticate without cracking them."
+    "explanation": "In a pass-the-hash attack, attackers use captured hashes directly to authenticate without cracking them.",
+    "multiple_answers": false
   },
   {
     "question": "What is a keylogger used for?",
@@ -184,7 +200,8 @@
       "D": "Erasing user files"
     },
     "correct_answers": ["B"],
-    "explanation": "A keylogger captures keystrokes typed by the user, which may include usernames and passwords."
+    "explanation": "A keylogger captures keystrokes typed by the user, which may include usernames and passwords.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following techniques is used to hide malicious processes?",
@@ -195,7 +212,8 @@
       "D": "Sniffer"
     },
     "correct_answers": ["A"],
-    "explanation": "Rootkits are used to hide processes, files, or system activity from detection tools."
+    "explanation": "Rootkits are used to hide processes, files, or system activity from detection tools.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of a backdoor?",
@@ -206,7 +224,8 @@
       "D": "To monitor firewalls"
     },
     "correct_answers": ["B"],
-    "explanation": "A backdoor allows attackers to access the system at will, bypassing authentication mechanisms."
+    "explanation": "A backdoor allows attackers to access the system at will, bypassing authentication mechanisms.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is considered a post-exploitation activity?",
@@ -217,7 +236,8 @@
       "D": "Banner grabbing"
     },
     "correct_answers": ["B"],
-    "explanation": "Post-exploitation involves maintaining access and hiding presence—often through tools like rootkits."
+    "explanation": "Post-exploitation involves maintaining access and hiding presence—often through tools like rootkits.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary goal of covering tracks?",
@@ -228,7 +248,8 @@
       "D": "To perform lateral movement"
     },
     "correct_answers": ["B"],
-    "explanation": "Covering tracks helps attackers erase logs and hide indicators of compromise to remain undetected."
+    "explanation": "Covering tracks helps attackers erase logs and hide indicators of compromise to remain undetected.",
+    "multiple_answers": false
   },
   {
     "question": "Which command is used to clear event logs in Windows?",
@@ -239,7 +260,8 @@
       "D": "net use /delete"
     },
     "correct_answers": ["A"],
-    "explanation": "`wevtutil cl` clears specified Windows event logs, a common method for covering tracks."
+    "explanation": "`wevtutil cl` clears specified Windows event logs, a common method for covering tracks.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool allows an attacker to maintain access on a compromised system?",
@@ -250,7 +272,8 @@
       "D": "Burp Suite"
     },
     "correct_answers": ["B"],
-    "explanation": "Meterpreter includes post-exploitation modules to establish persistence, gather info, and control the system."
+    "explanation": "Meterpreter includes post-exploitation modules to establish persistence, gather info, and control the system.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are ways to maintain access after exploitation?",
@@ -261,7 +284,8 @@
       "D": "Installing scheduled tasks"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Persistence can be achieved by adding users, modifying autorun keys, and scheduling malicious tasks."
+    "explanation": "Persistence can be achieved by adding users, modifying autorun keys, and scheduling malicious tasks.",
+    "multiple_answers": true
   },
   {
     "question": "Which type of shell gives an attacker control over the victim’s system from a remote location?",
@@ -272,7 +296,8 @@
       "D": "Command shell"
     },
     "correct_answers": ["A"],
-    "explanation": "A reverse shell connects back to the attacker's system, allowing remote control of the compromised host."
+    "explanation": "A reverse shell connects back to the attacker's system, allowing remote control of the compromised host.",
+    "multiple_answers": false
   },
   {
     "question": "What does a bind shell do?",
@@ -283,7 +308,8 @@
       "D": "Shuts down the host"
     },
     "correct_answers": ["A"],
-    "explanation": "A bind shell opens a listener on the victim's machine, allowing the attacker to connect directly to it."
+    "explanation": "A bind shell opens a listener on the victim's machine, allowing the attacker to connect directly to it.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can be used to create custom payloads?",
@@ -294,7 +320,8 @@
       "D": "Snort"
     },
     "correct_answers": ["A"],
-    "explanation": "MSFvenom is used to craft custom shellcode and payloads for exploitation."
+    "explanation": "MSFvenom is used to craft custom shellcode and payloads for exploitation.",
+    "multiple_answers": false
   },
   {
     "question": "What is the function of the 'schtasks' command in Windows?",
@@ -305,7 +332,8 @@
       "D": "Display user logs"
     },
     "correct_answers": ["A"],
-    "explanation": "The `schtasks` command schedules and manages tasks that can be used for persistence by attackers."
+    "explanation": "The `schtasks` command schedules and manages tasks that can be used for persistence by attackers.",
+    "multiple_answers": false
   },
   {
     "question": "What is the goal of lateral movement?",
@@ -316,7 +344,8 @@
       "D": "Encrypting files"
     },
     "correct_answers": ["C"],
-    "explanation": "Lateral movement is used to move from one system to another to gain deeper access in the network."
+    "explanation": "Lateral movement is used to move from one system to another to gain deeper access in the network.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can extract passwords stored in memory in plaintext on Windows?",
@@ -327,7 +356,8 @@
       "D": "John the Ripper"
     },
     "correct_answers": ["B"],
-    "explanation": "Mimikatz can dump credentials, including plaintext passwords, from Windows memory using LSASS."
+    "explanation": "Mimikatz can dump credentials, including plaintext passwords, from Windows memory using LSASS.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a defense against privilege escalation?",
@@ -338,7 +368,8 @@
       "D": "Disabling UAC"
     },
     "correct_answers": ["A"],
-    "explanation": "Keeping systems updated helps prevent exploitation of known vulnerabilities used for privilege escalation."
+    "explanation": "Keeping systems updated helps prevent exploitation of known vulnerabilities used for privilege escalation.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary goal of vulnerability analysis?",
@@ -349,7 +380,8 @@
       "D": "To conduct phishing campaigns"
     },
     "correct_answers": ["A"],
-    "explanation": "Vulnerability analysis aims to identify and assess security flaws that could be exploited by attackers."
+    "explanation": "Vulnerability analysis aims to identify and assess security flaws that could be exploited by attackers.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a widely used vulnerability scanning tool?",
@@ -360,7 +392,8 @@
       "D": "Burp Suite"
     },
     "correct_answers": ["A"],
-    "explanation": "Nessus is a well-known vulnerability scanner that identifies known vulnerabilities, misconfigurations, and missing patches."
+    "explanation": "Nessus is a well-known vulnerability scanner that identifies known vulnerabilities, misconfigurations, and missing patches.",
+    "multiple_answers": false
   },
   {
     "question": "What does CVSS stand for?",
@@ -371,7 +404,8 @@
       "D": "Common Verified Security Standard"
     },
     "correct_answers": ["A"],
-    "explanation": "CVSS is a standard for rating the severity of software vulnerabilities using a numeric score from 0 to 10."
+    "explanation": "CVSS is a standard for rating the severity of software vulnerabilities using a numeric score from 0 to 10.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following describes a false positive in vulnerability scanning?",
@@ -382,7 +416,8 @@
       "D": "A confirmed zero-day vulnerability"
     },
     "correct_answers": ["A"],
-    "explanation": "A false positive occurs when the scanner reports a vulnerability that isn't actually present or exploitable."
+    "explanation": "A false positive occurs when the scanner reports a vulnerability that isn't actually present or exploitable.",
+    "multiple_answers": false
   },
   {
     "question": "What kind of vulnerability is caused by improper input validation?",
@@ -393,7 +428,8 @@
       "D": "Phishing"
     },
     "correct_answers": ["A"],
-    "explanation": "Improper input validation can lead to injection attacks such as SQL injection or command injection."
+    "explanation": "Improper input validation can lead to injection attacks such as SQL injection or command injection.",
+    "multiple_answers": false
   },
   {
     "question": "Which database tracks publicly known security vulnerabilities?",
@@ -404,7 +440,8 @@
       "D": "Wayback Machine"
     },
     "correct_answers": ["A"],
-    "explanation": "NVD is maintained by NIST and provides a repository of known vulnerabilities and their CVSS scores."
+    "explanation": "NVD is maintained by NIST and provides a repository of known vulnerabilities and their CVSS scores.",
+    "multiple_answers": false
   },
   {
     "question": "What is the role of a vulnerability scanner's plugin?",
@@ -415,7 +452,8 @@
       "D": "To manage firewall rules"
     },
     "correct_answers": ["A"],
-    "explanation": "Plugins in a vulnerability scanner define how to test for specific vulnerabilities or misconfigurations."
+    "explanation": "Plugins in a vulnerability scanner define how to test for specific vulnerabilities or misconfigurations.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following best describes credentialed scanning?",
@@ -426,7 +464,8 @@
       "D": "Scanning performed using open-source tools"
     },
     "correct_answers": ["A"],
-    "explanation": "Credentialed scanning uses valid credentials to access and analyze systems with deeper insight and accuracy."
+    "explanation": "Credentialed scanning uses valid credentials to access and analyze systems with deeper insight and accuracy.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is an example of a misconfiguration vulnerability?",
@@ -437,6 +476,7 @@
       "D": "Timely patching of software"
     },
     "correct_answers": ["A"],
-    "explanation": "Leaving default credentials active is a common and dangerous misconfiguration that can be exploited easily."
+    "explanation": "Leaving default credentials active is a common and dangerous misconfiguration that can be exploited easily.",
+    "multiple_answers": false
   }
 ]

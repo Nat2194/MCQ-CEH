@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Which of the following are common types of SQL injection?",
+    "options": {
+      "A": "Union-based",
+      "B": "Blind",
+      "C": "Stored procedure injection",
+      "D": "Error-based"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these are valid forms of SQL injection techniques used to exploit backend databases.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does the SQL payload `' OR '1'='1' --` do?",
+    "options": {
+      "A": "Creates a syntax error",
+      "B": "Authenticates the user without valid credentials",
+      "C": "Triggers a buffer overflow",
+      "D": "Performs data encryption"
+    },
+    "correct_answers": ["B"],
+    "explanation": "This classic SQL injection bypasses authentication by always evaluating to true.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tools can automate the detection and exploitation of SQL injection?",
+    "options": {
+      "A": "Burp Suite",
+      "B": "Nikto",
+      "C": "sqlmap",
+      "D": "Havij"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "sqlmap, Burp Suite, and Havij are widely used for SQLi testing and exploitation.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which SQL functions can help extract information during an error-based SQL injection?",
+    "options": {
+      "A": "CONCAT()",
+      "B": "GROUP_CONCAT()",
+      "C": "PRINT()",
+      "D": "VERSION()"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "CONCAT, GROUP_CONCAT, and VERSION are commonly used to manipulate and leak data through errors.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the main difference between Union-based and Blind SQL Injection?",
+    "options": {
+      "A": "Union-based needs visual feedback, blind does not",
+      "B": "Blind SQLi can use the UNION keyword",
+      "C": "Union-based works only on Oracle DBs",
+      "D": "Blind SQLi is not detectable"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Union-based shows results directly on screen, while blind relies on inference (true/false or timing).",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which HTTP methods can potentially be used to deliver SQL injection payloads?",
+    "options": {
+      "A": "PUT",
+      "B": "GET",
+      "C": "POST",
+      "D": "DELETE"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Any HTTP method that takes input and passes it to a vulnerable SQL query can be exploited.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does the `--` sequence in SQL represent?",
+    "options": {
+      "A": "Comment operator",
+      "B": "Statement terminator",
+      "C": "String delimiter",
+      "D": "Wildcard"
+    },
+    "correct_answers": ["A"],
+    "explanation": "`--` comments out the rest of the SQL query, which is used to ignore trailing input.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which databases are commonly targeted by SQL injection attacks?",
+    "options": {
+      "A": "Oracle",
+      "B": "MySQL",
+      "C": "SQLite",
+      "D": "PostgreSQL"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All SQL-compliant databases are potential targets of SQL injection.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following is a prevention method against SQL injection?",
+    "options": {
+      "A": "Use of prepared statements",
+      "B": "Input sanitization",
+      "C": "Client-side validation only",
+      "D": "Stored procedures with user input directly concatenated"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Prepared statements and input sanitization reduce risk. Client-side validation is bypassable, and string concatenation is risky.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which indicator may suggest a SQL injection vulnerability?",
+    "options": {
+      "A": "Generic error messages",
+      "B": "Slow server response after sending payloads",
+      "C": "HTML output of database schema",
+      "D": "Redirection to login page"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Visible errors, delays, and leaked data hint at SQL injection. A login redirect is standard behavior.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the primary goal of a time-based blind SQL injection?",
+    "options": {
+      "A": "To cause a crash",
+      "B": "To extract data by inferring responses based on delay",
+      "C": "To list SQL tables",
+      "D": "To brute-force usernames"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Time-based SQLi uses sleep functions to measure delays and determine true/false conditions.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following payloads is associated with stacked queries?",
+    "options": {
+      "A": "'; DROP TABLE users; --",
+      "B": "' OR 1=1 --",
+      "C": "' UNION SELECT NULL --",
+      "D": "'; EXEC xp_cmdshell('dir'); --"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "Stacked queries execute multiple commands using semicolons; DROP TABLE and xp_cmdshell are typical use cases.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following database systems support stacked queries?",
+    "options": {
+      "A": "PostgreSQL",
+      "B": "MySQL (some versions)",
+      "C": "Oracle",
+      "D": "Microsoft SQL Server"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Stacked queries are supported in PostgreSQL, MS SQL, and some MySQL versions. Oracle uses PL/SQL blocks instead.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following indicates a vulnerable SQL query?",
+    "options": {
+      "A": "Input is concatenated directly into the SQL string",
+      "B": "User input is wrapped in a stored procedure",
+      "C": "Parameterization is used for all inputs",
+      "D": "User input is validated using regex"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Direct concatenation allows attackers to manipulate the query structure, leading to injection.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the function of the SQL `UNION` operator in injection attacks?",
+    "options": {
+      "A": "To perform batch deletes",
+      "B": "To combine results of two SELECT queries",
+      "C": "To create multiple database connections",
+      "D": "To send HTTP requests"
+    },
+    "correct_answers": ["B"],
+    "explanation": "The UNION operator merges SELECT outputs, which can allow data extraction from another table.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following functions can reveal the database version?",
+    "options": {
+      "A": "VERSION()",
+      "B": "@@version",
+      "C": "DB_VERSION()",
+      "D": "SELECT version FROM dual"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "VERSION() and @@version return DB version info. DB_VERSION() is not standard SQL.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following best describes a Boolean-based blind SQL injection?",
+    "options": {
+      "A": "Data is extracted via visual error messages",
+      "B": "The page content changes based on true/false logic",
+      "C": "Time delays are used for inference",
+      "D": "Multiple SQL statements are executed"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Boolean-based SQLi changes response output depending on the evaluation of injected conditions.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are considered safe coding practices against SQL injection?",
+    "options": {
+      "A": "Client-side validation",
+      "B": "Whitelist-based input validation",
+      "C": "Use of Object Relational Mapping (ORM)",
+      "D": "Prepared statements with placeholders"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Server-side validation, prepared statements, and ORM help mitigate SQLi. Client-side filtering is bypassable.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which SQLi payload is most likely to result in database deletion?",
+    "options": {
+      "A": "' OR 1=1 --",
+      "B": "'; DROP TABLE users; --",
+      "C": "' AND 1=0 --",
+      "D": "' UNION SELECT NULL --"
+    },
+    "correct_answers": ["B"],
+    "explanation": "This classic destructive payload ends the current query and issues a DROP TABLE command.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following attack types is closely related to SQL injection?",
+    "options": {
+      "A": "Command injection",
+      "B": "XSS",
+      "C": "LDAP injection",
+      "D": "Code injection"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "SQL injection is part of a broader class of injection attacks including LDAP, OS command, and code injection.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which types of SQL injection exploit the database through direct feedback or error messages?",
+    "options": {
+      "A": "Error-based SQLi",
+      "B": "Blind SQLi",
+      "C": "Union-based SQLi",
+      "D": "Time-based SQLi"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "Error-based and Union-based SQLi give direct feedback or visible results, while Blind and Time-based rely on inference.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What makes blind SQL injection more difficult to exploit than union-based injection?",
+    "options": {
+      "A": "Requires visible output from the server",
+      "B": "Does not show direct results of queries",
+      "C": "Requires high privileges",
+      "D": "Only works on NoSQL databases"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Blind SQLi relies on behavioral changes or timing to infer data rather than directly viewing it, making it harder to exploit.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can be indicators of SQL injection vulnerabilities during testing?",
+    "options": {
+      "A": "SQL syntax error messages",
+      "B": "Login succeeds with random inputs",
+      "C": "Web page crashes on single quote input",
+      "D": "No response to malformed queries"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Visible errors, login bypasses, and crashes on invalid input are red flags. Silence does not confirm a vulnerability.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these SQLi techniques extract data by merging queries?",
+    "options": {
+      "A": "Time-based SQLi",
+      "B": "Union-based SQLi",
+      "C": "Boolean-based SQLi",
+      "D": "Out-of-band SQLi"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Union-based SQLi combines queries to return additional data in the normal application output.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the purpose of using the `' OR '1'='1' --` payload?",
+    "options": {
+      "A": "To retrieve user credentials",
+      "B": "To execute system-level commands",
+      "C": "To bypass authentication",
+      "D": "To delete a database"
+    },
+    "correct_answers": ["C"],
+    "explanation": "This payload always evaluates to true, bypassing authentication checks in vulnerable applications.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following functions might be used in error-based SQL injection?",
+    "options": {
+      "A": "CONCAT()",
+      "B": "SLEEP()",
+      "C": "GROUP_CONCAT()",
+      "D": "VERSION()"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "CONCAT, GROUP_CONCAT, and VERSION() are used to extract and combine information from error messages.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which command allows an attacker to execute system-level commands through SQL Server?",
+    "options": {
+      "A": "GETDATE()",
+      "B": "xp_cmdshell",
+      "C": "CONCAT()",
+      "D": "LOAD_FILE()"
+    },
+    "correct_answers": ["B"],
+    "explanation": "`xp_cmdshell` is a stored procedure in Microsoft SQL Server that allows command execution on the host.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are valid evasion techniques for bypassing input filters?",
+    "options": {
+      "A": "Using inline comments like /**/",
+      "B": "Hex encoding characters",
+      "C": "Changing case of SQL keywords",
+      "D": "Injecting via image tags"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Comments, encoding, and case variation help evade filters. Image tags are unrelated to SQLi.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the goal of a time-based blind SQL injection?",
+    "options": {
+      "A": "Cause server crashes",
+      "B": "Extract data using delays",
+      "C": "Bypass CAPTCHA",
+      "D": "Inject JavaScript into responses"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Time-based SQLi uses delay functions to infer true/false outcomes when direct output is unavailable.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is a second-order SQL injection?",
+    "options": {
+      "A": "An injection that is reflected immediately",
+      "B": "Injection executed during a different transaction",
+      "C": "Injection in non-SQL databases",
+      "D": "Double-encoded payloads"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Second-order SQLi is where the payload is stored and later executed in a different context or query.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which prevention techniques are recommended against SQL injection?",
+    "options": {
+      "A": "Prepared statements",
+      "B": "Whitelisting user inputs",
+      "C": "Escaping user inputs",
+      "D": "Disabling database logging"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Prepared statements and proper input validation/escaping are essential for SQLi defense. Disabling logging is counterproductive.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of the `--` in SQL injection?",
+    "options": {
+      "A": "Starts a comment to ignore the rest of the SQL query",
+      "B": "Combines two SQL statements",
+      "C": "Terminates the current SQL query",
+      "D": "Enables advanced functions"
+    },
+    "correct_answers": ["A"],
+    "explanation": "`--` comments out the rest of the SQL query, often used to bypass unwanted conditions or syntax errors.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tool is specifically designed for automating SQL injection attacks?",
+    "options": {
+      "A": "Wireshark",
+      "B": "sqlmap",
+      "C": "Metasploit",
+      "D": "Nikto"
+    },
+    "correct_answers": ["B"],
+    "explanation": "`sqlmap` is an open-source tool focused on detecting and exploiting SQL injection flaws.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What does the following payload do: `' UNION SELECT NULL,NULL --`?",
+    "options": {
+      "A": "Checks for table existence",
+      "B": "Attempts to merge query results with dummy data",
+      "C": "Deletes rows from a table",
+      "D": "Triggers an authentication bypass"
+    },
+    "correct_answers": ["B"],
+    "explanation": "This payload tests if UNION-based SQLi is possible by matching the number of columns with NULLs.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can indicate a successful SQL injection attempt?",
+    "options": {
+      "A": "The page content changes",
+      "B": "A database dump appears",
+      "C": "An SQL error message is displayed",
+      "D": "Session expires"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Changes in output, visible dumps, and error messages signal a successful injection attempt.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these SQLi types is typically used when direct interaction is not possible?",
+    "options": {
+      "A": "Error-based",
+      "B": "Union-based",
+      "C": "Out-of-band",
+      "D": "Stored procedure injection"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Out-of-band SQLi uses alternate channels like DNS or HTTP to extract data without direct response.",
+    "multiple_answers": false
+  },
+  {
+    "question": "In a boolean-based blind SQL injection, what changes based on the condition?",
+    "options": {
+      "A": "The database schema",
+      "B": "The server's IP address",
+      "C": "The content or behavior of the page",
+      "D": "The user's password"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Boolean-based SQLi relies on observing page content or response differences from true/false queries.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following payloads is most likely to delete data?",
+    "options": {
+      "A": "' OR '1'='1",
+      "B": "'; DROP TABLE users; --",
+      "C": "' UNION SELECT NULL",
+      "D": "' AND 1=0 --"
+    },
+    "correct_answers": ["B"],
+    "explanation": "This payload issues a DROP TABLE command, which deletes the specified table from the database.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the purpose of enumeration during SQLi exploitation?",
+    "options": {
+      "A": "Extract system passwords",
+      "B": "Identify tables, columns, and database structure",
+      "C": "Crash the server",
+      "D": "Create new users"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Enumeration is the process of mapping out database structure to identify valuable targets and extract data.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which HTTP request components may carry SQL injection payloads?",
+    "options": {
+      "A": "Cookies",
+      "B": "User-Agent headers",
+      "C": "Query parameters",
+      "D": "POST bodies"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All these parts of an HTTP request can carry attacker-controlled data and be vectors for injection.",
+    "multiple_answers": true
+  }
+]

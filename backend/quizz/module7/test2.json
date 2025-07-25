@@ -7,8 +7,11 @@
       "C": "Spamming",
       "D": "Flooding"
     },
-    "correct_answers": ["A"],
-    "explanation": "Trojanizing involves embedding malicious code into seemingly legitimate software to trick users into installing it."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Trojanizing involves embedding malicious code into seemingly legitimate software to trick users into installing it.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary purpose of spyware?",
@@ -18,8 +21,11 @@
       "C": "To display unwanted advertisements",
       "D": "To delete files permanently"
     },
-    "correct_answers": ["A"],
-    "explanation": "Spyware operates silently, gathering user data such as browsing behavior, credentials, or credit card numbers."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Spyware operates silently, gathering user data such as browsing behavior, credentials, or credit card numbers.",
+    "multiple_answers": false
   },
   {
     "question": "Which component of ransomware handles file encryption?",
@@ -29,8 +35,11 @@
       "C": "Stub",
       "D": "Injector"
     },
-    "correct_answers": ["A"],
-    "explanation": "The payload of ransomware performs the encryption of files, locking users out of their data."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The payload of ransomware performs the encryption of files, locking users out of their data.",
+    "multiple_answers": false
   },
   {
     "question": "What is the role of a command and control (C2) server in malware attacks?",
@@ -40,8 +49,11 @@
       "C": "To update antivirus definitions",
       "D": "To scan for vulnerabilities"
     },
-    "correct_answers": ["A"],
-    "explanation": "C2 servers allow attackers to control malware remotely, issue commands, exfiltrate data, or update payloads."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "C2 servers allow attackers to control malware remotely, issue commands, exfiltrate data, or update payloads.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows registry key is commonly used by malware for persistence?",
@@ -51,8 +63,11 @@
       "C": "HKLM\\System\\MountedDevices",
       "D": "HKLM\\Software\\Classes\\Installer"
     },
-    "correct_answers": ["A"],
-    "explanation": "Malware often adds values under this Run key to ensure execution every time the system boots."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Malware often adds values under this Run key to ensure execution every time the system boots.",
+    "multiple_answers": false
   },
   {
     "question": "Which technique allows malware to avoid detection by modifying its appearance?",
@@ -62,8 +77,11 @@
       "C": "Enumeration",
       "D": "Cracking"
     },
-    "correct_answers": ["A"],
-    "explanation": "Obfuscation changes the structure of the malware code while preserving its function to evade detection tools."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Obfuscation changes the structure of the malware code while preserving its function to evade detection tools.",
+    "multiple_answers": false
   },
   {
     "question": "What does the term 'drive-by download' refer to?",
@@ -73,8 +91,11 @@
       "C": "Downloading files through FTP",
       "D": "Email attachments with trojans"
     },
-    "correct_answers": ["A"],
-    "explanation": "Drive-by downloads happen when malware is installed just by visiting a malicious or compromised site."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Drive-by downloads happen when malware is installed just by visiting a malicious or compromised site.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware type tricks users into giving up control or data by pretending to be antivirus software?",
@@ -84,8 +105,11 @@
       "C": "Ransomware",
       "D": "Botnet"
     },
-    "correct_answers": ["A"],
-    "explanation": "Scareware presents fake alerts and warnings to scare users into downloading or paying for fake software."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Scareware presents fake alerts and warnings to scare users into downloading or paying for fake software.",
+    "multiple_answers": false
   },
   {
     "question": "What is 'malvertising'?",
@@ -95,8 +119,11 @@
       "C": "Adware showing popups",
       "D": "Marketing phishing emails"
     },
-    "correct_answers": ["A"],
-    "explanation": "Malvertising involves injecting malicious ads into legitimate ad networks or websites to spread malware."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Malvertising involves injecting malicious ads into legitimate ad networks or websites to spread malware.",
+    "multiple_answers": false
   },
   {
     "question": "What distinguishes macro malware?",
@@ -106,8 +133,11 @@
       "C": "It resides in the kernel",
       "D": "It exploits network protocols"
     },
-    "correct_answers": ["A"],
-    "explanation": "Macro malware is hidden in macro-enabled Office documents (like .docm or .xlsm), often spread via phishing."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Macro malware is hidden in macro-enabled Office documents (like .docm or .xlsm), often spread via phishing.",
+    "multiple_answers": false
   },
   {
     "question": "Which command-line tool can inspect PE headers for malware traits?",
@@ -117,8 +147,11 @@
       "C": "nmap",
       "D": "Cain and Abel"
     },
-    "correct_answers": ["A"],
-    "explanation": "PEview is a tool that inspects Portable Executable (PE) headers to analyze files for signs of tampering or packing."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "PEview is a tool that inspects Portable Executable (PE) headers to analyze files for signs of tampering or packing.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a malware obfuscation technique?",
@@ -128,8 +161,11 @@
       "C": "Brute-forcing",
       "D": "Port scanning"
     },
-    "correct_answers": ["A"],
-    "explanation": "Packing compresses or encrypts executable files to hide their contents and hinder analysis."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Packing compresses or encrypts executable files to hide their contents and hinder analysis.",
+    "multiple_answers": false
   },
   {
     "question": "Which PowerShell feature is often abused by malware for execution?",
@@ -139,8 +175,11 @@
       "C": "PSSession",
       "D": "Debug-Process"
     },
-    "correct_answers": ["A"],
-    "explanation": "Attackers use EncodedCommand to execute obfuscated or base64-encoded PowerShell commands."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Attackers use EncodedCommand to execute obfuscated or base64-encoded PowerShell commands.",
+    "multiple_answers": false
   },
   {
     "question": "What type of malware replicates through removable media like USB drives?",
@@ -150,8 +189,11 @@
       "C": "Scareware",
       "D": "Spyware"
     },
-    "correct_answers": ["A"],
-    "explanation": "AutoRun worms exploit the autorun.inf file to spread via USB or other removable media."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "AutoRun worms exploit the autorun.inf file to spread via USB or other removable media.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware behavior monitors clipboard content for specific patterns?",
@@ -161,8 +203,11 @@
       "C": "Stub",
       "D": "Loader"
     },
-    "correct_answers": ["A"],
-    "explanation": "Clipper malware watches clipboard activity and can replace copied data such as cryptocurrency addresses."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Clipper malware watches clipboard activity and can replace copied data such as cryptocurrency addresses.",
+    "multiple_answers": false
   },
   {
     "question": "What malware type manipulates DNS settings to redirect users?",
@@ -172,8 +217,11 @@
       "C": "Trojan",
       "D": "Wiper"
     },
-    "correct_answers": ["A"],
-    "explanation": "DNSChanger modifies DNS settings to redirect victims to malicious servers and phishing pages."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "DNSChanger modifies DNS settings to redirect victims to malicious servers and phishing pages.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is an indication of malware persistence?",
@@ -183,8 +231,11 @@
       "C": "Disabled cookies in browser",
       "D": "Slow USB file transfer"
     },
-    "correct_answers": ["A"],
-    "explanation": "Persistence allows malware to survive reboots or logouts by using autorun entries or services."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Persistence allows malware to survive reboots or logouts by using autorun entries or services.",
+    "multiple_answers": false
   },
   {
     "question": "Which memory injection technique maps malicious code into a remote process?",
@@ -194,8 +245,11 @@
       "C": "Spoofing",
       "D": "Heuristic encoding"
     },
-    "correct_answers": ["A"],
-    "explanation": "DLL injection inserts malicious code into the address space of another process, often evading detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "DLL injection inserts malicious code into the address space of another process, often evading detection.",
+    "multiple_answers": false
   },
   {
     "question": "What malware trait allows it to communicate secretly with its operator?",
@@ -205,8 +259,11 @@
       "C": "Root access",
       "D": "Encoding"
     },
-    "correct_answers": ["A"],
-    "explanation": "The Command and Control (C2) channel is used by malware to receive instructions and exfiltrate data covertly."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The Command and Control (C2) channel is used by malware to receive instructions and exfiltrate data covertly.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware goal involves destroying data permanently?",
@@ -216,8 +273,11 @@
       "C": "Adware",
       "D": "Clipper"
     },
-    "correct_answers": ["A"],
-    "explanation": "Wipers are designed to delete or overwrite critical data, rendering systems unusable and unrecoverable."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Wipers are designed to delete or overwrite critical data, rendering systems unusable and unrecoverable.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware leverages legitimate operating system tools to perform malicious actions?",
@@ -227,8 +287,11 @@
       "C": "Virus",
       "D": "Rootkit"
     },
-    "correct_answers": ["A"],
-    "explanation": "LotL malware abuses trusted OS binaries (e.g., PowerShell, WMIC) to execute attacks and avoid detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "LotL malware abuses trusted OS binaries (e.g., PowerShell, WMIC) to execute attacks and avoid detection.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware infection method involves compromising the supply chain of software development?",
@@ -238,8 +301,11 @@
       "C": "Drive-by download",
       "D": "Remote access trojan"
     },
-    "correct_answers": ["A"],
-    "explanation": "Supply chain attacks insert malware into trusted software during development or distribution (e.g., SolarWinds)."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Supply chain attacks insert malware into trusted software during development or distribution (e.g., SolarWinds).",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary difference between a worm and a virus?",
@@ -249,8 +315,11 @@
       "C": "Worms only affect Linux systems",
       "D": "Viruses are always polymorphic"
     },
-    "correct_answers": ["A"],
-    "explanation": "Worms spread autonomously across networks, while viruses require host execution and user action."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Worms spread autonomously across networks, while viruses require host execution and user action.",
+    "multiple_answers": false
   },
   {
     "question": "What technique does malware use to detect if it is running in a virtual machine?",
@@ -260,8 +329,11 @@
       "C": "Polymorphic transformation",
       "D": "Brute-forcing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Malware can detect virtualized environments and halt execution to avoid being analyzed in sandboxes."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Malware can detect virtualized environments and halt execution to avoid being analyzed in sandboxes.",
+    "multiple_answers": false
   },
   {
     "question": "What is an example of a fileless malware attack vector?",
@@ -271,8 +343,11 @@
       "C": "PDF with embedded JavaScript",
       "D": "RAR archive with trojan"
     },
-    "correct_answers": ["A"],
-    "explanation": "Fileless malware often uses PowerShell or WMI to operate in memory without writing to disk."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Fileless malware often uses PowerShell or WMI to operate in memory without writing to disk.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware alters DNS settings to redirect victims to malicious websites?",
@@ -282,8 +357,11 @@
       "C": "Backdoor",
       "D": "Ransomware"
     },
-    "correct_answers": ["A"],
-    "explanation": "DNS hijackers change DNS configurations to reroute user traffic to malicious or phishing sites."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "DNS hijackers change DNS configurations to reroute user traffic to malicious or phishing sites.",
+    "multiple_answers": false
   },
   {
     "question": "What does the term 'persistence' mean in malware behavior?",
@@ -293,8 +371,11 @@
       "C": "The malware deletes itself after execution",
       "D": "The malware targets multiple users simultaneously"
     },
-    "correct_answers": ["A"],
-    "explanation": "Persistence ensures malware remains active across reboots and maintains access to the system."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Persistence ensures malware remains active across reboots and maintains access to the system.",
+    "multiple_answers": false
   },
   {
     "question": "Which executable is commonly used by malware to abuse Windows Management Instrumentation (WMI)?",
@@ -304,8 +385,11 @@
       "C": "explorer.exe",
       "D": "svchost.exe"
     },
-    "correct_answers": ["A"],
-    "explanation": "Malware uses wmic.exe to perform actions like spawning processes or gathering information stealthily."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Malware uses wmic.exe to perform actions like spawning processes or gathering information stealthily.",
+    "multiple_answers": false
   },
   {
     "question": "What kind of malware pretends to be helpful but actually causes damage or installs other malware?",
@@ -315,8 +399,11 @@
       "C": "Worm",
       "D": "Keylogger"
     },
-    "correct_answers": ["A"],
-    "explanation": "Trojans deceive users by disguising themselves as legitimate software while performing malicious actions."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Trojans deceive users by disguising themselves as legitimate software while performing malicious actions.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware spreads by inserting copies of itself into other programs or files?",
@@ -326,8 +413,11 @@
       "C": "Backdoor",
       "D": "Adware"
     },
-    "correct_answers": ["A"],
-    "explanation": "A virus replicates by attaching its code to executable files or documents that users must run."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A virus replicates by attaching its code to executable files or documents that users must run.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these is NOT a typical sign of malware infection?",
@@ -337,8 +427,11 @@
       "C": "System files modified without reason",
       "D": "Disabled antivirus or firewall"
     },
-    "correct_answers": ["A"],
-    "explanation": "Low CPU usage is not suspicious; however, outbound connections, file tampering, and AV deactivation are."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Low CPU usage is not suspicious; however, outbound connections, file tampering, and AV deactivation are.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware type communicates with a central controller to receive tasks?",
@@ -348,8 +441,11 @@
       "C": "Wiper",
       "D": "Spyware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Bots in a botnet receive instructions from a command and control (C2) server to perform coordinated attacks."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Bots in a botnet receive instructions from a command and control (C2) server to perform coordinated attacks.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of anti-debugging techniques in malware?",
@@ -359,8 +455,11 @@
       "C": "To disable firewalls",
       "D": "To encrypt files on disk"
     },
-    "correct_answers": ["A"],
-    "explanation": "Anti-debugging tricks make it difficult for analysts to understand the malware's behavior through debugging."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Anti-debugging tricks make it difficult for analysts to understand the malware's behavior through debugging.",
+    "multiple_answers": false
   },
   {
     "question": "Which file extension often indicates a macro-enabled Office document?",
@@ -370,8 +469,11 @@
       "C": ".txt",
       "D": ".xlsx"
     },
-    "correct_answers": ["A"],
-    "explanation": ".docm files can contain embedded macros that execute code, commonly used in macro-based attacks."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": ".docm files can contain embedded macros that execute code, commonly used in macro-based attacks.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can help dynamically analyze malware in an isolated environment?",
@@ -381,8 +483,11 @@
       "C": "Aircrack-ng",
       "D": "Netcat"
     },
-    "correct_answers": ["A"],
-    "explanation": "Cuckoo Sandbox allows analysts to safely execute and observe malware behavior in a virtualized environment."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Cuckoo Sandbox allows analysts to safely execute and observe malware behavior in a virtualized environment.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following terms refers to modifying malware code to avoid detection?",
@@ -392,8 +497,11 @@
       "C": "Buffer overflow",
       "D": "Credential stuffing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Code obfuscation disguises malware logic or structure, making it harder to detect with static analysis."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Code obfuscation disguises malware logic or structure, making it harder to detect with static analysis.",
+    "multiple_answers": false
   },
   {
     "question": "Which technique do malware authors use to prevent reverse engineering?",
@@ -403,8 +511,11 @@
       "C": "Running from read-only media",
       "D": "Dynamic IP addressing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Packing compresses or encrypts malware binaries, making them more difficult to analyze manually."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Packing compresses or encrypts malware binaries, making them more difficult to analyze manually.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows feature is often exploited for persistence by malware?",
@@ -414,8 +525,11 @@
       "C": "Event Viewer",
       "D": "Snipping Tool"
     },
-    "correct_answers": ["A"],
-    "explanation": "Malware may register a scheduled task to re-execute itself automatically at regular intervals or system boot."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Malware may register a scheduled task to re-execute itself automatically at regular intervals or system boot.",
+    "multiple_answers": false
   },
   {
     "question": "What is 'code injection' in the context of malware behavior?",
@@ -425,8 +539,11 @@
       "C": "Crashing system processes",
       "D": "Executing legitimate code remotely"
     },
-    "correct_answers": ["A"],
-    "explanation": "Code injection involves injecting malicious code into another process's memory to evade detection and gain privileges."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Code injection involves injecting malicious code into another process's memory to evade detection and gain privileges.",
+    "multiple_answers": false
   },
   {
     "question": "What is the role of a malware 'loader'?",
@@ -436,7 +553,10 @@
       "C": "To scan for open ports",
       "D": "To log keystrokes"
     },
-    "correct_answers": ["A"],
-    "explanation": "The loader is a lightweight program that loads and runs the main malicious payload on the system."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The loader is a lightweight program that loads and runs the main malicious payload on the system.",
+    "multiple_answers": false
   }
 ]

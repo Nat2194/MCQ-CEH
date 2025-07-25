@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Which of the following wireless encryption protocols is considered the most secure today?",
+    "options": {
+      "A": "WEP",
+      "B": "WPA",
+      "C": "WPA2",
+      "D": "WPA3"
+    },
+    "correct_answers": ["D"],
+    "explanation": "WPA3 is the latest and most secure wireless encryption standard, offering better protection even with weak passwords.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tools are commonly used to capture wireless packets for analysis?",
+    "options": {
+      "A": "Wireshark",
+      "B": "Aircrack-ng",
+      "C": "NetStumbler",
+      "D": "Ettercap"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Wireshark, Aircrack-ng, and NetStumbler are used for wireless sniffing and packet capture. Ettercap is more focused on MITM attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the function of the 'deauthentication attack' in wireless hacking?",
+    "options": {
+      "A": "Gain administrative access",
+      "B": "Kick clients off a network to capture handshakes",
+      "C": "Jam the frequency",
+      "D": "Encrypt traffic"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Deauth attacks forcibly disconnect clients, prompting reconnection and allowing the attacker to capture WPA/WPA2 handshakes.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following attacks are effective against WPA/WPA2-PSK networks?",
+    "options": {
+      "A": "Dictionary attacks",
+      "B": "Reaver WPS attack",
+      "C": "Brute-force attacks on handshakes",
+      "D": "ARP poisoning"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "WPA/WPA2-PSK can be attacked via handshake cracking using dictionary or brute-force attacks. Reaver targets WPS vulnerabilities.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the role of the handshake in WPA/WPA2 authentication?",
+    "options": {
+      "A": "Used to establish VPN tunnels",
+      "B": "Exchanges encryption keys between client and AP",
+      "C": "Detects rogue APs",
+      "D": "Performs frequency hopping"
+    },
+    "correct_answers": ["B"],
+    "explanation": "The handshake process exchanges key material to derive encryption keys for securing traffic between client and AP.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tool is primarily used to perform dictionary attacks on captured wireless handshakes?",
+    "options": {
+      "A": "Hydra",
+      "B": "Hashcat",
+      "C": "Aircrack-ng",
+      "D": "Netcat"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Aircrack-ng and Hashcat can both be used to perform dictionary attacks on WPA/WPA2 handshakes.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a rogue access point?",
+    "options": {
+      "A": "An AP set up to impersonate a legitimate one",
+      "B": "A client broadcasting fake probe requests",
+      "C": "A honeypot system",
+      "D": "An access point configured with WEP"
+    },
+    "correct_answers": ["A"],
+    "explanation": "A rogue AP mimics a legitimate one to trick users into connecting, often to intercept or manipulate traffic.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which wireless frequency bands are commonly used?",
+    "options": {
+      "A": "2.4 GHz",
+      "B": "3.6 GHz",
+      "C": "5 GHz",
+      "D": "7 GHz"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Common Wi-Fi frequencies include 2.4 GHz, 3.6 GHz (in some regions), and 5 GHz. 7 GHz is not standard for Wi-Fi.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following protocols are used in wireless security?",
+    "options": {
+      "A": "TKIP",
+      "B": "CCMP",
+      "C": "AES",
+      "D": "RC4"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "TKIP, CCMP, AES, and RC4 have all been used in different wireless encryption protocols. RC4 (WEP) is outdated.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the function of monitor mode in wireless interfaces?",
+    "options": {
+      "A": "Detects malware in Wi-Fi packets",
+      "B": "Allows injection of packets into the network",
+      "C": "Allows listening to all wireless traffic without association",
+      "D": "Blocks rogue APs"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Monitor mode enables passive listening to all Wi-Fi packets on a channel, even without connecting to the AP.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are signs of a wireless evil twin attack?",
+    "options": {
+      "A": "Duplicate SSID with stronger signal",
+      "B": "Frequent deauthentication requests",
+      "C": "Clients disconnecting and reconnecting abnormally",
+      "D": "New firmware update prompt on connection"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All listed symptoms can indicate a rogue AP impersonating a legitimate one (evil twin).",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tool is commonly used to create a fake AP?",
+    "options": {
+      "A": "Ettercap",
+      "B": "Airbase-ng",
+      "C": "Responder",
+      "D": "Kismet"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Airbase-ng, part of the Aircrack-ng suite, is used to create fake access points for rogue AP attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are effective countermeasures to wireless attacks?",
+    "options": {
+      "A": "Use WPA3 encryption",
+      "B": "Disable WPS",
+      "C": "MAC address filtering",
+      "D": "Strong passphrases"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "WPA3, disabling WPS, and strong passphrases improve wireless security. MAC filtering is easily bypassed.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of Wi-Fi Protected Setup (WPS)?",
+    "options": {
+      "A": "Encrypt traffic using AES",
+      "B": "Simplify network authentication",
+      "C": "Perform WPA2 handshake faster",
+      "D": "Facilitate easy device pairing"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "WPS simplifies authentication but is known to be insecure and vulnerable to brute-force attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following tools support packet injection?",
+    "options": {
+      "A": "Aireplay-ng",
+      "B": "Airbase-ng",
+      "C": "Wireshark",
+      "D": "Bettercap"
+    },
+    "correct_answers": ["A", "B"],
+    "explanation": "Aireplay-ng and Airbase-ng support packet injection; Wireshark is for sniffing, and Bettercap is used for MITM.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following wireless attack types can be performed without cracking encryption?",
+    "options": {
+      "A": "Evil twin attack",
+      "B": "Jamming",
+      "C": "MAC spoofing",
+      "D": "Handshake replay attack"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These attacks can disrupt or trick users without needing to decrypt traffic.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the goal of a Wi-Fi jamming attack?",
+    "options": {
+      "A": "Steal credentials",
+      "B": "Intercept encrypted traffic",
+      "C": "Cause denial of service",
+      "D": "Upgrade firmware"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Jamming aims to disrupt communication by flooding the frequency with noise or fake packets.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following wireless authentication types is most vulnerable to brute-force attacks?",
+    "options": {
+      "A": "WPA2-PSK",
+      "B": "WPA3-Enterprise",
+      "C": "WEP",
+      "D": "WPA2-Enterprise"
+    },
+    "correct_answers": ["A", "C"],
+    "explanation": "WPA2-PSK and WEP rely on shared keys, making them susceptible to brute-force and dictionary attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are components of a WPA2 4-way handshake?",
+    "options": {
+      "A": "Nonce generation",
+      "B": "PMK (Pairwise Master Key)",
+      "C": "MIC (Message Integrity Code)",
+      "D": "Certificate validation"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "The handshake uses nonces, MICs, and the PMK to establish secure keys. Certificates are used in WPA-Enterprise.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are legitimate purposes of using Kismet?",
+    "options": {
+      "A": "Wireless packet sniffing",
+      "B": "Detecting hidden SSIDs",
+      "C": "Creating rogue APs",
+      "D": "Detecting intrusion in wireless networks"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Kismet is a wireless sniffer and IDS; it can detect hidden SSIDs and rogue APs, but not create fake ones.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are valid attack surfaces in a wireless network?",
+    "options": {
+      "A": "Client devices",
+      "B": "Access points",
+      "C": "WPS protocol",
+      "D": "RF spectrum"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "Wireless attacks can target clients, APs, WPS, or even jam the RF spectrum.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does the WEP protocol use for encryption?",
+    "options": {
+      "A": "RC4 algorithm",
+      "B": "AES-GCM",
+      "C": "TKIP",
+      "D": "IV (Initialization Vector)"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "WEP uses the outdated RC4 cipher and IVs, which are easily predictable and crackable.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What type of attack involves flooding a frequency band to make a wireless network unusable?",
+    "options": {
+      "A": "Jamming",
+      "B": "Beacon flooding",
+      "C": "Packet replay",
+      "D": "ARP spoofing"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Jamming floods the RF channel with interference to prevent legitimate communication.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tools can be used for wireless reconnaissance?",
+    "options": {
+      "A": "Airodump-ng",
+      "B": "Kismet",
+      "C": "NetStumbler",
+      "D": "Airbase-ng"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Airodump-ng, Kismet, and NetStumbler are used for discovering wireless networks and clients. Airbase-ng is used for creating rogue APs.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following techniques can help uncover hidden SSIDs?",
+    "options": {
+      "A": "Monitor mode sniffing",
+      "B": "Sending deauth packets",
+      "C": "Brute-forcing SSID names",
+      "D": "Listening for probe requests"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Hidden SSIDs can often be discovered when clients reconnect or send probe requests. Brute-forcing SSID names is rarely effective.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the role of a pre-shared key (PSK) in WPA2-PSK?",
+    "options": {
+      "A": "Encrypts the 4-way handshake",
+      "B": "Derives the Pairwise Master Key (PMK)",
+      "C": "Used for SSID broadcast",
+      "D": "Authenticates users"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "The PSK is used to authenticate the client and generate the PMK, which in turn is used for encryption.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which attacks can be performed using Aireplay-ng?",
+    "options": {
+      "A": "Deauthentication attack",
+      "B": "Fake authentication",
+      "C": "ARP replay attack",
+      "D": "Passive packet capture"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Aireplay-ng is used for active attacks like deauth, fake auth, and replaying packets. Passive capture is done by Airodump-ng.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are potential weaknesses in wireless networks?",
+    "options": {
+      "A": "Default credentials on APs",
+      "B": "Unpatched firmware",
+      "C": "Weak encryption settings",
+      "D": "Too many connected clients"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Default credentials, weak encryption, and outdated firmware are real risks. Too many clients is a capacity issue, not a security flaw.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tool would you use to brute-force a captured WPA2 handshake?",
+    "options": {
+      "A": "Nmap",
+      "B": "John the Ripper",
+      "C": "Aircrack-ng",
+      "D": "Nikto"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "Aircrack-ng and John can brute-force handshakes. Nmap is for scanning and Nikto is for web app vulnerabilities.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Why is MAC filtering not a reliable wireless security control?",
+    "options": {
+      "A": "MAC addresses can be spoofed",
+      "B": "Attackers can't detect MAC addresses",
+      "C": "MAC filtering slows down the network",
+      "D": "MAC lists are publicly shared"
+    },
+    "correct_answers": ["A"],
+    "explanation": "MAC addresses can easily be spoofed by attackers using sniffed addresses from legitimate clients.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following wireless encryption algorithms has been deprecated due to vulnerabilities?",
+    "options": {
+      "A": "AES",
+      "B": "RC4",
+      "C": "TKIP",
+      "D": "CCMP"
+    },
+    "correct_answers": ["B", "C"],
+    "explanation": "RC4 (used in WEP) and TKIP (used in WPA) are considered insecure and deprecated.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which attack targets wireless clients instead of access points?",
+    "options": {
+      "A": "Evil twin attack",
+      "B": "Deauthentication attack",
+      "C": "Probe request poisoning",
+      "D": "Beacon flooding"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These attacks aim to manipulate or disconnect clients or trick them into connecting to rogue networks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following actions improve wireless network security?",
+    "options": {
+      "A": "Disable SSID broadcast",
+      "B": "Use WPA3",
+      "C": "Enable WPS for easy access",
+      "D": "Use a long random password"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "WPA3 and long passwords enhance security. Hiding SSID can reduce visibility, but WPS should be disabled for security.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a beacon frame in a wireless network?",
+    "options": {
+      "A": "A data packet between client and AP",
+      "B": "An announcement broadcast from the AP",
+      "C": "An encrypted authentication request",
+      "D": "A key exchange signal"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Beacon frames are broadcast by APs to advertise their presence and capabilities to clients.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which wireless security practices help defend against rogue APs?",
+    "options": {
+      "A": "Network Access Control (NAC)",
+      "B": "Wireless Intrusion Detection Systems (WIDS)",
+      "C": "Using static IPs",
+      "D": "SSID whitelisting"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "WIDS, NAC, and SSID control help detect and prevent rogue AP use. Static IPs don't prevent rogue AP access.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which wireless attack can allow an attacker to trick devices into connecting to a fake AP?",
+    "options": {
+      "A": "Beacon flooding",
+      "B": "Evil twin",
+      "C": "Man-in-the-middle",
+      "D": "Jamming"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Evil twin attacks involve cloning an AP’s SSID to trick users into connecting to a malicious network.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following conditions can make a wireless network easier to attack?",
+    "options": {
+      "A": "SSID is hidden",
+      "B": "AP is using default credentials",
+      "C": "WPS is enabled",
+      "D": "Weak pre-shared key"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Default credentials, WPS, and weak passwords are all major vulnerabilities in wireless setups.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which protocols are commonly seen in WPA2 encryption?",
+    "options": {
+      "A": "AES",
+      "B": "CCMP",
+      "C": "RC4",
+      "D": "TKIP"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "WPA2 primarily uses AES with CCMP, but may fall back to TKIP for compatibility. RC4 is used by WEP.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which field in a wireless packet can be spoofed to bypass MAC filtering?",
+    "options": {
+      "A": "SSID",
+      "B": "BSSID",
+      "C": "Source MAC",
+      "D": "Encryption type"
+    },
+    "correct_answers": ["C"],
+    "explanation": "The source MAC address can be spoofed to impersonate an authorized device and bypass MAC filtering.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are common payloads or indicators of wireless attacks?",
+    "options": {
+      "A": "Fake beacon frames",
+      "B": "Malformed probe responses",
+      "C": "Deauth frames",
+      "D": "ICMP redirect packets"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "Wireless-specific attacks often involve beacon/probe frame manipulation and deauth frames. ICMP is more relevant to IP-based attacks.",
+    "multiple_answers": true
+  }
+]

@@ -1,0 +1,620 @@
+[
+  {
+    "question": "What does the OWASP Top 10 aim to provide?",
+    "options": {
+      "A": "A list of the ten most popular hacking tools",
+      "B": "The ten most critical web application security risks",
+      "C": "A regulatory compliance checklist",
+      "D": "A guide for configuring firewalls"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "OWASP Top 10 lists the most critical risks to web applications to help organizations prioritize defense.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are commonly used for web application reconnaissance?",
+    "options": {
+      "A": "Google Dorking",
+      "B": "Nmap",
+      "C": "Wayback Machine",
+      "D": "Whois"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Search engines, archived pages, and domain records help gather public data before direct testing.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which vulnerability occurs when user-controlled input is passed directly into an operating system command?",
+    "options": {
+      "A": "XSS",
+      "B": "Command Injection",
+      "C": "CSRF",
+      "D": "IDOR"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Command injection happens when unsanitized user input is used in system commands on the backend.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tools can automate detection of web application vulnerabilities?",
+    "options": {
+      "A": "Nikto",
+      "B": "Burp Suite",
+      "C": "WPScan",
+      "D": "Nessus"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Nikto and WPScan specialize in web app scanning; Burp automates many vulnerability tests. Nessus is more general.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these would BEST mitigate insecure deserialization?",
+    "options": {
+      "A": "Avoiding serialization of sensitive objects",
+      "B": "Implementing digital signatures on serialized data",
+      "C": "Sanitizing user input",
+      "D": "Limiting HTTP methods"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Avoiding deserialization or verifying input integrity can prevent remote code execution via deserialization.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which vulnerability allows attackers to override values in a web request to escalate privileges?",
+    "options": {
+      "A": "Parameter Tampering",
+      "B": "XSS",
+      "C": "Clickjacking",
+      "D": "CSRF"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Parameter tampering involves manipulating URL/form values to access unauthorized resources or permissions.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following HTTP verbs are typically used in web application testing?",
+    "options": {
+      "A": "GET",
+      "B": "POST",
+      "C": "PUT",
+      "D": "DELETE"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "All listed HTTP methods can be used during fuzzing and enumeration to discover endpoints and vulnerabilities.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which are consequences of using weak password policies in web applications?",
+    "options": {
+      "A": "Brute-force attacks",
+      "B": "Credential stuffing",
+      "C": "Privilege escalation",
+      "D": "Web server misconfiguration"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Weak passwords allow brute force and reuse attacks, which can lead to unauthorized access and privilege misuse.",
+    "multiple_answers": true
+  },
+  {
+    "question": "How does Cross-Origin Resource Sharing (CORS) affect web application security?",
+    "options": {
+      "A": "Allows or blocks cross-site requests",
+      "B": "Encrypts JavaScript traffic",
+      "C": "Disables XSS by default",
+      "D": "Manages API request permissions"
+    },
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "CORS determines which domains can interact with a web app, especially for APIs and cross-site scripts.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which response code would indicate successful directory listing access?",
+    "options": {
+      "A": "200 OK",
+      "B": "403 Forbidden",
+      "C": "404 Not Found",
+      "D": "500 Internal Server Error"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A 200 OK response with a list of files indicates that directory listing is enabled and accessible.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the main goal of session management in web applications?",
+    "options": {
+      "A": "Improve performance",
+      "B": "Track user state securely across multiple requests",
+      "C": "Filter search results",
+      "D": "Encrypt database entries"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Session management ensures continuity of authentication and permissions across multiple requests securely.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are protections against XSS?",
+    "options": {
+      "A": "Output encoding",
+      "B": "Content Security Policy (CSP)",
+      "C": "Sanitizing inputs",
+      "D": "Cross-site tracing"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Encoding, input sanitization, and CSP limit how scripts are interpreted or executed in browsers.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these would be considered a logic flaw in a web application?",
+    "options": {
+      "A": "Password stored in plain text",
+      "B": "Reset link doesn’t expire after use",
+      "C": "Clicking 'Buy 1' adds 10 items to cart",
+      "D": "SQL errors shown to user"
+    },
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Logic flaws break the intended business flow—such as unlimited use of tokens or incorrect item handling.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are valid test cases for file upload vulnerabilities?",
+    "options": {
+      "A": "Uploading executable files",
+      "B": "Bypassing client-side validation",
+      "C": "Renaming file extensions",
+      "D": "Injecting SQL queries into filenames"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Testing file uploads includes checking how the app handles risky names, content, and evasion attempts.",
+    "multiple_answers": true
+  },
+  {
+    "question": "How can developers protect against path traversal attacks?",
+    "options": {
+      "A": "Sanitize and validate user input",
+      "B": "Restrict file access to known directories",
+      "C": "Use absolute paths from config",
+      "D": "Enable server-side includes"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Sanitization and restricting access to known paths prevent attackers from traversing the file system.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a key danger of improper error handling in web applications?",
+    "options": {
+      "A": "Leaks sensitive information like stack traces",
+      "B": "Reduces SEO ranking",
+      "C": "Slows down the web server",
+      "D": "Exposes user credentials"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Verbose error messages can leak server internals, exposing routes, database structures, or even credentials.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are considered secure practices when configuring HTTP cookies?",
+    "options": {
+      "A": "Setting the Secure flag to ensure cookies are only sent over HTTPS",
+      "B": "Using the HttpOnly flag to prevent JavaScript access",
+      "C": "Storing session identifiers in JavaScript variables",
+      "D": "Using short expiration times for sensitive cookies"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Secure and HttpOnly flags reduce exposure to interception and XSS. Short expiration limits session window. Storing cookies in JavaScript is unsafe and exposes them to client-side attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these are legitimate impacts of web application attacks?",
+    "options": {
+      "A": "Loss of sensitive data",
+      "B": "Defacement of website content",
+      "C": "Loss of Wi-Fi connectivity",
+      "D": "Denial of service"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Web application attacks can lead to data loss, reputation damage, and service disruptions. Wi-Fi is unrelated.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which techniques are used in a black-box web application test?",
+    "options": {
+      "A": "No source code access",
+      "B": "Reconnaissance and fuzzing",
+      "C": "Source code review",
+      "D": "Blind injection attacks"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Black-box testing assumes no internal knowledge and relies on external probing, fuzzing, and injections.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following would help reduce web application attack surfaces?",
+    "options": {
+      "A": "Removing unused input fields",
+      "B": "Disabling unnecessary HTTP methods",
+      "C": "Using verbose error messages",
+      "D": "Minimizing exposed APIs"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Reducing functionality and exposure limits attacker options. Verbose errors increase risk.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following headers can be used to prevent MIME-type sniffing?",
+    "options": {
+      "A": "X-Content-Type-Options",
+      "B": "X-Frame-Options",
+      "C": "Content-Type",
+      "D": "Strict-Transport-Security"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "X-Content-Type-Options: nosniff instructs browsers not to sniff MIME types, reducing risk of content-type confusion attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can lead to unauthorized actions being performed on behalf of a user?",
+    "options": {
+      "A": "Cross-Site Scripting",
+      "B": "Cross-Site Request Forgery",
+      "C": "Session Fixation",
+      "D": "Command Injection"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "CSRF tricks authenticated users into performing unintended actions using their valid session context.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are critical defenses against parameter tampering?",
+    "options": {
+      "A": "Input validation",
+      "B": "Server-side authorization checks",
+      "C": "Client-side JavaScript filters",
+      "D": "Enforcing access control on the server"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Parameter tampering must be mitigated by input checks and robust server-side validation and authorization.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these tools are suitable for mapping and crawling web applications?",
+    "options": {
+      "A": "Burp Spider",
+      "B": "OWASP ZAP Spider",
+      "C": "Netcat",
+      "D": "Dirb"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Burp Spider, ZAP Spider, and Dirb are used for discovering directories and endpoints. Netcat is not web-focused.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following describe DOM-based XSS characteristics?",
+    "options": {
+      "A": "Exploits JavaScript on the client side",
+      "B": "Payload reflected in server response",
+      "C": "Requires a vulnerable DOM environment",
+      "D": "Does not interact with the server"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "DOM-based XSS occurs in the browser, without involving the server, by abusing unsafe DOM APIs.",
+    "multiple_answers": true
+  },
+  {
+    "question": "How can attackers exploit hidden fields in web forms?",
+    "options": {
+      "A": "Tampering with the field value",
+      "B": "Injecting scripts",
+      "C": "Reading hidden values via XSS",
+      "D": "Encrypting them client-side"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Hidden fields can be manipulated or exposed by XSS if not properly validated and protected.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following HTTP methods can modify server resources?",
+    "options": {
+      "A": "POST",
+      "B": "GET",
+      "C": "PUT",
+      "D": "DELETE"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "POST, PUT, and DELETE modify server state. GET is for data retrieval and should not alter resources.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are signs of insecure session management?",
+    "options": {
+      "A": "Predictable session IDs",
+      "B": "Session IDs passed in URLs",
+      "C": "Lack of session expiration",
+      "D": "Server-side token storage"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Sessions should be unpredictable, expire properly, and not be exposed via URLs. Server-side token storage is good.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following help prevent SQL Injection?",
+    "options": {
+      "A": "Input validation",
+      "B": "Use of prepared statements",
+      "C": "Client-side input filtering",
+      "D": "Using ORM frameworks properly"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Input validation, parameterized queries, and ORM usage help prevent SQLi. Client-side filters are not reliable.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which OWASP Top 10 category includes insufficient logging and monitoring?",
+    "options": {
+      "A": "Security Misconfiguration",
+      "B": "Insufficient Monitoring",
+      "C": "Broken Access Control",
+      "D": "None of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "OWASP includes 'Insufficient Logging & Monitoring' as its own category (A10), not under others.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the best practice for handling user-uploaded files?",
+    "options": {
+      "A": "Store in a public folder",
+      "B": "Rename and sanitize file names",
+      "C": "Allow execution of uploaded scripts",
+      "D": "Scan files with antivirus"
+    },
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "Renaming and scanning help ensure uploaded files don’t pose a risk. Public folders and script execution are dangerous.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following can reduce exposure to automated attacks?",
+    "options": {
+      "A": "Rate limiting",
+      "B": "CAPTCHA implementation",
+      "C": "Allowing default credentials",
+      "D": "Input normalization"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Rate limits and CAPTCHA slow down bots and brute-force tools. Default credentials and normalization don't help.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which types of attacks are commonly enabled by reflected XSS?",
+    "options": {
+      "A": "Session hijacking",
+      "B": "Keylogging",
+      "C": "Stored payload persistence",
+      "D": "Phishing redirection"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Reflected XSS can hijack sessions, log keystrokes, or redirect users. Persistent effects require stored XSS.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these are components of a secure authentication mechanism?",
+    "options": {
+      "A": "Multi-factor authentication",
+      "B": "Rate limiting login attempts",
+      "C": "Client-side password hashing",
+      "D": "Strong password policies"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "MFA, rate limiting, and password rules enhance security. Client-side hashing is not sufficient.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these could allow attackers to bypass authentication mechanisms?",
+    "options": {
+      "A": "SQL Injection in login form",
+      "B": "Weak session management",
+      "C": "Rate limiting enabled",
+      "D": "Password stored in plaintext"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "SQLi, session flaws, and unencrypted credentials may lead to bypass or compromise. Rate limiting helps prevent attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these techniques can help discover hidden or unlinked pages?",
+    "options": {
+      "A": "Robots.txt analysis",
+      "B": "Search engine queries",
+      "C": "Brute-force directory enumeration",
+      "D": "SSL pinning"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "All listed techniques help in recon; SSL pinning is unrelated to enumeration.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which vulnerability arises when developers trust user input to access files?",
+    "options": {
+      "A": "Path Traversal",
+      "B": "SQL Injection",
+      "C": "Command Injection",
+      "D": "Reflected XSS"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Path traversal occurs when input is used to build file paths, possibly allowing directory access.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What makes a good access control policy in web applications?",
+    "options": {
+      "A": "Server-side role enforcement",
+      "B": "Allowing admin roles in the client",
+      "C": "Least privilege principle",
+      "D": "Session-based access validation"
+    },
+    "correct_answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "Client-side access controls are easily bypassed. Enforce access on the server, using roles and session validation.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What are common results of exploiting vulnerable file upload functions?",
+    "options": {
+      "A": "Web shell deployment",
+      "B": "Denial of Service",
+      "C": "Privilege escalation",
+      "D": "XSS via uploaded files"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Poor upload controls can lead to various exploits, from shells to DoS to stored script injection.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following defenses reduce XSS attack surfaces?",
+    "options": {
+      "A": "Validating input on the server side",
+      "B": "Escaping output in dynamic content",
+      "C": "Allowing raw HTML in user input",
+      "D": "Implementing CSP headers"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Validating input, escaping output, and enforcing CSP limit the risk of injected script execution.",
+    "multiple_answers": true
+  }
+]

@@ -7,8 +7,12 @@
       "C": "The NIC is in monitor mode",
       "D": "The attacker is on the same broadcast domain"
     },
-    "correct_answers": ["A", "D"],
-    "explanation": "Passive sniffing works best on hub-based networks or when on the same broadcast domain."
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "Passive sniffing works best on hub-based networks or when on the same broadcast domain.",
+    "multiple_answers": true
   },
   {
     "question": "What types of data are commonly captured during a successful sniffing attack?",
@@ -18,8 +22,13 @@
       "C": "Private key files",
       "D": "DNS query logs"
     },
-    "correct_answers": ["A", "B", "D"],
-    "explanation": "Sniffers can easily extract credentials, session data, and DNS queries if not encrypted."
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Sniffers can easily extract credentials, session data, and DNS queries if not encrypted.",
+    "multiple_answers": true
   },
   {
     "question": "Which tools allow for sniffing encrypted traffic for analysis?",
@@ -29,8 +38,14 @@
       "C": "ssldump",
       "D": "Cain & Abel"
     },
-    "correct_answers": ["A", "B", "C", "D"],
-    "explanation": "These tools can either decrypt captured SSL traffic (if keys are known) or perform MITM to sniff it."
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "These tools can either decrypt captured SSL traffic (if keys are known) or perform MITM to sniff it.",
+    "multiple_answers": true
   },
   {
     "question": "What distinguishes monitor mode from promiscuous mode?",
@@ -40,8 +55,13 @@
       "C": "Monitor mode captures all wireless frames",
       "D": "Promiscuous mode requires authentication"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Monitor mode captures raw 802.11 frames on wireless, while promiscuous is for Ethernet."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Monitor mode captures raw 802.11 frames on wireless, while promiscuous is for Ethernet.",
+    "multiple_answers": true
   },
   {
     "question": "Which techniques are commonly used in active sniffing?",
@@ -51,8 +71,13 @@
       "C": "DNS spoofing",
       "D": "Session hijacking"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Active sniffing uses manipulation like ARP poisoning or DNS spoofing to intercept traffic."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Active sniffing uses manipulation like ARP poisoning or DNS spoofing to intercept traffic.",
+    "multiple_answers": true
   },
   {
     "question": "Which protocols are typically targeted during VoIP sniffing?",
@@ -62,8 +87,13 @@
       "C": "H.323",
       "D": "HTTPS"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "VoIP uses SIP, RTP, and H.323; HTTPS is unrelated to voice traffic."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "VoIP uses SIP, RTP, and H.323; HTTPS is unrelated to voice traffic.",
+    "multiple_answers": true
   },
   {
     "question": "How does a packet sniffer typically operate on a switched Ethernet network?",
@@ -73,8 +103,13 @@
       "C": "By performing MAC duplication",
       "D": "By relying on DNS rebinding"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "On switched networks, sniffers need tricks like ARP spoofing or mirrored ports to capture traffic."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "On switched networks, sniffers need tricks like ARP spoofing or mirrored ports to capture traffic.",
+    "multiple_answers": true
   },
   {
     "question": "Which protocols are considered secure against sniffing if properly configured?",
@@ -84,8 +119,13 @@
       "C": "Telnet",
       "D": "RDP"
     },
-    "correct_answers": ["A", "B", "D"],
-    "explanation": "Encrypted protocols like HTTPS, SFTP, and RDP resist sniffing; Telnet does not."
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Encrypted protocols like HTTPS, SFTP, and RDP resist sniffing; Telnet does not.",
+    "multiple_answers": true
   },
   {
     "question": "What filtering option in Wireshark would display all TCP traffic?",
@@ -95,8 +135,12 @@
       "C": "ip.proto == 6",
       "D": "tcp.flags.syn == 1"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": "'tcp' and 'tcp.port > 0' are valid filters for capturing TCP traffic."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "'tcp' and 'tcp.port > 0' are valid filters for capturing TCP traffic.",
+    "multiple_answers": true
   },
   {
     "question": "What are consequences of successful sniffing attacks?",
@@ -106,8 +150,13 @@
       "C": "Denial of Service",
       "D": "Network eavesdropping"
     },
-    "correct_answers": ["A", "B", "D"],
-    "explanation": "Sniffing typically results in eavesdropping, stolen credentials, or hijacked sessions—not DoS."
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Sniffing typically results in eavesdropping, stolen credentials, or hijacked sessions—not DoS.",
+    "multiple_answers": true
   },
   {
     "question": "Which layers of the OSI model do sniffing tools typically operate at?",
@@ -117,8 +166,13 @@
       "C": "Layer 4 (Transport)",
       "D": "Layer 7 (Application)"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Sniffers inspect traffic across multiple layers, especially 2–4, to extract useful metadata and payloads."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Sniffers inspect traffic across multiple layers, especially 2–4, to extract useful metadata and payloads.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these tools are useful for DNS sniffing or manipulation?",
@@ -128,8 +182,14 @@
       "C": "Wireshark",
       "D": "Cain & Abel"
     },
-    "correct_answers": ["A", "B", "C", "D"],
-    "explanation": "All listed tools support DNS sniffing or manipulation, often in MITM scenarios."
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "All listed tools support DNS sniffing or manipulation, often in MITM scenarios.",
+    "multiple_answers": true
   },
   {
     "question": "Which wireless sniffing technique allows capturing handshake packets?",
@@ -139,8 +199,12 @@
       "C": "Passive scanning",
       "D": "Beacon flooding"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": "Monitor mode + deauth attacks allow attackers to capture handshakes for cracking WPA/WPA2."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Monitor mode + deauth attacks allow attackers to capture handshakes for cracking WPA/WPA2.",
+    "multiple_answers": true
   },
   {
     "question": "What data can be extracted from sniffed HTTP packets?",
@@ -150,8 +214,13 @@
       "C": "URLs and headers",
       "D": "Private keys"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "HTTP traffic is unencrypted, exposing cookies, credentials, and browsing behavior."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "HTTP traffic is unencrypted, exposing cookies, credentials, and browsing behavior.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following help detect sniffers in a network?",
@@ -161,8 +230,13 @@
       "C": "Promiscuous mode probe",
       "D": "Monitor DHCP responses"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Detecting sniffers involves probing network behavior and NIC mode detection techniques."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Detecting sniffers involves probing network behavior and NIC mode detection techniques.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these indicate a system may be in promiscuous mode?",
@@ -172,8 +246,11 @@
       "C": "Captures broadcast-only packets",
       "D": "Shows no MAC address"
     },
-    "correct_answers": ["A"],
-    "explanation": "In promiscuous mode, a system processes all packets, not just those addressed to it."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "In promiscuous mode, a system processes all packets, not just those addressed to it.",
+    "multiple_answers": false
   },
   {
     "question": "What countermeasures can stop ARP poisoning-based sniffing?",
@@ -183,8 +260,13 @@
       "C": "Enable dynamic ARP inspection",
       "D": "Switch to IPv6"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Static ARP, encryption, and DAI help prevent or mitigate ARP-based sniffing attacks."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Static ARP, encryption, and DAI help prevent or mitigate ARP-based sniffing attacks.",
+    "multiple_answers": true
   },
   {
     "question": "Which file format is used by Wireshark and Tcpdump for packet captures?",
@@ -194,8 +276,12 @@
       "C": ".dump",
       "D": ".pkt"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": ".pcap and .cap are commonly used by sniffer tools for storing captured traffic."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": ".pcap and .cap are commonly used by sniffer tools for storing captured traffic.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these represent real-world uses of sniffing in pen testing?",
@@ -205,8 +291,13 @@
       "C": "Collecting cleartext passwords",
       "D": "Flooding access points"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Sniffing helps harvest sensitive data in assessments; flooding is a DoS tactic, not sniffing."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Sniffing helps harvest sensitive data in assessments; flooding is a DoS tactic, not sniffing.",
+    "multiple_answers": true
   },
   {
     "question": "Which protocols are considered unsecure and should be avoided on enterprise networks?",
@@ -216,8 +307,14 @@
       "C": "FTP",
       "D": "SMBv1"
     },
-    "correct_answers": ["A", "B", "C", "D"],
-    "explanation": "All listed protocols transmit data insecurely and are common targets for sniffing or exploitation."
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "All listed protocols transmit data insecurely and are common targets for sniffing or exploitation.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are indicators of an ongoing ARP poisoning attack?",
@@ -227,8 +324,13 @@
       "C": "Sudden traffic rerouting",
       "D": "DNS lookup failures"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "ARP poisoning may cause unusual ARP traffic, duplicate IP-to-MAC entries, and rerouted packets."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "ARP poisoning may cause unusual ARP traffic, duplicate IP-to-MAC entries, and rerouted packets.",
+    "multiple_answers": true
   },
   {
     "question": "What are common results of DNS spoofing when used with sniffing?",
@@ -238,8 +340,12 @@
       "C": "Altering email routes",
       "D": "Blocking HTTPS access"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": "DNS spoofing misdirects users to attacker-controlled pages for data interception."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "DNS spoofing misdirects users to attacker-controlled pages for data interception.",
+    "multiple_answers": true
   },
   {
     "question": "Which protocols send data in cleartext by default?",
@@ -249,8 +355,13 @@
       "C": "Telnet",
       "D": "SCP"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "FTP, POP3, and Telnet transmit data unencrypted; SCP uses SSH and is encrypted."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "FTP, POP3, and Telnet transmit data unencrypted; SCP uses SSH and is encrypted.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following can be captured from SMBv1 sessions during sniffing?",
@@ -260,8 +371,13 @@
       "C": "Username information",
       "D": "Kerberos tickets"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "SMBv1 leaks usernames, shares, and weak NTLM hashes; Kerberos is used in more secure environments."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "SMBv1 leaks usernames, shares, and weak NTLM hashes; Kerberos is used in more secure environments.",
+    "multiple_answers": true
   },
   {
     "question": "What are advantages of using TShark over Wireshark?",
@@ -271,8 +387,13 @@
       "C": "Lower memory usage",
       "D": "Built-in traffic decryption"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "TShark is a CLI tool for packet capture, ideal for scripting and low-resource environments."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "TShark is a CLI tool for packet capture, ideal for scripting and low-resource environments.",
+    "multiple_answers": true
   },
   {
     "question": "Which actions can prevent packet sniffing on a wireless network?",
@@ -282,8 +403,12 @@
       "C": "Disabling SSID broadcast",
       "D": "MAC address filtering"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": "WPA3 and client isolation help protect data; hiding SSIDs and MAC filtering offer minimal real security."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "WPA3 and client isolation help protect data; hiding SSIDs and MAC filtering offer minimal real security.",
+    "multiple_answers": true
   },
   {
     "question": "Which techniques are used by attackers to force reauthentication in sniffing attacks?",
@@ -293,8 +418,12 @@
       "C": "IP spoofing",
       "D": "Man-in-the-middle delay injection"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": "Deauth and TCP resets force users to reconnect, potentially exposing credentials or session tokens."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Deauth and TCP resets force users to reconnect, potentially exposing credentials or session tokens.",
+    "multiple_answers": true
   },
   {
     "question": "Which are valid reasons for ethical sniffing during a penetration test?",
@@ -304,8 +433,13 @@
       "C": "Validating encryption effectiveness",
       "D": "Disrupting user traffic"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Ethical sniffing aims to assess data exposure, weak protocols, and test defensive configurations."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Ethical sniffing aims to assess data exposure, weak protocols, and test defensive configurations.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these are default filter options in Wireshark?",
@@ -315,8 +449,13 @@
       "C": "tcp.flags.syn",
       "D": "arp.hw.type"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Wireshark supports filters by protocol, TCP flags, IPs, and much more for precise capture analysis."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Wireshark supports filters by protocol, TCP flags, IPs, and much more for precise capture analysis.",
+    "multiple_answers": true
   },
   {
     "question": "Which commands or tools can help verify if a NIC is in promiscuous mode?",
@@ -326,8 +465,13 @@
       "C": "netstat -i",
       "D": "tcpdump"
     },
-    "correct_answers": ["A", "B", "D"],
-    "explanation": "ifconfig and 'ip link' show NIC flags; tcpdump can force promiscuous mode for sniffing."
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "ifconfig and 'ip link' show NIC flags; tcpdump can force promiscuous mode for sniffing.",
+    "multiple_answers": true
   },
   {
     "question": "Which network configurations help reduce the impact of sniffing?",
@@ -337,8 +481,12 @@
       "C": "Full-duplex links",
       "D": "Static IP addressing"
     },
-    "correct_answers": ["A", "B"],
-    "explanation": "Private VLANs and port isolation limit broadcast traffic to attackers on the same subnet."
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Private VLANs and port isolation limit broadcast traffic to attackers on the same subnet.",
+    "multiple_answers": true
   },
   {
     "question": "Which are outputs a sniffer like Wireshark may display?",
@@ -348,8 +496,13 @@
       "C": "Sequence numbers",
       "D": "Encrypted payloads in plaintext"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Wireshark reveals packet headers, TCP flags, sequence numbers, and MAC addresses. Encrypted payloads cannot be read."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Wireshark reveals packet headers, TCP flags, sequence numbers, and MAC addresses. Encrypted payloads cannot be read.",
+    "multiple_answers": true
   },
   {
     "question": "Which protocols commonly use TCP port 110, 21, and 23 respectively?",
@@ -359,8 +512,13 @@
       "C": "Telnet",
       "D": "HTTPS"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "POP3 = 110, FTP = 21, Telnet = 23. All are insecure without encryption layers."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "POP3 = 110, FTP = 21, Telnet = 23. All are insecure without encryption layers.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are common in packet replay attacks?",
@@ -370,8 +528,13 @@
       "C": "Malicious DNS responses",
       "D": "VoIP call packets"
     },
-    "correct_answers": ["A", "B", "D"],
-    "explanation": "Packet replay can reuse authentication and VoIP data or flood the network with ARP requests."
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Packet replay can reuse authentication and VoIP data or flood the network with ARP requests.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these sniffing tools support plugin-based extensibility?",
@@ -381,8 +544,13 @@
       "C": "Burp Suite",
       "D": "Cain & Abel"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Ettercap and Wireshark support user scripts/plugins; Burp has many modules. Cain is not plugin-based."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Ettercap and Wireshark support user scripts/plugins; Burp has many modules. Cain is not plugin-based.",
+    "multiple_answers": true
   },
   {
     "question": "Which information can an attacker extract by sniffing LDAP queries?",
@@ -392,8 +560,13 @@
       "C": "Encrypted password hashes",
       "D": "Group memberships"
     },
-    "correct_answers": ["A", "B", "D"],
-    "explanation": "If LDAP traffic is unencrypted, it can leak directory paths, user names, and group info."
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "If LDAP traffic is unencrypted, it can leak directory paths, user names, and group info.",
+    "multiple_answers": true
   },
   {
     "question": "Which transport-layer protocol is typically the target in TCP session hijacking via sniffing?",
@@ -403,8 +576,11 @@
       "C": "ICMP",
       "D": "ARP"
     },
-    "correct_answers": ["A"],
-    "explanation": "TCP’s connection-oriented structure makes it vulnerable to hijacking when sequence numbers are sniffed."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "TCP’s connection-oriented structure makes it vulnerable to hijacking when sequence numbers are sniffed.",
+    "multiple_answers": false
   },
   {
     "question": "What methods are used to trigger user traffic for sniffing capture?",
@@ -414,8 +590,13 @@
       "C": "Deauthentication floods",
       "D": "ARP request flooding"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Triggering user interaction helps sniffers capture valuable data like credentials or session cookies."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Triggering user interaction helps sniffers capture valuable data like credentials or session cookies.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following use packet injection in combination with sniffing?",
@@ -425,8 +606,13 @@
       "C": "Metasploit",
       "D": "Wireshark"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Ettercap, Aircrack-ng, and Metasploit can inject and sniff; Wireshark is passive only."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Ettercap, Aircrack-ng, and Metasploit can inject and sniff; Wireshark is passive only.",
+    "multiple_answers": true
   },
   {
     "question": "Which forms of sniffing work best on unsegmented Layer 2 networks?",
@@ -436,7 +622,12 @@
       "C": "Switch port stealing",
       "D": "SSL stripping"
     },
-    "correct_answers": ["A", "B", "C"],
-    "explanation": "Layer 2 attacks like passive sniffing and switch manipulation are most effective on flat, unsegmented networks."
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Layer 2 attacks like passive sniffing and switch manipulation are most effective on flat, unsegmented networks.",
+    "multiple_answers": true
   }
 ]

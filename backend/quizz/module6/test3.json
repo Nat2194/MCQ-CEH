@@ -7,8 +7,11 @@
       "C": "To scan for malware",
       "D": "To monitor network traffic"
     },
-    "correct_answers": ["A"],
-    "explanation": "System hacking focuses on exploiting systems to gain unauthorized access, escalate privileges, and maintain control."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "System hacking focuses on exploiting systems to gain unauthorized access, escalate privileges, and maintain control.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a key technique for password cracking?",
@@ -18,8 +21,11 @@
       "C": "Phishing",
       "D": "Banner grabbing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Brute-force attacks try every possible combination of characters until the correct password is found."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Brute-force attacks try every possible combination of characters until the correct password is found.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can dump password hashes from the SAM file in Windows?",
@@ -29,8 +35,11 @@
       "C": "sqlmap",
       "D": "Metagoofil"
     },
-    "correct_answers": ["A"],
-    "explanation": "Mimikatz is used for extracting passwords and hashes from Windows memory and SAM files."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Mimikatz is used for extracting passwords and hashes from Windows memory and SAM files.",
+    "multiple_answers": false
   },
   {
     "question": "What is a key objective of privilege escalation?",
@@ -40,8 +49,11 @@
       "C": "To map network drives",
       "D": "To download malware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Privilege escalation is the process of gaining higher-level permissions such as root or SYSTEM access."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Privilege escalation is the process of gaining higher-level permissions such as root or SYSTEM access.",
+    "multiple_answers": false
   },
   {
     "question": "Which file in Linux contains hashed passwords?",
@@ -51,8 +63,11 @@
       "C": "/var/log/messages",
       "D": "/etc/group"
     },
-    "correct_answers": ["A"],
-    "explanation": "The /etc/shadow file contains password hashes and is readable only by the root user."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The /etc/shadow file contains password hashes and is readable only by the root user.",
+    "multiple_answers": false
   },
   {
     "question": "Which attack reuses a password hash to authenticate without cracking it?",
@@ -62,8 +77,11 @@
       "C": "Brute-force attack",
       "D": "Dictionary attack"
     },
-    "correct_answers": ["A"],
-    "explanation": "Pass-the-hash allows an attacker to authenticate by using the password hash directly without needing the actual password."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Pass-the-hash allows an attacker to authenticate by using the password hash directly without needing the actual password.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is designed to perform brute-force login attacks?",
@@ -73,8 +91,11 @@
       "C": "Netcat",
       "D": "Cain and Abel"
     },
-    "correct_answers": ["A"],
-    "explanation": "Hydra is a fast and flexible tool for performing brute-force attacks on various services."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Hydra is a fast and flexible tool for performing brute-force attacks on various services.",
+    "multiple_answers": false
   },
   {
     "question": "What does a keylogger do?",
@@ -84,8 +105,11 @@
       "C": "Decrypts SSL traffic",
       "D": "Maps active directories"
     },
-    "correct_answers": ["A"],
-    "explanation": "Keyloggers record keystrokes typed by a user, potentially capturing credentials and sensitive data."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Keyloggers record keystrokes typed by a user, potentially capturing credentials and sensitive data.",
+    "multiple_answers": false
   },
   {
     "question": "Which command is used in Meterpreter to clear event logs?",
@@ -95,8 +119,11 @@
       "C": "rm -log",
       "D": "eventwipe"
     },
-    "correct_answers": ["A"],
-    "explanation": "'clearev' is used to erase Windows event logs to cover the attacker's tracks."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'clearev' is used to erase Windows event logs to cover the attacker's tracks.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows file contains user account information and password hashes?",
@@ -106,8 +133,11 @@
       "C": "boot.ini",
       "D": "NTUSER.DAT"
     },
-    "correct_answers": ["A"],
-    "explanation": "The Security Accounts Manager (SAM) file stores encrypted user credentials and password hashes."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The Security Accounts Manager (SAM) file stores encrypted user credentials and password hashes.",
+    "multiple_answers": false
   },
   {
     "question": "What technique is used to hide malicious code within legitimate processes?",
@@ -117,8 +147,11 @@
       "C": "Ping sweep",
       "D": "Packet sniffing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Process injection allows malware to run in the context of a trusted process, helping it avoid detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Process injection allows malware to run in the context of a trusted process, helping it avoid detection.",
+    "multiple_answers": false
   },
   {
     "question": "What kind of shell gives control of the victim’s machine to the attacker?",
@@ -128,8 +161,11 @@
       "C": "Command prompt",
       "D": "Service shell"
     },
-    "correct_answers": ["A"],
-    "explanation": "A reverse shell is initiated from the victim’s system and connects back to the attacker, allowing command execution."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A reverse shell is initiated from the victim’s system and connects back to the attacker, allowing command execution.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is considered a post-exploitation activity?",
@@ -139,8 +175,11 @@
       "C": "Identifying open ports",
       "D": "Banner grabbing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Post-exploitation includes maintaining access and hiding presence, such as by installing a rootkit."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Post-exploitation includes maintaining access and hiding presence, such as by installing a rootkit.",
+    "multiple_answers": false
   },
   {
     "question": "What is the function of the Meterpreter 'hashdump' command?",
@@ -150,8 +189,11 @@
       "C": "Escalates privileges",
       "D": "Injects DLLs into processes"
     },
-    "correct_answers": ["A"],
-    "explanation": "'hashdump' pulls user password hashes from the SAM file on a Windows system."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'hashdump' pulls user password hashes from the SAM file on a Windows system.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can be used to maintain persistent access on a system?",
@@ -161,8 +203,11 @@
       "C": "Traceroute",
       "D": "ARP table"
     },
-    "correct_answers": ["A"],
-    "explanation": "Scheduled tasks can be created to re-establish backdoor access every time the system boots."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Scheduled tasks can be created to re-establish backdoor access every time the system boots.",
+    "multiple_answers": false
   },
   {
     "question": "Which attack captures passwords as they are typed by a user?",
@@ -172,8 +217,11 @@
       "C": "Spoofing",
       "D": "Social engineering"
     },
-    "correct_answers": ["A"],
-    "explanation": "Keylogging captures every keystroke typed, which may include sensitive data like credentials."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Keylogging captures every keystroke typed, which may include sensitive data like credentials.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of covering tracks in the system hacking phase?",
@@ -183,8 +231,11 @@
       "C": "To automate vulnerability scans",
       "D": "To detect IDS systems"
     },
-    "correct_answers": ["A"],
-    "explanation": "Covering tracks ensures attackers can evade detection and prolong access to the system."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Covering tracks ensures attackers can evade detection and prolong access to the system.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools can be used to crack Windows password hashes?",
@@ -194,8 +245,11 @@
       "C": "tcpdump",
       "D": "Sqlmap"
     },
-    "correct_answers": ["A"],
-    "explanation": "John the Ripper is a password-cracking tool that supports cracking Windows hashes such as NTLM."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "John the Ripper is a password-cracking tool that supports cracking Windows hashes such as NTLM.",
+    "multiple_answers": false
   },
   {
     "question": "Which Metasploit payload provides a powerful, in-memory interactive shell?",
@@ -205,8 +259,11 @@
       "C": "cmd shell",
       "D": "Bash shell"
     },
-    "correct_answers": ["A"],
-    "explanation": "Meterpreter is an advanced Metasploit payload that resides in memory and offers powerful post-exploitation capabilities."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Meterpreter is an advanced Metasploit payload that resides in memory and offers powerful post-exploitation capabilities.",
+    "multiple_answers": false
   },
   {
     "question": "What is the main risk of improperly configured SUID binaries?",
@@ -216,8 +273,11 @@
       "C": "Network flooding",
       "D": "Brute-force attacks"
     },
-    "correct_answers": ["A"],
-    "explanation": "SUID binaries that are poorly configured may allow regular users to execute commands as root, leading to privilege escalation."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "SUID binaries that are poorly configured may allow regular users to execute commands as root, leading to privilege escalation.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows command can list all scheduled tasks?",
@@ -227,8 +287,11 @@
       "C": "taskkill /IM",
       "D": "taskmgr"
     },
-    "correct_answers": ["A"],
-    "explanation": "'schtasks /query' displays all scheduled tasks on a Windows system, which attackers may use to maintain persistence."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'schtasks /query' displays all scheduled tasks on a Windows system, which attackers may use to maintain persistence.",
+    "multiple_answers": false
   },
   {
     "question": "What is the goal of lateral movement during system hacking?",
@@ -238,8 +301,11 @@
       "C": "Clearing event logs",
       "D": "Capturing keystrokes"
     },
-    "correct_answers": ["A"],
-    "explanation": "Lateral movement allows attackers to move through the network to find valuable assets or escalate privileges."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Lateral movement allows attackers to move through the network to find valuable assets or escalate privileges.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool automates privilege escalation checks on Linux?",
@@ -249,8 +315,11 @@
       "C": "Burp Suite",
       "D": "Ettercap"
     },
-    "correct_answers": ["A"],
-    "explanation": "LinPEAS is a script that performs extensive privilege escalation checks and local enumeration on Linux systems."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "LinPEAS is a script that performs extensive privilege escalation checks and local enumeration on Linux systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows utility is often abused to execute malicious DLLs?",
@@ -260,8 +329,11 @@
       "C": "explorer.exe",
       "D": "msconfig"
     },
-    "correct_answers": ["A"],
-    "explanation": "'rundll32.exe' can be used to execute DLLs and is often exploited for executing malicious payloads in memory."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'rundll32.exe' can be used to execute DLLs and is often exploited for executing malicious payloads in memory.",
+    "multiple_answers": false
   },
   {
     "question": "What is the Meterpreter 'migrate' command used for?",
@@ -271,8 +343,11 @@
       "C": "Upgrade shell to GUI",
       "D": "Switch user sessions"
     },
-    "correct_answers": ["A"],
-    "explanation": "'migrate' allows the Meterpreter session to move to another process, often to maintain stability or evade detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'migrate' allows the Meterpreter session to move to another process, often to maintain stability or evade detection.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of the 'getuid' command in Meterpreter?",
@@ -282,8 +357,11 @@
       "C": "Clear logs",
       "D": "List open ports"
     },
-    "correct_answers": ["A"],
-    "explanation": "'getuid' tells the attacker which user the Meterpreter session is currently running as, useful for privilege assessment."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'getuid' tells the attacker which user the Meterpreter session is currently running as, useful for privilege assessment.",
+    "multiple_answers": false
   },
   {
     "question": "Which method is often used to escalate privileges in a Windows environment?",
@@ -293,8 +371,11 @@
       "C": "Wi-Fi sniffing",
       "D": "Port scanning"
     },
-    "correct_answers": ["A"],
-    "explanation": "Unquoted service paths can be exploited to execute attacker-controlled executables with elevated privileges."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Unquoted service paths can be exploited to execute attacker-controlled executables with elevated privileges.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can extract saved passwords from browsers and apps?",
@@ -304,8 +385,11 @@
       "C": "Hydra",
       "D": "Wireshark"
     },
-    "correct_answers": ["A"],
-    "explanation": "LaZagne retrieves stored credentials from browsers, databases, and applications on a compromised system."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "LaZagne retrieves stored credentials from browsers, databases, and applications on a compromised system.",
+    "multiple_answers": false
   },
   {
     "question": "What is the main purpose of shellcode?",
@@ -315,8 +399,11 @@
       "C": "Scan networks",
       "D": "List user accounts"
     },
-    "correct_answers": ["A"],
-    "explanation": "Shellcode is a small piece of code used as a payload to execute commands on a compromised machine."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Shellcode is a small piece of code used as a payload to execute commands on a compromised machine.",
+    "multiple_answers": false
   },
   {
     "question": "Which command in Linux helps find SUID files?",
@@ -326,8 +413,11 @@
       "C": "ls -a",
       "D": "chmod 755"
     },
-    "correct_answers": ["A"],
-    "explanation": "This find command lists files with the SUID permission, which can be exploited for privilege escalation."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "This find command lists files with the SUID permission, which can be exploited for privilege escalation.",
+    "multiple_answers": false
   },
   {
     "question": "Which technique involves executing malicious code using trusted Windows binaries?",
@@ -337,8 +427,11 @@
       "C": "Command injection",
       "D": "Pivoting"
     },
-    "correct_answers": ["A"],
-    "explanation": "LOLbins are legitimate Windows utilities abused to execute malicious commands without dropping new files."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "LOLbins are legitimate Windows utilities abused to execute malicious commands without dropping new files.",
+    "multiple_answers": false
   },
   {
     "question": "What is the role of the 'upload' command in Meterpreter?",
@@ -348,8 +441,11 @@
       "C": "Create a reverse shell",
       "D": "Bypass firewall rules"
     },
-    "correct_answers": ["A"],
-    "explanation": "'upload' allows an attacker to transfer files (like payloads or scripts) to the compromised machine."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'upload' allows an attacker to transfer files (like payloads or scripts) to the compromised machine.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following helps evade antivirus detection?",
@@ -359,8 +455,11 @@
       "C": "Network enumeration",
       "D": "Port knocking"
     },
-    "correct_answers": ["A"],
-    "explanation": "Encoding alters the payload's signature to avoid detection by antivirus and IDS systems."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Encoding alters the payload's signature to avoid detection by antivirus and IDS systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of payload runs in memory and avoids touching disk?",
@@ -370,8 +469,11 @@
       "C": "Command shell",
       "D": "PSExec"
     },
-    "correct_answers": ["A"],
-    "explanation": "Meterpreter runs entirely in memory, making it stealthier and harder to detect than disk-based payloads."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Meterpreter runs entirely in memory, making it stealthier and harder to detect than disk-based payloads.",
+    "multiple_answers": false
   },
   {
     "question": "What is a 'pivoting' technique used for?",
@@ -381,8 +483,11 @@
       "C": "Cracking password hashes",
       "D": "Modifying log files"
     },
-    "correct_answers": ["A"],
-    "explanation": "Pivoting lets attackers use a compromised system as a springboard to reach other internal network segments."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Pivoting lets attackers use a compromised system as a springboard to reach other internal network segments.",
+    "multiple_answers": false
   },
   {
     "question": "Which file in Windows is essential for password recovery or hash dumping?",
@@ -392,8 +497,11 @@
       "C": "boot.ini",
       "D": "system32.dll"
     },
-    "correct_answers": ["A"],
-    "explanation": "The SAM file stores user account information and password hashes and is crucial for credential dumping."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The SAM file stores user account information and password hashes and is crucial for credential dumping.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of 'clearev' in Meterpreter?",
@@ -403,8 +511,11 @@
       "C": "Clear user credentials",
       "D": "Reset system time"
     },
-    "correct_answers": ["A"],
-    "explanation": "'clearev' is used to erase Windows event logs, helping attackers cover their tracks."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'clearev' is used to erase Windows event logs, helping attackers cover their tracks.",
+    "multiple_answers": false
   },
   {
     "question": "Which command can show scheduled tasks in Linux?",
@@ -414,8 +525,11 @@
       "C": "sudo tasks",
       "D": "schedule --view"
     },
-    "correct_answers": ["A"],
-    "explanation": "'crontab -l' lists cron jobs scheduled for the current user, useful for identifying persistence methods."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "'crontab -l' lists cron jobs scheduled for the current user, useful for identifying persistence methods.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can identify weak service permissions for privilege escalation?",
@@ -425,8 +539,11 @@
       "C": "aircrack-ng",
       "D": "Zenmap"
     },
-    "correct_answers": ["A"],
-    "explanation": "PowerUp is used on Windows to find misconfigurations and weak permissions that can lead to privilege escalation."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "PowerUp is used on Windows to find misconfigurations and weak permissions that can lead to privilege escalation.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can be considered an in-memory-only payload?",
@@ -436,7 +553,10 @@
       "C": "Plain command prompt",
       "D": "User account creation"
     },
-    "correct_answers": ["A"],
-    "explanation": "Meterpreter reverse_https payload resides in memory and communicates over HTTPS to evade detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Meterpreter reverse_https payload resides in memory and communicates over HTTPS to evade detection.",
+    "multiple_answers": false
   }
 ]

@@ -7,8 +7,11 @@
       "C": "Port scanning",
       "D": "Brute force"
     },
-    "correct_answers": ["A"],
-    "explanation": "Process hollowing involves launching a legitimate process and replacing its memory with malicious code."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Process hollowing involves launching a legitimate process and replacing its memory with malicious code.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware distribution method involves fake browser alerts urging immediate action?",
@@ -18,8 +21,11 @@
       "C": "RAT",
       "D": "Botnet"
     },
-    "correct_answers": ["A"],
-    "explanation": "Scareware displays alarming pop-ups (e.g., fake virus alerts) to trick users into downloading or buying malicious software."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Scareware displays alarming pop-ups (e.g., fake virus alerts) to trick users into downloading or buying malicious software.",
+    "multiple_answers": false
   },
   {
     "question": "What is the main function of a malware downloader?",
@@ -29,8 +35,11 @@
       "C": "To replicate across the network",
       "D": "To overload the CPU"
     },
-    "correct_answers": ["A"],
-    "explanation": "Downloaders are initial-stage malware used to fetch and install the primary malicious payload."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Downloaders are initial-stage malware used to fetch and install the primary malicious payload.",
+    "multiple_answers": false
   },
   {
     "question": "Which scripting environment is most commonly abused by malware in Windows?",
@@ -40,8 +49,11 @@
       "C": "Perl",
       "D": "Ruby"
     },
-    "correct_answers": ["A"],
-    "explanation": "PowerShell is integrated into Windows and allows script-based automation — often leveraged by malware."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "PowerShell is integrated into Windows and allows script-based automation — often leveraged by malware.",
+    "multiple_answers": false
   },
   {
     "question": "What type of malware is designed specifically to delete files and damage systems?",
@@ -51,8 +63,11 @@
       "C": "Trojan",
       "D": "Adware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Wipers are destructive malware that erase files or entire systems, sometimes for sabotage purposes."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Wipers are destructive malware that erase files or entire systems, sometimes for sabotage purposes.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can malware use to escalate privileges in Windows?",
@@ -62,8 +77,11 @@
       "C": "Injecting ads",
       "D": "Enabling two-factor authentication"
     },
-    "correct_answers": ["A"],
-    "explanation": "Unquoted service paths can be manipulated by malware to run malicious executables with elevated privileges."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Unquoted service paths can be manipulated by malware to run malicious executables with elevated privileges.",
+    "multiple_answers": false
   },
   {
     "question": "Which file type is often used to deliver macro malware in spreadsheets?",
@@ -73,8 +91,11 @@
       "C": ".mp3",
       "D": ".js"
     },
-    "correct_answers": ["A"],
-    "explanation": ".xlsm is a macro-enabled Excel file often used in phishing campaigns to execute malicious code."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": ".xlsm is a macro-enabled Excel file often used in phishing campaigns to execute malicious code.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can indicate botnet activity on a host?",
@@ -84,8 +105,11 @@
       "C": "Disabled JavaScript",
       "D": "Constant ARP broadcast"
     },
-    "correct_answers": ["A"],
-    "explanation": "Bots frequently contact a command and control server, often at scheduled intervals."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Bots frequently contact a command and control server, often at scheduled intervals.",
+    "multiple_answers": false
   },
   {
     "question": "What’s the typical function of an exploit kit in malware campaigns?",
@@ -95,8 +119,11 @@
       "C": "To uninstall antivirus software",
       "D": "To redirect search results"
     },
-    "correct_answers": ["A"],
-    "explanation": "Exploit kits scan for known vulnerabilities and exploit them to deliver malware automatically."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Exploit kits scan for known vulnerabilities and exploit them to deliver malware automatically.",
+    "multiple_answers": false
   },
   {
     "question": "What technique is used to ensure malware executes during system boot?",
@@ -106,8 +133,11 @@
       "C": "Credential dumping",
       "D": "SQL injection"
     },
-    "correct_answers": ["A"],
-    "explanation": "Run keys in the registry are often used by malware to automatically execute on startup."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Run keys in the registry are often used by malware to automatically execute on startup.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these is a known malware that targeted SCADA systems?",
@@ -117,8 +147,11 @@
       "C": "Zeus",
       "D": "DarkHotel"
     },
-    "correct_answers": ["A"],
-    "explanation": "Stuxnet was designed to disrupt Iranian nuclear facilities by targeting industrial control systems."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Stuxnet was designed to disrupt Iranian nuclear facilities by targeting industrial control systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware disables security tools and enables full system access?",
@@ -128,8 +161,11 @@
       "C": "Scareware",
       "D": "Adware"
     },
-    "correct_answers": ["A"],
-    "explanation": "RATs allow attackers remote control over infected systems, often with admin-level access."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "RATs allow attackers remote control over infected systems, often with admin-level access.",
+    "multiple_answers": false
   },
   {
     "question": "Which common malware analysis technique uses hash comparison?",
@@ -139,8 +175,11 @@
       "C": "Dynamic emulation",
       "D": "Protocol fuzzing"
     },
-    "correct_answers": ["A"],
-    "explanation": "Signature-based detection compares file hashes or known code patterns to a database of known malware."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Signature-based detection compares file hashes or known code patterns to a database of known malware.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following malware types is specifically designed to gather banking credentials?",
@@ -150,8 +189,11 @@
       "C": "Ransomware",
       "D": "Keylogger"
     },
-    "correct_answers": ["A"],
-    "explanation": "Banking trojans target online banking sessions to steal credentials, often by injecting code into browsers."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Banking trojans target online banking sessions to steal credentials, often by injecting code into browsers.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following best defines 'malware beaconing'?",
@@ -161,8 +203,11 @@
       "C": "Pinging all devices on the network",
       "D": "Flooding the logs with false events"
     },
-    "correct_answers": ["A"],
-    "explanation": "Beaconing involves malware checking in with its C2 server to receive instructions or send data."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Beaconing involves malware checking in with its C2 server to receive instructions or send data.",
+    "multiple_answers": false
   },
   {
     "question": "What technique is used by malware to run in the context of a legitimate process?",
@@ -172,8 +217,11 @@
       "C": "Replay attack",
       "D": "Sniffing"
     },
-    "correct_answers": ["A"],
-    "explanation": "DLL injection runs malicious code in another process’s address space, often to evade security tools."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "DLL injection runs malicious code in another process’s address space, often to evade security tools.",
+    "multiple_answers": false
   },
   {
     "question": "What malware classification applies to software that installs without user consent and collects data?",
@@ -183,8 +231,11 @@
       "C": "Logic bomb",
       "D": "Exploit kit"
     },
-    "correct_answers": ["A"],
-    "explanation": "Spyware is installed covertly and monitors user activities, often for commercial or malicious gain."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Spyware is installed covertly and monitors user activities, often for commercial or malicious gain.",
+    "multiple_answers": false
   },
   {
     "question": "What is the goal of a bootkit?",
@@ -194,8 +245,11 @@
       "C": "To monitor Bluetooth activity",
       "D": "To decrypt ransomware payloads"
     },
-    "correct_answers": ["A"],
-    "explanation": "Bootkits load before the operating system and are designed to gain persistence and evade detection early in the boot process."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Bootkits load before the operating system and are designed to gain persistence and evade detection early in the boot process.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware technique relies on encoding or encryption to prevent signature detection?",
@@ -205,8 +259,11 @@
       "C": "Session hijacking",
       "D": "Rainbow table generation"
     },
-    "correct_answers": ["A"],
-    "explanation": "Obfuscation techniques disguise the code to bypass static signature detection by security tools."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Obfuscation techniques disguise the code to bypass static signature detection by security tools.",
+    "multiple_answers": false
   },
   {
     "question": "Which advanced malware component allows a malicious payload to be executed without writing it to disk?",
@@ -216,8 +273,11 @@
       "C": "Autorun script",
       "D": "Drive-by script"
     },
-    "correct_answers": ["A"],
-    "explanation": "Reflective DLL injection loads and executes code directly in memory without touching disk, aiding in stealth."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Reflective DLL injection loads and executes code directly in memory without touching disk, aiding in stealth.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following best defines a 'dropper' in malware terminology?",
@@ -227,8 +287,11 @@
       "C": "A log cleaner",
       "D": "A keylogger plugin"
     },
-    "correct_answers": ["A"],
-    "explanation": "A dropper is a small piece of code whose purpose is to install a larger, often more dangerous, payload."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A dropper is a small piece of code whose purpose is to install a larger, often more dangerous, payload.",
+    "multiple_answers": false
   },
   {
     "question": "Which command-line tool is commonly used to inspect malware behavior in real time on Windows?",
@@ -238,8 +301,11 @@
       "C": "CHKDSK",
       "D": "Defrag"
     },
-    "correct_answers": ["A"],
-    "explanation": "Process Monitor provides real-time file system, registry, and process/thread activity, useful in malware analysis."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Process Monitor provides real-time file system, registry, and process/thread activity, useful in malware analysis.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these is a common indicator of compromise (IoC) for malware infections?",
@@ -249,8 +315,11 @@
       "C": "Open port 443",
       "D": "Active file compression"
     },
-    "correct_answers": ["A"],
-    "explanation": "Unexpected outbound traffic to unfamiliar domains or IPs is a red flag in malware detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Unexpected outbound traffic to unfamiliar domains or IPs is a red flag in malware detection.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware creates fake interfaces to trick users into entering sensitive information?",
@@ -260,8 +329,11 @@
       "C": "Keylogger",
       "D": "Wiper"
     },
-    "correct_answers": ["A"],
-    "explanation": "Pharming trojans mimic legitimate interfaces to steal credentials and personal data."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Pharming trojans mimic legitimate interfaces to steal credentials and personal data.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware analysis method involves executing malware in a controlled environment to observe behavior?",
@@ -271,8 +343,11 @@
       "C": "Code refactoring",
       "D": "Signature matching"
     },
-    "correct_answers": ["A"],
-    "explanation": "Dynamic analysis involves executing the malware in a sandbox to study its behavior safely."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Dynamic analysis involves executing the malware in a sandbox to study its behavior safely.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of anti-VM techniques in malware?",
@@ -282,8 +357,11 @@
       "C": "To alter firewall rules",
       "D": "To decrypt data at runtime"
     },
-    "correct_answers": ["A"],
-    "explanation": "Anti-VM checks prevent malware from executing in virtual environments used for analysis."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Anti-VM checks prevent malware from executing in virtual environments used for analysis.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these best describes 'trojanized software'?",
@@ -293,8 +371,11 @@
       "C": "Software with expired certificates",
       "D": "Compressed files with viruses"
     },
-    "correct_answers": ["A"],
-    "explanation": "Trojanized software appears to be genuine but is modified to include malicious code."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Trojanized software appears to be genuine but is modified to include malicious code.",
+    "multiple_answers": false
   },
   {
     "question": "What does a polymorphic virus do to avoid detection?",
@@ -304,8 +385,11 @@
       "C": "Deletes logs",
       "D": "Encrypts the registry"
     },
-    "correct_answers": ["A"],
-    "explanation": "Polymorphic viruses continuously change their appearance, making signature-based detection difficult."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Polymorphic viruses continuously change their appearance, making signature-based detection difficult.",
+    "multiple_answers": false
   },
   {
     "question": "Which attack uses social engineering and malware to manipulate financial transactions?",
@@ -315,8 +399,11 @@
       "C": "ARP spoofing",
       "D": "Shoulder surfing"
     },
-    "correct_answers": ["A"],
-    "explanation": "MitB attacks use malware to intercept and manipulate browser transactions without user knowledge."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "MitB attacks use malware to intercept and manipulate browser transactions without user knowledge.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used to analyze malicious Office document macros?",
@@ -326,8 +413,11 @@
       "C": "Nessus",
       "D": "nmap"
     },
-    "correct_answers": ["A"],
-    "explanation": "oletools is a Python package used to parse and analyze Microsoft OLE2 (e.g., Office) documents."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "oletools is a Python package used to parse and analyze Microsoft OLE2 (e.g., Office) documents.",
+    "multiple_answers": false
   },
   {
     "question": "What is a key symptom of ransomware infection?",
@@ -337,8 +427,11 @@
       "C": "Unwanted popups in Chrome",
       "D": "High CPU usage during boot"
     },
-    "correct_answers": ["A"],
-    "explanation": "Ransomware typically encrypts files and adds custom extensions while displaying a ransom message."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Ransomware typically encrypts files and adds custom extensions while displaying a ransom message.",
+    "multiple_answers": false
   },
   {
     "question": "Which feature is typically used by malware to ensure stealth and persistence?",
@@ -348,8 +441,11 @@
       "C": "Multithreading",
       "D": "Compression"
     },
-    "correct_answers": ["A"],
-    "explanation": "Rootkits are designed to hide the presence of malware and maintain access to the system over time."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Rootkits are designed to hide the presence of malware and maintain access to the system over time.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware component may inject code into svchost.exe to remain hidden?",
@@ -359,8 +455,11 @@
       "C": "Logger",
       "D": "Binder"
     },
-    "correct_answers": ["A"],
-    "explanation": "Injectors load malware into legitimate processes like svchost.exe to evade detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Injectors load malware into legitimate processes like svchost.exe to evade detection.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware is designed to gather screenshots or video from a user’s device?",
@@ -370,8 +469,11 @@
       "C": "Adware",
       "D": "Dropper"
     },
-    "correct_answers": ["A"],
-    "explanation": "Spyware can be configured to record screen activity in addition to logging keystrokes and capturing data."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Spyware can be configured to record screen activity in addition to logging keystrokes and capturing data.",
+    "multiple_answers": false
   },
   {
     "question": "What technique might malware use to delay execution to avoid sandbox detection?",
@@ -381,8 +483,11 @@
       "C": "Loop injection",
       "D": "Entropy analysis"
     },
-    "correct_answers": ["A"],
-    "explanation": "Some malware delays execution with a sleep timer to outlast the short runtime of sandbox environments."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Some malware delays execution with a sleep timer to outlast the short runtime of sandbox environments.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these is a mobile malware that targets Android devices and spreads via SMS?",
@@ -392,8 +497,11 @@
       "C": "Petya",
       "D": "Conficker"
     },
-    "correct_answers": ["A"],
-    "explanation": "Cabir was one of the first mobile worms, spreading via Bluetooth and SMS, specifically on Symbian/early Android devices."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Cabir was one of the first mobile worms, spreading via Bluetooth and SMS, specifically on Symbian/early Android devices.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used for static analysis of Windows executable headers?",
@@ -403,8 +511,11 @@
       "C": "DirBuster",
       "D": "Burp Suite"
     },
-    "correct_answers": ["A"],
-    "explanation": "PEiD identifies packers, cryptors, and compilers within Windows executables, aiding malware research."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "PEiD identifies packers, cryptors, and compilers within Windows executables, aiding malware research.",
+    "multiple_answers": false
   },
   {
     "question": "What is a key difference between ransomware and wiper malware?",
@@ -414,8 +525,11 @@
       "C": "Ransomware disables firewalls",
       "D": "Ransomware targets only mobile devices"
     },
-    "correct_answers": ["A"],
-    "explanation": "Ransomware seeks payment for data recovery, while wipers are designed for destruction without recovery options."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Ransomware seeks payment for data recovery, while wipers are designed for destruction without recovery options.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool provides an interactive view of malware-infected memory space?",
@@ -425,8 +539,11 @@
       "C": "Nmap",
       "D": "BeEF"
     },
-    "correct_answers": ["A"],
-    "explanation": "Volatility is a memory forensics tool that extracts and analyzes artifacts from RAM dumps."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Volatility is a memory forensics tool that extracts and analyzes artifacts from RAM dumps.",
+    "multiple_answers": false
   },
   {
     "question": "What is a binder in the context of malware?",
@@ -436,7 +553,10 @@
       "C": "A signature scanner",
       "D": "A screen capture utility"
     },
-    "correct_answers": ["A"],
-    "explanation": "A binder combines malware with a legitimate executable or document to trick users into execution."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A binder combines malware with a legitimate executable or document to trick users into execution.",
+    "multiple_answers": false
   }
 ]

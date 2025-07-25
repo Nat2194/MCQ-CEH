@@ -8,7 +8,8 @@
       "D": "ACK Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "FIN scans send TCP packets with only the FIN flag set; if no response is received, the port is likely open."
+    "explanation": "FIN scans send TCP packets with only the FIN flag set; if no response is received, the port is likely open.",
+    "multiple_answers": false
   },
   {
     "question": "What type of response does a closed port send during a NULL scan?",
@@ -19,7 +20,8 @@
       "D": "No response"
     },
     "correct_answers": ["A"],
-    "explanation": "A closed port will typically respond with an RST (Reset) packet during a NULL scan."
+    "explanation": "A closed port will typically respond with an RST (Reset) packet during a NULL scan.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap option enables aggressive scan that includes OS detection and version detection?",
@@ -30,7 +32,8 @@
       "D": "-T4"
     },
     "correct_answers": ["A"],
-    "explanation": "The -A option in Nmap enables OS detection, version detection, script scanning, and traceroute."
+    "explanation": "The -A option in Nmap enables OS detection, version detection, script scanning, and traceroute.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following represents the correct order in scanning methodology?",
@@ -41,7 +44,8 @@
       "D": "Vulnerability Scan → Port Scan → Ping Sweep"
     },
     "correct_answers": ["A"],
-    "explanation": "The typical scanning order starts with host discovery (ping sweep), then port scanning, followed by OS fingerprinting."
+    "explanation": "The typical scanning order starts with host discovery (ping sweep), then port scanning, followed by OS fingerprinting.",
+    "multiple_answers": false
   },
   {
     "question": "Which scanning type does not complete the TCP handshake and is used for stealth purposes?",
@@ -52,7 +56,8 @@
       "D": "Ping Sweep"
     },
     "correct_answers": ["A"],
-    "explanation": "SYN scans (half-open scans) don't complete the full TCP handshake, making them stealthier."
+    "explanation": "SYN scans (half-open scans) don't complete the full TCP handshake, making them stealthier.",
+    "multiple_answers": false
   },
   {
     "question": "What information can OS fingerprinting reveal?",
@@ -63,7 +68,8 @@
       "D": "Usernames"
     },
     "correct_answers": ["A"],
-    "explanation": "OS fingerprinting identifies the target's operating system and possibly its version."
+    "explanation": "OS fingerprinting identifies the target's operating system and possibly its version.",
+    "multiple_answers": false
   },
   {
     "question": "Which scan type is most likely to go undetected by a stateful firewall?",
@@ -74,7 +80,8 @@
       "D": "UDP Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "XMAS scans send packets with FIN, URG, and PUSH flags set; many firewalls ignore these, so they may go undetected."
+    "explanation": "XMAS scans send packets with FIN, URG, and PUSH flags set; many firewalls ignore these, so they may go undetected.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol is targeted in UDP scans?",
@@ -85,7 +92,8 @@
       "D": "TFTP"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "UDP scans are used to identify open services like DNS (port 53), SNMP (161), and TFTP (69) that operate over UDP."
+    "explanation": "UDP scans are used to identify open services like DNS (port 53), SNMP (161), and TFTP (69) that operate over UDP.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following ports is commonly scanned to detect FTP services?",
@@ -96,7 +104,8 @@
       "D": "80"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "FTP control uses port 21, while port 20 is used for data transfer in active mode."
+    "explanation": "FTP control uses port 21, while port 20 is used for data transfer in active mode.",
+    "multiple_answers": true
   },
   {
     "question": "Which option in Nmap is used to specify the timing template?",
@@ -107,7 +116,8 @@
       "D": "-v"
     },
     "correct_answers": ["A"],
-    "explanation": "The -T option is used to set the timing template (0-5), affecting scan speed and stealthiness."
+    "explanation": "The -T option is used to set the timing template (0-5), affecting scan speed and stealthiness.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap timing template provides the fastest scanning speed?",
@@ -118,7 +128,8 @@
       "D": "-T1"
     },
     "correct_answers": ["A"],
-    "explanation": "-T5 is the most aggressive (fastest) timing template in Nmap, typically used when speed is more important than stealth."
+    "explanation": "-T5 is the most aggressive (fastest) timing template in Nmap, typically used when speed is more important than stealth.",
+    "multiple_answers": false
   },
   {
     "question": "What scanning method attempts to enumerate services without being detected by IDS?",
@@ -129,7 +140,8 @@
       "D": "NULL Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "Idle scanning leverages a third-party idle host to conduct stealthy scans and avoid detection."
+    "explanation": "Idle scanning leverages a third-party idle host to conduct stealthy scans and avoid detection.",
+    "multiple_answers": false
   },
   {
     "question": "What does a filtered port indicate?",
@@ -140,7 +152,8 @@
       "D": "No host available"
     },
     "correct_answers": ["A"],
-    "explanation": "Filtered ports usually mean a firewall is actively dropping packets to/from that port."
+    "explanation": "Filtered ports usually mean a firewall is actively dropping packets to/from that port.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is known for its fast scanning performance on large networks?",
@@ -151,7 +164,8 @@
       "D": "Netcat"
     },
     "correct_answers": ["A"],
-    "explanation": "Masscan is optimized for high-speed scanning and can scan the entire Internet in minutes."
+    "explanation": "Masscan is optimized for high-speed scanning and can scan the entire Internet in minutes.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap script category is used for detecting vulnerabilities?",
@@ -162,7 +176,8 @@
       "D": "external"
     },
     "correct_answers": ["A"],
-    "explanation": "The 'vuln' script category in Nmap contains scripts that test for known vulnerabilities."
+    "explanation": "The 'vuln' script category in Nmap contains scripts that test for known vulnerabilities.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following scanning tools can also perform OS detection?",
@@ -173,7 +188,8 @@
       "D": "OpenVAS"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Nmap and xProbe2 are commonly used for OS fingerprinting using TCP/IP stack signatures."
+    "explanation": "Nmap and xProbe2 are commonly used for OS fingerprinting using TCP/IP stack signatures.",
+    "multiple_answers": true
   },
   {
     "question": "What is the purpose of a decoy scan?",
@@ -184,7 +200,8 @@
       "D": "Find hidden services"
     },
     "correct_answers": ["A"],
-    "explanation": "Decoy scans obscure the real source by using multiple spoofed IP addresses to confuse logging systems."
+    "explanation": "Decoy scans obscure the real source by using multiple spoofed IP addresses to confuse logging systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which response from a UDP scan typically indicates an open port?",
@@ -195,7 +212,8 @@
       "D": "RST"
     },
     "correct_answers": ["A"],
-    "explanation": "An open UDP port usually doesn't respond, while a closed port returns an ICMP Port Unreachable error."
+    "explanation": "An open UDP port usually doesn't respond, while a closed port returns an ICMP Port Unreachable error.",
+    "multiple_answers": false
   },
   {
     "question": "Which scanning technique can exploit idle hosts to mask scan source?",
@@ -206,7 +224,8 @@
       "D": "XMAS Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "Idle scans use a 'zombie' host with predictable IP IDs to perform stealthy scans on behalf of the attacker."
+    "explanation": "Idle scans use a 'zombie' host with predictable IP IDs to perform stealthy scans on behalf of the attacker.",
+    "multiple_answers": false
   },
   {
     "question": "What does Nmap's '-sA' scan do?",
@@ -217,7 +236,8 @@
       "D": "Sends FIN packets"
     },
     "correct_answers": ["A"],
-    "explanation": "An ACK scan is used to determine firewall rules by sending ACK packets and analyzing the response."
+    "explanation": "An ACK scan is used to determine firewall rules by sending ACK packets and analyzing the response.",
+    "multiple_answers": false
   },
   {
     "question": "Which scanning technique sends TCP packets with FIN flag set to identify open ports?",
@@ -228,7 +248,8 @@
       "D": "ACK Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "FIN scans send TCP packets with only the FIN flag set; if no response is received, the port is likely open."
+    "explanation": "FIN scans send TCP packets with only the FIN flag set; if no response is received, the port is likely open.",
+    "multiple_answers": false
   },
   {
     "question": "What type of response does a closed port send during a NULL scan?",
@@ -239,7 +260,8 @@
       "D": "No response"
     },
     "correct_answers": ["A"],
-    "explanation": "A closed port will typically respond with an RST (Reset) packet during a NULL scan."
+    "explanation": "A closed port will typically respond with an RST (Reset) packet during a NULL scan.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap option enables aggressive scan that includes OS detection and version detection?",
@@ -250,7 +272,8 @@
       "D": "-T4"
     },
     "correct_answers": ["A"],
-    "explanation": "The -A option in Nmap enables OS detection, version detection, script scanning, and traceroute."
+    "explanation": "The -A option in Nmap enables OS detection, version detection, script scanning, and traceroute.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following represents the correct order in scanning methodology?",
@@ -261,7 +284,8 @@
       "D": "Vulnerability Scan → Port Scan → Ping Sweep"
     },
     "correct_answers": ["A"],
-    "explanation": "The typical scanning order starts with host discovery (ping sweep), then port scanning, followed by OS fingerprinting."
+    "explanation": "The typical scanning order starts with host discovery (ping sweep), then port scanning, followed by OS fingerprinting.",
+    "multiple_answers": false
   },
   {
     "question": "Which scanning type does not complete the TCP handshake and is used for stealth purposes?",
@@ -272,7 +296,8 @@
       "D": "Ping Sweep"
     },
     "correct_answers": ["A"],
-    "explanation": "SYN scans (half-open scans) don't complete the full TCP handshake, making them stealthier."
+    "explanation": "SYN scans (half-open scans) don't complete the full TCP handshake, making them stealthier.",
+    "multiple_answers": false
   },
   {
     "question": "What information can OS fingerprinting reveal?",
@@ -283,7 +308,8 @@
       "D": "Usernames"
     },
     "correct_answers": ["A"],
-    "explanation": "OS fingerprinting identifies the target's operating system and possibly its version."
+    "explanation": "OS fingerprinting identifies the target's operating system and possibly its version.",
+    "multiple_answers": false
   },
   {
     "question": "Which scan type is most likely to go undetected by a stateful firewall?",
@@ -294,7 +320,8 @@
       "D": "UDP Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "XMAS scans send packets with FIN, URG, and PUSH flags set; many firewalls ignore these, so they may go undetected."
+    "explanation": "XMAS scans send packets with FIN, URG, and PUSH flags set; many firewalls ignore these, so they may go undetected.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol is targeted in UDP scans?",
@@ -305,7 +332,8 @@
       "D": "TFTP"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "UDP scans are used to identify open services like DNS (port 53), SNMP (161), and TFTP (69) that operate over UDP."
+    "explanation": "UDP scans are used to identify open services like DNS (port 53), SNMP (161), and TFTP (69) that operate over UDP.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following ports is commonly scanned to detect FTP services?",
@@ -316,7 +344,8 @@
       "D": "80"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "FTP control uses port 21, while port 20 is used for data transfer in active mode."
+    "explanation": "FTP control uses port 21, while port 20 is used for data transfer in active mode.",
+    "multiple_answers": true
   },
   {
     "question": "Which option in Nmap is used to specify the timing template?",
@@ -327,7 +356,8 @@
       "D": "-v"
     },
     "correct_answers": ["A"],
-    "explanation": "The -T option is used to set the timing template (0-5), affecting scan speed and stealthiness."
+    "explanation": "The -T option is used to set the timing template (0-5), affecting scan speed and stealthiness.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap timing template provides the fastest scanning speed?",
@@ -338,7 +368,8 @@
       "D": "-T1"
     },
     "correct_answers": ["A"],
-    "explanation": "-T5 is the most aggressive (fastest) timing template in Nmap, typically used when speed is more important than stealth."
+    "explanation": "-T5 is the most aggressive (fastest) timing template in Nmap, typically used when speed is more important than stealth.",
+    "multiple_answers": false
   },
   {
     "question": "What scanning method attempts to enumerate services without being detected by IDS?",
@@ -349,7 +380,8 @@
       "D": "NULL Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "Idle scanning leverages a third-party idle host to conduct stealthy scans and avoid detection."
+    "explanation": "Idle scanning leverages a third-party idle host to conduct stealthy scans and avoid detection.",
+    "multiple_answers": false
   },
   {
     "question": "What does a filtered port indicate?",
@@ -360,7 +392,8 @@
       "D": "No host available"
     },
     "correct_answers": ["A"],
-    "explanation": "Filtered ports usually mean a firewall is actively dropping packets to/from that port."
+    "explanation": "Filtered ports usually mean a firewall is actively dropping packets to/from that port.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is known for its fast scanning performance on large networks?",
@@ -371,7 +404,8 @@
       "D": "Netcat"
     },
     "correct_answers": ["A"],
-    "explanation": "Masscan is optimized for high-speed scanning and can scan the entire Internet in minutes."
+    "explanation": "Masscan is optimized for high-speed scanning and can scan the entire Internet in minutes.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap script category is used for detecting vulnerabilities?",
@@ -382,7 +416,8 @@
       "D": "external"
     },
     "correct_answers": ["A"],
-    "explanation": "The 'vuln' script category in Nmap contains scripts that test for known vulnerabilities."
+    "explanation": "The 'vuln' script category in Nmap contains scripts that test for known vulnerabilities.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following scanning tools can also perform OS detection?",
@@ -393,7 +428,8 @@
       "D": "OpenVAS"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Nmap and xProbe2 are commonly used for OS fingerprinting using TCP/IP stack signatures."
+    "explanation": "Nmap and xProbe2 are commonly used for OS fingerprinting using TCP/IP stack signatures.",
+    "multiple_answers": true
   },
   {
     "question": "What is the purpose of a decoy scan?",
@@ -404,7 +440,8 @@
       "D": "Find hidden services"
     },
     "correct_answers": ["A"],
-    "explanation": "Decoy scans obscure the real source by using multiple spoofed IP addresses to confuse logging systems."
+    "explanation": "Decoy scans obscure the real source by using multiple spoofed IP addresses to confuse logging systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which response from a UDP scan typically indicates an open port?",
@@ -415,7 +452,8 @@
       "D": "RST"
     },
     "correct_answers": ["A"],
-    "explanation": "An open UDP port usually doesn't respond, while a closed port returns an ICMP Port Unreachable error."
+    "explanation": "An open UDP port usually doesn't respond, while a closed port returns an ICMP Port Unreachable error.",
+    "multiple_answers": false
   },
   {
     "question": "Which scanning technique can exploit idle hosts to mask scan source?",
@@ -426,7 +464,8 @@
       "D": "XMAS Scan"
     },
     "correct_answers": ["A"],
-    "explanation": "Idle scans use a 'zombie' host with predictable IP IDs to perform stealthy scans on behalf of the attacker."
+    "explanation": "Idle scans use a 'zombie' host with predictable IP IDs to perform stealthy scans on behalf of the attacker.",
+    "multiple_answers": false
   },
   {
     "question": "What does Nmap's '-sA' scan do?",
@@ -437,6 +476,7 @@
       "D": "Sends FIN packets"
     },
     "correct_answers": ["A"],
-    "explanation": "An ACK scan is used to determine firewall rules by sending ACK packets and analyzing the response."
+    "explanation": "An ACK scan is used to determine firewall rules by sending ACK packets and analyzing the response.",
+    "multiple_answers": false
   }
 ]

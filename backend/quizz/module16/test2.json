@@ -1,0 +1,241 @@
+[
+  {
+    "question": "What is the primary goal of an evil twin attack?",
+    "options": {
+      "A": "Jam legitimate Wi-Fi channels",
+      "B": "Replace an AP's firmware",
+      "C": "Intercept user credentials",
+      "D": "Cause denial of service"
+    },
+    "correct_answers": ["C"],
+    "explanation": "An evil twin attack sets up a rogue AP to trick users into connecting, often for stealing credentials.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following types of wireless attacks exploit management frames?",
+    "options": {
+      "A": "Deauthentication attacks",
+      "B": "Disassociation attacks",
+      "C": "Beacon spoofing",
+      "D": "Credential stuffing"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "These attacks target management frames, which are typically unencrypted. Credential stuffing targets logins, not Wi-Fi protocols.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tools are typically used to perform a wireless MITM attack?",
+    "options": {
+      "A": "Airbase-ng",
+      "B": "Ettercap",
+      "C": "Wireshark",
+      "D": "dsniff"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "Airbase-ng can create rogue APs, while Ettercap and dsniff can sniff/manipulate traffic in MITM scenarios.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which protocols are replaced or hardened in WPA3 to enhance security?",
+    "options": {
+      "A": "WEP",
+      "B": "SAE replaces PSK",
+      "C": "TKIP replaced with CCMP",
+      "D": "RC4 replaced by AES"
+    },
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "WPA3 uses SAE instead of PSK, and enforces stronger encryption like AES/CCMP while deprecating TKIP and RC4.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is a common method of capturing WPA2 handshakes?",
+    "options": {
+      "A": "Running a port scan",
+      "B": "Sniffing probe requests",
+      "C": "Performing a deauth attack",
+      "D": "Scanning with Nmap"
+    },
+    "correct_answers": ["C"],
+    "explanation": "Deauth attacks force clients to reconnect, allowing the capture of WPA2 handshake exchanges.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What are probe requests in wireless communication?",
+    "options": {
+      "A": "Authentication challenges",
+      "B": "Client broadcasts to find known networks",
+      "C": "Beacon frames from APs",
+      "D": "Packets that contain MAC addresses of client’s preferred networks"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "Probe requests are sent by clients to identify nearby known networks and can leak preferred SSIDs.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following encryption methods does WPA2 use?",
+    "options": {
+      "A": "TKIP",
+      "B": "AES",
+      "C": "DES",
+      "D": "CCMP"
+    },
+    "correct_answers": ["B", "D"],
+    "explanation": "WPA2 uses AES in CCMP mode for encryption. TKIP is a fallback for older WPA compatibility. DES is outdated and not used.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does an attacker typically need to perform a successful WPA handshake crack?",
+    "options": {
+      "A": "Captured handshake file",
+      "B": "Rainbow tables",
+      "C": "Target SSID",
+      "D": "Wordlist or dictionary file"
+    },
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Cracking WPA handshakes requires the handshake itself, the correct SSID, and a dictionary to guess the passphrase.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following techniques are used in wireless intrusion detection?",
+    "options": {
+      "A": "Monitoring for rogue APs",
+      "B": "Detecting excessive deauth packets",
+      "C": "Monitoring for repeated failed associations",
+      "D": "Detecting increased signal-to-noise ratio"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "WIDS systems watch for patterns like rogue APs and abnormal traffic, but SNR changes are not reliable indicators.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the purpose of performing a beacon flood attack?",
+    "options": {
+      "A": "Crack the WPA2 passphrase",
+      "B": "Overwhelm clients with fake SSIDs",
+      "C": "Jam the radio frequency",
+      "D": "Scan for WPS-enabled APs"
+    },
+    "correct_answers": ["B"],
+    "explanation": "Beacon flooding floods the airspace with fake SSIDs, causing confusion or device instability.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What capabilities does the Airmon-ng tool provide?",
+    "options": {
+      "A": "Enable monitor mode",
+      "B": "Start packet injection",
+      "C": "View MAC filtering settings",
+      "D": "Kill conflicting network services"
+    },
+    "correct_answers": ["A", "D"],
+    "explanation": "Airmon-ng enables monitor mode and stops processes that interfere with wireless sniffing.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which wireless encryption scheme is considered obsolete and highly insecure?",
+    "options": {
+      "A": "WPA2-Enterprise",
+      "B": "WPA3",
+      "C": "WEP",
+      "D": "WPA2-PSK"
+    },
+    "correct_answers": ["C"],
+    "explanation": "WEP has well-known flaws and is easily cracked in seconds, making it obsolete for security.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which wireless frames are typically targeted during sniffing?",
+    "options": {
+      "A": "Data frames",
+      "B": "Probe requests/responses",
+      "C": "Authentication frames",
+      "D": "Beacon frames"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All types of wireless frames can yield valuable information during sniffing and analysis.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is one of the key weaknesses of WPS?",
+    "options": {
+      "A": "Uses weak default credentials",
+      "B": "8-digit PIN is easily brute-forced",
+      "C": "Relies on user-generated keys",
+      "D": "Can’t be disabled on any router"
+    },
+    "correct_answers": ["B"],
+    "explanation": "WPS PINs can be brute-forced in hours due to protocol flaws that allow validating PIN halves separately.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the function of the 'PMKID' in WPA2 networks?",
+    "options": {
+      "A": "A unique identifier of the encryption key",
+      "B": "Used during the 4-way handshake",
+      "C": "Exploited to perform offline cracking",
+      "D": "Part of MAC filtering"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "PMKID is part of the key exchange process and can be exploited for offline password attacks.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following attacks can be used to recover the pre-shared key in a WPA2 network?",
+    "options": {
+      "A": "PMKID-based attack",
+      "B": "WPS brute-force",
+      "C": "ARP cache poisoning",
+      "D": "Handshake capture with dictionary attack"
+    },
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "These attacks allow recovery of the PSK through brute-force or offline cracking. ARP poisoning targets local networks, not PSKs.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are advantages of WPA3 over WPA2?",
+    "options": {
+      "A": "Forward secrecy",
+      "B": "Protection from offline dictionary attacks",
+      "C": "Longer key lengths",
+      "D": "MAC address hiding"
+    },
+    "correct_answers": ["A", "B", "C"],
+    "explanation": "WPA3 introduces SAE for forward secrecy, resists offline attacks, and uses stronger encryption. It does not hide MACs.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following is the best way to detect rogue APs in an enterprise environment?",
+    "options": {
+      "A": "Firewall rules",
+      "B": "Manually checking SSIDs",
+      "C": "Wireless Intrusion Detection Systems",
+      "D": "MAC address filtering"
+    },
+    "correct_answers": ["C"],
+    "explanation": "WIDS continuously monitors the airspace for unauthorized or rogue devices and is the most effective detection method.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What wireless attack floods a network with authentication requests to cause disruption?",
+    "options": {
+      "A": "Authentication DoS attack",
+      "B": "Beacon spoofing",
+      "C": "ARP flooding",
+      "D": "Probe flooding"
+    },
+    "correct_answers": ["A"],
+    "explanation": "Authentication DoS attacks overwhelm an AP with repeated requests, disrupting service availability.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can be signs that a device is connected to a rogue access point?",
+    "options": {
+      "A": "Unusual certificate prompts",
+      "B": "Changed captive portal login pages",
+      "C": "HTTPS warnings in browsers",
+      "D": "Delayed or failed DNS resolution"
+    },
+    "correct_answers": ["A", "B", "C", "D"],
+    "explanation": "All are common symptoms of a rogue AP, especially during MITM or phishing attacks.",
+    "multiple_answers": true
+  }, 

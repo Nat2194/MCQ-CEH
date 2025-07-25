@@ -8,7 +8,8 @@
       "D": "hping3"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "onesixtyone, snmpwalk, and nmap with UDP scan on port 161 can all be used to detect SNMP-enabled hosts and query their data."
+    "explanation": "onesixtyone, snmpwalk, and nmap with UDP scan on port 161 can all be used to detect SNMP-enabled hosts and query their data.",
+    "multiple_answers": true
   },
   {
     "question": "Which file on a Unix system contains static DNS entries?",
@@ -19,7 +20,8 @@
       "D": "/etc/sysctl.conf"
     },
     "correct_answers": ["A"],
-    "explanation": "The /etc/hosts file statically maps hostnames to IP addresses on Unix-based systems."
+    "explanation": "The /etc/hosts file statically maps hostnames to IP addresses on Unix-based systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can assist in mapping virtual hosts on a server?",
@@ -30,7 +32,8 @@
       "D": "robots.txt file"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Host header manipulation and DNS brute force can reveal virtual hosts mapped to the same IP address."
+    "explanation": "Host header manipulation and DNS brute force can reveal virtual hosts mapped to the same IP address.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following methods is used to identify live hosts in a subnet without sending ICMP requests?",
@@ -41,7 +44,8 @@
       "D": "ICMP timestamp request"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "ARP scans identify devices by querying MAC addresses directly, and TCP ACK scans bypass ICMP filtering to infer live systems."
+    "explanation": "ARP scans identify devices by querying MAC addresses directly, and TCP ACK scans bypass ICMP filtering to infer live systems.",
+    "multiple_answers": true
   },
   {
     "question": "What is the purpose of the '-Pn' switch in Nmap?",
@@ -52,7 +56,8 @@
       "D": "Perform DNS resolution"
     },
     "correct_answers": ["A"],
-    "explanation": "The '-Pn' option disables host discovery, treating all hosts as online, useful when ICMP is blocked."
+    "explanation": "The '-Pn' option disables host discovery, treating all hosts as online, useful when ICMP is blocked.",
+    "multiple_answers": false
   },
   {
     "question": "Which reconnaissance tools are particularly effective for cloud-based infrastructure discovery?",
@@ -63,7 +68,8 @@
       "D": "Shodan"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Amass, SecurityTrails, and Shodan help find exposed cloud services and assets across public domains and IPs."
+    "explanation": "Amass, SecurityTrails, and Shodan help find exposed cloud services and assets across public domains and IPs.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following indicates a potentially vulnerable FTP server?",
@@ -74,7 +80,8 @@
       "D": "Default welcome banner"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Anonymous FTP, open port 21, and default banners often indicate misconfigurations or outdated server versions."
+    "explanation": "Anonymous FTP, open port 21, and default banners often indicate misconfigurations or outdated server versions.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these are reconnaissance techniques targeting VoIP systems?",
@@ -85,7 +92,8 @@
       "D": "DNS SRV record analysis"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "SIP scanning, ENUM, and SRV records help enumerate VoIP endpoints, extensions, and services."
+    "explanation": "SIP scanning, ENUM, and SRV records help enumerate VoIP endpoints, extensions, and services.",
+    "multiple_answers": true
   },
   {
     "question": "Which types of DNS records are helpful for enumerating VoIP systems?",
@@ -96,7 +104,8 @@
       "D": "PTR"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "SRV and NAPTR records are used by SIP-based VoIP systems to identify services and resolve call routing."
+    "explanation": "SRV and NAPTR records are used by SIP-based VoIP systems to identify services and resolve call routing.",
+    "multiple_answers": true
   },
   {
     "question": "Which tool can be used to identify shared drives and file shares on Windows systems?",
@@ -107,7 +116,8 @@
       "D": "ftp"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "net view, smbclient, and enum4linux enumerate SMB shares, providing insight into accessible files or drives."
+    "explanation": "net view, smbclient, and enum4linux enumerate SMB shares, providing insight into accessible files or drives.",
+    "multiple_answers": true
   },
   {
     "question": "What is the default SNMP port?",
@@ -118,7 +128,8 @@
       "D": "514"
     },
     "correct_answers": ["A"],
-    "explanation": "SNMP typically uses UDP port 161 for agent communications."
+    "explanation": "SNMP typically uses UDP port 161 for agent communications.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of passive DNS replication?",
@@ -129,7 +140,8 @@
       "D": "Forge DNS zone transfers"
     },
     "correct_answers": ["A"],
-    "explanation": "Passive DNS replication stores historical DNS resolution data to identify changes and movements of domains."
+    "explanation": "Passive DNS replication stores historical DNS resolution data to identify changes and movements of domains.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following protocols can be analyzed using Wireshark for reconnaissance?",
@@ -140,7 +152,8 @@
       "D": "SIP"
     },
     "correct_answers": ["A", "B", "C", "D"],
-    "explanation": "Wireshark can analyze all listed protocols, revealing service configurations and potential vulnerabilities."
+    "explanation": "Wireshark can analyze all listed protocols, revealing service configurations and potential vulnerabilities.",
+    "multiple_answers": true
   },
   {
     "question": "Which reconnaissance activity leverages company press releases and blogs?",
@@ -151,7 +164,8 @@
       "D": "Session hijacking"
     },
     "correct_answers": ["A"],
-    "explanation": "Press releases and blogs are common OSINT sources that may reveal technology stacks or employee roles."
+    "explanation": "Press releases and blogs are common OSINT sources that may reveal technology stacks or employee roles.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following enumeration methods is used to identify user accounts on a Unix system?",
@@ -162,7 +176,8 @@
       "D": "ARP poisoning"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "/etc/passwd lists local usernames, and SSH brute-force attacks may reveal valid logins if credentials are weak."
+    "explanation": "/etc/passwd lists local usernames, and SSH brute-force attacks may reveal valid logins if credentials are weak.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following web reconnaissance techniques reveals hidden resources?",
@@ -173,7 +188,8 @@
       "D": "Zone transfer"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Brute-forcing directories, analyzing robots.txt, and reviewing source code can expose hidden or sensitive paths."
+    "explanation": "Brute-forcing directories, analyzing robots.txt, and reviewing source code can expose hidden or sensitive paths.",
+    "multiple_answers": true
   },
   {
     "question": "What is the significance of a TXT DNS record during reconnaissance?",
@@ -184,7 +200,8 @@
       "D": "It facilitates zone transfers"
     },
     "correct_answers": ["A"],
-    "explanation": "TXT records often contain SPF data, domain verification tokens, or other reconnaissance-relevant information."
+    "explanation": "TXT records often contain SPF data, domain verification tokens, or other reconnaissance-relevant information.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is considered a stealthier scanning method?",
@@ -195,7 +212,8 @@
       "D": "UDP scan"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "SYN and NULL scans are stealthy options since they do not complete full connections or use recognizable TCP flags."
+    "explanation": "SYN and NULL scans are stealthy options since they do not complete full connections or use recognizable TCP flags.",
+    "multiple_answers": true
   },
   {
     "question": "Which tool supports DNS bruteforcing and zone transfer attempts?",
@@ -206,7 +224,8 @@
       "D": "Netcat"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "dnsenum, dnsrecon, and dig can be used to enumerate DNS data and attempt zone transfers on misconfigured servers."
+    "explanation": "dnsenum, dnsrecon, and dig can be used to enumerate DNS data and attempt zone transfers on misconfigured servers.",
+    "multiple_answers": true
   },
   {
     "question": "Which reconnaissance tactic involves checking SSL/TLS cipher suites?",
@@ -217,7 +236,8 @@
       "D": "CRL verification"
     },
     "correct_answers": ["A"],
-    "explanation": "SSL scanning tests supported cipher suites and protocol versions to detect insecure configurations."
+    "explanation": "SSL scanning tests supported cipher suites and protocol versions to detect insecure configurations.",
+    "multiple_answers": false
   },
   {
     "question": "Which header can leak internal IP addresses in HTTP responses?",
@@ -228,7 +248,8 @@
       "D": "Content-Type"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Headers like X-Forwarded-For, Server, and Via can unintentionally disclose internal IPs and infrastructure details."
+    "explanation": "Headers like X-Forwarded-For, Server, and Via can unintentionally disclose internal IPs and infrastructure details.",
+    "multiple_answers": true
   },
   {
     "question": "Which Nmap script can be used to detect HTTP titles on web servers?",
@@ -239,7 +260,8 @@
       "D": "ssl-cert"
     },
     "correct_answers": ["A"],
-    "explanation": "The http-title script retrieves the HTML title from web servers, helpful in identifying pages during recon."
+    "explanation": "The http-title script retrieves the HTML title from web servers, helpful in identifying pages during recon.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following commands is used to display current routing table in Linux?",
@@ -250,7 +272,8 @@
       "D": "traceroute"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "All three commands show the routing table in different formats and are useful during network reconnaissance."
+    "explanation": "All three commands show the routing table in different formats and are useful during network reconnaissance.",
+    "multiple_answers": true
   },
   {
     "question": "Which header might reveal the backend technology used by a web server?",
@@ -261,7 +284,8 @@
       "D": "Referer"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "The 'Server' and 'X-Powered-By' headers often disclose backend software, frameworks, or versions."
+    "explanation": "The 'Server' and 'X-Powered-By' headers often disclose backend software, frameworks, or versions.",
+    "multiple_answers": true
   },
   {
     "question": "What type of reconnaissance can involve searching GitHub repositories for credentials?",
@@ -272,7 +296,8 @@
       "D": "Social engineering"
     },
     "correct_answers": ["A"],
-    "explanation": "GitHub repos can unintentionally expose sensitive data like API keys or config files during OSINT."
+    "explanation": "GitHub repos can unintentionally expose sensitive data like API keys or config files during OSINT.",
+    "multiple_answers": false
   },
   {
     "question": "Which technique allows gathering usernames by analyzing login response times?",
@@ -283,7 +308,8 @@
       "D": "Credential stuffing"
     },
     "correct_answers": ["A"],
-    "explanation": "Timing attacks exploit variations in server response time to infer valid usernames or credentials."
+    "explanation": "Timing attacks exploit variations in server response time to infer valid usernames or credentials.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these methods uses ICMP Echo Request for host discovery?",
@@ -294,7 +320,8 @@
       "D": "UDP scan"
     },
     "correct_answers": ["A"],
-    "explanation": "Ping sweeps use ICMP Echo Requests to determine if hosts in a subnet are alive."
+    "explanation": "Ping sweeps use ICMP Echo Requests to determine if hosts in a subnet are alive.",
+    "multiple_answers": false
   },
   {
     "question": "Which record type allows mapping multiple domains to a single IP?",
@@ -305,7 +332,8 @@
       "D": "SOA"
     },
     "correct_answers": ["A"],
-    "explanation": "CNAME (Canonical Name) records map one domain to another, often pointing to the same IP address."
+    "explanation": "CNAME (Canonical Name) records map one domain to another, often pointing to the same IP address.",
+    "multiple_answers": false
   },
   {
     "question": "Which method can be used to identify exposed directories on a website?",
@@ -316,7 +344,8 @@
       "D": "WHOIS lookup"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Brute-forcing and robots.txt analysis can reveal hidden directories; misconfigured listings may expose file structures."
+    "explanation": "Brute-forcing and robots.txt analysis can reveal hidden directories; misconfigured listings may expose file structures.",
+    "multiple_answers": true
   },
   {
     "question": "What does the ‘-sT’ option in Nmap do?",
@@ -327,7 +356,8 @@
       "D": "Enables OS detection"
     },
     "correct_answers": ["A"],
-    "explanation": "The `-sT` flag initiates a TCP connect scan that uses the full three-way handshake to detect open ports."
+    "explanation": "The `-sT` flag initiates a TCP connect scan that uses the full three-way handshake to detect open ports.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used to retrieve hidden data or metadata from documents?",
@@ -338,7 +368,8 @@
       "D": "Burp Suite"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "FOCA, ExifTool, and strings can extract metadata like author names, file paths, and version info from documents."
+    "explanation": "FOCA, ExifTool, and strings can extract metadata like author names, file paths, and version info from documents.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these tools is designed to query public breach data for exposed credentials?",
@@ -349,7 +380,8 @@
       "D": "Metasploit"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Have I Been Pwned and Dehashed index leaked credential databases and are valuable for OSINT recon."
+    "explanation": "Have I Been Pwned and Dehashed index leaked credential databases and are valuable for OSINT recon.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following reveals the number of hops between your host and a destination?",
@@ -360,7 +392,8 @@
       "D": "nmap"
     },
     "correct_answers": ["A"],
-    "explanation": "Traceroute identifies each router between a source and destination, showing hop counts and delays."
+    "explanation": "Traceroute identifies each router between a source and destination, showing hop counts and delays.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following protocols does not use port 443?",
@@ -371,7 +404,8 @@
       "D": "Telnet"
     },
     "correct_answers": ["D"],
-    "explanation": "Telnet uses port 23, while HTTPS, implicit FTPS, and SMTPS may operate over 443 in certain configurations."
+    "explanation": "Telnet uses port 23, while HTTPS, implicit FTPS, and SMTPS may operate over 443 in certain configurations.",
+    "multiple_answers": false
   },
   {
     "question": "Which field in a DNS zone file defines the authoritative name server?",
@@ -382,7 +416,8 @@
       "D": "MX"
     },
     "correct_answers": ["B"],
-    "explanation": "The SOA (Start of Authority) record defines the authoritative server and zone transfer settings."
+    "explanation": "The SOA (Start of Authority) record defines the authoritative server and zone transfer settings.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool allows passive subdomain discovery from certificate transparency logs?",
@@ -393,7 +428,8 @@
       "D": "Zone transfer"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "crt.sh, Amass, and Subfinder extract subdomains from CT logs and other OSINT sources without directly probing the target."
+    "explanation": "crt.sh, Amass, and Subfinder extract subdomains from CT logs and other OSINT sources without directly probing the target.",
+    "multiple_answers": true
   },
   {
     "question": "Which scanning method sends packets with no TCP flags set?",
@@ -404,7 +440,8 @@
       "D": "SYN scan"
     },
     "correct_answers": ["A"],
-    "explanation": "NULL scans send packets with no TCP flags, exploiting differences in how operating systems handle them."
+    "explanation": "NULL scans send packets with no TCP flags, exploiting differences in how operating systems handle them.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these is a limitation of passive reconnaissance?",
@@ -415,7 +452,8 @@
       "D": "Requires active tools"
     },
     "correct_answers": ["A"],
-    "explanation": "Passive recon relies on public data, which may be incomplete or outdated compared to active methods."
+    "explanation": "Passive recon relies on public data, which may be incomplete or outdated compared to active methods.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools is designed for subdomain enumeration?",
@@ -426,7 +464,8 @@
       "D": "sqlmap"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Sublist3r, theHarvester, and dnsenum are subdomain discovery tools used during DNS reconnaissance."
+    "explanation": "Sublist3r, theHarvester, and dnsenum are subdomain discovery tools used during DNS reconnaissance.",
+    "multiple_answers": true
   },
   {
     "question": "Which nmap option enables aggressive scanning including OS and version detection?",
@@ -437,6 +476,7 @@
       "D": "-O"
     },
     "correct_answers": ["A"],
-    "explanation": "The `-A` option enables aggressive scan mode, combining OS detection, version scanning, script scanning, and traceroute."
+    "explanation": "The `-A` option enables aggressive scan mode, combining OS detection, version scanning, script scanning, and traceroute.",
+    "multiple_answers": false
   }
 ]

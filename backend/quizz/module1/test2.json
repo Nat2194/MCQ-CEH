@@ -8,7 +8,8 @@
       "D": "Deface websites for publicity"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Ethical hackers simulate attacks to identify and fix vulnerabilities legally and with permission."
+    "explanation": "Ethical hackers simulate attacks to identify and fix vulnerabilities legally and with permission.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following phases involves gathering public and private information about a target?",
@@ -19,7 +20,8 @@
       "D": "Exploitation"
     },
     "correct_answers": ["A"],
-    "explanation": "Reconnaissance involves collecting data from various sources to prepare for an attack."
+    "explanation": "Reconnaissance involves collecting data from various sources to prepare for an attack.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are part of the CEH hacking methodology?",
@@ -30,7 +32,8 @@
       "D": "Covering Tracks"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "CEH methodology includes scanning, maintaining access, and covering tracks during penetration testing."
+    "explanation": "CEH methodology includes scanning, maintaining access, and covering tracks during penetration testing.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these require written consent before performing a penetration test?",
@@ -41,7 +44,8 @@
       "D": "A competitor’s website"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "Penetration testing any system not owned by you requires written permission to be legal."
+    "explanation": "Penetration testing any system not owned by you requires written permission to be legal.",
+    "multiple_answers": true
   },
   {
     "question": "What distinguishes a gray hat hacker from a white hat hacker?",
@@ -52,7 +56,8 @@
       "D": "White hats avoid breaking laws"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "Gray hats often operate without prior consent, whereas white hats work within legal boundaries."
+    "explanation": "Gray hats often operate without prior consent, whereas white hats work within legal boundaries.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following can be used for passive reconnaissance?",
@@ -63,7 +68,8 @@
       "D": "Social media analysis"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Passive recon uses publicly available sources like DNS and social media without alerting the target."
+    "explanation": "Passive recon uses publicly available sources like DNS and social media without alerting the target.",
+    "multiple_answers": true
   },
   {
     "question": "Which are considered components of the attack surface?",
@@ -74,7 +80,8 @@
       "D": "Encrypted communications"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Attack surface includes all the vulnerable points that can be exploited, such as open services and misconfigs."
+    "explanation": "Attack surface includes all the vulnerable points that can be exploited, such as open services and misconfigs.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these are responsibilities of an ethical hacker?",
@@ -85,7 +92,8 @@
       "D": "Stay within defined scope"
     },
     "correct_answers": ["B", "C", "D"],
-    "explanation": "Ethical hackers must report findings, preserve confidentiality, and operate strictly within agreed scope."
+    "explanation": "Ethical hackers must report findings, preserve confidentiality, and operate strictly within agreed scope.",
+    "multiple_answers": true
   },
   {
     "question": "What is the purpose of covering tracks during a cyberattack?",
@@ -96,7 +104,8 @@
       "D": "Remove evidence from logs"
     },
     "correct_answers": ["A", "D"],
-    "explanation": "Covering tracks is about evading detection by erasing logs and hiding traces of compromise."
+    "explanation": "Covering tracks is about evading detection by erasing logs and hiding traces of compromise.",
+    "multiple_answers": true
   },
   {
     "question": "What are the common traits of black hat hackers?",
@@ -107,7 +116,8 @@
       "D": "Have malicious intent"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Black hats operate illegally, often for personal or political motives, without permission."
+    "explanation": "Black hats operate illegally, often for personal or political motives, without permission.",
+    "multiple_answers": true
   },
   {
     "question": "Which laws or standards regulate ethical hacking practices?",
@@ -118,7 +128,8 @@
       "D": "PCI DSS"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "GDPR, CFAA, and PCI DSS define legal and ethical standards that govern how testing is performed."
+    "explanation": "GDPR, CFAA, and PCI DSS define legal and ethical standards that govern how testing is performed.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following actions are considered unethical in a penetration test?",
@@ -129,7 +140,8 @@
       "D": "Performing authorized phishing simulations"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Testing outside scope or causing harm without consent is unethical, even during pen tests."
+    "explanation": "Testing outside scope or causing harm without consent is unethical, even during pen tests.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these are examples of social engineering techniques?",
@@ -140,7 +152,8 @@
       "D": "Tailgating"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Social engineering manipulates people using phishing, impersonation, and physical tricks like tailgating."
+    "explanation": "Social engineering manipulates people using phishing, impersonation, and physical tricks like tailgating.",
+    "multiple_answers": true
   },
   {
     "question": "What is the primary function of the Blue Team?",
@@ -151,7 +164,8 @@
       "D": "Simulate APTs"
     },
     "correct_answers": ["C"],
-    "explanation": "Blue Teams are responsible for defense, monitoring, and incident response."
+    "explanation": "Blue Teams are responsible for defense, monitoring, and incident response.",
+    "multiple_answers": false
   },
   {
     "question": "What should be defined in a Rules of Engagement document?",
@@ -162,7 +176,8 @@
       "D": "Exploit code sharing"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Rules of Engagement define boundaries, tools, and expectations for the testing engagement."
+    "explanation": "Rules of Engagement define boundaries, tools, and expectations for the testing engagement.",
+    "multiple_answers": true
   },
   {
     "question": "What are considered ethical hacking deliverables?",
@@ -173,7 +188,8 @@
       "D": "Unencrypted password lists"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Ethical hackers deliver structured reports with findings and actionable remediation steps."
+    "explanation": "Ethical hackers deliver structured reports with findings and actionable remediation steps.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are common threat vectors?",
@@ -184,7 +200,8 @@
       "D": "Open remote desktop ports"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Threat vectors are paths used to exploit systems, including phishing and misconfigured services."
+    "explanation": "Threat vectors are paths used to exploit systems, including phishing and misconfigured services.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following activities are part of vulnerability assessment?",
@@ -195,7 +212,8 @@
       "D": "Risk ranking"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Vulnerability assessment includes discovering known issues and ranking their severity, not exploitation."
+    "explanation": "Vulnerability assessment includes discovering known issues and ranking their severity, not exploitation.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following is true about Red Team operations?",
@@ -206,7 +224,8 @@
       "D": "They patch systems after attacks"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Red Teams simulate advanced threats and stealth tactics to test Blue Team capabilities."
+    "explanation": "Red Teams simulate advanced threats and stealth tactics to test Blue Team capabilities.",
+    "multiple_answers": true
   },
   {
     "question": "Which skills are essential for an ethical hacker?",
@@ -217,7 +236,8 @@
       "D": "Strong communication skills"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Ethical hackers need strong technical and legal knowledge, and the ability to report findings clearly."
+    "explanation": "Ethical hackers need strong technical and legal knowledge, and the ability to report findings clearly.",
+    "multiple_answers": true
   },
   {
     "question": "Which tools are commonly used for enumeration?",
@@ -228,7 +248,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Enumeration tools like Nmap and SNMPwalk reveal services and users on target systems."
+    "explanation": "Enumeration tools like Nmap and SNMPwalk reveal services and users on target systems.",
+    "multiple_answers": true
   },
   {
     "question": "Which phase follows scanning in the hacking process?",
@@ -239,7 +260,8 @@
       "D": "Maintaining Access"
     },
     "correct_answers": ["B"],
-    "explanation": "After scanning, the attacker tries to gain access using discovered vulnerabilities."
+    "explanation": "After scanning, the attacker tries to gain access using discovered vulnerabilities.",
+    "multiple_answers": false
   },
   {
     "question": "Which statements best describe vulnerability assessment?",
@@ -250,7 +272,8 @@
       "D": "It guarantees system protection"
     },
     "correct_answers": ["B", "C"],
-    "explanation": "Vulnerability assessments find known issues using automated tools, but don’t involve exploitation."
+    "explanation": "Vulnerability assessments find known issues using automated tools, but don’t involve exploitation.",
+    "multiple_answers": true
   },
   {
     "question": "Which tools can be used for web vulnerability scanning?",
@@ -261,7 +284,8 @@
       "D": "Acunetix"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Nikto, Burp Suite, and Acunetix scan web applications for common vulnerabilities."
+    "explanation": "Nikto, Burp Suite, and Acunetix scan web applications for common vulnerabilities.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are examples of insider threats?",
@@ -272,7 +296,8 @@
       "D": "Negligent contractor"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Insiders include current or former employees and contractors who pose internal security risks."
+    "explanation": "Insiders include current or former employees and contractors who pose internal security risks.",
+    "multiple_answers": true
   },
   {
     "question": "What defines a zero-day vulnerability?",
@@ -283,7 +308,8 @@
       "D": "A vulnerability found during a pen test"
     },
     "correct_answers": ["B", "C"],
-    "explanation": "Zero-day vulnerabilities are flaws unknown to the vendor and often exploited before patches exist."
+    "explanation": "Zero-day vulnerabilities are flaws unknown to the vendor and often exploited before patches exist.",
+    "multiple_answers": true
   },
   {
     "question": "Which tools are used for password cracking?",
@@ -294,7 +320,8 @@
       "D": "John the Ripper"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Hydra, Hashcat, and John the Ripper are tools used for cracking or guessing passwords."
+    "explanation": "Hydra, Hashcat, and John the Ripper are tools used for cracking or guessing passwords.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following help ethical hackers avoid legal issues?",
@@ -305,7 +332,8 @@
       "D": "Signed engagement contracts"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Written agreements and well-defined scope are critical for staying legally compliant during testing."
+    "explanation": "Written agreements and well-defined scope are critical for staying legally compliant during testing.",
+    "multiple_answers": true
   },
   {
     "question": "Which tools are commonly used in reconnaissance?",
@@ -316,6 +344,7 @@
       "D": "Hydra"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Reconnaissance tools like Maltego, Recon-ng, and Nmap gather public and network-level information."
+    "explanation": "Reconnaissance tools like Maltego, Recon-ng, and Nmap gather public and network-level information.",
+    "multiple_answers": true
   }
 ]

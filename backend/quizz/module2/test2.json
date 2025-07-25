@@ -8,7 +8,8 @@
       "D": "ICMP"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "SMB and SNMP are commonly used for remote enumeration to gather information such as shared resources and system configurations."
+    "explanation": "SMB and SNMP are commonly used for remote enumeration to gather information such as shared resources and system configurations.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following is a technique for website footprinting?",
@@ -19,7 +20,8 @@
       "D": "Using the Wayback Machine"
     },
     "correct_answers": ["A", "D"],
-    "explanation": "Examining robots.txt reveals disallowed paths, while the Wayback Machine shows historical versions of a website for intelligence gathering."
+    "explanation": "Examining robots.txt reveals disallowed paths, while the Wayback Machine shows historical versions of a website for intelligence gathering.",
+    "multiple_answers": true
   },
   {
     "question": "What is the purpose of email harvesting?",
@@ -30,7 +32,8 @@
       "D": "Gain admin privileges"
     },
     "correct_answers": ["A"],
-    "explanation": "Email harvesting is used to collect email addresses, often to target users with spam or phishing campaigns."
+    "explanation": "Email harvesting is used to collect email addresses, often to target users with spam or phishing campaigns.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are examples of WHOIS data?",
@@ -41,7 +44,8 @@
       "D": "Registrant's contact information"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "WHOIS data includes information about domain registration such as registrar, registration date, and owner contact."
+    "explanation": "WHOIS data includes information about domain registration such as registrar, registration date, and owner contact.",
+    "multiple_answers": true
   },
   {
     "question": "What is a zone transfer in DNS?",
@@ -52,7 +56,8 @@
       "D": "A way to inject malicious DNS entries"
     },
     "correct_answers": ["A"],
-    "explanation": "A zone transfer synchronizes DNS records between servers and can reveal domain structure if misconfigured."
+    "explanation": "A zone transfer synchronizes DNS records between servers and can reveal domain structure if misconfigured.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools can perform email address harvesting?",
@@ -63,7 +68,8 @@
       "D": "Recon-ng"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "theHarvester, Maltego, and Recon-ng are reconnaissance tools used to gather open-source data including emails."
+    "explanation": "theHarvester, Maltego, and Recon-ng are reconnaissance tools used to gather open-source data including emails.",
+    "multiple_answers": true
   },
   {
     "question": "Which operating system service can be enumerated with rpcclient?",
@@ -74,7 +80,8 @@
       "D": "Firewall rules"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "rpcclient is used for querying Windows systems for services like SMB shares and domain information from Active Directory."
+    "explanation": "rpcclient is used for querying Windows systems for services like SMB shares and domain information from Active Directory.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following tools are effective for performing OS fingerprinting?",
@@ -85,7 +92,8 @@
       "D": "hping"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "nmap, xProbe2, and hping can be used to identify operating systems based on packet behavior and responses."
+    "explanation": "nmap, xProbe2, and hping can be used to identify operating systems based on packet behavior and responses.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following can be used to bypass IDS during reconnaissance?",
@@ -96,7 +104,8 @@
       "D": "Spoofed source IP"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Slow scans and fragmented packets can evade IDS detection; spoofing IPs hides the origin of scans."
+    "explanation": "Slow scans and fragmented packets can evade IDS detection; spoofing IPs hides the origin of scans.",
+    "multiple_answers": true
   },
   {
     "question": "What is the purpose of DNS brute forcing?",
@@ -107,7 +116,8 @@
       "D": "Hijack DNS responses"
     },
     "correct_answers": ["A"],
-    "explanation": "DNS brute forcing attempts to discover valid subdomains of a target domain."
+    "explanation": "DNS brute forcing attempts to discover valid subdomains of a target domain.",
+    "multiple_answers": false
   },
   {
     "question": "Which header information can be extracted from an HTTP response for fingerprinting?",
@@ -118,7 +128,8 @@
       "D": "Date"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Headers like 'Server' and 'X-Powered-By' can reveal information about the web server and technologies used."
+    "explanation": "Headers like 'Server' and 'X-Powered-By' can reveal information about the web server and technologies used.",
+    "multiple_answers": true
   },
   {
     "question": "Which command can be used to list all open ports and associated services in Linux?",
@@ -129,7 +140,8 @@
       "D": "iptables -L"
     },
     "correct_answers": ["A"],
-    "explanation": "The netstat command with -tuln flags shows open TCP/UDP ports and listening services."
+    "explanation": "The netstat command with -tuln flags shows open TCP/UDP ports and listening services.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools can analyze metadata in documents?",
@@ -140,7 +152,8 @@
       "D": "Nikto"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "ExifTool and FOCA can extract metadata from documents which may reveal sensitive information such as usernames and file paths."
+    "explanation": "ExifTool and FOCA can extract metadata from documents which may reveal sensitive information such as usernames and file paths.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these tools is best suited for visual reconnaissance mapping?",
@@ -151,7 +164,8 @@
       "D": "Zenmap"
     },
     "correct_answers": ["A", "D"],
-    "explanation": "Maltego and Zenmap provide graphical mapping of networks and relationships between entities during reconnaissance."
+    "explanation": "Maltego and Zenmap provide graphical mapping of networks and relationships between entities during reconnaissance.",
+    "multiple_answers": true
   },
   {
     "question": "What can be extracted from a DNS reverse lookup?",
@@ -162,7 +176,8 @@
       "D": "Operating system"
     },
     "correct_answers": ["A"],
-    "explanation": "A reverse DNS lookup reveals the hostname associated with a given IP address."
+    "explanation": "A reverse DNS lookup reveals the hostname associated with a given IP address.",
+    "multiple_answers": false
   },
   {
     "question": "Which CEH concept involves identifying an organization’s external attack surface?",
@@ -173,7 +188,8 @@
       "D": "Backdoor installation"
     },
     "correct_answers": ["A"],
-    "explanation": "Footprinting is the initial phase in ethical hacking focused on gathering external information about the target."
+    "explanation": "Footprinting is the initial phase in ethical hacking focused on gathering external information about the target.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are common targets during enumeration?",
@@ -184,7 +200,8 @@
       "D": "Group memberships"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Enumeration often reveals usernames, shared resources, and group memberships within a target system."
+    "explanation": "Enumeration often reveals usernames, shared resources, and group memberships within a target system.",
+    "multiple_answers": true
   },
   {
     "question": "What information can be obtained from an SSL certificate?",
@@ -195,7 +212,8 @@
       "D": "Expiration date"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "SSL certificates provide metadata including the domain, organization, and expiry — useful for reconnaissance."
+    "explanation": "SSL certificates provide metadata including the domain, organization, and expiry — useful for reconnaissance.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are best practices during reconnaissance?",
@@ -206,7 +224,8 @@
       "D": "Exploiting discovered vulnerabilities"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Recon should be stealthy and well-documented, without moving into exploitation or alerting defenders prematurely."
+    "explanation": "Recon should be stealthy and well-documented, without moving into exploitation or alerting defenders prematurely.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these reconnaissance tools provides graphical output?",
@@ -217,7 +236,8 @@
       "D": "Metasploit"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Zenmap and Maltego both offer graphical views of network maps and entity relationships."
+    "explanation": "Zenmap and Maltego both offer graphical views of network maps and entity relationships.",
+    "multiple_answers": true
   },
   {
     "question": "Which technique allows an attacker to identify live hosts on a network?",
@@ -228,7 +248,8 @@
       "D": "Brute force"
     },
     "correct_answers": ["A"],
-    "explanation": "Ping sweeps send ICMP echo requests across a range of IPs to identify which hosts respond as 'alive'."
+    "explanation": "Ping sweeps send ICMP echo requests across a range of IPs to identify which hosts respond as 'alive'.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is an SNMP enumeration tool?",
@@ -239,7 +260,8 @@
       "D": "john"
     },
     "correct_answers": ["A"],
-    "explanation": "snmpwalk is a tool that queries SNMP-enabled devices for information using the SNMP protocol."
+    "explanation": "snmpwalk is a tool that queries SNMP-enabled devices for information using the SNMP protocol.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol operates on UDP port 161?",
@@ -250,7 +272,8 @@
       "D": "SMTP"
     },
     "correct_answers": ["A"],
-    "explanation": "SNMP (Simple Network Management Protocol) typically uses UDP port 161 for querying device information."
+    "explanation": "SNMP (Simple Network Management Protocol) typically uses UDP port 161 for querying device information.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of enumeration?",
@@ -261,7 +284,8 @@
       "D": "To hide attacker presence"
     },
     "correct_answers": ["A"],
-    "explanation": "Enumeration involves gathering usernames, shares, services, and other detailed data about the system."
+    "explanation": "Enumeration involves gathering usernames, shares, services, and other detailed data about the system.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows tool allows enumeration of shared resources on a network?",
@@ -272,7 +296,8 @@
       "D": "whoami"
     },
     "correct_answers": ["A"],
-    "explanation": "The 'net view' command displays a list of shared resources and systems on the local network."
+    "explanation": "The 'net view' command displays a list of shared resources and systems on the local network.",
+    "multiple_answers": false
   },
   {
     "question": "Which nmap option enables OS detection?",
@@ -283,7 +308,8 @@
       "D": "-sU"
     },
     "correct_answers": ["A"],
-    "explanation": "The '-O' flag in nmap activates OS detection by analyzing TCP/IP stack behavior."
+    "explanation": "The '-O' flag in nmap activates OS detection by analyzing TCP/IP stack behavior.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these ports is commonly used for NetBIOS enumeration?",
@@ -294,7 +320,8 @@
       "D": "443"
     },
     "correct_answers": ["A"],
-    "explanation": "Port 139 is used by NetBIOS Session Service, which can be targeted for enumeration of shares and users."
+    "explanation": "Port 139 is used by NetBIOS Session Service, which can be targeted for enumeration of shares and users.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol is used for remote access and commonly enumerated?",
@@ -305,7 +332,8 @@
       "D": "SMTP"
     },
     "correct_answers": ["A"],
-    "explanation": "Telnet is a remote access protocol that transmits data in plaintext, making it susceptible to enumeration."
+    "explanation": "Telnet is a remote access protocol that transmits data in plaintext, making it susceptible to enumeration.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools can be used to brute-force SNMP community strings?",
@@ -316,7 +344,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["A"],
-    "explanation": "Onesixtyone is a fast SNMP scanner used to brute-force community strings on SNMP-enabled devices."
+    "explanation": "Onesixtyone is a fast SNMP scanner used to brute-force community strings on SNMP-enabled devices.",
+    "multiple_answers": false
   },
   {
     "question": "What information can be enumerated from Active Directory?",
@@ -327,7 +356,8 @@
       "D": "MAC addresses"
     },
     "correct_answers": ["A"],
-    "explanation": "Active Directory stores user accounts, group memberships, and organizational structures that can be enumerated."
+    "explanation": "Active Directory stores user accounts, group memberships, and organizational structures that can be enumerated.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used for SMB enumeration on Windows networks?",
@@ -338,7 +368,8 @@
       "D": "Nikto"
     },
     "correct_answers": ["A"],
-    "explanation": "enum4linux is a Linux tool that gathers Windows host information via SMB, including usernames and shares."
+    "explanation": "enum4linux is a Linux tool that gathers Windows host information via SMB, including usernames and shares.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of using banner grabbing?",
@@ -349,7 +380,8 @@
       "D": "To brute-force passwords"
     },
     "correct_answers": ["A"],
-    "explanation": "Banner grabbing extracts metadata from services to identify their software version and configuration."
+    "explanation": "Banner grabbing extracts metadata from services to identify their software version and configuration.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can be used for SNMP enumeration in a graphical interface?",
@@ -360,7 +392,8 @@
       "D": "nmap"
     },
     "correct_answers": ["A"],
-    "explanation": "OpUtils offers GUI-based SNMP tools for monitoring and enumeration of network devices."
+    "explanation": "OpUtils offers GUI-based SNMP tools for monitoring and enumeration of network devices.",
+    "multiple_answers": false
   },
   {
     "question": "What does the 'finger' service provide?",
@@ -371,7 +404,8 @@
       "D": "Firewall status"
     },
     "correct_answers": ["A"],
-    "explanation": "The finger protocol allows querying user information from a remote system, including usernames and logins."
+    "explanation": "The finger protocol allows querying user information from a remote system, including usernames and logins.",
+    "multiple_answers": false
   },
   {
     "question": "Which port does the LDAP protocol use for enumeration?",
@@ -382,7 +416,8 @@
       "D": "161"
     },
     "correct_answers": ["A"],
-    "explanation": "LDAP uses port 389 for directory service queries, including user and group enumeration."
+    "explanation": "LDAP uses port 389 for directory service queries, including user and group enumeration.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is useful for analyzing and enumerating HTTP headers?",
@@ -393,7 +428,8 @@
       "D": "Nessus"
     },
     "correct_answers": ["A"],
-    "explanation": "Burp Suite allows users to intercept and modify HTTP requests and responses, including header analysis."
+    "explanation": "Burp Suite allows users to intercept and modify HTTP requests and responses, including header analysis.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a common result of successful DNS enumeration?",
@@ -404,7 +440,8 @@
       "D": "Firewall rules"
     },
     "correct_answers": ["A"],
-    "explanation": "DNS enumeration reveals subdomains, which help map the structure and reach of a target’s domain."
+    "explanation": "DNS enumeration reveals subdomains, which help map the structure and reach of a target’s domain.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these protocols is most vulnerable to clear-text credential enumeration?",
@@ -415,7 +452,8 @@
       "D": "IPSec"
     },
     "correct_answers": ["A"],
-    "explanation": "Telnet transmits data, including credentials, in plaintext, making it highly vulnerable to enumeration and interception."
+    "explanation": "Telnet transmits data, including credentials, in plaintext, making it highly vulnerable to enumeration and interception.",
+    "multiple_answers": false
   },
   {
     "question": "Which enumeration method would best discover services running on a system?",
@@ -426,7 +464,8 @@
       "D": "DNS poisoning"
     },
     "correct_answers": ["A"],
-    "explanation": "Port scanning is used to identify which services are running by scanning for open and responsive ports."
+    "explanation": "Port scanning is used to identify which services are running by scanning for open and responsive ports.",
+    "multiple_answers": false
   },
   {
     "question": "Which CEH phase involves enumeration?",
@@ -437,6 +476,7 @@
       "D": "Maintaining access"
     },
     "correct_answers": ["A"],
-    "explanation": "Enumeration is a sub-phase of scanning and involves actively querying systems for detailed information."
+    "explanation": "Enumeration is a sub-phase of scanning and involves actively querying systems for detailed information.",
+    "multiple_answers": false
   }
 ]

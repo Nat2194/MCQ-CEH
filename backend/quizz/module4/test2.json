@@ -8,7 +8,8 @@
       "D": "SNMP"
     },
     "correct_answers": ["A"],
-    "explanation": "RPC enumeration in Unix/Linux systems is typically done through the portmapper service on port 111."
+    "explanation": "RPC enumeration in Unix/Linux systems is typically done through the portmapper service on port 111.",
+    "multiple_answers": false
   },
   {
     "question": "What does the 'rpcclient' tool allow an attacker to do?",
@@ -19,7 +20,8 @@
       "D": "Exploit buffer overflows"
     },
     "correct_answers": ["A"],
-    "explanation": "'rpcclient' can connect to Windows RPC services and extract user, group, and share information."
+    "explanation": "'rpcclient' can connect to Windows RPC services and extract user, group, and share information.",
+    "multiple_answers": false
   },
   {
     "question": "What is the output of 'enum4linux -a' typically used for?",
@@ -30,7 +32,8 @@
       "D": "Banner grabbing"
     },
     "correct_answers": ["A"],
-    "explanation": "'enum4linux -a' performs full SMB enumeration including users, groups, shares, and password policies."
+    "explanation": "'enum4linux -a' performs full SMB enumeration including users, groups, shares, and password policies.",
+    "multiple_answers": false
   },
   {
     "question": "What does the 'smbclient -L //<target>' command display?",
@@ -41,7 +44,8 @@
       "D": "DNS records"
     },
     "correct_answers": ["A"],
-    "explanation": "'smbclient -L //<target>' queries an SMB server for a list of available shares."
+    "explanation": "'smbclient -L //<target>' queries an SMB server for a list of available shares.",
+    "multiple_answers": false
   },
   {
     "question": "Which enumeration method would help find hidden shared folders?",
@@ -52,7 +56,8 @@
       "D": "DNS enumeration"
     },
     "correct_answers": ["A"],
-    "explanation": "SMB enumeration allows discovery of both visible and hidden shared folders on a system."
+    "explanation": "SMB enumeration allows discovery of both visible and hidden shared folders on a system.",
+    "multiple_answers": false
   },
   {
     "question": "Which SNMP version is considered insecure due to lack of encryption?",
@@ -63,7 +68,8 @@
       "D": "SNMPx"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "SNMPv1 and v2c do not provide encryption or strong authentication, making them insecure by default."
+    "explanation": "SNMPv1 and v2c do not provide encryption or strong authentication, making them insecure by default.",
+    "multiple_answers": true
   },
   {
     "question": "Which port is commonly used for Microsoft RPC endpoint mapping?",
@@ -74,7 +80,8 @@
       "D": "3389"
     },
     "correct_answers": ["A"],
-    "explanation": "TCP port 135 is used by Microsoft's RPC Endpoint Mapper for locating RPC services on a system."
+    "explanation": "TCP port 135 is used by Microsoft's RPC Endpoint Mapper for locating RPC services on a system.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following commands can test if SNMP is enabled on a host?",
@@ -85,7 +92,8 @@
       "D": "ssh <IP>"
     },
     "correct_answers": ["A"],
-    "explanation": "'snmpwalk' uses SNMP to extract information from a device, using the community string (e.g., 'public')."
+    "explanation": "'snmpwalk' uses SNMP to extract information from a device, using the community string (e.g., 'public').",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of the tool 'JXplorer'?",
@@ -96,7 +104,8 @@
       "D": "DNS enumeration"
     },
     "correct_answers": ["A"],
-    "explanation": "JXplorer is a GUI LDAP browser used to interact with and enumerate LDAP directory services."
+    "explanation": "JXplorer is a GUI LDAP browser used to interact with and enumerate LDAP directory services.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools is used for enumerating RPC services on UNIX systems?",
@@ -107,7 +116,8 @@
       "D": "netstat"
     },
     "correct_answers": ["A"],
-    "explanation": "'rpcinfo' queries the portmapper service to list all RPC services on a target UNIX system."
+    "explanation": "'rpcinfo' queries the portmapper service to list all RPC services on a target UNIX system.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can be used to list active NFS mounts from a remote host?",
@@ -118,7 +128,8 @@
       "D": "net view"
     },
     "correct_answers": ["A"],
-    "explanation": "'showmount -e' displays the list of exported NFS shares on a remote host."
+    "explanation": "'showmount -e' displays the list of exported NFS shares on a remote host.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a potential risk of SNMP enumeration?",
@@ -129,7 +140,8 @@
       "D": "SQL injection"
     },
     "correct_answers": ["A"],
-    "explanation": "SNMP enumeration can reveal sensitive details like network topology, interfaces, and routing tables."
+    "explanation": "SNMP enumeration can reveal sensitive details like network topology, interfaces, and routing tables.",
+    "multiple_answers": false
   },
   {
     "question": "Which Linux command can be used to query an LDAP server?",
@@ -140,7 +152,8 @@
       "D": "finger"
     },
     "correct_answers": ["A"],
-    "explanation": "'ldapsearch' queries LDAP directory entries such as users, groups, and policies."
+    "explanation": "'ldapsearch' queries LDAP directory entries such as users, groups, and policies.",
+    "multiple_answers": false
   },
   {
     "question": "Which enumeration technique targets port 111 on UNIX systems?",
@@ -151,7 +164,8 @@
       "D": "LDAP enumeration"
     },
     "correct_answers": ["A"],
-    "explanation": "Port 111 is used by portmapper to manage RPC services, making it a key target for enumeration."
+    "explanation": "Port 111 is used by portmapper to manage RPC services, making it a key target for enumeration.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these services is commonly targeted for email account enumeration?",
@@ -162,7 +176,8 @@
       "D": "POP3"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "SMTP, IMAP, and POP3 can be used to probe or verify the existence of email addresses on a mail server."
+    "explanation": "SMTP, IMAP, and POP3 can be used to probe or verify the existence of email addresses on a mail server.",
+    "multiple_answers": true
   },
   {
     "question": "What does the SMTP 'VRFY' command attempt to do?",
@@ -173,7 +188,8 @@
       "D": "Update DNS records"
     },
     "correct_answers": ["A"],
-    "explanation": "'VRFY' is an SMTP command used to verify whether a specific email address exists on the mail server."
+    "explanation": "'VRFY' is an SMTP command used to verify whether a specific email address exists on the mail server.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following may allow access to an NFS share without credentials?",
@@ -184,7 +200,8 @@
       "D": "DNS AXFR"
     },
     "correct_answers": ["A"],
-    "explanation": "An NFS server configured to allow anonymous mounting exposes its shares without authentication."
+    "explanation": "An NFS server configured to allow anonymous mounting exposes its shares without authentication.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can be used to brute force usernames via SMB enumeration?",
@@ -195,7 +212,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["D"],
-    "explanation": "Hydra is a credential brute-force tool that supports SMB as one of its many attack modules."
+    "explanation": "Hydra is a credential brute-force tool that supports SMB as one of its many attack modules.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of the 'finger' service in older UNIX systems?",
@@ -206,7 +224,8 @@
       "D": "Authenticate remote users"
     },
     "correct_answers": ["A"],
-    "explanation": "The 'finger' service provides information about system users, including login names and last login times."
+    "explanation": "The 'finger' service provides information about system users, including login names and last login times.",
+    "multiple_answers": false
   },
   {
     "question": "Which command can enumerate LDAP entries using simple queries?",
@@ -217,7 +236,8 @@
       "D": "showmount"
     },
     "correct_answers": ["A"],
-    "explanation": "'ldapsearch' is a command-line utility for querying LDAP directories for structured information."
+    "explanation": "'ldapsearch' is a command-line utility for querying LDAP directories for structured information.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol uses port 389 for communication?",
@@ -228,7 +248,8 @@
       "D": "SNMP"
     },
     "correct_answers": ["A"],
-    "explanation": "LDAP communicates over TCP port 389 and is used for querying and managing directory services."
+    "explanation": "LDAP communicates over TCP port 389 and is used for querying and managing directory services.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following ports is used by NetBIOS Session Service?",
@@ -239,7 +260,8 @@
       "D": "161"
     },
     "correct_answers": ["A"],
-    "explanation": "NetBIOS Session Service uses TCP port 139, typically for file and printer sharing on Windows systems."
+    "explanation": "NetBIOS Session Service uses TCP port 139, typically for file and printer sharing on Windows systems.",
+    "multiple_answers": false
   },
   {
     "question": "What is a null session in the context of Windows enumeration?",
@@ -250,7 +272,8 @@
       "D": "Closed port on firewall"
     },
     "correct_answers": ["A"],
-    "explanation": "A null session is an unauthenticated SMB connection that may allow enumeration of users, shares, and groups."
+    "explanation": "A null session is an unauthenticated SMB connection that may allow enumeration of users, shares, and groups.",
+    "multiple_answers": false
   },
   {
     "question": "What does the 'nbtstat -A <IP>' command provide?",
@@ -261,7 +284,8 @@
       "D": "DNS zone transfer"
     },
     "correct_answers": ["A"],
-    "explanation": "'nbtstat -A <IP>' displays the NetBIOS name table for a remote machine, helping in NetBIOS enumeration."
+    "explanation": "'nbtstat -A <IP>' displays the NetBIOS name table for a remote machine, helping in NetBIOS enumeration.",
+    "multiple_answers": false
   },
   {
     "question": "Which SNMP tool can perform a fast scan using dictionary-based community strings?",
@@ -272,7 +296,8 @@
       "D": "hydra"
     },
     "correct_answers": ["A"],
-    "explanation": "'onesixtyone' performs fast SNMP scans by testing a list of community strings against multiple hosts."
+    "explanation": "'onesixtyone' performs fast SNMP scans by testing a list of community strings against multiple hosts.",
+    "multiple_answers": false
   },
   {
     "question": "Which command-line tool is used to query SMB shares on Linux?",
@@ -283,7 +308,8 @@
       "D": "rpcinfo"
     },
     "correct_answers": ["A"],
-    "explanation": "'smbclient' is a Linux utility that connects to Windows SMB shares, similar to using FTP."
+    "explanation": "'smbclient' is a Linux utility that connects to Windows SMB shares, similar to using FTP.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can gather usernames and share information from Windows systems using null sessions?",
@@ -294,7 +320,8 @@
       "D": "telnet"
     },
     "correct_answers": ["A"],
-    "explanation": "'enum' is an older but effective tool for enumerating usernames, shares, and passwords using SMB null sessions."
+    "explanation": "'enum' is an older but effective tool for enumerating usernames, shares, and passwords using SMB null sessions.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these is a valid SNMP read community string used by default?",
@@ -305,7 +332,8 @@
       "D": "manager"
     },
     "correct_answers": ["A"],
-    "explanation": "The default SNMP read-only community string is often set to 'public', which is widely known and insecure."
+    "explanation": "The default SNMP read-only community string is often set to 'public', which is widely known and insecure.",
+    "multiple_answers": false
   },
   {
     "question": "What is the function of 'net view' in Windows?",
@@ -316,7 +344,8 @@
       "D": "Initiates LDAP query"
     },
     "correct_answers": ["A"],
-    "explanation": "'net view' lists all available shared resources on a domain or network."
+    "explanation": "'net view' lists all available shared resources on a domain or network.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol is most commonly used for Microsoft file and printer sharing?",
@@ -327,7 +356,8 @@
       "D": "SSH"
     },
     "correct_answers": ["A"],
-    "explanation": "SMB is used by Microsoft for file and printer sharing, and is a common target for enumeration and attacks."
+    "explanation": "SMB is used by Microsoft for file and printer sharing, and is a common target for enumeration and attacks.",
+    "multiple_answers": false
   },
   {
     "question": "What does the '-L' flag do in the smbclient tool?",
@@ -338,7 +368,8 @@
       "D": "Logs all actions"
     },
     "correct_answers": ["A"],
-    "explanation": "The '-L' option with smbclient lists the available shares on a given SMB target."
+    "explanation": "The '-L' option with smbclient lists the available shares on a given SMB target.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a risk associated with using default SNMP strings?",
@@ -349,7 +380,8 @@
       "D": "Session hijacking"
     },
     "correct_answers": ["A"],
-    "explanation": "Default SNMP strings like 'public' can lead to exposure of critical system data and configurations."
+    "explanation": "Default SNMP strings like 'public' can lead to exposure of critical system data and configurations.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used to display RPC programs registered with the portmapper service?",
@@ -360,7 +392,8 @@
       "D": "smbclient"
     },
     "correct_answers": ["A"],
-    "explanation": "'rpcinfo' reveals the RPC services registered with the portmapper service on Unix/Linux systems."
+    "explanation": "'rpcinfo' reveals the RPC services registered with the portmapper service on Unix/Linux systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which enumeration technique would be useful against Microsoft Exchange servers?",
@@ -371,7 +404,8 @@
       "D": "SNMP enumeration"
     },
     "correct_answers": ["A"],
-    "explanation": "SMTP enumeration can help identify valid email users on a Microsoft Exchange server."
+    "explanation": "SMTP enumeration can help identify valid email users on a Microsoft Exchange server.",
+    "multiple_answers": false
   },
   {
     "question": "Which protocol is typically used in Windows environments to resolve hostnames?",
@@ -382,7 +416,8 @@
       "D": "RPC"
     },
     "correct_answers": ["A"],
-    "explanation": "NetBIOS is commonly used in Windows environments for hostname resolution and resource sharing."
+    "explanation": "NetBIOS is commonly used in Windows environments for hostname resolution and resource sharing.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following protocols can be enumerated using the tool 'snmpcheck'?",
@@ -393,7 +428,8 @@
       "D": "SSH"
     },
     "correct_answers": ["A"],
-    "explanation": "'snmpcheck' queries SNMP agents to collect data like OS version, users, running processes, and services."
+    "explanation": "'snmpcheck' queries SNMP agents to collect data like OS version, users, running processes, and services.",
+    "multiple_answers": false
   },
   {
     "question": "What kind of information can be retrieved using SNMP enumeration?",
@@ -404,7 +440,8 @@
       "D": "Firewall logs"
     },
     "correct_answers": ["A"],
-    "explanation": "SNMP enumeration can provide deep insight into the configuration and status of networked devices."
+    "explanation": "SNMP enumeration can provide deep insight into the configuration and status of networked devices.",
+    "multiple_answers": false
   },
   {
     "question": "Which enumeration technique targets LDAP servers for extracting information?",
@@ -415,7 +452,8 @@
       "D": "SSH enumeration"
     },
     "correct_answers": ["A"],
-    "explanation": "LDAP enumeration targets directory services like Active Directory to extract user and group information."
+    "explanation": "LDAP enumeration targets directory services like Active Directory to extract user and group information.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool provides a GUI for browsing LDAP directories?",
@@ -426,7 +464,8 @@
       "D": "hydra"
     },
     "correct_answers": ["A"],
-    "explanation": "JXplorer is a graphical interface used to explore and interact with LDAP directories."
+    "explanation": "JXplorer is a graphical interface used to explore and interact with LDAP directories.",
+    "multiple_answers": false
   },
   {
     "question": "What is the goal of enumeration in the ethical hacking process?",
@@ -437,6 +476,7 @@
       "D": "Install rootkits"
     },
     "correct_answers": ["A"],
-    "explanation": "Enumeration is a reconnaissance step used to extract detailed information from the target environment."
+    "explanation": "Enumeration is a reconnaissance step used to extract detailed information from the target environment.",
+    "multiple_answers": false
   }
 ]

@@ -8,7 +8,8 @@
       "D": "HTTP"
     },
     "correct_answers": ["A"],
-    "explanation": "LDAP is used to query directory services like Active Directory, making it ideal for enumerating users, groups, and policies."
+    "explanation": "LDAP is used to query directory services like Active Directory, making it ideal for enumerating users, groups, and policies.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary use of the 'host' command in reconnaissance?",
@@ -19,7 +20,8 @@
       "D": "Firewall evasion"
     },
     "correct_answers": ["A"],
-    "explanation": "The 'host' command is used to perform DNS lookups and resolve hostnames to IPs or vice versa."
+    "explanation": "The 'host' command is used to perform DNS lookups and resolve hostnames to IPs or vice versa.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following tools can assist with WHOIS enumeration?",
@@ -30,7 +32,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "whois, theHarvester, and Netcraft can extract domain registration details and contact info used during footprinting."
+    "explanation": "whois, theHarvester, and Netcraft can extract domain registration details and contact info used during footprinting.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these is an example of a threat intelligence platform useful during reconnaissance?",
@@ -41,7 +44,8 @@
       "D": "Censys"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "VirusTotal, Shodan, and Censys help discover publicly exposed systems, malware signatures, and infrastructure metadata."
+    "explanation": "VirusTotal, Shodan, and Censys help discover publicly exposed systems, malware signatures, and infrastructure metadata.",
+    "multiple_answers": true
   },
   {
     "question": "Which tool can be used to scan for open RDP services?",
@@ -52,7 +56,8 @@
       "D": "Nikto"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Nmap and Masscan can detect open RDP ports (3389); Metasploit can use this info for deeper service enumeration or exploitation."
+    "explanation": "Nmap and Masscan can detect open RDP ports (3389); Metasploit can use this info for deeper service enumeration or exploitation.",
+    "multiple_answers": true
   },
   {
     "question": "What does the 'nslookup' command do?",
@@ -63,7 +68,8 @@
       "D": "Executes system enumeration"
     },
     "correct_answers": ["A"],
-    "explanation": "nslookup is a DNS querying tool that returns domain name resolution details like IPs, MX, or NS records."
+    "explanation": "nslookup is a DNS querying tool that returns domain name resolution details like IPs, MX, or NS records.",
+    "multiple_answers": false
   },
   {
     "question": "Which port is associated with LDAP enumeration?",
@@ -74,7 +80,8 @@
       "D": "110"
     },
     "correct_answers": ["A"],
-    "explanation": "LDAP commonly operates on TCP/UDP port 389 and is used to retrieve directory service data."
+    "explanation": "LDAP commonly operates on TCP/UDP port 389 and is used to retrieve directory service data.",
+    "multiple_answers": false
   },
   {
     "question": "What is the function of the 'dig' command?",
@@ -85,7 +92,8 @@
       "D": "Checks IP TTL values"
     },
     "correct_answers": ["A"],
-    "explanation": "dig (Domain Information Groper) queries DNS servers and provides detailed information such as A, MX, and NS records."
+    "explanation": "dig (Domain Information Groper) queries DNS servers and provides detailed information such as A, MX, and NS records.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following ports are commonly scanned for remote login services?",
@@ -96,7 +104,8 @@
       "D": "69"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Ports 22 (SSH), 23 (Telnet), and 3389 (RDP) are frequently targeted to identify remote access services."
+    "explanation": "Ports 22 (SSH), 23 (Telnet), and 3389 (RDP) are frequently targeted to identify remote access services.",
+    "multiple_answers": true
   },
   {
     "question": "What is the main purpose of an aggressive scan in Nmap?",
@@ -107,7 +116,8 @@
       "D": "Encrypt data in transit"
     },
     "correct_answers": ["A"],
-    "explanation": "Aggressive scanning in Nmap (-A) enables OS detection, version scanning, script scanning, and traceroute."
+    "explanation": "Aggressive scanning in Nmap (-A) enables OS detection, version scanning, script scanning, and traceroute.",
+    "multiple_answers": false
   },
   {
     "question": "Which command in Linux shows all active network connections and listening ports?",
@@ -118,7 +128,8 @@
       "D": "ls -al"
     },
     "correct_answers": ["A"],
-    "explanation": "The `netstat -tuln` command lists TCP and UDP ports that are listening or actively connected."
+    "explanation": "The `netstat -tuln` command lists TCP and UDP ports that are listening or actively connected.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of the A record in DNS?",
@@ -129,7 +140,8 @@
       "D": "Identify authoritative name server"
     },
     "correct_answers": ["A"],
-    "explanation": "A records in DNS map domain names to IPv4 addresses for proper name resolution."
+    "explanation": "A records in DNS map domain names to IPv4 addresses for proper name resolution.",
+    "multiple_answers": false
   },
   {
     "question": "Which command reveals system uptime and load average in Linux?",
@@ -140,7 +152,8 @@
       "D": "free -m"
     },
     "correct_answers": ["A"],
-    "explanation": "`uptime` shows how long the system has been running and the current load average."
+    "explanation": "`uptime` shows how long the system has been running and the current load average.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is NOT considered passive reconnaissance?",
@@ -151,7 +164,8 @@
       "D": "Searching WHOIS data"
     },
     "correct_answers": ["C"],
-    "explanation": "Port scanning interacts directly with the target system and is classified as active reconnaissance."
+    "explanation": "Port scanning interacts directly with the target system and is classified as active reconnaissance.",
+    "multiple_answers": false
   },
   {
     "question": "Which record is responsible for identifying the name server of a domain?",
@@ -162,7 +176,8 @@
       "D": "TXT"
     },
     "correct_answers": ["A"],
-    "explanation": "NS records define the authoritative DNS servers for a domain."
+    "explanation": "NS records define the authoritative DNS servers for a domain.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a benefit of passive reconnaissance?",
@@ -173,7 +188,8 @@
       "D": "It runs brute-force attacks"
     },
     "correct_answers": ["A"],
-    "explanation": "Passive reconnaissance uses public sources and does not interact with the target, reducing chances of detection."
+    "explanation": "Passive reconnaissance uses public sources and does not interact with the target, reducing chances of detection.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a tool for extracting email addresses from public sources?",
@@ -184,7 +200,8 @@
       "D": "Aircrack-ng"
     },
     "correct_answers": ["A"],
-    "explanation": "theHarvester is an OSINT tool that collects email addresses, hostnames, and subdomains from public sources."
+    "explanation": "theHarvester is an OSINT tool that collects email addresses, hostnames, and subdomains from public sources.",
+    "multiple_answers": false
   },
   {
     "question": "Which command-line tool can retrieve SSL certificate information?",
@@ -195,7 +212,8 @@
       "D": "netstat"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "These tools are commonly used to analyze SSL certificates, including expiration date and issuing authority."
+    "explanation": "These tools are commonly used to analyze SSL certificates, including expiration date and issuing authority.",
+    "multiple_answers": true
   },
   {
     "question": "What is the function of a TXT record in DNS?",
@@ -206,7 +224,8 @@
       "D": "Performs port translation"
     },
     "correct_answers": ["A"],
-    "explanation": "TXT records store human-readable text such as SPF records or domain ownership verification keys."
+    "explanation": "TXT records store human-readable text such as SPF records or domain ownership verification keys.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool can be used to visually map network infrastructure using OSINT?",
@@ -217,7 +236,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["A"],
-    "explanation": "Maltego is a powerful visual link analysis tool used in OSINT and reconnaissance."
+    "explanation": "Maltego is a powerful visual link analysis tool used in OSINT and reconnaissance.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following commands is used to trace the route packets take to a destination?",
@@ -228,7 +248,8 @@
       "D": "host"
     },
     "correct_answers": ["A"],
-    "explanation": "`traceroute` shows the path packets take from source to destination, identifying each hop."
+    "explanation": "`traceroute` shows the path packets take from source to destination, identifying each hop.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following indicates a site uses Cloudflare as a CDN or protection?",
@@ -239,7 +260,8 @@
       "D": "Port 443 is closed"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Cloudflare’s presence is indicated by specific IP ranges, name servers, and HTTP headers like 'cf-ray'."
+    "explanation": "Cloudflare’s presence is indicated by specific IP ranges, name servers, and HTTP headers like 'cf-ray'.",
+    "multiple_answers": true
   },
   {
     "question": "Which port is typically used by Telnet?",
@@ -250,7 +272,8 @@
       "D": "53"
     },
     "correct_answers": ["A"],
-    "explanation": "Port 23 is used for Telnet, which allows remote command-line access but transmits data in plaintext."
+    "explanation": "Port 23 is used for Telnet, which allows remote command-line access but transmits data in plaintext.",
+    "multiple_answers": false
   },
   {
     "question": "Which method would be most effective to find outdated software exposed on a domain?",
@@ -261,7 +284,8 @@
       "D": "Port knocking"
     },
     "correct_answers": ["A"],
-    "explanation": "Banner grabbing reveals version info for services, which can be checked for known vulnerabilities."
+    "explanation": "Banner grabbing reveals version info for services, which can be checked for known vulnerabilities.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is NOT a valid reason for performing reconnaissance?",
@@ -272,7 +296,8 @@
       "D": "To assess organizational exposure"
     },
     "correct_answers": ["C"],
-    "explanation": "Reconnaissance is a pre-exploitation phase and does not involve data exfiltration."
+    "explanation": "Reconnaissance is a pre-exploitation phase and does not involve data exfiltration.",
+    "multiple_answers": false
   },
   {
     "question": "Which port is used by SNMP by default?",
@@ -283,7 +308,8 @@
       "D": "23"
     },
     "correct_answers": ["A"],
-    "explanation": "SNMP uses UDP port 161 to manage and monitor network devices."
+    "explanation": "SNMP uses UDP port 161 to manage and monitor network devices.",
+    "multiple_answers": false
   },
   {
     "question": "Which record in DNS indicates the authoritative server for a domain?",
@@ -294,7 +320,8 @@
       "D": "CNAME"
     },
     "correct_answers": ["A"],
-    "explanation": "SOA (Start of Authority) records indicate the primary DNS server and zone settings for a domain."
+    "explanation": "SOA (Start of Authority) records indicate the primary DNS server and zone settings for a domain.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are reconnaissance tools used to discover open services?",
@@ -305,7 +332,8 @@
       "D": "Metasploit"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Nmap and Masscan are widely used for scanning IP ranges to discover live hosts and open ports."
+    "explanation": "Nmap and Masscan are widely used for scanning IP ranges to discover live hosts and open ports.",
+    "multiple_answers": true
   },
   {
     "question": "What type of reconnaissance is using Google search operators to discover exposed files?",
@@ -316,7 +344,8 @@
       "D": "Direct"
     },
     "correct_answers": ["A"],
-    "explanation": "Using Google Dorking for file discovery is considered passive reconnaissance since it does not interact with the target."
+    "explanation": "Using Google Dorking for file discovery is considered passive reconnaissance since it does not interact with the target.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used to perform brute-force attacks but not reconnaissance?",
@@ -327,6 +356,7 @@
       "D": "Maltego"
     },
     "correct_answers": ["A"],
-    "explanation": "Hydra is used for brute-forcing login credentials and is not typically used for recon purposes."
+    "explanation": "Hydra is used for brute-forcing login credentials and is not typically used for recon purposes.",
+    "multiple_answers": false
   }
 ]

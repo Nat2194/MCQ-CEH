@@ -8,7 +8,8 @@
       "D": "To monitor users without detection"
     },
     "correct_answers": ["C"],
-    "explanation": "Ethical hacking is the authorized practice of testing and improving security systems to prevent malicious attacks."
+    "explanation": "Ethical hacking is the authorized practice of testing and improving security systems to prevent malicious attacks.",
+    "multiple_answers": false
   },
   {
     "question": "Which phase involves identifying live systems, open ports, and services?",
@@ -19,7 +20,8 @@
       "D": "Maintaining Access"
     },
     "correct_answers": ["B"],
-    "explanation": "The scanning phase actively probes systems to find live hosts and available services for further exploitation."
+    "explanation": "The scanning phase actively probes systems to find live hosts and available services for further exploitation.",
+    "multiple_answers": false
   },
   {
     "question": "What is the role of a vulnerability assessment?",
@@ -30,7 +32,8 @@
       "D": "Simulate real-world attacks"
     },
     "correct_answers": ["B"],
-    "explanation": "Vulnerability assessments identify, classify, and prioritize known vulnerabilities without exploiting them."
+    "explanation": "Vulnerability assessments identify, classify, and prioritize known vulnerabilities without exploiting them.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following actions are permitted for ethical hackers with authorization?",
@@ -41,7 +44,8 @@
       "D": "Selling discovered zero-day exploits"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Ethical hackers can scan and analyze systems within scope and report findings but cannot sell exploits."
+    "explanation": "Ethical hackers can scan and analyze systems within scope and report findings but cannot sell exploits.",
+    "multiple_answers": true
   },
   {
     "question": "Which hacker type operates legally and with prior approval?",
@@ -52,7 +56,8 @@
       "D": "White Hat"
     },
     "correct_answers": ["D"],
-    "explanation": "White hat hackers perform legal, authorized penetration tests to improve security."
+    "explanation": "White hat hackers perform legal, authorized penetration tests to improve security.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are common deliverables in an ethical hacking report?",
@@ -63,7 +68,8 @@
       "D": "Technical vulnerability list"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Ethical hacking reports include executive overviews, detailed findings, and sometimes PoCs to demonstrate impact."
+    "explanation": "Ethical hacking reports include executive overviews, detailed findings, and sometimes PoCs to demonstrate impact.",
+    "multiple_answers": true
   },
   {
     "question": "What are common examples of social engineering?",
@@ -74,7 +80,8 @@
       "D": "Pretexting"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "Social engineering exploits human behavior via deception such as phishing, baiting, and impersonation."
+    "explanation": "Social engineering exploits human behavior via deception such as phishing, baiting, and impersonation.",
+    "multiple_answers": true
   },
   {
     "question": "What is an ethical hacker legally allowed to do?",
@@ -85,7 +92,8 @@
       "D": "Access unscoped third-party services"
     },
     "correct_answers": ["B", "C"],
-    "explanation": "Ethical hackers must operate with written consent and stay within scope defined in agreements."
+    "explanation": "Ethical hackers must operate with written consent and stay within scope defined in agreements.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these are part of the CEH hacking cycle?",
@@ -96,7 +104,8 @@
       "D": "Covering Tracks"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "The CEH methodology includes reconnaissance, scanning, gaining access, maintaining access, and covering tracks."
+    "explanation": "The CEH methodology includes reconnaissance, scanning, gaining access, maintaining access, and covering tracks.",
+    "multiple_answers": true
   },
   {
     "question": "What is the primary goal of the Blue Team?",
@@ -107,7 +116,8 @@
       "D": "Penetrate organizational defenses"
     },
     "correct_answers": ["B"],
-    "explanation": "Blue Teams are responsible for defense, detection, and incident response during and after an attack."
+    "explanation": "Blue Teams are responsible for defense, detection, and incident response during and after an attack.",
+    "multiple_answers": false
   },
   {
     "question": "Which best describes a Red Team?",
@@ -118,7 +128,8 @@
       "D": "Handles malware cleanup"
     },
     "correct_answers": ["B"],
-    "explanation": "Red Teams emulate real-world attackers to test and challenge an organization’s defenses."
+    "explanation": "Red Teams emulate real-world attackers to test and challenge an organization’s defenses.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are forms of reconnaissance?",
@@ -129,7 +140,8 @@
       "D": "Social media scraping"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Reconnaissance includes collecting info from public sources, services, and social platforms."
+    "explanation": "Reconnaissance includes collecting info from public sources, services, and social platforms.",
+    "multiple_answers": true
   },
   {
     "question": "Which of these are reasons companies hire ethical hackers?",
@@ -140,7 +152,8 @@
       "D": "Security validation"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Organizations use ethical hackers to meet regulations, simulate threats, and validate security posture."
+    "explanation": "Organizations use ethical hackers to meet regulations, simulate threats, and validate security posture.",
+    "multiple_answers": true
   },
   {
     "question": "Which best describes a gray hat hacker?",
@@ -151,7 +164,8 @@
       "D": "Is part of a SOC"
     },
     "correct_answers": ["C"],
-    "explanation": "Gray hat hackers may discover issues without prior permission but usually report them responsibly."
+    "explanation": "Gray hat hackers may discover issues without prior permission but usually report them responsibly.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are valid components of a Rules of Engagement (RoE)?",
@@ -162,7 +176,8 @@
       "D": "Time window for testing"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "RoE defines scope, attack methods, and timing constraints to guide ethical hacking engagements."
+    "explanation": "RoE defines scope, attack methods, and timing constraints to guide ethical hacking engagements.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are examples of technical security controls?",
@@ -173,7 +188,8 @@
       "D": "Network segmentation"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "Technical controls include devices and configurations that enforce security, like firewalls and antivirus."
+    "explanation": "Technical controls include devices and configurations that enforce security, like firewalls and antivirus.",
+    "multiple_answers": true
   },
   {
     "question": "What is the main risk of performing unauthorized security testing?",
@@ -184,7 +200,8 @@
       "D": "Better CV for the tester"
     },
     "correct_answers": ["C"],
-    "explanation": "Unauthorized testing can lead to lawsuits, fines, or even imprisonment under various laws."
+    "explanation": "Unauthorized testing can lead to lawsuits, fines, or even imprisonment under various laws.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are considered open-source intelligence (OSINT) sources?",
@@ -195,7 +212,8 @@
       "D": "News articles"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "OSINT includes public data sources like DNS, WHOIS, and media publications."
+    "explanation": "OSINT includes public data sources like DNS, WHOIS, and media publications.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are key elements of the CIA triad?",
@@ -206,7 +224,8 @@
       "D": "Availability"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "CIA triad stands for Confidentiality, Integrity, and Availability—the pillars of cybersecurity."
+    "explanation": "CIA triad stands for Confidentiality, Integrity, and Availability—the pillars of cybersecurity.",
+    "multiple_answers": true
   },
   {
     "question": "What are potential consequences of an unscoped penetration test?",
@@ -217,7 +236,8 @@
       "D": "Increased revenue"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Operating outside scope can result in legal action, system damage, and data breaches."
+    "explanation": "Operating outside scope can result in legal action, system damage, and data breaches.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following is a major difference between a vulnerability scan and a penetration test?",
@@ -228,7 +248,8 @@
       "D": "Vulnerability scans detect zero-days"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Pen tests attempt exploitation; vulnerability scans detect known issues without exploiting them."
+    "explanation": "Pen tests attempt exploitation; vulnerability scans detect known issues without exploiting them.",
+    "multiple_answers": true
   },
   {
     "question": "Which tools can be used in scanning or enumeration?",
@@ -239,7 +260,8 @@
       "D": "Netcat"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Nmap and SNMPwalk are used for enumeration; Netcat is often used for port scanning or connectivity testing."
+    "explanation": "Nmap and SNMPwalk are used for enumeration; Netcat is often used for port scanning or connectivity testing.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following tools would help discover subdomains?",
@@ -250,7 +272,8 @@
       "D": "Hydra"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Sublist3r, Dig, and Gobuster can be used for subdomain enumeration and brute-forcing."
+    "explanation": "Sublist3r, Dig, and Gobuster can be used for subdomain enumeration and brute-forcing.",
+    "multiple_answers": true
   },
   {
     "question": "Which legal or regulatory frameworks affect ethical hacking?",
@@ -261,7 +284,8 @@
       "D": "DMCA"
     },
     "correct_answers": ["A", "B", "C", "D"],
-    "explanation": "All listed frameworks regulate digital activity and impact ethical hacking scope and conduct."
+    "explanation": "All listed frameworks regulate digital activity and impact ethical hacking scope and conduct.",
+    "multiple_answers": true
   },
   {
     "question": "What makes phishing so effective?",
@@ -272,7 +296,8 @@
       "D": "It often bypasses traditional filters"
     },
     "correct_answers": ["B", "C", "D"],
-    "explanation": "Phishing is successful because it manipulates users and often evades technical defenses."
+    "explanation": "Phishing is successful because it manipulates users and often evades technical defenses.",
+    "multiple_answers": true
   },
   {
     "question": "Which activities occur during the gaining access phase?",
@@ -283,7 +308,8 @@
       "D": "Exploitation of system flaws"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Gaining access involves using exploits and stolen credentials to enter a target system."
+    "explanation": "Gaining access involves using exploits and stolen credentials to enter a target system.",
+    "multiple_answers": true
   },
   {
     "question": "Which type of hacker often uses publicly available tools without understanding them?",
@@ -294,7 +320,8 @@
       "D": "Red teamer"
     },
     "correct_answers": ["C"],
-    "explanation": "Script kiddies use pre-built tools without fully understanding how they work or the implications."
+    "explanation": "Script kiddies use pre-built tools without fully understanding how they work or the implications.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are examples of threats?",
@@ -305,7 +332,8 @@
       "D": "Firewalls"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Threats include malicious software, attacks like SQLi, and threat actors such as hackers."
+    "explanation": "Threats include malicious software, attacks like SQLi, and threat actors such as hackers.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are examples of risk mitigation strategies?",
@@ -316,7 +344,8 @@
       "D": "Logging and monitoring"
     },
     "correct_answers": ["A", "B", "C", "D"],
-    "explanation": "All options are risk mitigation strategies to reduce attack surface and detect suspicious activity."
+    "explanation": "All options are risk mitigation strategies to reduce attack surface and detect suspicious activity.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following are information disclosure risks?",
@@ -327,7 +356,8 @@
       "D": "Port forwarding"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "These can reveal system information or internal structure useful for attackers during recon."
+    "explanation": "These can reveal system information or internal structure useful for attackers during recon.",
+    "multiple_answers": true
   },
   {
     "question": "What is the main advantage of using OSINT tools?",
@@ -338,6 +368,7 @@
       "D": "They use exploit code automatically"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "OSINT tools collect publicly available data without interacting with the target, avoiding detection."
+    "explanation": "OSINT tools collect publicly available data without interacting with the target, avoiding detection.",
+    "multiple_answers": true
   }
 ]

@@ -7,8 +7,11 @@
       "C": "query user",
       "D": "ipconfig"
     },
-    "correct_answers": ["C"],
-    "explanation": "The `query user` command displays information about user sessions on a Windows system."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The `query user` command displays information about user sessions on a Windows system.",
+    "multiple_answers": false
   },
   {
     "question": "What does privilege escalation allow an attacker to do?",
@@ -18,8 +21,11 @@
       "C": "Scan external IPs",
       "D": "Encrypt data on the system"
     },
-    "correct_answers": ["B"],
-    "explanation": "Privilege escalation gives attackers higher-level access to perform administrative tasks."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Privilege escalation gives attackers higher-level access to perform administrative tasks.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is a local privilege escalation vulnerability in Windows?",
@@ -29,8 +35,11 @@
       "C": "Token impersonation",
       "D": "SQL Injection"
     },
-    "correct_answers": ["C"],
-    "explanation": "Token impersonation in Windows allows privilege escalation by impersonating higher-privileged tokens."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Token impersonation in Windows allows privilege escalation by impersonating higher-privileged tokens.",
+    "multiple_answers": false
   },
   {
     "question": "Which command would you use to list scheduled tasks in Windows?",
@@ -40,8 +49,11 @@
       "C": "tasklist",
       "D": "services.msc"
     },
-    "correct_answers": ["A"],
-    "explanation": "`schtasks /query` lists all scheduled tasks, useful in discovering persistence mechanisms."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "`schtasks /query` lists all scheduled tasks, useful in discovering persistence mechanisms.",
+    "multiple_answers": false
   },
   {
     "question": "What tool can be used to manipulate Windows tokens for privilege escalation?",
@@ -51,8 +63,11 @@
       "C": "Netcat",
       "D": "Ettercap"
     },
-    "correct_answers": ["A"],
-    "explanation": "Mimikatz can extract and impersonate tokens for privilege escalation in Windows."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Mimikatz can extract and impersonate tokens for privilege escalation in Windows.",
+    "multiple_answers": false
   },
   {
     "question": "Which Metasploit module is commonly used to exploit a vulnerable service?",
@@ -62,8 +77,11 @@
       "C": "post/windows/gather",
       "D": "payload/windows/meterpreter/reverse_tcp"
     },
-    "correct_answers": ["B"],
-    "explanation": "This exploit targets SMBv1 vulnerabilities and is part of system hacking."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "This exploit targets SMBv1 vulnerabilities and is part of system hacking.",
+    "multiple_answers": false
   },
   {
     "question": "Which technique helps attackers maintain persistence on a Windows host?",
@@ -73,8 +91,11 @@
       "C": "Running Nmap",
       "D": "Changing DNS settings"
     },
-    "correct_answers": ["B"],
-    "explanation": "Creating a hidden or admin-level user ensures continued access."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Creating a hidden or admin-level user ensures continued access.",
+    "multiple_answers": false
   },
   {
     "question": "How does SAM file dumping assist attackers?",
@@ -84,8 +105,11 @@
       "C": "Gives real-time network traffic",
       "D": "Hides processes"
     },
-    "correct_answers": ["B"],
-    "explanation": "The SAM file contains NTLM/LM password hashes which can be cracked offline."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "The SAM file contains NTLM/LM password hashes which can be cracked offline.",
+    "multiple_answers": false
   },
   {
     "question": "Which command is used to change a password on Windows via command line?",
@@ -95,8 +119,11 @@
       "C": "adduser",
       "D": "usermod"
     },
-    "correct_answers": ["B"],
-    "explanation": "The `net user` command is used in Windows to modify user accounts, including passwords."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "The `net user` command is used in Windows to modify user accounts, including passwords.",
+    "multiple_answers": false
   },
   {
     "question": "What is a common Linux post-exploitation persistence method?",
@@ -106,8 +133,11 @@
       "C": "Running a Windows service",
       "D": "Editing system32"
     },
-    "correct_answers": ["B"],
-    "explanation": "Adding a cron job ensures the malicious script or backdoor runs at scheduled intervals."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Adding a cron job ensures the malicious script or backdoor runs at scheduled intervals.",
+    "multiple_answers": false
   },
   {
     "question": "What can the Windows command `at` be used for?",
@@ -117,8 +147,11 @@
       "C": "Scheduling tasks",
       "D": "Stopping services"
     },
-    "correct_answers": ["C"],
-    "explanation": "The `at` command is used to schedule tasks in older versions of Windows."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The `at` command is used to schedule tasks in older versions of Windows.",
+    "multiple_answers": false
   },
   {
     "question": "Why would an attacker want to dump LSASS memory?",
@@ -128,8 +161,11 @@
       "C": "To extract password hashes or plaintext passwords",
       "D": "To find open ports"
     },
-    "correct_answers": ["C"],
-    "explanation": "LSASS holds credentials and can be dumped to recover plaintext passwords or hashes."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "LSASS holds credentials and can be dumped to recover plaintext passwords or hashes.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of using 'Sticky Keys' backdoor?",
@@ -139,8 +175,11 @@
       "C": "To gain system access from login screen",
       "D": "To escalate local privileges on Linux"
     },
-    "correct_answers": ["C"],
-    "explanation": "Replacing sethc.exe (Sticky Keys) with cmd.exe allows command prompt access pre-login."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Replacing sethc.exe (Sticky Keys) with cmd.exe allows command prompt access pre-login.",
+    "multiple_answers": false
   },
   {
     "question": "Which service is often targeted in pass-the-hash attacks?",
@@ -150,8 +189,11 @@
       "C": "SMB",
       "D": "DNS"
     },
-    "correct_answers": ["C"],
-    "explanation": "Pass-the-hash exploits SMB by reusing hash credentials to authenticate to remote systems."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Pass-the-hash exploits SMB by reusing hash credentials to authenticate to remote systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following is used to extract passwords from a Windows registry backup?",
@@ -161,8 +203,11 @@
       "C": "Cain and Abel",
       "D": "Metasploit"
     },
-    "correct_answers": ["B"],
-    "explanation": "Pwdump is designed to extract password hashes from the SAM database in registry backups."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Pwdump is designed to extract password hashes from the SAM database in registry backups.",
+    "multiple_answers": false
   },
   {
     "question": "Which keylogging method captures screen coordinates instead of actual keystrokes?",
@@ -172,8 +217,11 @@
       "C": "Form grabbing",
       "D": "Mouse-logging"
     },
-    "correct_answers": ["D"],
-    "explanation": "Mouse-loggers track clicks and positions rather than traditional keystrokes."
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Mouse-loggers track clicks and positions rather than traditional keystrokes.",
+    "multiple_answers": false
   },
   {
     "question": "What does a stealth rootkit do?",
@@ -183,8 +231,11 @@
       "C": "Hides processes, files, and connections",
       "D": "Performs MITM attacks"
     },
-    "correct_answers": ["C"],
-    "explanation": "Stealth rootkits modify the OS to hide malicious components and actions."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Stealth rootkits modify the OS to hide malicious components and actions.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary goal of a bootkit?",
@@ -194,8 +245,11 @@
       "C": "Modify firewall rules",
       "D": "Disable antivirus"
     },
-    "correct_answers": ["B"],
-    "explanation": "Bootkits infect the system’s bootloader to gain control before the OS starts."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Bootkits infect the system’s bootloader to gain control before the OS starts.",
+    "multiple_answers": false
   },
   {
     "question": "What’s an example of vertical privilege escalation?",
@@ -205,8 +259,11 @@
       "C": "A guest user gaining admin rights",
       "D": "Two admins switching accounts"
     },
-    "correct_answers": ["C"],
-    "explanation": "Vertical escalation means moving from a lower privilege level to a higher one, like guest to admin."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Vertical escalation means moving from a lower privilege level to a higher one, like guest to admin.",
+    "multiple_answers": false
   },
   {
     "question": "Which attack uses a legitimate scheduled service to run a payload as SYSTEM?",
@@ -216,8 +273,11 @@
       "C": "Scheduled task abuse",
       "D": "Command injection"
     },
-    "correct_answers": ["C"],
-    "explanation": "Attackers can abuse scheduled tasks to execute malicious payloads under high-privilege contexts."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Attackers can abuse scheduled tasks to execute malicious payloads under high-privilege contexts.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of 'clearing bash history' on a Linux system after compromise?",
@@ -227,8 +287,11 @@
       "C": "To erase evidence of commands run",
       "D": "To change user credentials"
     },
-    "correct_answers": ["C"],
-    "explanation": "Attackers clear bash history to hide the commands they've executed during compromise."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Attackers clear bash history to hide the commands they've executed during compromise.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows file is responsible for storing registry backups?",
@@ -238,8 +301,11 @@
       "C": "RegBack",
       "D": "config.sys"
     },
-    "correct_answers": ["C"],
-    "explanation": "The RegBack folder stores registry hive backups, which can include sensitive system data."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The RegBack folder stores registry hive backups, which can include sensitive system data.",
+    "multiple_answers": false
   },
   {
     "question": "What is shellcode?",
@@ -249,8 +315,11 @@
       "C": "A small piece of code used as payload in exploits",
       "D": "Encrypted traffic"
     },
-    "correct_answers": ["C"],
-    "explanation": "Shellcode is a small payload used in exploitation to spawn a shell or give control to an attacker."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Shellcode is a small payload used in exploitation to spawn a shell or give control to an attacker.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is commonly used to create custom reverse shells?",
@@ -260,8 +329,11 @@
       "C": "Burp Suite",
       "D": "Snort"
     },
-    "correct_answers": ["B"],
-    "explanation": "MSFvenom is used to create custom payloads, including reverse shells for various platforms."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "MSFvenom is used to create custom payloads, including reverse shells for various platforms.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware is designed to remain hidden by operating at the kernel level?",
@@ -271,8 +343,11 @@
       "C": "Kernel-mode rootkit",
       "D": "Logic bomb"
     },
-    "correct_answers": ["C"],
-    "explanation": "Kernel-mode rootkits operate at the OS core, making them extremely difficult to detect."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Kernel-mode rootkits operate at the OS core, making them extremely difficult to detect.",
+    "multiple_answers": false
   },
   {
     "question": "What’s the difference between vertical and horizontal privilege escalation?",
@@ -282,8 +357,11 @@
       "C": "Horizontal increases admin control",
       "D": "They are the same"
     },
-    "correct_answers": ["B"],
-    "explanation": "Vertical escalation gains higher privileges; horizontal accesses other users' resources without elevated rights."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Vertical escalation gains higher privileges; horizontal accesses other users' resources without elevated rights.",
+    "multiple_answers": false
   },
   {
     "question": "Which Linux command is used to schedule recurring tasks?",
@@ -293,8 +371,11 @@
       "C": "sudoers",
       "D": "lsmod"
     },
-    "correct_answers": ["A"],
-    "explanation": "`crontab` is used to manage scheduled tasks in Linux, commonly abused for persistence."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "`crontab` is used to manage scheduled tasks in Linux, commonly abused for persistence.",
+    "multiple_answers": false
   },
   {
     "question": "Why would an attacker use a netcat listener after gaining access?",
@@ -304,8 +385,11 @@
       "C": "To maintain remote access",
       "D": "To sniff traffic"
     },
-    "correct_answers": ["C"],
-    "explanation": "Netcat can set up listeners for reverse shells, allowing remote command execution."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Netcat can set up listeners for reverse shells, allowing remote command execution.",
+    "multiple_answers": false
   },
   {
     "question": "What does the Meterpreter 'persistence' script do?",
@@ -315,8 +399,11 @@
       "C": "Performs port scanning",
       "D": "Extracts password hashes"
     },
-    "correct_answers": ["B"],
-    "explanation": "Meterpreter's persistence script installs a service that re-establishes a connection after reboot."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Meterpreter's persistence script installs a service that re-establishes a connection after reboot.",
+    "multiple_answers": false
   },
   {
     "question": "Which format is typically used for storing Windows password hashes?",
@@ -326,8 +413,11 @@
       "C": "NTLM",
       "D": "Base64"
     },
-    "correct_answers": ["C"],
-    "explanation": "Windows stores password hashes using NTLM (NT LAN Manager) hashing format."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Windows stores password hashes using NTLM (NT LAN Manager) hashing format.",
+    "multiple_answers": false
   },
   {
     "question": "What attack involves reusing password hashes to authenticate without cracking them?",
@@ -337,8 +427,11 @@
       "C": "Brute force",
       "D": "Credential stuffing"
     },
-    "correct_answers": ["B"],
-    "explanation": "Pass-the-hash allows attackers to authenticate using a captured hash without cracking it."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Pass-the-hash allows attackers to authenticate using a captured hash without cracking it.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following logs would most likely reveal a successful login attempt?",
@@ -348,8 +441,11 @@
       "C": "Security log",
       "D": "Setup log"
     },
-    "correct_answers": ["C"],
-    "explanation": "The Security log in Windows records events such as logon attempts and policy changes."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The Security log in Windows records events such as logon attempts and policy changes.",
+    "multiple_answers": false
   },
   {
     "question": "What is the use of the command `wmic useraccount list full`?",
@@ -359,8 +455,11 @@
       "C": "To list all user accounts and properties",
       "D": "To update drivers"
     },
-    "correct_answers": ["C"],
-    "explanation": "WMIC can be used to gather information on all user accounts on a system."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "WMIC can be used to gather information on all user accounts on a system.",
+    "multiple_answers": false
   },
   {
     "question": "Which file on Linux typically stores password hashes?",
@@ -370,8 +469,11 @@
       "C": "/usr/bin/shadow",
       "D": "/var/log/auth.log"
     },
-    "correct_answers": ["B"],
-    "explanation": "/etc/shadow stores password hashes in Linux systems, protected from regular users."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "/etc/shadow stores password hashes in Linux systems, protected from regular users.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary function of Metasploit’s post-exploitation modules?",
@@ -381,8 +483,11 @@
       "C": "Maintaining and expanding access after compromise",
       "D": "Performing vulnerability scans"
     },
-    "correct_answers": ["C"],
-    "explanation": "Post-exploitation modules are used to gather information, escalate privileges, and persist after exploitation."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Post-exploitation modules are used to gather information, escalate privileges, and persist after exploitation.",
+    "multiple_answers": false
   },
   {
     "question": "Which log file in Linux may help track unauthorized login attempts?",
@@ -392,8 +497,11 @@
       "C": "/var/log/auth.log",
       "D": "/etc/passwd"
     },
-    "correct_answers": ["C"],
-    "explanation": "The auth.log file contains authentication events, including successful and failed login attempts."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The auth.log file contains authentication events, including successful and failed login attempts.",
+    "multiple_answers": false
   },
   {
     "question": "What technique does a time-based keylogger use to capture input?",
@@ -403,8 +511,11 @@
       "C": "It takes periodic snapshots of key presses",
       "D": "It records all clipboard events"
     },
-    "correct_answers": ["C"],
-    "explanation": "Time-based keyloggers log key presses based on timed intervals rather than real-time events."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Time-based keyloggers log key presses based on timed intervals rather than real-time events.",
+    "multiple_answers": false
   },
   {
     "question": "Which Metasploit payload provides an interactive shell and post-exploitation features?",
@@ -414,8 +525,11 @@
       "C": "windows/meterpreter/reverse_tcp",
       "D": "generic/shell_bind_tcp"
     },
-    "correct_answers": ["C"],
-    "explanation": "Meterpreter is a powerful payload offering advanced post-exploitation features beyond a basic shell."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Meterpreter is a powerful payload offering advanced post-exploitation features beyond a basic shell.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of disabling antivirus on a compromised host?",
@@ -425,8 +539,11 @@
       "C": "To avoid detection of malware or backdoors",
       "D": "To escalate privileges"
     },
-    "correct_answers": ["C"],
-    "explanation": "Disabling AV prevents it from removing or alerting on the attacker's tools."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Disabling AV prevents it from removing or alerting on the attacker's tools.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following describes a zero-day vulnerability?",
@@ -436,7 +553,10 @@
       "C": "An old unpatched flaw",
       "D": "A misconfiguration"
     },
-    "correct_answers": ["B"],
-    "explanation": "A zero-day is an undisclosed vulnerability with no current patch or fix available."
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "A zero-day is an undisclosed vulnerability with no current patch or fix available.",
+    "multiple_answers": false
   }
 ]

@@ -8,7 +8,8 @@
       "D": "Erase evidence of attack"
     },
     "correct_answers": ["B"],
-    "explanation": "Reconnaissance is the initial phase where information about the target is collected without engaging or exploiting systems."
+    "explanation": "Reconnaissance is the initial phase where information about the target is collected without engaging or exploiting systems.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are passive reconnaissance techniques?",
@@ -19,7 +20,8 @@
       "D": "Direct port scanning"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Passive techniques gather data without alerting the target, such as WHOIS and social media analysis."
+    "explanation": "Passive techniques gather data without alerting the target, such as WHOIS and social media analysis.",
+    "multiple_answers": true
   },
   {
     "question": "Which tool can be used for DNS enumeration?",
@@ -30,7 +32,8 @@
       "D": "metasploit"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Both nslookup and dig are commonly used to query DNS records for enumeration purposes."
+    "explanation": "Both nslookup and dig are commonly used to query DNS records for enumeration purposes.",
+    "multiple_answers": true
   },
   {
     "question": "What type of reconnaissance involves interacting directly with the target?",
@@ -41,7 +44,8 @@
       "D": "Foothold insertion"
     },
     "correct_answers": ["A"],
-    "explanation": "Active reconnaissance involves sending requests or probing the target system, making detection more likely."
+    "explanation": "Active reconnaissance involves sending requests or probing the target system, making detection more likely.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are valid sources for OSINT?",
@@ -52,7 +56,8 @@
       "D": "Employee resumes"
     },
     "correct_answers": ["A", "C", "D"],
-    "explanation": "OSINT includes publicly available sources like Shodan, LinkedIn profiles, and social platforms."
+    "explanation": "OSINT includes publicly available sources like Shodan, LinkedIn profiles, and social platforms.",
+    "multiple_answers": true
   },
   {
     "question": "What is Google dorking used for?",
@@ -63,7 +68,8 @@
       "D": "Generating phishing emails"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Google dorking uses advanced search queries to uncover sensitive files and exposed web apps."
+    "explanation": "Google dorking uses advanced search queries to uncover sensitive files and exposed web apps.",
+    "multiple_answers": true
   },
   {
     "question": "Which port is commonly used for SSH?",
@@ -74,7 +80,8 @@
       "D": "3389"
     },
     "correct_answers": ["A"],
-    "explanation": "SSH typically operates on port 22 and is used for secure remote administration."
+    "explanation": "SSH typically operates on port 22 and is used for secure remote administration.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of banner grabbing?",
@@ -85,7 +92,8 @@
       "D": "Bypass firewall"
     },
     "correct_answers": ["A"],
-    "explanation": "Banner grabbing reveals software versions and service info from responses—useful for identifying vulnerabilities."
+    "explanation": "Banner grabbing reveals software versions and service info from responses—useful for identifying vulnerabilities.",
+    "multiple_answers": false
   },
   {
     "question": "Which of these are common banner grabbing tools?",
@@ -96,7 +104,8 @@
       "D": "Traceroute"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Netcat and Telnet allow manual connections to services and reading banners returned by those services."
+    "explanation": "Netcat and Telnet allow manual connections to services and reading banners returned by those services.",
+    "multiple_answers": true
   },
   {
     "question": "What is a vulnerability scanner used for?",
@@ -107,7 +116,8 @@
       "D": "Capture network traffic"
     },
     "correct_answers": ["A", "C"],
-    "explanation": "Vulnerability scanners automate scanning to find known security flaws across systems."
+    "explanation": "Vulnerability scanners automate scanning to find known security flaws across systems.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following tools are commonly used for network scanning?",
@@ -118,7 +128,8 @@
       "D": "Netcat"
     },
     "correct_answers": ["A", "B", "D"],
-    "explanation": "Nmap is a port scanner, Nessus is a vulnerability scanner, and Netcat can scan ports or open connections."
+    "explanation": "Nmap is a port scanner, Nessus is a vulnerability scanner, and Netcat can scan ports or open connections.",
+    "multiple_answers": true
   },
   {
     "question": "Which command can be used in Linux to check active network connections?",
@@ -129,7 +140,8 @@
       "D": "ifconfig"
     },
     "correct_answers": ["A"],
-    "explanation": "The `netstat` command displays current TCP/UDP connections and listening ports on the system."
+    "explanation": "The `netstat` command displays current TCP/UDP connections and listening ports on the system.",
+    "multiple_answers": false
   },
   {
     "question": "Which term describes an attacker who scans an environment without being noticed?",
@@ -140,7 +152,8 @@
       "D": "Passive attacker"
     },
     "correct_answers": ["D"],
-    "explanation": "A passive attacker gathers information quietly without interacting directly with the system to avoid detection."
+    "explanation": "A passive attacker gathers information quietly without interacting directly with the system to avoid detection.",
+    "multiple_answers": false
   },
   {
     "question": "What does the 'ping' command primarily test?",
@@ -151,7 +164,8 @@
       "D": "Firewall configuration"
     },
     "correct_answers": ["B"],
-    "explanation": "The `ping` command checks if a host is reachable and how long it takes to respond."
+    "explanation": "The `ping` command checks if a host is reachable and how long it takes to respond.",
+    "multiple_answers": false
   },
   {
     "question": "Which scan type is considered stealthy and sends only SYN packets?",
@@ -162,7 +176,8 @@
       "D": "ACK scan"
     },
     "correct_answers": ["C"],
-    "explanation": "SYN scans (also called half-open scans) send SYN packets and analyze the response without completing the TCP handshake."
+    "explanation": "SYN scans (also called half-open scans) send SYN packets and analyze the response without completing the TCP handshake.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following are active reconnaissance techniques?",
@@ -173,7 +188,8 @@
       "D": "WHOIS search"
     },
     "correct_answers": ["A", "B", "C"],
-    "explanation": "Active reconnaissance interacts directly with the target, including scanning, grabbing banners, and tracing routes."
+    "explanation": "Active reconnaissance interacts directly with the target, including scanning, grabbing banners, and tracing routes.",
+    "multiple_answers": true
   },
   {
     "question": "Which Nmap command performs OS detection?",
@@ -184,7 +200,8 @@
       "D": "nmap -A"
     },
     "correct_answers": ["B", "D"],
-    "explanation": "`-O` enables OS detection, and `-A` enables OS detection along with version detection, script scanning, and traceroute."
+    "explanation": "`-O` enables OS detection, and `-A` enables OS detection along with version detection, script scanning, and traceroute.",
+    "multiple_answers": true
   },
   {
     "question": "Which of the following tools is useful for sniffing network traffic?",
@@ -195,7 +212,8 @@
       "D": "Metasploit"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Wireshark and Tcpdump are packet analyzers that capture and analyze network traffic."
+    "explanation": "Wireshark and Tcpdump are packet analyzers that capture and analyze network traffic.",
+    "multiple_answers": true
   },
   {
     "question": "What does traceroute help identify?",
@@ -206,7 +224,8 @@
       "D": "Credentials over the wire"
     },
     "correct_answers": ["B"],
-    "explanation": "Traceroute shows the path packets take to reach a destination, helping map network topology."
+    "explanation": "Traceroute shows the path packets take to reach a destination, helping map network topology.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following actions best describes the enumeration process?",
@@ -217,7 +236,8 @@
       "D": "Flooding a target with traffic"
     },
     "correct_answers": ["B"],
-    "explanation": "Enumeration involves retrieving more detailed information like usernames, shares, and group memberships."
+    "explanation": "Enumeration involves retrieving more detailed information like usernames, shares, and group memberships.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is used to automate web application reconnaissance?",
@@ -228,7 +248,8 @@
       "D": "Aircrack-ng"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Burp Suite and Nikto scan web apps for vulnerabilities and misconfigurations."
+    "explanation": "Burp Suite and Nikto scan web apps for vulnerabilities and misconfigurations.",
+    "multiple_answers": true
   },
   {
     "question": "Which scan type checks for open UDP ports?",
@@ -239,7 +260,8 @@
       "D": "nmap -sT"
     },
     "correct_answers": ["A"],
-    "explanation": "`-sU` tells Nmap to perform a UDP scan, which checks for open UDP-based services."
+    "explanation": "`-sU` tells Nmap to perform a UDP scan, which checks for open UDP-based services.",
+    "multiple_answers": false
   },
   {
     "question": "Which Nmap switch enables service version detection?",
@@ -250,7 +272,8 @@
       "D": "-v"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "`-sV` enables version detection; `-A` includes version detection plus OS detection and more."
+    "explanation": "`-sV` enables version detection; `-A` includes version detection plus OS detection and more.",
+    "multiple_answers": true
   },
   {
     "question": "Which command shows the ARP cache in Windows?",
@@ -261,7 +284,8 @@
       "D": "route print"
     },
     "correct_answers": ["A"],
-    "explanation": "`arp -a` lists the ARP table that maps IP addresses to MAC addresses on the local network."
+    "explanation": "`arp -a` lists the ARP table that maps IP addresses to MAC addresses on the local network.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following identifies publicly exposed files and folders on a web server?",
@@ -272,7 +296,8 @@
       "D": "Nmap"
     },
     "correct_answers": ["A", "B"],
-    "explanation": "Gobuster brute-forces directories; Nikto checks for dangerous files and misconfigurations."
+    "explanation": "Gobuster brute-forces directories; Nikto checks for dangerous files and misconfigurations.",
+    "multiple_answers": true
   },
   {
     "question": "Which protocol is commonly exploited in enumeration?",
@@ -283,7 +308,8 @@
       "D": "HTTPS"
     },
     "correct_answers": ["A"],
-    "explanation": "SNMP provides detailed system information that can be enumerated if poorly configured."
+    "explanation": "SNMP provides detailed system information that can be enumerated if poorly configured.",
+    "multiple_answers": false
   },
   {
     "question": "Which Windows command displays NetBIOS name tables and sessions?",
@@ -294,7 +320,8 @@
       "D": "nslookup"
     },
     "correct_answers": ["A"],
-    "explanation": "`nbtstat` shows NetBIOS over TCP/IP information like name tables and active connections."
+    "explanation": "`nbtstat` shows NetBIOS over TCP/IP information like name tables and active connections.",
+    "multiple_answers": false
   },
   {
     "question": "What does the 'robots.txt' file typically contain?",
@@ -305,7 +332,8 @@
       "D": "SQL database dumps"
     },
     "correct_answers": ["C"],
-    "explanation": "robots.txt tells search engines which directories to avoid indexing, often revealing sensitive paths."
+    "explanation": "robots.txt tells search engines which directories to avoid indexing, often revealing sensitive paths.",
+    "multiple_answers": false
   },
   {
     "question": "Which command can help map out open ports on a network range?",
@@ -316,7 +344,8 @@
       "D": "tracert 192.168.1.1"
     },
     "correct_answers": ["A"],
-    "explanation": "The Nmap command scans all 65535 TCP ports on the entire subnet."
+    "explanation": "The Nmap command scans all 65535 TCP ports on the entire subnet.",
+    "multiple_answers": false
   },
   {
     "question": "What is the main risk of using active scanning techniques?",
@@ -327,6 +356,7 @@
       "D": "Loss of internet access"
     },
     "correct_answers": ["B"],
-    "explanation": "Active scanning sends packets to targets, which can trigger alerts from intrusion detection systems."
+    "explanation": "Active scanning sends packets to targets, which can trigger alerts from intrusion detection systems.",
+    "multiple_answers": false
   }
 ]

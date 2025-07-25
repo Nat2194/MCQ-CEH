@@ -1,0 +1,584 @@
+[
+  {
+    "question": "What is the purpose of .htaccess files on Apache web servers?",
+    "options": {
+      "A": "To configure user login pages",
+      "B": "To control directory-level server configurations",
+      "C": "To set firewall rules",
+      "D": "To disable cookies"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": ".htaccess files allow directory-specific configuration for access control, redirects, and security policies.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following HTTP status codes might indicate a server misconfiguration?",
+    "options": {
+      "A": "200 OK",
+      "B": "403 Forbidden",
+      "C": "500 Internal Server Error",
+      "D": "301 Moved Permanently"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "A 500 Internal Server Error often indicates improper code execution or server misconfiguration.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following is a technique used to detect a vulnerable file upload feature?",
+    "options": {
+      "A": "Try uploading a PHP shell disguised as an image",
+      "B": "Test for long URL paths",
+      "C": "Conduct DNS zone transfers",
+      "D": "Run a DoS attack"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Uploading a disguised PHP shell can reveal whether the server improperly validates or executes uploaded files.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which headers can be set to mitigate XSS and Clickjacking attacks?",
+    "options": {
+      "A": "X-Frame-Options",
+      "B": "Content-Security-Policy",
+      "C": "X-XSS-Protection",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All listed headers help secure web applications by controlling how content is rendered or executed.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following scenarios might indicate an LFI (Local File Inclusion) vulnerability?",
+    "options": {
+      "A": "The application loads unexpected system files",
+      "B": "JavaScript is injected into input fields",
+      "C": "A login page bypass works",
+      "D": "Cookies are not marked as secure"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "LFI vulnerabilities occur when local files (like /etc/passwd) can be loaded via user-controlled input.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the main purpose of log poisoning in web server attacks?",
+    "options": {
+      "A": "To corrupt application data",
+      "B": "To hide attacker activity",
+      "C": "To inject code that will be executed later",
+      "D": "To prevent server restarts"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Log poisoning involves inserting executable code into logs that may later be included and executed by the application.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the primary danger of leaving default web server pages enabled?",
+    "options": {
+      "A": "They improve SEO ranking",
+      "B": "They expose server version and configuration details",
+      "C": "They load faster than custom pages",
+      "D": "They redirect traffic to HTTPS"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Default pages often contain metadata about the server software and version, aiding fingerprinting.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which port is typically associated with HTTP traffic?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Port 80 is the default port for unencrypted HTTP traffic.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which port is typically used for HTTPS on secure web servers?",
+    "options": {
+      "A": "80",
+      "B": "443",
+      "C": "21",
+      "D": "25"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "HTTPS traffic is encrypted and transmitted over port 443 by default.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following is a common post-exploitation technique on a compromised web server?",
+    "options": {
+      "A": "Privilege escalation",
+      "B": "Patching the server",
+      "C": "Enabling 2FA",
+      "D": "Changing favicon.ico"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "After gaining access, attackers often escalate privileges to gain full control over the system.",
+    "multiple_answers": false
+  },
+  {
+    "question": "How does a reverse proxy improve web server security?",
+    "options": {
+      "A": "By encrypting the entire OS",
+      "B": "By analyzing SSL certificates",
+      "C": "By hiding the origin server and filtering malicious traffic",
+      "D": "By deleting access logs"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Reverse proxies can mask the identity of the backend server and apply traffic filtering and WAF policies.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tool can be used to identify technologies and frameworks used by a web server?",
+    "options": {
+      "A": "WhatWeb",
+      "B": "WPScan",
+      "C": "Dirb",
+      "D": "SQLmap"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "WhatWeb fingerprints websites and identifies technologies like server types, CMSs, and frameworks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following would be the BEST indicator that a server is vulnerable to Shellshock?",
+    "options": {
+      "A": "The server uses outdated PHP",
+      "B": "The server responds to crafted HTTP headers with Bash execution",
+      "C": "The server uses SMBv1",
+      "D": "The server returns verbose errors"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Shellshock exploits a flaw in Bash parsing, often via HTTP headers in CGI scripts.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which file extension is often targeted for upload when exploiting a vulnerable web server?",
+    "options": {
+      "A": ".php",
+      "B": ".docx",
+      "C": ".jpg",
+      "D": ".txt"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Attackers often try to upload malicious .php files to execute arbitrary commands on the server.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What can result from unrestricted file upload vulnerabilities?",
+    "options": {
+      "A": "Denial of service",
+      "B": "Remote code execution",
+      "C": "Defacement",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Improperly validated uploads can lead to RCE, DoS, or defacement depending on attacker intent.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which scripting language is commonly used in server-side attacks involving web shells?",
+    "options": {
+      "A": "Python",
+      "B": "Java",
+      "C": "PHP",
+      "D": "Ruby"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "PHP is widely supported by web servers and often targeted in web shell attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which technique allows an attacker to identify software running on a web server?",
+    "options": {
+      "A": "Banner grabbing",
+      "B": "Cross-site scripting",
+      "C": "Brute force attack",
+      "D": "ARP poisoning"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Banner grabbing extracts service info from headers or error messages, aiding in reconnaissance.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Why should the TRACE HTTP method be disabled?",
+    "options": {
+      "A": "It allows XSS attacks via reflected input",
+      "B": "It allows SQL injection",
+      "C": "It logs all user activity",
+      "D": "It causes denial of service"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "TRACE can reflect headers back to the user, enabling Cross-Site Tracing (XST) attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What risk does verbose error reporting pose on a web server?",
+    "options": {
+      "A": "It increases page load time",
+      "B": "It reveals system paths, configurations, and code structure",
+      "C": "It encrypts the website",
+      "D": "It disables firewalls"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Verbose errors may expose sensitive details useful for exploiting vulnerabilities.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following is the most appropriate response when a critical web server vulnerability is identified?",
+    "options": {
+      "A": "Wait for a weekly patch cycle",
+      "B": "Notify the user base",
+      "C": "Apply the patch or mitigation immediately",
+      "D": "Disable logging"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Immediate action (patching or mitigation) is essential to reduce exposure to known exploits.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are effective countermeasures to prevent web server attacks?",
+    "options": {
+      "A": "Disabling unused services",
+      "B": "Regular patching",
+      "C": "Using default credentials",
+      "D": "Employing web application firewalls (WAF)"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Disabling services, patching regularly, and deploying WAFs are proactive defenses. Using default creds is a risk.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which types of information can be gathered through banner grabbing?",
+    "options": {
+      "A": "Operating system details",
+      "B": "Web server version",
+      "C": "Available usernames",
+      "D": "Supported protocols"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Banner grabbing often reveals server type, version, and protocol support, helping attackers plan targeted exploits.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the main risk of enabling server-side includes (SSI) on a web server?",
+    "options": {
+      "A": "Allows file upload",
+      "B": "Enables execution of unauthorized scripts",
+      "C": "Triggers XSS attacks",
+      "D": "Exposes directory structure"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "SSI can allow attackers to execute arbitrary scripts or commands if not properly secured.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following actions can help reduce the attack surface of a web server?",
+    "options": {
+      "A": "Disabling directory listing",
+      "B": "Running only necessary modules",
+      "C": "Installing multiple server types",
+      "D": "Minimizing external error messages"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Reducing modules, disabling unnecessary features, and suppressing error details limit what attackers can exploit.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following are signs a web server has been compromised?",
+    "options": {
+      "A": "Unexpected open ports",
+      "B": "Presence of unfamiliar processes",
+      "C": "Disabled login page",
+      "D": "Modified web content"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Changes to server behavior, unknown processes, and unauthorized defacement indicate compromise.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following services are common entry points for web server attacks?",
+    "options": {
+      "A": "HTTP",
+      "B": "HTTPS",
+      "C": "SSH",
+      "D": "SMTP"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Web servers expose HTTP/HTTPS. SSH and SMTP can be attack surfaces too, but not as directly tied to web server compromise.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of the following attacks are commonly used against web servers?",
+    "options": {
+      "A": "Path Traversal",
+      "B": "Command Injection",
+      "C": "ARP Spoofing",
+      "D": "Remote File Inclusion"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "These target web server vulnerabilities directly. ARP spoofing targets network infrastructure, not the server layer.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What does a 403 HTTP status code indicate?",
+    "options": {
+      "A": "Resource not found",
+      "B": "Access is forbidden",
+      "C": "Server error occurred",
+      "D": "Unauthorized access attempt"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "403 means the server understands the request but refuses to authorize it — typically due to permission issues.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following methods can be used to upload web shells to a vulnerable server?",
+    "options": {
+      "A": "Exploiting unrestricted file uploads",
+      "B": "Abusing RFI vulnerabilities",
+      "C": "Performing cross-site scripting",
+      "D": "SQL Injection with file-write capabilities"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Unrestricted uploads, RFI, and SQLi with file privileges can all be used to upload and execute web shells.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tools are used for fingerprinting web servers?",
+    "options": {
+      "A": "WhatWeb",
+      "B": "Nikto",
+      "C": "Hydra",
+      "D": "Netcat"
+    },
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "WhatWeb and Nikto are excellent for identifying server software and versions. Hydra is for brute force. Netcat is general-purpose.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which of these can help detect an attempted defacement of a web server?",
+    "options": {
+      "A": "Website content monitoring tools",
+      "B": "Checksum verification",
+      "C": "Syslog parsing",
+      "D": "NTP synchronization"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Content monitors and hash checks can detect unauthorized changes; logs provide evidence. NTP is unrelated.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the most likely reason attackers exploit LFI vulnerabilities?",
+    "options": {
+      "A": "To perform phishing attacks",
+      "B": "To access sensitive system files",
+      "C": "To redirect users to fake websites",
+      "D": "To delete admin accounts"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "LFI (Local File Inclusion) allows access to local files on the server, such as configuration or password files.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which web server misconfiguration can lead to full path disclosure?",
+    "options": {
+      "A": "Verbose error messages",
+      "B": "Weak password policies",
+      "C": "Session ID prediction",
+      "D": "XSS filters disabled"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Verbose errors often reveal internal paths and code structures that help attackers tailor exploits.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following server-side components are attractive targets for attackers?",
+    "options": {
+      "A": "CMS platforms like WordPress or Joomla",
+      "B": "Database connection scripts",
+      "C": "CSS stylesheets",
+      "D": "Config files"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "CMSes, config files, and DB scripts contain sensitive logic and credentials. CSS doesn’t pose major risk.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Why is it important to disable detailed error messages on production web servers?",
+    "options": {
+      "A": "To improve SEO performance",
+      "B": "To prevent data exfiltration",
+      "C": "To reduce information leakage",
+      "D": "To disable server logging"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Detailed error messages can leak stack traces, file paths, and version info useful for exploitation.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the purpose of hiding the 'X-Powered-By' HTTP header?",
+    "options": {
+      "A": "To prevent DoS attacks",
+      "B": "To limit technology fingerprinting",
+      "C": "To secure SSL certificates",
+      "D": "To redirect search engines"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "This header can expose the technology stack (e.g., PHP, ASP.NET), helping attackers identify exploitable systems.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following web server security issues can lead to authentication bypass?",
+    "options": {
+      "A": "Misconfigured access control lists",
+      "B": "Unvalidated input in login forms",
+      "C": "Verbose HTTP error messages",
+      "D": "Session ID reuse"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "ACL misconfigurations, input validation flaws, and session vulnerabilities can all bypass authentication mechanisms.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which tool is used to fuzz input fields for command injection on web servers?",
+    "options": {
+      "A": "WFuzz",
+      "B": "Dirbuster",
+      "C": "Gobuster",
+      "D": "Sqlmap"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "WFuzz is used to send a large volume of test payloads to find input-based vulnerabilities like command injection.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of these are symptoms of a server under a web-based DoS attack?",
+    "options": {
+      "A": "Excessive 503 errors",
+      "B": "Slow page load times",
+      "C": "High CPU and memory usage",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Denial-of-service attacks can lead to resource exhaustion, service errors, and unresponsiveness.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following security measures protect against web server fingerprinting?",
+    "options": {
+      "A": "Disabling banner display",
+      "B": "Obfuscating HTTP headers",
+      "C": "Changing default ports",
+      "D": "Enabling FTP access"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Suppressing banners, modifying headers, and changing ports make fingerprinting harder. FTP access adds risk.",
+    "multiple_answers": true
+  }
+]

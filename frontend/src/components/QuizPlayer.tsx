@@ -6,6 +6,7 @@ interface QuizQuestion {
   options: Record<string, string>;
   correct_answers: string[];
   explanation?: string;
+  multiple_answers?: boolean;
 }
 
 interface Quiz {
@@ -33,6 +34,7 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
     setAnswers((prev) => {
       const currentAnswers = prev[index] || [];
       const isSelected = currentAnswers.includes(option);
+      const isMultiple = quiz.data[index]?.multiple_answers;
 
       if (isSelected) {
         // Remove the option if it's already selected
@@ -41,7 +43,14 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
           [index]: currentAnswers.filter((a) => a !== option),
         };
       } else {
-        // Add the option if it's not selected
+        // For single-answer questions, replace previous selection
+        if (!isMultiple && currentAnswers.length > 0) {
+          return {
+            ...prev,
+            [index]: [option],
+          };
+        }
+        // For multiple-answer questions, add to selection
         return {
           ...prev,
           [index]: [...currentAnswers, option],
@@ -271,27 +280,61 @@ export default function QuizPlayer({ quiz, onExit }: QuizPlayerProps) {
         <h2 className="text-2xl font-bold mb-6 text-white text-center">
           {quiz.title}
         </h2>
+        <p className="text-gray-400 mb-6">
+          {quiz.data.some((q) => q.multiple_answers)
+            ? "Questions may have single or multiple correct answers"
+            : "All questions have single correct answers"}
+        </p>
 
         {quiz.data.map((q, idx) => (
           <div
             key={idx}
             className="bg-gray-800 border border-gray-700 p-6 rounded-lg"
           >
-            <p className="font-semibold text-white mb-4">
-              Question {idx + 1}: {q.question}
-            </p>
+            <div className="flex justify-between items-start mb-4">
+              <p className="font-semibold text-white">
+                Question {idx + 1}: {q.question}
+              </p>
+              <span
+                className={`text-xs px-2 py-1 rounded-full ${
+                  q.multiple_answers
+                    ? "bg-purple-500/20 text-purple-400"
+                    : "bg-blue-500/20 text-blue-400"
+                }`}
+              >
+                {q.multiple_answers ? "Multiple answers" : "Single answer"}
+              </span>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {Object.entries(q.options).map(([key, val]) => (
                 <label
                   key={key}
-                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
+                  className={`flex items-center space-x-3 p-3 rounded-lg transition-colors cursor-pointer ${
+                    (answers[idx] || []).includes(key)
+                      ? q.multiple_answers
+                        ? "bg-purple-500/10 border border-purple-500/30"
+                        : "bg-blue-500/10 border border-blue-500/30"
+                      : "hover:bg-gray-700"
+                  }`}
                 >
-                  <input
-                    type="checkbox"
-                    checked={(answers[idx] || []).includes(key)}
-                    onChange={() => handleSelect(idx, key)}
-                    className="w-4 h-4 text-blue-500 bg-gray-700 border-gray-600 rounded focus:ring-blue-500 focus:ring-2"
-                  />
+                  {q.multiple_answers ? (
+                    // Checkbox for multiple answers
+                    <input
+                      type="checkbox"
+                      checked={(answers[idx] || []).includes(key)}
+                      onChange={() => handleSelect(idx, key)}
+                      className="rounded w-4 h-4 accent-purple-600 bg-gray-700 border-gray-600 focus:ring-purple-500 focus:ring-2"
+                    />
+                  ) : (
+                    // Radio button for single answer
+                    <input
+                      type="radio"
+                      name={`question-${idx}`}
+                      checked={(answers[idx] || []).includes(key)}
+                      onChange={() => handleSelect(idx, key)}
+                      className="rounded-full w-4 h-4 accent-blue-500 bg-gray-700 border-gray-600 focus:ring-blue-500 focus:ring-2"
+                    />
+                  )}
                   <span className="text-gray-300">
                     <span className="font-medium text-gray-200">{key}.</span>{" "}
                     {val}

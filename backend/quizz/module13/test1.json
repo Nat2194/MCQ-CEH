@@ -1,0 +1,566 @@
+[
+  {
+    "question": "What is the primary goal of hacking a web server?",
+    "options": {
+      "A": "To deface a website",
+      "B": "To bypass firewalls",
+      "C": "To gain unauthorized access to sensitive data or system-level control",
+      "D": "To perform DDoS attacks"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The main goal is typically to gain unauthorized access for data theft or privilege escalation, not just vandalism.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following tools are commonly used to scan for web server vulnerabilities?",
+    "options": {
+      "A": "Nikto",
+      "B": "Burp Suite",
+      "C": "Nessus",
+      "D": "Wireshark"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Nikto scans web servers, Burp Suite is a proxy for testing, and Nessus scans for vulnerabilities. Wireshark is a packet sniffer.",
+    "multiple_answers": true
+  },
+  {
+    "question": "Which HTTP method is often abused to upload malicious files to a vulnerable web server?",
+    "options": {
+      "A": "GET",
+      "B": "HEAD",
+      "C": "PUT",
+      "D": "TRACE"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "If improperly enabled, the PUT method allows attackers to upload arbitrary files to the server.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can help prevent web server fingerprinting?",
+    "options": {
+      "A": "Disabling server version banners",
+      "B": "Using custom error messages",
+      "C": "Obfuscating HTTP headers",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All these techniques can make it harder for attackers to determine the type/version of the web server.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which vulnerability allows attackers to execute arbitrary code on a web server via input fields?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "Command Injection",
+      "C": "Cross-Site Scripting",
+      "D": "Path Traversal"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Command injection allows attackers to run OS-level commands through vulnerable input fields.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the role of a web application firewall (WAF) in securing a web server?",
+    "options": {
+      "A": "Encrypts stored passwords",
+      "B": "Filters malicious HTTP requests",
+      "C": "Scans the network for threats",
+      "D": "Backs up server data"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "WAFs sit between users and servers to filter malicious input and protect against web-based attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which attack can be used to read sensitive files like '/etc/passwd' on a vulnerable server?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "Path Traversal",
+      "C": "Command Injection",
+      "D": "Clickjacking"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Path traversal manipulates file paths to access directories and files outside the web root.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following servers are commonly targeted by attackers?",
+    "options": {
+      "A": "Apache",
+      "B": "Nginx",
+      "C": "Microsoft IIS",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All major web server platforms are common targets, as each has had historical vulnerabilities.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which type of vulnerability exploits misconfigured directory permissions on a web server?",
+    "options": {
+      "A": "Directory Traversal",
+      "B": "Unrestricted File Upload",
+      "C": "Directory Listing",
+      "D": "Broken Authentication"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Directory listing can reveal the contents of directories if access is not properly restricted.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What does the 'Server' HTTP response header reveal?",
+    "options": {
+      "A": "Client IP address",
+      "B": "Server operating system",
+      "C": "Web server software and version",
+      "D": "SSL certificate details"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The 'Server' header typically exposes the web server software and its version, aiding fingerprinting.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can help harden a web server?",
+    "options": {
+      "A": "Disabling unused modules",
+      "B": "Applying security patches",
+      "C": "Disabling directory listing",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All listed practices reduce attack surface and mitigate vulnerabilities.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is a common sign of a defaced web server?",
+    "options": {
+      "A": "Webpage displays unauthorized content or political messages",
+      "B": "Increased server load",
+      "C": "Redirect to HTTPS",
+      "D": "Backup files available for download"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Defacement often replaces or alters site content with malicious or unauthorized material.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of these tools is primarily used for web server vulnerability assessment?",
+    "options": {
+      "A": "Burp Suite",
+      "B": "Nikto",
+      "C": "Nmap",
+      "D": "Aircrack-ng"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Nikto is a specialized scanner for identifying web server misconfigurations and vulnerabilities.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following HTTP methods should typically be disabled on production servers?",
+    "options": {
+      "A": "OPTIONS",
+      "B": "TRACE",
+      "C": "PUT",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "These methods are often unnecessary and can introduce security risks if enabled in production.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which vulnerability allows injecting scripts into a web server's HTML output?",
+    "options": {
+      "A": "SQL Injection",
+      "B": "XSS (Cross-Site Scripting)",
+      "C": "Command Injection",
+      "D": "CSRF"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "XSS lets attackers embed malicious scripts into content served to other users.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the primary goal of banner grabbing?",
+    "options": {
+      "A": "Obtain valid login credentials",
+      "B": "Detect open ports",
+      "C": "Identify software and version information",
+      "D": "Establish a reverse shell"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Banner grabbing helps identify server software and versions, useful for vulnerability mapping.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which configuration setting improves web server security?",
+    "options": {
+      "A": "Enabling auto-indexing",
+      "B": "Allowing default credentials",
+      "C": "Limiting access with .htaccess",
+      "D": "Keeping outdated modules active"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": ".htaccess can enforce access controls and restrict sensitive areas.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following can lead to web server exploitation if misconfigured?",
+    "options": {
+      "A": "Server-side includes (SSI)",
+      "B": "Verbose error messages",
+      "C": "Default admin interfaces exposed",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All these misconfigurations can leak information or introduce attack vectors.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which technique is used to redirect a visitor from a compromised web server to a malicious site?",
+    "options": {
+      "A": "HTTP response injection",
+      "B": "DNS cache poisoning",
+      "C": "iFrame injection",
+      "D": "SQL error generation"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Attackers often use hidden iFrames to silently redirect users to malicious sites.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is a common goal of an attacker after exploiting a web server?",
+    "options": {
+      "A": "Install ransomware on the website’s homepage",
+      "B": "Use the server to launch further internal attacks",
+      "C": "Convert the server to an FTP host",
+      "D": "Replace the SSL certificate"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Compromised servers are often used as footholds for pivoting to other systems inside the network.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following are common causes of web server vulnerabilities?",
+    "options": {
+      "A": "Unpatched software",
+      "B": "Default configurations",
+      "C": "Outdated plugins or modules",
+      "D": "Brute-forced switches"
+    },
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Web servers are often vulnerable due to outdated software, default settings, or unmaintained third-party modules.",
+    "multiple_answers": true
+  },
+  {
+    "question": "What is the primary threat associated with allowing directory listing?",
+    "options": {
+      "A": "It reveals server memory usage",
+      "B": "It provides internal IP addresses",
+      "C": "It exposes file names and structures to attackers",
+      "D": "It enables session hijacking"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Directory listing reveals files/folders, which can expose sensitive data or give clues for further exploitation.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which Metasploit module type is typically used to exploit a web server vulnerability?",
+    "options": {
+      "A": "Exploit",
+      "B": "Payload",
+      "C": "Auxiliary",
+      "D": "Encoder"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Metasploit uses 'exploit' modules to trigger known vulnerabilities in targets like web servers.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following web server vulnerabilities can lead to remote code execution?",
+    "options": {
+      "A": "Command injection",
+      "B": "File upload vulnerabilities",
+      "C": "Directory traversal",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All listed vulnerabilities can lead to RCE if improperly handled by the web server.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which HTTP method is typically used to test for Cross-Site Tracing (XST) vulnerability?",
+    "options": {
+      "A": "TRACE",
+      "B": "OPTIONS",
+      "C": "GET",
+      "D": "CONNECT"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The TRACE method can echo user input, potentially exposing sensitive data in XST attacks.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which technique involves injecting HTML or JavaScript into vulnerable web applications?",
+    "options": {
+      "A": "XSS",
+      "B": "SQL Injection",
+      "C": "CRLF Injection",
+      "D": "Command Injection"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Cross-Site Scripting (XSS) allows attackers to inject client-side scripts into web pages.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following is an indicator of a successful web server compromise?",
+    "options": {
+      "A": "Web shell present in file system",
+      "B": "Strange outbound connections from server",
+      "C": "Unauthorized user accounts created",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All are signs that a web server has been compromised and is potentially under attacker control.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which tool is best for identifying web server misconfigurations?",
+    "options": {
+      "A": "Nikto",
+      "B": "Wireshark",
+      "C": "Aircrack-ng",
+      "D": "Nmap"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Nikto specializes in scanning for web server misconfigurations, outdated components, and dangerous files.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is the function of 'robots.txt' in a web server?",
+    "options": {
+      "A": "It limits HTTP connections per user",
+      "B": "It specifies directories for search engines to avoid indexing",
+      "C": "It blocks DDoS traffic",
+      "D": "It secures admin login pages"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "'robots.txt' suggests to search engines which directories should not be indexed—can leak sensitive paths.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which encoding technique is often used to bypass input filters on web servers?",
+    "options": {
+      "A": "Base64",
+      "B": "Hexadecimal",
+      "C": "URL encoding",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "All listed encoding methods are used to obfuscate payloads and bypass weak input validation mechanisms.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What does the tool 'Wapiti' do?",
+    "options": {
+      "A": "Cracks WPA2 passwords",
+      "B": "Sniffs traffic",
+      "C": "Audits web applications for vulnerabilities",
+      "D": "Performs ARP poisoning"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Wapiti is a web application vulnerability scanner that can detect XSS, file disclosure, and more.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is a common vulnerability when default credentials are left unchanged on web servers?",
+    "options": {
+      "A": "Privilege escalation",
+      "B": "Authentication bypass",
+      "C": "Denial of Service",
+      "D": "XSS"
+    },
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Default credentials allow attackers to easily log in, effectively bypassing proper authentication controls.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following logs should be regularly monitored on web servers?",
+    "options": {
+      "A": "Access logs",
+      "B": "Error logs",
+      "C": "Authentication logs",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Regular monitoring of all logs helps detect suspicious behavior, failed login attempts, and exploitation attempts.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which server-side script is often targeted for RFI and LFI attacks?",
+    "options": {
+      "A": "PHP",
+      "B": "JavaScript",
+      "C": "CSS",
+      "D": "SQL"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "PHP is vulnerable to Local and Remote File Inclusion when file inputs are not properly validated.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which configuration change strengthens the security of Apache web servers?",
+    "options": {
+      "A": "Disable directory listing",
+      "B": "Enable TRACE method",
+      "C": "Set 'ServerTokens Full'",
+      "D": "Allow default .htaccess everywhere"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Disabling directory listing prevents attackers from browsing directories and discovering exploitable files.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which web shell gives attackers remote command execution via a web interface?",
+    "options": {
+      "A": "C99",
+      "B": "Meterpreter",
+      "C": "Aircrack-ng",
+      "D": "Ettercap"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "C99 is a PHP-based web shell allowing remote execution, file browsing, and command control via a browser.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which of the following is a sign of a vulnerable CMS installation?",
+    "options": {
+      "A": "Outdated plugins or themes",
+      "B": "Open access to wp-admin",
+      "C": "Known CVEs unpatched",
+      "D": "All of the above"
+    },
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Outdated CMS components and exposed admin interfaces are common targets for attackers.",
+    "multiple_answers": false
+  },
+  {
+    "question": "Which HTTP response code could indicate directory listing is enabled?",
+    "options": {
+      "A": "403 Forbidden",
+      "B": "404 Not Found",
+      "C": "200 OK with directory contents",
+      "D": "500 Internal Server Error"
+    },
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "A 200 OK response with HTML showing file listings is a telltale sign that directory listing is active.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What does an attacker typically do after uploading a web shell?",
+    "options": {
+      "A": "Exploit the shell to run system commands",
+      "B": "Start brute forcing admin accounts",
+      "C": "Begin phishing campaigns",
+      "D": "Use rainbow tables"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Web shells give command-line access via HTTP, allowing full control over the server’s OS if privileges permit.",
+    "multiple_answers": false
+  },
+  {
+    "question": "What is one of the first steps in attacking a web server?",
+    "options": {
+      "A": "Perform service enumeration and banner grabbing",
+      "B": "Upload ransomware",
+      "C": "Modify DNS records",
+      "D": "Launch a SYN flood"
+    },
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Before attacking, an attacker must gather information—enumerating services and grabbing banners reveals server type/version.",
+    "multiple_answers": false
+  }
+]

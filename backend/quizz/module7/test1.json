@@ -7,8 +7,11 @@
       "C": "To encrypt files for ransom",
       "D": "To overload network bandwidth"
     },
-    "correct_answers": ["A"],
-    "explanation": "A Trojan horse appears to perform a legitimate function but actually executes malicious activities in the background."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A Trojan horse appears to perform a legitimate function but actually executes malicious activities in the background.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware replicates itself to spread to other systems?",
@@ -18,8 +21,11 @@
       "C": "Keylogger",
       "D": "Rootkit"
     },
-    "correct_answers": ["A"],
-    "explanation": "A worm is a self-replicating program that spreads across systems and networks without user intervention."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A worm is a self-replicating program that spreads across systems and networks without user intervention.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware is designed to provide unauthorized remote access to a system?",
@@ -29,8 +35,11 @@
       "C": "Spyware",
       "D": "Logic bomb"
     },
-    "correct_answers": ["A"],
-    "explanation": "RATs are designed to allow an attacker full control over a compromised machine, often stealthily."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "RATs are designed to allow an attacker full control over a compromised machine, often stealthily.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware hides its presence by modifying the operating system or using stealth techniques?",
@@ -40,8 +49,11 @@
       "C": "Spyware",
       "D": "Ransomware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Rootkits are designed to remain hidden and conceal their presence and the presence of other malware."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Rootkits are designed to remain hidden and conceal their presence and the presence of other malware.",
+    "multiple_answers": false
   },
   {
     "question": "What does ransomware typically do once it infects a system?",
@@ -51,8 +63,11 @@
       "C": "Hijacks browser traffic",
       "D": "Captures screenshots"
     },
-    "correct_answers": ["A"],
-    "explanation": "Ransomware encrypts files and demands a ransom from the user to restore access."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Ransomware encrypts files and demands a ransom from the user to restore access.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware records everything a user types on their keyboard?",
@@ -62,8 +77,11 @@
       "C": "Backdoor",
       "D": "Rootkit"
     },
-    "correct_answers": ["A"],
-    "explanation": "Keyloggers track and log keystrokes to capture sensitive information such as passwords and personal data."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Keyloggers track and log keystrokes to capture sensitive information such as passwords and personal data.",
+    "multiple_answers": false
   },
   {
     "question": "What is a logic bomb?",
@@ -73,8 +91,11 @@
       "C": "Adware bundled with software",
       "D": "A hardware-based attack"
     },
-    "correct_answers": ["A"],
-    "explanation": "A logic bomb is a malicious code that executes when predefined conditions are met, such as a date or action."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A logic bomb is a malicious code that executes when predefined conditions are met, such as a date or action.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware is primarily used to collect user data without consent?",
@@ -84,8 +105,11 @@
       "C": "Ransomware",
       "D": "Exploit kit"
     },
-    "correct_answers": ["A"],
-    "explanation": "Spyware collects information from users without their knowledge, often for advertising or identity theft."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Spyware collects information from users without their knowledge, often for advertising or identity theft.",
+    "multiple_answers": false
   },
   {
     "question": "Which file format is most commonly used to deliver malware via email?",
@@ -95,8 +119,11 @@
       "C": ".avi",
       "D": ".txt"
     },
-    "correct_answers": ["A"],
-    "explanation": "Office documents with embedded macros are commonly used to deliver malware via phishing emails."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Office documents with embedded macros are commonly used to deliver malware via phishing emails.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is commonly used to create and manage malware payloads?",
@@ -106,8 +133,11 @@
       "C": "Nikto",
       "D": "Snort"
     },
-    "correct_answers": ["A"],
-    "explanation": "msfvenom is part of Metasploit and is used to generate and encode payloads, including malware."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "msfvenom is part of Metasploit and is used to generate and encode payloads, including malware.",
+    "multiple_answers": false
   },
   {
     "question": "What is the role of a dropper in malware deployment?",
@@ -117,8 +147,11 @@
       "C": "To delete all data",
       "D": "To infect USB devices"
     },
-    "correct_answers": ["A"],
-    "explanation": "A dropper is a small program designed to deliver and execute the actual malicious payload."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A dropper is a small program designed to deliver and execute the actual malicious payload.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware is often bundled with free software and shows unwanted ads?",
@@ -128,8 +161,11 @@
       "C": "Keylogger",
       "D": "Worm"
     },
-    "correct_answers": ["A"],
-    "explanation": "Adware is often installed alongside freeware and displays intrusive advertisements."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Adware is often installed alongside freeware and displays intrusive advertisements.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following can help detect malware based on file behavior and system changes?",
@@ -139,8 +175,11 @@
       "C": "Hash comparison",
       "D": "Traceroute"
     },
-    "correct_answers": ["A"],
-    "explanation": "Heuristic analysis identifies malware by analyzing behaviors and characteristics rather than signatures."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Heuristic analysis identifies malware by analyzing behaviors and characteristics rather than signatures.",
+    "multiple_answers": false
   },
   {
     "question": "What is polymorphic malware?",
@@ -150,8 +189,11 @@
       "C": "Malware that targets hardware",
       "D": "Malware that only runs once"
     },
-    "correct_answers": ["A"],
-    "explanation": "Polymorphic malware continuously changes its code to avoid signature-based detection systems."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Polymorphic malware continuously changes its code to avoid signature-based detection systems.",
+    "multiple_answers": false
   },
   {
     "question": "What is the primary use of the PEiD tool in malware analysis?",
@@ -161,8 +203,11 @@
       "C": "Scan email headers",
       "D": "Display file permissions"
     },
-    "correct_answers": ["A"],
-    "explanation": "PEiD detects packers, cryptors, and compilers in executable files to aid in malware reverse engineering."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "PEiD detects packers, cryptors, and compilers in executable files to aid in malware reverse engineering.",
+    "multiple_answers": false
   },
   {
     "question": "Which technique is used by malware to avoid execution in virtual environments?",
@@ -172,8 +217,11 @@
       "C": "Obfuscation",
       "D": "Keylogging"
     },
-    "correct_answers": ["A"],
-    "explanation": "Sandbox evasion techniques detect if malware is running in a virtual or test environment and halt execution to avoid analysis."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Sandbox evasion techniques detect if malware is running in a virtual or test environment and halt execution to avoid analysis.",
+    "multiple_answers": false
   },
   {
     "question": "What is the goal of a botnet in malware threats?",
@@ -183,8 +231,11 @@
       "C": "To prevent web browsing",
       "D": "To remove all system logs"
     },
-    "correct_answers": ["A"],
-    "explanation": "Botnets are networks of infected machines controlled remotely to launch large-scale attacks such as DDoS."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Botnets are networks of infected machines controlled remotely to launch large-scale attacks such as DDoS.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware analysis technique involves executing malware in a controlled environment?",
@@ -194,8 +245,11 @@
       "C": "Code review",
       "D": "Fingerprinting"
     },
-    "correct_answers": ["A"],
-    "explanation": "Dynamic analysis involves running the malware in a sandbox to observe its behavior and actions."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Dynamic analysis involves running the malware in a sandbox to observe its behavior and actions.",
+    "multiple_answers": false
   },
   {
     "question": "Which file type is often used to hide malicious macros?",
@@ -205,8 +259,11 @@
       "C": ".html",
       "D": ".exe"
     },
-    "correct_answers": ["A"],
-    "explanation": ".xlsm is a macro-enabled Excel file that can be used to deliver malicious macros in phishing attacks."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": ".xlsm is a macro-enabled Excel file that can be used to deliver malicious macros in phishing attacks.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware hides in legitimate applications and activates under specific conditions?",
@@ -216,8 +273,11 @@
       "C": "Backdoor",
       "D": "Spyware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Logic bombs stay dormant until specific conditions are met (like a date or user action), then trigger malicious behavior."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Logic bombs stay dormant until specific conditions are met (like a date or user action), then trigger malicious behavior.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of packers in malware?",
@@ -227,8 +287,11 @@
       "C": "To prevent antivirus updates",
       "D": "To scan for open ports"
     },
-    "correct_answers": ["A"],
-    "explanation": "Packers compress and obfuscate executable code, making malware harder to detect and analyze."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Packers compress and obfuscate executable code, making malware harder to detect and analyze.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware technique alters its signature with each infection?",
@@ -238,8 +301,11 @@
       "C": "Sandboxing",
       "D": "Tunneling"
     },
-    "correct_answers": ["A"],
-    "explanation": "Polymorphic malware changes its code structure during replication, evading signature-based detection."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Polymorphic malware changes its code structure during replication, evading signature-based detection.",
+    "multiple_answers": false
   },
   {
     "question": "What is a stub in the context of a crypter?",
@@ -249,8 +315,11 @@
       "C": "A malware signature",
       "D": "A kernel-level driver"
     },
-    "correct_answers": ["A"],
-    "explanation": "In crypters, the stub is the part that decrypts and loads the original encrypted payload into memory."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "In crypters, the stub is the part that decrypts and loads the original encrypted payload into memory.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool is commonly used for static malware analysis?",
@@ -260,8 +329,11 @@
       "C": "Wireshark",
       "D": "Aircrack-ng"
     },
-    "correct_answers": ["A"],
-    "explanation": "IDA Pro is a disassembler used to reverse-engineer malware binaries and examine code statically."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "IDA Pro is a disassembler used to reverse-engineer malware binaries and examine code statically.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware modifies system files to survive reboots?",
@@ -271,8 +343,11 @@
       "C": "Keylogger",
       "D": "Adware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Rootkits modify system-level files or drivers to maintain stealth and persist through system reboots."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Rootkits modify system-level files or drivers to maintain stealth and persist through system reboots.",
+    "multiple_answers": false
   },
   {
     "question": "Which tool emulates the execution of malware for analysis without infecting the system?",
@@ -282,8 +357,11 @@
       "C": "Burp Suite",
       "D": "Cain and Abel"
     },
-    "correct_answers": ["A"],
-    "explanation": "Cuckoo Sandbox is a popular open-source tool for dynamic malware analysis in an isolated environment."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Cuckoo Sandbox is a popular open-source tool for dynamic malware analysis in an isolated environment.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware masquerades as a legitimate update or software?",
@@ -293,8 +371,11 @@
       "C": "Botnet",
       "D": "Ransomware"
     },
-    "correct_answers": ["A"],
-    "explanation": "Trojans trick users into installing them by posing as legitimate software or updates."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Trojans trick users into installing them by posing as legitimate software or updates.",
+    "multiple_answers": false
   },
   {
     "question": "Which behavior is indicative of a worm?",
@@ -304,8 +385,11 @@
       "C": "Intercepts browser credentials",
       "D": "Loads from USB only"
     },
-    "correct_answers": ["A"],
-    "explanation": "Worms are self-replicating malware that spread autonomously over networks, often rapidly."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Worms are self-replicating malware that spread autonomously over networks, often rapidly.",
+    "multiple_answers": false
   },
   {
     "question": "Which type of malware gives an attacker persistent access to a system?",
@@ -315,8 +399,11 @@
       "C": "Adware",
       "D": "Botnet"
     },
-    "correct_answers": ["A"],
-    "explanation": "Backdoors bypass normal authentication to allow unauthorized remote access to a system over time."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Backdoors bypass normal authentication to allow unauthorized remote access to a system over time.",
+    "multiple_answers": false
   },
   {
     "question": "What’s the primary goal of an exploit kit?",
@@ -326,8 +413,11 @@
       "C": "To test antivirus software",
       "D": "To bypass physical locks"
     },
-    "correct_answers": ["A"],
-    "explanation": "Exploit kits automate the identification and exploitation of client-side vulnerabilities to deliver malware."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Exploit kits automate the identification and exploitation of client-side vulnerabilities to deliver malware.",
+    "multiple_answers": false
   },
   {
     "question": "What is a bot in cybersecurity terms?",
@@ -337,8 +427,11 @@
       "C": "A firewall rule set",
       "D": "A DNS resolver"
     },
-    "correct_answers": ["A"],
-    "explanation": "A bot is an infected device that receives instructions from a central command server and acts accordingly."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "A bot is an infected device that receives instructions from a central command server and acts accordingly.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware analysis method involves disassembling executable code?",
@@ -348,8 +441,11 @@
       "C": "Behavioral analysis",
       "D": "Signature detection"
     },
-    "correct_answers": ["A"],
-    "explanation": "Static analysis involves examining code without running it, typically using disassemblers and hex editors."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Static analysis involves examining code without running it, typically using disassemblers and hex editors.",
+    "multiple_answers": false
   },
   {
     "question": "Which scripting language is commonly used in macro-based malware?",
@@ -359,8 +455,11 @@
       "C": "Bash",
       "D": "PowerShell"
     },
-    "correct_answers": ["A"],
-    "explanation": "VBA is embedded in Office macros and frequently used to run malicious code in macro-based attacks."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "VBA is embedded in Office macros and frequently used to run malicious code in macro-based attacks.",
+    "multiple_answers": false
   },
   {
     "question": "What’s the purpose of a crypter in malware development?",
@@ -370,8 +469,11 @@
       "C": "To generate IP addresses",
       "D": "To scan for vulnerabilities"
     },
-    "correct_answers": ["A"],
-    "explanation": "Crypters are used to encrypt malware so antivirus tools can't easily detect its signature."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Crypters are used to encrypt malware so antivirus tools can't easily detect its signature.",
+    "multiple_answers": false
   },
   {
     "question": "Which feature distinguishes fileless malware?",
@@ -381,8 +483,11 @@
       "C": "It deletes all files after running",
       "D": "It affects only mobile systems"
     },
-    "correct_answers": ["A"],
-    "explanation": "Fileless malware executes in memory, leaving minimal footprints on disk, which makes detection harder."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Fileless malware executes in memory, leaving minimal footprints on disk, which makes detection harder.",
+    "multiple_answers": false
   },
   {
     "question": "What is the purpose of malware obfuscation?",
@@ -392,8 +497,11 @@
       "C": "To clean up registry entries",
       "D": "To execute commands faster"
     },
-    "correct_answers": ["A"],
-    "explanation": "Obfuscation alters the appearance of code to prevent analysis and detection by antivirus tools."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Obfuscation alters the appearance of code to prevent analysis and detection by antivirus tools.",
+    "multiple_answers": false
   },
   {
     "question": "What does malware persistence refer to?",
@@ -403,8 +511,11 @@
       "C": "Malware’s ability to spread automatically",
       "D": "Malware’s ability to scan subnets"
     },
-    "correct_answers": ["A"],
-    "explanation": "Persistence mechanisms ensure the malware continues operating after reboot or logoff events."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Persistence mechanisms ensure the malware continues operating after reboot or logoff events.",
+    "multiple_answers": false
   },
   {
     "question": "Which common malware vector uses social engineering for delivery?",
@@ -414,8 +525,11 @@
       "C": "SQL injection",
       "D": "DNS tunneling"
     },
-    "correct_answers": ["A"],
-    "explanation": "Phishing emails are often used to trick users into opening malicious attachments or links."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Phishing emails are often used to trick users into opening malicious attachments or links.",
+    "multiple_answers": false
   },
   {
     "question": "Which malware attack is considered time-based and remains inactive until a certain trigger?",
@@ -425,8 +539,11 @@
       "C": "Bot",
       "D": "Trojan"
     },
-    "correct_answers": ["A"],
-    "explanation": "Logic bombs are programmed to execute their payload at a specific time or in response to specific actions."
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Logic bombs are programmed to execute their payload at a specific time or in response to specific actions.",
+    "multiple_answers": false
   },
   {
     "question": "Which of the following malware types can integrate with legitimate software as a plugin?",
@@ -436,7 +553,10 @@
       "C": "Adware",
       "D": "Worm"
     },
-    "correct_answers": ["C"],
-    "explanation": "Adware often installs itself as browser extensions or plugins to show ads or redirect traffic."
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Adware often installs itself as browser extensions or plugins to show ads or redirect traffic.",
+    "multiple_answers": false
   }
 ]
